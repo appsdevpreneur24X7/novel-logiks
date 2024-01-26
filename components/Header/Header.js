@@ -73,7 +73,8 @@ export default function Header(props) {
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container} style={{ marginLeft: '2rem', marginRight: 'auto' }}>
         <Hidden mdDown implementation="css" className={classes.hidden}>
-          <div className={classes.collapse}>{links} <Button
+          <div className={classes.collapse}>{links} 
+          {/* <Button
             size="medium"
             variant="contained"
             type="submit"
@@ -90,7 +91,8 @@ export default function Header(props) {
             onClick={routeToContactUs}
           >
             Contact Us
-          </Button></div>
+          </Button> */}
+          </div>
         </Hidden>
         <Hidden mdUp>
           <img src="/img/resized_imgs/transparent-logo.png" alt="novellogiks" style={{ width: "4rem", height: "4rem", marginRight: "1.5rem" }} />

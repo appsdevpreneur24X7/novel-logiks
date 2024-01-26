@@ -5,7 +5,7 @@ exports.id = 30;
 exports.ids = [30];
 exports.modules = {
 
-/***/ 0:
+/***/ 6927:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -25,9 +25,9 @@ var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_)
 var makeStyles_ = __webpack_require__(8409);
 var makeStyles_default = /*#__PURE__*/__webpack_require__.n(makeStyles_);
 // EXTERNAL MODULE: ./components/Header/Header.js + 1 modules
-var Header_Header = __webpack_require__(4889);
+var Header = __webpack_require__(4889);
 // EXTERNAL MODULE: ./components/Header/HeaderLinks.js + 1 modules
-var Header_HeaderLinks = __webpack_require__(6659);
+var HeaderLinks = __webpack_require__(6659);
 // EXTERNAL MODULE: ./components/Grid/GridContainer.js
 var Grid_GridContainer = __webpack_require__(4041);
 // EXTERNAL MODULE: ./components/Grid/GridItem.js
@@ -523,13 +523,13 @@ function SectionHeaders({ ...rest }) {
 };
 
 // EXTERNAL MODULE: ./components/CustomButtons/Button.js + 1 modules
-var CustomButtons_Button = __webpack_require__(571);
+var Button = __webpack_require__(571);
 // EXTERNAL MODULE: ./components/Card/Card.js + 1 modules
-var Card_Card = __webpack_require__(2643);
+var Card = __webpack_require__(2643);
 // EXTERNAL MODULE: ./components/Card/CardHeader.js + 1 modules
-var Card_CardHeader = __webpack_require__(3082);
+var CardHeader = __webpack_require__(3082);
 // EXTERNAL MODULE: ./components/Card/CardBody.js + 1 modules
-var Card_CardBody = __webpack_require__(222);
+var CardBody = __webpack_require__(222);
 // EXTERNAL MODULE: ./components/Typography/Warning.js
 var Warning = __webpack_require__(4951);
 // EXTERNAL MODULE: external "@mui/material/styles"
@@ -543,7 +543,7 @@ var Box_ = __webpack_require__(19);
 // EXTERNAL MODULE: ./data/about-us-data.js
 var about_us_data = __webpack_require__(5870);
 // EXTERNAL MODULE: ./pages-sections/sections-page/SectionAboutUsCard.js
-var SectionAboutUsCard = __webpack_require__(6724);
+var sections_page_SectionAboutUsCard = __webpack_require__(539);
 ;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionAboutUs.js
 
 
@@ -574,43 +574,43 @@ function SectionAboutUs_SectionHeaders({ ...rest }) {
     const routeToContactUs = ()=>{
         Router.push("/contact-us");
     };
-    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ _jsx("div", {
         className: "cd-section",
         ...rest,
         style: {
             background: "#5288E5"
         },
-        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        children: /*#__PURE__*/ _jsx("div", {
             className: classes.container,
-            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+            children: /*#__PURE__*/ _jsxs(GridContainer, {
                 children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                    /*#__PURE__*/ _jsx(GridItem, {
                         xs: 12,
                         sm: 4,
                         md: 4,
                         style: {
                             marginTop: "2rem"
                         },
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(SectionAboutUsCard/* default */.Z, {
+                        children: /*#__PURE__*/ _jsx(SectionAboutUsCard, {
                             index: 0
                         })
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                    /*#__PURE__*/ _jsx(GridItem, {
                         xs: 12,
                         sm: 4,
                         md: 4,
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(SectionAboutUsCard/* default */.Z, {
+                        children: /*#__PURE__*/ _jsx(SectionAboutUsCard, {
                             index: 1
                         })
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                    /*#__PURE__*/ _jsx(GridItem, {
                         xs: 12,
                         sm: 4,
                         md: 4,
                         style: {
                             marginTop: "2rem"
                         },
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(SectionAboutUsCard/* default */.Z, {
+                        children: /*#__PURE__*/ _jsx(SectionAboutUsCard, {
                             index: 2
                         })
                     })
@@ -622,6 +622,7 @@ function SectionAboutUs_SectionHeaders({ ...rest }) {
 
 ;// CONCATENATED MODULE: external "@mui/icons-material/ShoppingCartCheckout"
 const ShoppingCartCheckout_namespaceObject = require("@mui/icons-material/ShoppingCartCheckout");
+var ShoppingCartCheckout_default = /*#__PURE__*/__webpack_require__.n(ShoppingCartCheckout_namespaceObject);
 ;// CONCATENATED MODULE: external "@mui/icons-material/MedicalInformation"
 const MedicalInformation_namespaceObject = require("@mui/icons-material/MedicalInformation");
 ;// CONCATENATED MODULE: external "@mui/icons-material/CloudDone"
@@ -676,11 +677,11 @@ const SectionServicesCarousalCard = (props)=>{
         xs: 12,
         sm: 6,
         md: 4,
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_Card/* default */.Z, {
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
             plain: true,
             blog: true,
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(Card_CardHeader/* default */.Z, {
+                /*#__PURE__*/ jsx_runtime_.jsx(CardHeader/* default */.Z, {
                     plain: true,
                     image: true,
                     children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
@@ -693,7 +694,7 @@ const SectionServicesCarousalCard = (props)=>{
                         }
                     })
                 }),
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_CardBody/* default */.Z, {
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
                     plain: true,
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
@@ -776,9 +777,9 @@ function SectionServicesCarousel() {
     };
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(Header_Header/* default */.Z, {
+            /*#__PURE__*/ jsx_runtime_.jsx(Header/* default */.Z, {
                 brand: "",
-                links: /*#__PURE__*/ jsx_runtime_.jsx(Header_HeaderLinks/* default */.Z, {
+                links: /*#__PURE__*/ jsx_runtime_.jsx(HeaderLinks/* default */.Z, {
                     dropdownHoverColor: "info"
                 }),
                 fixed: true,
@@ -833,7 +834,7 @@ function SectionServicesCarousel() {
                             sm: 12,
                             md: 12,
                             children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx(CustomButtons_Button/* default */.Z, {
+                                /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
                                     size: "medium",
                                     variant: "contained",
                                     type: "submit",
@@ -873,7 +874,7 @@ function SectionServicesCarousel() {
                                     onClick: routeToContactUs,
                                     children: "Contact Us"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx(CustomButtons_Button/* default */.Z, {
+                                /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
                                     size: "medium",
                                     variant: "contained",
                                     type: "submit",
@@ -1554,150 +1555,130 @@ function SectionContactUs({ ...rest }) {
     });
 };
 
-;// CONCATENATED MODULE: ./data/industries-data.js
-const industries_data_industries = [
-    {
-        serviceTitle: "Retail",
-        serviceImageUrl: "img/resized_imgs/industries-retail.png",
-        // serviceOneLiner :"The rise of e-commerce and omnichannel, changing customer behavior, hyperpersonalization, and increased supply chain complexity have reshaped the industry. impacting retailer profits over the past 5 Years. Novel Logiks with its business and technical knowhow helps you achieve the imperative scalability in the technical architecture and operating model to keep pace with the changing landscape."
-        serviceOneLiner: "The rise of e-commerce and omnichannel, changing customer behavior, hyperpersonalization, and increased supply chain complexity have reshaped the industry."
+// EXTERNAL MODULE: external "@mui/material/Icon"
+var Icon_ = __webpack_require__(3843);
+;// CONCATENATED MODULE: external "@mui/icons-material/AdminPanelSettings"
+const AdminPanelSettings_namespaceObject = require("@mui/icons-material/AdminPanelSettings");
+var AdminPanelSettings_default = /*#__PURE__*/__webpack_require__.n(AdminPanelSettings_namespaceObject);
+;// CONCATENATED MODULE: external "@mui/icons-material/Analytics"
+const Analytics_namespaceObject = require("@mui/icons-material/Analytics");
+var Analytics_default = /*#__PURE__*/__webpack_require__.n(Analytics_namespaceObject);
+;// CONCATENATED MODULE: external "@mui/icons-material/LocalShipping"
+const LocalShipping_namespaceObject = require("@mui/icons-material/LocalShipping");
+var LocalShipping_default = /*#__PURE__*/__webpack_require__.n(LocalShipping_namespaceObject);
+;// CONCATENATED MODULE: external "@mui/icons-material/Tune"
+const Tune_namespaceObject = require("@mui/icons-material/Tune");
+var Tune_default = /*#__PURE__*/__webpack_require__.n(Tune_namespaceObject);
+;// CONCATENATED MODULE: external "@mui/icons-material/QueryBuilder"
+const QueryBuilder_namespaceObject = require("@mui/icons-material/QueryBuilder");
+var QueryBuilder_default = /*#__PURE__*/__webpack_require__.n(QueryBuilder_namespaceObject);
+// EXTERNAL MODULE: external "@mui/icons-material/Dashboard"
+var Dashboard_ = __webpack_require__(7235);
+var Dashboard_default = /*#__PURE__*/__webpack_require__.n(Dashboard_);
+// EXTERNAL MODULE: ./components/InfoArea/InfoArea.js + 1 modules
+var InfoArea = __webpack_require__(5190);
+// EXTERNAL MODULE: ./components/Badge/Badge.js + 1 modules
+var Badge = __webpack_require__(8423);
+// EXTERNAL MODULE: ./styles/jss/novel-logiks.js
+var novel_logiks = __webpack_require__(6441);
+;// CONCATENATED MODULE: ./styles/jss/novel-logiks/pages/sectionsSections/projectsStyle.js
+
+const projectsSection = {
+    container: novel_logiks/* container */.nC,
+    mlAuto: novel_logiks/* mlAuto */.hU,
+    mrAuto: novel_logiks/* mrAuto */.kq,
+    title: novel_logiks/* title */.TN,
+    description: novel_logiks/* description */.WL,
+    coloredShadow: novel_logiks/* coloredShadow */.DF,
+    cardTitle: novel_logiks/* cardTitle */.X5,
+    textCenter: {
+        textAlign: "center"
     },
-    {
-        serviceTitle: "Automotive",
-        serviceImageUrl: "img/resized_imgs/industries.png",
-        // serviceOneLiner :"Disruptive technologies, coupled with emerging markets and evolving consumer preferences towards ownership, are set to revolutionize how industry players adapt to shifting consumer behavior, form partnerships, and lead digital business transformation. Novel Logiks helps in this strategic move to shape the organizations evolution with its IOT and Software Solutions. "
-        serviceOneLiner: "Disruptive technologies, coupled with emerging markets and evolving consumer preferences towards ownership, are set to revolutionize how industry players adapt to shifting consumer behavior."
+    projects: {
+        padding: "80px 0"
     },
-    {
-        serviceTitle: "CPG",
-        serviceImageUrl: "img/resized_imgs/industries-cpg.png",
-        // serviceOneLiner :"The CPG industry is revolutionized by digital transformation impacting consumer communication, sales strategies, data utilization and supply chain and manufacturing operations , Novel Logiks brings  expertise in the top notch digital initiatives to aid companies in achieving innovation , efficiency and operational improvements that propel their success."
-        serviceOneLiner: "The CPG industry is revolutionized by digital transformation impacting consumer communication, sales strategies, data utilization and supply chain and manufacturing operations."
+    tabSpace: {
+        padding: "20px 0 50px 0px"
     },
-    {
-        serviceTitle: "Shipping",
-        serviceImageUrl: "img/latest/ship-building.png",
-        // serviceOneLiner :"The shipbuilding and ship repair industry is projected to lose approximately 33% of skilled workforce and 48% of management by 2028. There is huge potential to increase cost savings, decrease production timelines, and drive down inefficiencies in Lifecyle management of ships. Novel Logiks brings in the expertise in emergent technologies including the Internet of Things, Big Data, Robotic automation of processes, and Artificial Intelligence (AI)"
-        serviceOneLiner: "The shipbuilding and ship repair industry is projected to lose approximately 33% of skilled workforce and 48% of management by 2028. There is huge potential to increase cost savings."
+    cardCategory: {
+        color: "rgba(" + (0,novel_logiks/* hexToRgb */.oo)(novel_logiks/* whiteColor */.zQ) + ", 0.7) !important",
+        marginTop: "10px"
     },
-    {
-        serviceTitle: "Manufacturing",
-        serviceImageUrl: "img/latest/manufacturing_ai.jpg",
-        // serviceOneLiner :"Novel Logiks synergies with Manufacturing industry brings in Advanced Analytics for planning and forecasting, digital tools to improve productivity and safety , Automated processes to improve efficiency , reduce error rates and increase efficiencies and advanced supply chain enterprise platforms on cloud."
-        serviceOneLiner: "Novel Logiks synergies with Manufacturing industry brings in Advanced Analytics for planning and forecasting, digital tools to improve productivity and safety."
+    cardTitleWhite: {
+        ...novel_logiks/* cardTitle */.X5,
+        color: novel_logiks/* whiteColor */.zQ + "  !important",
+        marginTop: "10px !important"
     },
-    {
-        serviceTitle: "Pharma",
-        serviceImageUrl: "img/latest/pharma.jpg",
-        // serviceOneLiner :"Amidst the challenges posed by increasing intricacy, expenses, and regulatory demands, a growing number of pharmaceutical executives are turning their attention to Industry 4.0 manufacturing and implementation of cloud based enterprise applications. This promises to significantly curtail pharmaceutical manufacturing expenses, elevate product quality, and alleviate capacity limitations.  Novel Logiks offers Industry 4.0 Support."
-        serviceOneLiner: "Amidst the challenges posed by increasing intricacy, expenses, and regulatory demands, a growing number of pharmaceutical executives are turning their attention to Industry 4.0 manufacturing ."
+    cardDescription: {
+        color: "rgba(" + (0,novel_logiks/* hexToRgb */.oo)(novel_logiks/* whiteColor */.zQ) + ", 0.7) !important"
     },
-    {
-        serviceTitle: "Telecom",
-        serviceImageUrl: "img/telecom1.jpg",
-        // serviceOneLiner :"The telecom industry in this era has witnessed customer-focused disruptions, where digital-native companies have established a new benchmark for seamlessonline experiences, compelling traditional telecom companies to reimagine their customer engagementapproaches. Additionally, business-model disruptions have emerged, driven by transformative technologieslike AI, big data, RPA and the Internet of Things, reshaping the way services are delivered and value is captured.leverage Novel Logiks expertise to stay ahead."
-        serviceOneLiner: "The telecom industry in this era has witnessed customer-focused disruptions, where digital-native companies have established a new benchmark for seamlessonline experiences."
+    sectionSpace: {
+        height: "70px",
+        display: "block"
     },
-    {
-        serviceTitle: "Energy and Utlities",
-        serviceImageUrl: "img/energy1.jpg",
-        // serviceOneLiner :"Energy and natural resources companies are rapidly expediting their digital transformation endeavors across various use cases, in the wake challenges posed by decarbonization and decentralisation. These include enhancing operational productivity, elevating the customer experience, exploring new business models, improving organizational performance,and fulfilling ESG (Environmental, Social, and Governance) goals.Novel Logiks helps modernization which in turnproviders custoers diversity their business models and opportunity to gain new revenue streams."
-        serviceOneLiner: "Energy and natural resources companies are rapidly expediting their digital transformation endeavors across various use cases, in the wake challenges posed by decarbonization and decentralisation."
-    }, 
-];
-
-;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionIndustriesCarousalCard.js
-/*eslint-disable*/ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-const SectionIndustriesCarousalCard_useStyles = makeStyles_default()(featuresStyle/* default */.Z);
-const SectionIndustriesCarousalCard_SectionIndustriesCarousalCard = (props)=>{
-    const classes = SectionIndustriesCarousalCard_useStyles();
-    console.log("props Passed to Carousal Card : ", props);
-    const { index  } = props;
-    console.log("props Passed to Carousal Card : ", index);
-    return /*#__PURE__*/ _jsx(GridItem, {
-        xs: 12,
-        sm: 6,
-        md: 4,
-        children: /*#__PURE__*/ _jsxs(Card, {
-            plain: true,
-            blog: true,
-            style: {
-                background: "#5288E5",
-                borderColor: "#5288E5",
-                borderStyle: "solid",
-                borderWidth: "medium"
-            },
-            children: [
-                /*#__PURE__*/ _jsx(CardHeader, {
-                    plain: true,
-                    image: true,
-                    children: /*#__PURE__*/ _jsx("img", {
-                        src: industries[index].serviceImageUrl,
-                        alt: "...",
-                        style: {
-                            height: "20rem",
-                            padding: "1rem",
-                            boxShadow: "none"
-                        }
-                    })
-                }),
-                /*#__PURE__*/ _jsxs(CardBody, {
-                    plain: true,
-                    children: [
-                        /*#__PURE__*/ _jsx(Typography, {
-                            style: {
-                                fontFamily: "Montserrat",
-                                fontSize: "1.125rem",
-                                lineHeight: "1.719rem",
-                                fontWeight: "600",
-                                textAlign: "left",
-                                color: "#212121",
-                                padding: "1rem"
-                            },
-                            children: industries[index].serviceTitle
-                        }),
-                        /*#__PURE__*/ _jsx(Typography, {
-                            style: {
-                                fontFamily: '"Open Sans", sans-serif',
-                                fontSize: "0.875rem",
-                                lineHeight: "1.719rem",
-                                fontWeight: "300",
-                                textAlign: "left",
-                                color: "#212121",
-                                padding: "1rem"
-                            },
-                            children: industries[index].serviceOneLiner
-                        })
-                    ]
-                })
-            ]
-        })
-    });
+    marginTop20: {
+        marginTop: "20px"
+    },
+    card2: {
+        textAlign: "center"
+    },
+    sectionDark: {
+        ...novel_logiks/* sectionDark */.Yw,
+        backgroundSize: "550% 450%",
+        "& $title, & $cardTitle": {
+            color: novel_logiks/* whiteColor */.zQ
+        },
+        "& $cardCategory": {
+            color: "rgba(" + (0,novel_logiks/* hexToRgb */.oo)(novel_logiks/* whiteColor */.zQ) + ", 0.5) !important"
+        },
+        "& $cardDescription": {
+            color: "rgba(" + (0,novel_logiks/* hexToRgb */.oo)(novel_logiks/* whiteColor */.zQ) + ", 0.76) !important"
+        }
+    },
+    projects3: {
+        "& $title": {
+            marginBottom: "80px",
+            marginTop: "5px"
+        },
+        "& h6": {
+            marginBottom: "5px"
+        }
+    },
+    card4: {
+        marginTop: "0",
+        marginBottom: "0",
+        "& $cardTitle": {
+            color: novel_logiks/* whiteColor */.zQ
+        }
+    },
+    cardBody4: {
+        paddingTop: "140px",
+        paddingBottom: "140px"
+    },
+    info4: {
+        padding: "0"
+    },
+    projects4: {
+        "& hr": {
+            margin: "70px auto",
+            maxWidth: "970px"
+        }
+    }
 };
-/* harmony default export */ const sections_page_SectionIndustriesCarousalCard = ((/* unused pure expression or super */ null && (SectionIndustriesCarousalCard_SectionIndustriesCarousalCard)));
+/* harmony default export */ const projectsStyle = (projectsSection);
 
-;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionIndustriesCarousel.js
-/*eslint-disable*/ 
-
-
-// nodejs library that concatenates classes
+;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionProjects.js
+/* eslint-disable */ 
 
 
 
 // @mui/icons-material
+
+
+
+
+
+
 
 // core components
 
@@ -1707,263 +1688,192 @@ const SectionIndustriesCarousalCard_SectionIndustriesCarousalCard = (props)=>{
 
 
 
-
-
-
-
-
-
-
-
-const SectionIndustriesCarousel_useStyles = makeStyles_default()(featuresStyle/* default */.Z);
-function SectionIndustriesCarousel_SectionIndustriesCarousel() {
-    const classes = SectionIndustriesCarousel_useStyles();
-    console.log("industries Data : ", industries);
-    const settings = {
-        // dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true
-    };
-    const showAllServices = ()=>{
-        console.log("Routing to /service-details Page ");
-        Router.push("/service-details");
-    };
-    const routeToContactUs = ()=>{
-        console.log("Routing to /contactUs Page ");
-        Router.push("/sections#contactUs");
-    };
-    return /*#__PURE__*/ _jsxs(_Fragment, {
-        children: [
-            /*#__PURE__*/ _jsx(Header, {
-                brand: "",
-                links: /*#__PURE__*/ _jsx(HeaderLinks, {
-                    dropdownHoverColor: "info"
-                }),
-                fixed: true,
-                color: "info",
-                disableGutters: true
-            }),
-            /*#__PURE__*/ _jsxs("div", {
+const SectionProjects_useStyles = makeStyles_default()(projectsStyle);
+function SectionProjects({ ...rest }) {
+    const classes = SectionProjects_useStyles();
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        className: "cd-section",
+        ...rest,
+        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+            className: classes.projects + " " + classes.projects4,
+            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: classes.container,
                 children: [
-                    /*#__PURE__*/ _jsxs(Carousel, {
-                        ...settings,
-                        children: [
-                            /*#__PURE__*/ _jsx("div", {
-                                children: /*#__PURE__*/ _jsxs(GridContainer, {
-                                    children: [
-                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
-                                            index: 0
-                                        }),
-                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
-                                            index: 1
-                                        }),
-                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
-                                            index: 2
-                                        })
-                                    ]
-                                })
-                            }),
-                            /*#__PURE__*/ _jsx("div", {
-                                children: /*#__PURE__*/ _jsxs(GridContainer, {
-                                    children: [
-                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
-                                            index: 3
-                                        }),
-                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
-                                            index: 4
-                                        }),
-                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
-                                            index: 5
-                                        })
-                                    ]
-                                })
-                            }),
-                            /*#__PURE__*/ _jsx("div", {
-                                children: /*#__PURE__*/ _jsxs(GridContainer, {
-                                    children: [
-                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
-                                            index: 6
-                                        }),
-                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
-                                            index: 7
-                                        })
-                                    ]
-                                })
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ _jsx(GridContainer, {
-                        style: {
-                            marginBottom: "2rem",
-                            textAlign: "center"
-                        },
-                        children: /*#__PURE__*/ _jsxs(GridItem, {
+                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
                             xs: 12,
-                            sm: 12,
-                            md: 12,
+                            sm: 8,
+                            md: 8,
+                            className: classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter,
                             children: [
-                                /*#__PURE__*/ _jsx(Button, {
-                                    size: "medium",
-                                    variant: "contained",
-                                    type: "submit",
-                                    sx: {
-                                        width: {
-                                            lg: "21rem",
-                                            md: "21rem",
-                                            sm: "15rem",
-                                            xs: "15rem"
-                                        },
-                                        height: {
-                                            lg: "4rem",
-                                            md: "4rem",
-                                            sm: "3rem",
-                                            xs: "3rem"
-                                        },
-                                        fontSize: {
-                                            lg: "1.5rem",
-                                            md: "1.5rem",
-                                            sm: "1.25rem",
-                                            xs: "1.125rem"
-                                        }
-                                    },
-                                    style: {
-                                        textTransform: "none",
-                                        fontFamily: "Montserrat",
-                                        fontSize: "1.5rem",
-                                        fontWeight: "600",
-                                        color: "#112A46",
-                                        background: "#5288E5",
-                                        textAlign: "left",
-                                        margin: "1em",
-                                        fontSize: "1.5rem",
-                                        boxShadow: "none",
-                                        borderRadius: "0px"
-                                    },
-                                    onClick: routeToContactUs,
-                                    children: "Contact Us"
+                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                    className: classes.title,
+                                    children: "Some of Our Awesome E-Commerce Products"
                                 }),
-                                /*#__PURE__*/ _jsx(Button, {
-                                    size: "medium",
-                                    variant: "contained",
-                                    type: "submit",
-                                    sx: {
-                                        width: {
-                                            lg: "21rem",
-                                            md: "21rem",
-                                            sm: "15rem",
-                                            xs: "15rem"
-                                        },
-                                        height: {
-                                            lg: "4rem",
-                                            md: "4rem",
-                                            sm: "3rem",
-                                            xs: "3rem"
-                                        },
-                                        fontSize: {
-                                            lg: "1.5rem",
-                                            md: "1.5rem",
-                                            sm: "1.25rem",
-                                            xs: "1.125rem"
-                                        }
-                                    },
-                                    style: {
-                                        color: "#112A46",
-                                        textTransform: "none",
-                                        fontFamily: "Montserrat",
-                                        fontSize: "1.5rem",
-                                        borderColor: "black",
-                                        border: "2px solid",
-                                        background: "#FFF",
-                                        textAlign: "right",
-                                        boxShadow: "none",
-                                        borderRadius: "0px",
-                                        fontWeight: "600"
-                                    },
-                                    onClick: showAllServices,
-                                    children: "See all Services"
+                                /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                    className: classes.description,
+                                    children: "We understood Who’s target buyer?what they need and What are their pain points? and we came up with a solution."
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: classes.sectionSpace
                                 })
                             ]
                         })
-                    })
-                ]
-            })
-        ]
-    });
-};
-
-;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionIndustries.js
-
-
-
-
-
-
-
-
-
-
-const SectionIndustries_useStyles = makeStyles_default()(headersStyle/* default */.Z);
-const SectionIndustries_routeToAiDetails = ()=>{
-    Router.push("/ai-details");
-};
-const SectionIndustries_routeToContactUs = ()=>{
-    Router.push("/contact-us");
-};
-function SectionIndustries({ ...rest }) {
-    const classes = SectionIndustries_useStyles();
-    console.log("Loaded Services data : ", services ? services.length : 0);
-    return /*#__PURE__*/ _jsx("div", {
-        className: "cd-section",
-        ...rest,
-        children: /*#__PURE__*/ _jsxs("div", {
-            className: classes.container,
-            children: [
-                /*#__PURE__*/ _jsx(GridContainer, {
-                    style: {
-                        marginBottom: ".25rem"
-                    },
-                    children: /*#__PURE__*/ _jsxs(GridItem, {
-                        md: 6,
-                        style: {
-                            color: "#112A46"
-                        },
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
                         children: [
-                            /*#__PURE__*/ _jsx("h1", {
-                                style: {
-                                    fontFamily: "Montserrat",
-                                    fontSize: "2rem",
-                                    lineHeight: "2rem",
-                                    fontWeight: "600",
-                                    textAlign: "left",
-                                    color: "#112A46"
-                                },
-                                children: "  Industries"
+                            /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                xs: 12,
+                                sm: 5,
+                                md: 5,
+                                className: classes.mlAuto,
+                                children: /*#__PURE__*/ jsx_runtime_.jsx(Card/* default */.Z, {
+                                    background: true,
+                                    className: classes.card4,
+                                    style: {
+                                        backgroundImage: "url('/img/tt_client.png')"
+                                    },
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                        background: true,
+                                        className: classes.cardBody4,
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx(Badge/* default */.Z, {
+                                                color: "rose",
+                                                children: "Client: Vishudha Tagline Traders"
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                                                href: "#pablo",
+                                                onClick: (e)=>e.preventDefault,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                                        className: classes.cardTitle,
+                                                        children: "Tagline E-Commerce Client"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        className: classes.cardDescription,
+                                                        children: "E-Commerce Client App to facilitate procuring Vishudha Groceries uin Domestic and Bulk."
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    })
+                                })
                             }),
-                            /*#__PURE__*/ _jsx(Divider, {
-                                style: {
-                                    backgroundColor: "#5288E5",
-                                    color: "#5288E5",
-                                    border: "#5288E5",
-                                    borderRadius: "5px",
-                                    borderTop: "0.25rem solid #5288E5",
-                                    width: "40%"
-                                }
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                                xs: 12,
+                                sm: 5,
+                                md: 5,
+                                className: classes.mrAuto,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
+                                        className: classes.info4,
+                                        title: "E-Commerce Application",
+                                        description: "We've created the design of the website using modern Technologies like Sketch. It was a very interesting collaboration.",
+                                        icon: (ShoppingCartCheckout_default()),
+                                        iconColor: "success"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
+                                        className: classes.info4,
+                                        title: "Saves Time",
+                                        description: "I would save lot of time of the customer by just relaxing and ordering the Groceries needed to any where ",
+                                        icon: (QueryBuilder_default()),
+                                        iconColor: "primary"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
+                                        className: classes.info4,
+                                        title: "Free Shipping",
+                                        description: "Deliver Goods on Time and handle the goods with Care",
+                                        icon: (LocalShipping_default()),
+                                        iconColor: "success"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("hr", {}),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                                xs: 12,
+                                sm: 5,
+                                md: 5,
+                                className: classes.mlAuto,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
+                                        className: classes.info4,
+                                        title: "Admin Panel",
+                                        description: "Admin Panel for accessing all the modules in Vishudha Ecommerce Business",
+                                        icon: (AdminPanelSettings_default()),
+                                        iconColor: "warning"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
+                                        className: classes.info4,
+                                        title: "Analytics Integrated",
+                                        description: "Fully Integrated with Analytics to track the Sales",
+                                        icon: (Analytics_default()),
+                                        iconColor: "success"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
+                                        className: classes.info4,
+                                        title: "Intuitive Dashboard ",
+                                        description: "Intuitive Dashboard based on the Roles",
+                                        icon: (Dashboard_default()),
+                                        iconColor: "info"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
+                                        className: classes.info4,
+                                        title: "Configure ",
+                                        description: "Can Configure all the Categories, Sub categories, Products, Prices, Discounts and Taxes details",
+                                        icon: (Tune_default()),
+                                        iconColor: "info"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                xs: 12,
+                                sm: 5,
+                                md: 5,
+                                className: classes.mrAuto,
+                                children: /*#__PURE__*/ jsx_runtime_.jsx(Card/* default */.Z, {
+                                    background: true,
+                                    className: classes.card4,
+                                    style: {
+                                        backgroundImage: "url('/img/tt_admin.png')"
+                                    },
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                        background: true,
+                                        className: classes.cardBody4,
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx(Badge/* default */.Z, {
+                                                color: "rose",
+                                                children: "CLIENT: Vishudha Tagline Traders"
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                                                href: "#pablo",
+                                                onClick: (e)=>e.preventDefault,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                                        className: classes.cardTitle,
+                                                        children: "Tagline E-Commerce MIS"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        className: classes.cardDescription,
+                                                        children: "Admin module to facilitate all the backend operations of Tagline Traders."
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    })
+                                })
                             })
                         ]
                     })
-                }),
-                /*#__PURE__*/ _jsx(SectionIndustriesCarousel, {})
-            ]
+                ]
+            })
         })
     });
 };
 
-// EXTERNAL MODULE: ./styles/jss/novel-logiks.js
-var novel_logiks = __webpack_require__(6441);
 ;// CONCATENATED MODULE: ./styles/jss/novel-logiks/pages/sectionsSections/careersStyle.js
 
 const careersSection = {
@@ -2547,16 +2457,16 @@ function SectionCareers({ ...rest }) {
                                                 alignItems: "center",
                                                 textAlign: "center",
                                                 textTransform: "none",
-                                                background: "#5288E5",
-                                                color: "black",
-                                                boxShadow: "none",
-                                                borderRadius: "0px",
                                                 width: "21rem",
                                                 fontFamily: "Montserrat",
                                                 fontSize: "1.5rem",
                                                 fontWeight: "600",
                                                 lineHeight: "1.5rem",
-                                                height: "3.9rem"
+                                                height: "3.9rem",
+                                                color: "#112A46",
+                                                borderRadius: "5px",
+                                                backgroundColor: "#E5AF52",
+                                                boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
                                             },
                                             disabled: enableSearch ? true : false,
                                             onClick: searchHandler,
@@ -2785,7 +2695,7 @@ function SectionTeams({ ...rest }) {
                                 lg: 6,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                     className: classes.rotatingCardContainer,
-                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_Card/* default */.Z, {
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
                                         background: true,
                                         className: classes.cardRotate,
                                         children: [
@@ -2794,7 +2704,7 @@ function SectionTeams({ ...rest }) {
                                                 style: {
                                                     backgroundColor: "#E5AF52"
                                                 },
-                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_CardBody/* default */.Z, {
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
                                                     background: true,
                                                     className: classes.cardBodyRotate,
                                                     children: [
@@ -2845,7 +2755,7 @@ function SectionTeams({ ...rest }) {
                                                     fontWeight: "400",
                                                     color: "#091133"
                                                 },
-                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_CardBody/* default */.Z, {
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
                                                     background: true,
                                                     className: classes.cardBodyRotate,
                                                     children: [
@@ -2914,7 +2824,7 @@ function SectionTeams({ ...rest }) {
                                 lg: 6,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                     className: classes.rotatingCardContainer,
-                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_Card/* default */.Z, {
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
                                         background: true,
                                         className: classes.cardRotate,
                                         children: [
@@ -2923,7 +2833,7 @@ function SectionTeams({ ...rest }) {
                                                 style: {
                                                     backgroundColor: "#E5AF52"
                                                 },
-                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_CardBody/* default */.Z, {
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
                                                     background: true,
                                                     className: classes.cardBodyRotate,
                                                     children: [
@@ -2972,7 +2882,7 @@ function SectionTeams({ ...rest }) {
                                                     fontSize: "0.85rem",
                                                     fontWeight: "400"
                                                 },
-                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_CardBody/* default */.Z, {
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
                                                     background: true,
                                                     className: classes.cardBodyRotate,
                                                     children: [
@@ -3151,10 +3061,10 @@ function SectionsPage() {
     const classes = sections_useStyles();
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(Header_Header/* default */.Z, {
+            /*#__PURE__*/ jsx_runtime_.jsx(Header/* default */.Z, {
                 color: "info",
                 brand: "",
-                links: /*#__PURE__*/ jsx_runtime_.jsx(Header_HeaderLinks/* default */.Z, {
+                links: /*#__PURE__*/ jsx_runtime_.jsx(HeaderLinks/* default */.Z, {
                     dropdownHoverColor: "info"
                 }),
                 fixed: true
@@ -3168,17 +3078,17 @@ function SectionsPage() {
                     /*#__PURE__*/ jsx_runtime_.jsx(SectionServices, {
                         id: "services"
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(SectionAboutUs_SectionHeaders, {
-                        id: "aboutus"
+                    /*#__PURE__*/ jsx_runtime_.jsx(SectionProjects, {
+                        id: "projects"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx(SectionTeams, {
                         id: "teams"
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(SectionContactUs, {
-                        id: "contactUs"
-                    }),
                     /*#__PURE__*/ jsx_runtime_.jsx(SectionCareers, {
                         id: "careers"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx(SectionContactUs, {
+                        id: "contactUs"
                     })
                 ]
             }),
@@ -3266,7 +3176,7 @@ function SectionsPage() {
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
                             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
-                                href: "#industries",
+                                href: "#projects",
                                 "data-number": "4",
                                 className: "",
                                 onClick: (e)=>{
@@ -3275,7 +3185,7 @@ function SectionsPage() {
                                     // if we are on mobile device the scroll into view will be managed by the browser
                                     } else {
                                         e.preventDefault();
-                                        smoothScroll("industries");
+                                        smoothScroll("projects");
                                     }
                                 },
                                 children: [
@@ -3284,7 +3194,7 @@ function SectionsPage() {
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                         className: "cd-label",
-                                        children: "Industries"
+                                        children: "Projects"
                                     })
                                 ]
                             })
@@ -3341,31 +3251,6 @@ function SectionsPage() {
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
                             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
-                                href: "#contactUs",
-                                "data-number": "7",
-                                className: "",
-                                onClick: (e)=>{
-                                    var isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
-                                    if (isMobile) {
-                                    // if we are on mobile device the scroll into view will be managed by the browser
-                                    } else {
-                                        e.preventDefault();
-                                        smoothScroll("contactUs");
-                                    }
-                                },
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                        className: "cd-dot"
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                        className: "cd-label",
-                                        children: "Contact Us"
-                                    })
-                                ]
-                            })
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                                 href: "#careers",
                                 "data-number": "7",
                                 className: "",
@@ -3388,6 +3273,31 @@ function SectionsPage() {
                                     })
                                 ]
                             })
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                                href: "#contactUs",
+                                "data-number": "7",
+                                className: "",
+                                onClick: (e)=>{
+                                    var isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+                                    if (isMobile) {
+                                    // if we are on mobile device the scroll into view will be managed by the browser
+                                    } else {
+                                        e.preventDefault();
+                                        smoothScroll("contactUs");
+                                    }
+                                },
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                        className: "cd-dot"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                        className: "cd-label",
+                                        children: "Contact Us"
+                                    })
+                                ]
+                            })
                         })
                     ]
                 })
@@ -3395,53 +3305,66 @@ function SectionsPage() {
             /*#__PURE__*/ jsx_runtime_.jsx(Footer/* default */.Z, {
                 className: classes.footer,
                 content: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    style: {
-                        background: "#FBFBFD"
-                    },
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx(material_.Divider, {}),
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            style: {
-                                float: "left",
-                                marginTop: "1.5rem"
-                            },
-                            children: "\xa92023 Novel Logiks Pvt Ltd"
-                        }),
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            style: {
-                                float: "right"
-                            },
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx(CustomButtons_Button/* default */.Z, {
-                                    // href=""
-                                    target: "_blank",
-                                    color: "twitter",
-                                    justIcon: true,
-                                    simple: true,
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                        className: "fab fa-twitter"
+                            className: classes.container,
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                                style: {
+                                    alignItems: "baseline"
+                                },
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                        md: 6,
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                            style: {
+                                                fontFamily: "Montserrat",
+                                                fontSize: "0.75rem",
+                                                color: "#091133"
+                                            },
+                                            children: "\xa92023 Novel Logiks Technologies"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                                        md: 6,
+                                        style: {
+                                            color: "#112A46",
+                                            verticalAlign: "baseline"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
+                                                // href=""
+                                                target: "_blank",
+                                                color: "twitter",
+                                                justIcon: true,
+                                                simple: true,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                                    className: "fab fa-twitter"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
+                                                // href=""
+                                                target: "_blank",
+                                                color: "instagram",
+                                                justIcon: true,
+                                                simple: true,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                                    className: "fab fa-instagram"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
+                                                // href=""
+                                                justIcon: true,
+                                                simple: true,
+                                                color: "facebook",
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                                    className: "fab fa-facebook-square"
+                                                })
+                                            })
+                                        ]
                                     })
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx(CustomButtons_Button/* default */.Z, {
-                                    // href=""
-                                    target: "_blank",
-                                    color: "instagram",
-                                    justIcon: true,
-                                    simple: true,
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                        className: "fab fa-instagram"
-                                    })
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx(CustomButtons_Button/* default */.Z, {
-                                    // href=""
-                                    justIcon: true,
-                                    simple: true,
-                                    color: "facebook",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                        className: "fab fa-facebook-square"
-                                    })
-                                })
-                            ]
+                                ]
+                            })
                         })
                     ]
                 })
@@ -3457,6 +3380,13 @@ function SectionsPage() {
 /***/ ((module) => {
 
 module.exports = require("@mui/icons-material/Close");
+
+/***/ }),
+
+/***/ 7235:
+/***/ ((module) => {
+
+module.exports = require("@mui/icons-material/Dashboard");
 
 /***/ }),
 
@@ -3527,6 +3457,13 @@ module.exports = require("@mui/material/Grid");
 /***/ ((module) => {
 
 module.exports = require("@mui/material/Hidden");
+
+/***/ }),
+
+/***/ 3843:
+/***/ ((module) => {
+
+module.exports = require("@mui/material/Icon");
 
 /***/ }),
 
@@ -3796,7 +3733,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [952,270,664,441,999,39,866,568,765,482,82,684,696,645,951,828,724,174,707], () => (__webpack_exec__(0)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,270,664,441,999,39,866,568,765,482,82,684,696,645,951,828,83,724,707], () => (__webpack_exec__(6927)));
 module.exports = __webpack_exports__;
 
 })();

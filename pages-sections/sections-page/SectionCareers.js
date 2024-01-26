@@ -309,16 +309,16 @@ export default function SectionCareers({ ...rest }) {
                   alignItems: "center",
                   textAlign: "center",
                   textTransform: "none",
-                  background: '#5288E5',
-                  color:"black",
-                  boxShadow:"none",
-                  borderRadius:"0px",
                   width:"21rem",
                   fontFamily:"Montserrat",
                   fontSize:"1.5rem",
                   fontWeight:"600",
                   lineHeight:"1.5rem",
-                  height:"3.9rem"
+                  height:"3.9rem",
+                  color: '#112A46',
+                  borderRadius:'5px',
+                  backgroundColor: '#E5AF52',
+                  boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)'
                 }}
                 disabled={enableSearch ? true : false}
                 onClick={searchHandler}

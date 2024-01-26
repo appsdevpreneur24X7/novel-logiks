@@ -70,7 +70,7 @@ export default function HeaderLinks(props) {
         <a
           className={classes.dropdownLink} style={{ color: '#111111' }}
           onClick={(e) => {
-            if (each.title === "Services" || each.title === "About")
+            if (each.title === "Services")
               Router.push(each.href)
             else
               smoothScroll(e, each.smoothScroll)

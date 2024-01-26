@@ -159,7 +159,7 @@ module.exports = require("next/dist/server/utils.js");
 
 /***/ }),
 
-/***/ 2417:
+/***/ 6724:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/constants.js");

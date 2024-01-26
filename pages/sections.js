@@ -7,7 +7,7 @@ import SectionAboutUs from "/pages-sections/sections-page/SectionAboutUs.js";
 import SectionServices from "/pages-sections/sections-page/SectionServices.js";
 import SectionServicesCarousel from "/pages-sections/sections-page/SectionServicesCarousel.js";
 import SectionContactUs from "/pages-sections/sections-page/SectionContactUs.js";
-import SectionIndustries from "/pages-sections/sections-page/SectionIndustries.js";
+import SectionProjects from "/pages-sections/sections-page/SectionProjects.js";
 import SectionCareers from "/pages-sections/sections-page/SectionCareers.js";
 import SectionTeams from "/pages-sections/sections-page/SectionTeams.js";
 import sectionsPageStyle from "/styles/jss/novel-logiks/pages/sectionsPageStyle.js";
@@ -85,12 +85,12 @@ export default function SectionsPage() {
     };
     animateScroll();
   };
-  const showAllServices = ()=>{
+  const showAllServices = () => {
     console.log("Routing to /service-details Page ");
     Router.push("/service-details");
   }
 
-  const routeToContactUs = ()=>{
+  const routeToContactUs = () => {
     console.log("Routing to /contactUs Page ");
     Router.push("/sections#contactUs");
   }
@@ -107,11 +107,11 @@ export default function SectionsPage() {
       <div className={classes.main}>
         <SectionHome id="home" />
         <SectionServices id="services" />
-        <SectionAboutUs id="aboutus" />
+        <SectionProjects id="projects" />
         {/* <SectionIndustries id="industries" /> */}
         <SectionTeams id="teams" />
-        <SectionContactUs id="contactUs" />
         <SectionCareers id="careers" />
+        <SectionContactUs id="contactUs" />
       </div>
       <nav id="cd-vertical-nav" style={{ display: 'none' }}>
         <ul>
@@ -182,7 +182,7 @@ export default function SectionsPage() {
           </li>
           <li>
             <a
-              href="#industries"
+              href="#projects"
               data-number="4"
               className=""
               onClick={(e) => {
@@ -193,12 +193,12 @@ export default function SectionsPage() {
                   // if we are on mobile device the scroll into view will be managed by the browser
                 } else {
                   e.preventDefault();
-                  smoothScroll("industries");
+                  smoothScroll("projects");
                 }
               }}
             >
               <span className="cd-dot" />
-              <span className="cd-label">Industries</span>
+              <span className="cd-label">Projects</span>
             </a>
           </li>
           <li>
@@ -245,27 +245,6 @@ export default function SectionsPage() {
           </li>
           <li>
             <a
-              href="#contactUs"
-              data-number="7"
-              className=""
-              onClick={(e) => {
-                var isMobile = navigator.userAgent.match(
-                  /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                );
-                if (isMobile) {
-                  // if we are on mobile device the scroll into view will be managed by the browser
-                } else {
-                  e.preventDefault();
-                  smoothScroll("contactUs");
-                }
-              }}
-            >
-              <span className="cd-dot" />
-              <span className="cd-label">Contact Us</span>
-            </a>
-          </li>
-          <li>
-            <a
               href="#careers"
               data-number="7"
               className=""
@@ -285,71 +264,66 @@ export default function SectionsPage() {
               <span className="cd-label">Careers</span>
             </a>
           </li>
+          <li>
+            <a
+              href="#contactUs"
+              data-number="7"
+              className=""
+              onClick={(e) => {
+                var isMobile = navigator.userAgent.match(
+                  /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
+                );
+                if (isMobile) {
+                  // if we are on mobile device the scroll into view will be managed by the browser
+                } else {
+                  e.preventDefault();
+                  smoothScroll("contactUs");
+                }
+              }}
+            >
+              <span className="cd-dot" />
+              <span className="cd-label">Contact Us</span>
+            </a>
+          </li>
         </ul>
       </nav>
       <Footer
         className={classes.footer}
         content={
-          <div style={{ background: "#FBFBFD" }}>
-            {/* <div className={classes.container} >
-              <GridContainer style={{ marginBottom: '2rem', marginTop: '4rem', alignItems: "baseline" }}>
-                <GridItem md={4} style={{ color: '#112A46' }}>
-                  ©2023 Novel Logiks Technologies
+          <div>
+            <Divider />
+            <div className={classes.container} >
+              <GridContainer style={{alignItems: "baseline" }}>
+                <GridItem md={6} >
+                  <h4 style ={{fontFamily:"Montserrat", fontSize : "0.75rem", color:"#091133"}}>©2023 Novel Logiks Technologies</h4>
                 </GridItem>
-                <GridItem md={4} style={{ color: '#112A46', verticalAlign: "baseline" }}>
-                  <img src="/img/resized_imgs/transparent-logo.png" alt="novellogiks" style={{ width: "4rem", height: "4rem", marginRight: "1.5rem" }} />
-                  <img src="/img/resized_imgs/logo-watermark.png" alt="novellogiks" style={{ marginRight: "1.5rem" }} />
-                </GridItem>
-                <GridItem md={4} style={{ color: '#112A46' }}>
+                <GridItem md={6} style={{ color: '#112A46', verticalAlign: "baseline" }}>
                   <Button
-                    size="medium"
-                    variant="contained"
-                    type="submit"
-                    justify="center"
-                    style={{
-                      textTransform: "none",
-                      color: '#112A46',
-                      background: '#dfe3ee',
-                      width: '6.75rem',
-                      height: "2rem",
-                      whiteSpace: 'nowrap',
-                      boxShadow: "none"
-                    }}
-                    onClick={() => { }}
+                    // href=""
+                    target="_blank"
+                    color="twitter"
+                    justIcon
+                    simple
                   >
-                    Contact Us
+                    <i className="fab fa-twitter" />
+                  </Button>
+                  <Button
+                    // href=""
+                    target="_blank"
+                    color="instagram"
+                    justIcon
+                    simple
+                  >
+                    <i className="fab fa-instagram" />
+                  </Button>
+                  <Button
+                    // href=""
+                    justIcon simple color="facebook">
+                    <i className="fab fa-facebook-square" />
                   </Button>
                 </GridItem>
+
               </GridContainer>
-            </div> */}
-            <Divider />
-            <div style={{ float: "left" ,marginTop:"1.5rem"}}>
-              ©2023 Novel Logiks Pvt Ltd 
-            </div>
-            <div style={{ float: "right" }}>
-              <Button
-                // href=""
-                target="_blank"
-                color="twitter"
-                justIcon
-                simple
-              >
-                <i className="fab fa-twitter" />
-              </Button>
-              <Button
-                  // href=""
-                target="_blank"
-                color="instagram"
-                justIcon
-                simple
-              >
-                <i className="fab fa-instagram" />
-              </Button>
-              <Button  
-               // href=""
-                justIcon simple color="facebook">
-                <i className="fab fa-facebook-square" />
-              </Button>
             </div>
           </div>
         }

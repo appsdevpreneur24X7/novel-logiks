@@ -5,7 +5,7 @@ exports.id = 505;
 exports.ids = [505];
 exports.modules = {
 
-/***/ 7980:
+/***/ 8544:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -561,87 +561,8 @@ Pagination.propTypes = {
     className: (external_prop_types_default()).string
 };
 
-;// CONCATENATED MODULE: ./styles/jss/novel-logiks/components/badgeStyle.js
-
-const badgeStyle = {
-    badge: {
-        marginRight: "3px",
-        borderRadius: "12px",
-        padding: "5px 12px",
-        textTransform: "uppercase",
-        fontSize: "10px",
-        fontWeight: "500",
-        lineHeight: "1",
-        color: novel_logiks/* whiteColor */.zQ,
-        textAlign: "center",
-        whiteSpace: "nowrap",
-        verticalAlign: "baseline",
-        display: "inline-block"
-    },
-    primary: {
-        backgroundColor: novel_logiks/* primaryColor.0 */.lr[0]
-    },
-    warning: {
-        backgroundColor: novel_logiks/* warningColor.0 */.MA[0]
-    },
-    danger: {
-        backgroundColor: novel_logiks/* dangerColor.0 */.E7[0]
-    },
-    success: {
-        backgroundColor: novel_logiks/* successColor.0 */.nq[0]
-    },
-    info: {
-        backgroundColor: novel_logiks/* infoColor.0 */.bE[0]
-    },
-    rose: {
-        backgroundColor: novel_logiks/* roseColor.0 */.An[0]
-    },
-    gray: {
-        backgroundColor: novel_logiks/* grayColor.7 */.X_[7]
-    }
-};
-/* harmony default export */ const components_badgeStyle = (badgeStyle);
-
-;// CONCATENATED MODULE: ./components/Badge/Badge.js
-
-
-// nodejs library that concatenates classes
-
-// nodejs library to set properties for components
-
-
-
-const Badge_useStyles = makeStyles_default()(components_badgeStyle);
-function Badge(props) {
-    const { color , children , className  } = props;
-    const classes = Badge_useStyles();
-    const badgeClasses = external_classnames_default()({
-        [classes.badge]: true,
-        [classes[color]]: true,
-        [className]: className !== undefined
-    });
-    return /*#__PURE__*/ jsx_runtime_.jsx("span", {
-        className: badgeClasses,
-        children: children
-    });
-};
-Badge.defaultProps = {
-    color: "gray"
-};
-Badge.propTypes = {
-    color: external_prop_types_default().oneOf([
-        "primary",
-        "warning",
-        "danger",
-        "success",
-        "info",
-        "rose",
-        "gray"
-    ]),
-    className: (external_prop_types_default()).string,
-    children: (external_prop_types_default()).node
-};
-
+// EXTERNAL MODULE: ./components/Badge/Badge.js + 1 modules
+var Badge = __webpack_require__(8423);
 ;// CONCATENATED MODULE: external "@mui/material/MenuList"
 const MenuList_namespaceObject = require("@mui/material/MenuList");
 var MenuList_default = /*#__PURE__*/__webpack_require__.n(MenuList_namespaceObject);
@@ -3276,30 +3197,30 @@ function SectionBasics() {
                                             children: "Badges"
                                         })
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Badge, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(Badge/* default */.Z, {
                                         children: "default"
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Badge, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(Badge/* default */.Z, {
                                         color: "primary",
                                         children: "primary"
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Badge, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(Badge/* default */.Z, {
                                         color: "info",
                                         children: "info"
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Badge, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(Badge/* default */.Z, {
                                         color: "success",
                                         children: "success"
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Badge, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(Badge/* default */.Z, {
                                         color: "warning",
                                         children: "warning"
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Badge, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(Badge/* default */.Z, {
                                         color: "danger",
                                         children: "danger"
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Badge, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(Badge/* default */.Z, {
                                         color: "rose",
                                         children: "rose"
                                     })
@@ -4216,9 +4137,9 @@ function SectionTabs() {
     });
 };
 
-;// CONCATENATED MODULE: external "@mui/icons-material/Dashboard"
-const Dashboard_namespaceObject = require("@mui/icons-material/Dashboard");
-var Dashboard_default = /*#__PURE__*/__webpack_require__.n(Dashboard_namespaceObject);
+// EXTERNAL MODULE: external "@mui/icons-material/Dashboard"
+var Dashboard_ = __webpack_require__(7235);
+var Dashboard_default = /*#__PURE__*/__webpack_require__.n(Dashboard_);
 ;// CONCATENATED MODULE: external "@mui/icons-material/Schedule"
 const Schedule_namespaceObject = require("@mui/icons-material/Schedule");
 var Schedule_default = /*#__PURE__*/__webpack_require__.n(Schedule_namespaceObject);
@@ -4808,9 +4729,9 @@ var SnackbarContent_default = /*#__PURE__*/__webpack_require__.n(SnackbarContent
 // EXTERNAL MODULE: external "@mui/material/IconButton"
 var IconButton_ = __webpack_require__(7934);
 var IconButton_default = /*#__PURE__*/__webpack_require__.n(IconButton_);
-;// CONCATENATED MODULE: external "@mui/material/Icon"
-const Icon_namespaceObject = require("@mui/material/Icon");
-var Icon_default = /*#__PURE__*/__webpack_require__.n(Icon_namespaceObject);
+// EXTERNAL MODULE: external "@mui/material/Icon"
+var Icon_ = __webpack_require__(3843);
+var Icon_default = /*#__PURE__*/__webpack_require__.n(Icon_);
 // EXTERNAL MODULE: external "@mui/icons-material/Close"
 var Close_ = __webpack_require__(4173);
 var Close_default = /*#__PURE__*/__webpack_require__.n(Close_);
@@ -11916,173 +11837,8 @@ CustomFileInput.propTypes = {
     multiple: (external_prop_types_default()).bool
 };
 
-;// CONCATENATED MODULE: ./styles/jss/novel-logiks/components/infoStyle.js
-
-const infoStyle = {
-    infoArea: {
-        maxWidth: "360px",
-        margin: "0 auto",
-        padding: "10px 0 10px"
-    },
-    iconWrapper: {
-        float: "left",
-        marginTop: "24px",
-        marginRight: "10px"
-    },
-    primary: {
-        color: novel_logiks/* primaryColor.0 */.lr[0]
-    },
-    warning: {
-        color: novel_logiks/* warningColor.0 */.MA[0]
-    },
-    danger: {
-        color: novel_logiks/* dangerColor.0 */.E7[0]
-    },
-    success: {
-        color: novel_logiks/* successColor.0 */.nq[0]
-    },
-    info: {
-        color: novel_logiks/* infoColor.0 */.bE[0]
-    },
-    rose: {
-        color: novel_logiks/* roseColor.0 */.An[0]
-    },
-    gray: {
-        color: novel_logiks/* grayColor.0 */.X_[0]
-    },
-    icon: {
-        width: "2.25rem",
-        height: "2.25rem",
-        fontSize: "2.25rem"
-    },
-    descriptionWrapper: {
-        color: novel_logiks/* grayColor.0 */.X_[0],
-        overflow: "hidden"
-    },
-    title: {
-        ...novel_logiks/* title */.TN,
-        margin: "1.75rem 0 0.875rem !important",
-        minHeight: "unset"
-    },
-    description: {
-        color: novel_logiks/* grayColor.0 */.X_[0],
-        overflow: "hidden",
-        marginTop: "0px",
-        "& p": {
-            color: novel_logiks/* grayColor.0 */.X_[0],
-            fontSize: "14px"
-        }
-    },
-    short_description: {
-        color: novel_logiks/* grayColor.1 */.X_[1],
-        overflow: "hidden",
-        marginTop: "0px",
-        "& p": {
-            color: novel_logiks/* grayColor.1 */.X_[1],
-            fontSize: "14px"
-        }
-    },
-    iconWrapperVertical: {
-        float: "none"
-    },
-    iconVertical: {
-        width: "61px",
-        height: "61px"
-    }
-};
-/* harmony default export */ const components_infoStyle = (infoStyle);
-
-;// CONCATENATED MODULE: ./components/InfoArea/InfoArea.js
-
-
-// nodejs library to set properties for components
-
-// nodejs library that concatenates classes
-
-
-
-
-const InfoArea_useStyles = makeStyles_default()(components_infoStyle);
-function InfoArea(props) {
-    const { title , description , iconColor , vertical , className , short_description  } = props;
-    const classes = InfoArea_useStyles();
-    const iconWrapper = external_classnames_default()({
-        [classes.iconWrapper]: true,
-        [classes[iconColor]]: true,
-        [classes.iconWrapperVertical]: vertical
-    });
-    const iconClasses = external_classnames_default()({
-        [classes.icon]: true,
-        [classes.iconVertical]: vertical
-    });
-    const infoAreaClasses = external_classnames_default()({
-        [classes.infoArea]: true,
-        [className]: className !== undefined
-    });
-    let icon = null;
-    switch(typeof props.icon){
-        case "string":
-            icon = /*#__PURE__*/ jsx_runtime_.jsx((Icon_default()), {
-                className: iconClasses,
-                children: props.icon
-            });
-            break;
-        default:
-            icon = /*#__PURE__*/ jsx_runtime_.jsx(props.icon, {
-                className: iconClasses
-            });
-            break;
-    }
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        className: infoAreaClasses,
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: iconWrapper,
-                children: icon
-            }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: classes.descriptionWrapper,
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("h4", {
-                        className: classes.title,
-                        children: title
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: classes.description,
-                        children: description
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: classes.short_description,
-                        children: short_description
-                    })
-                ]
-            })
-        ]
-    });
-};
-InfoArea.defaultProps = {
-    iconColor: "gray"
-};
-InfoArea.propTypes = {
-    icon: external_prop_types_default().oneOfType([
-        (external_prop_types_default()).object,
-        (external_prop_types_default()).string
-    ]).isRequired,
-    title: (external_prop_types_default()).string.isRequired,
-    description: (external_prop_types_default()).node.isRequired,
-    iconColor: external_prop_types_default().oneOf([
-        "primary",
-        "warning",
-        "danger",
-        "success",
-        "info",
-        "rose",
-        "gray"
-    ]),
-    vertical: (external_prop_types_default()).bool,
-    className: (external_prop_types_default()).string
-};
-
+// EXTERNAL MODULE: ./components/InfoArea/InfoArea.js + 1 modules
+var InfoArea = __webpack_require__(5190);
 ;// CONCATENATED MODULE: external "@mui/material/Accordion"
 const Accordion_namespaceObject = require("@mui/material/Accordion");
 var Accordion_default = /*#__PURE__*/__webpack_require__.n(Accordion_namespaceObject);
@@ -13309,7 +13065,7 @@ function SectionJavascript() {
                                                                             md: 5,
                                                                             className: classes.mlAuto,
                                                                             children: [
-                                                                                /*#__PURE__*/ jsx_runtime_.jsx(InfoArea, {
+                                                                                /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
                                                                                     className: classes.infoArea,
                                                                                     title: "Marketing",
                                                                                     description: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
@@ -13322,7 +13078,7 @@ function SectionJavascript() {
                                                                                     icon: (Timeline_default()),
                                                                                     iconColor: "rose"
                                                                                 }),
-                                                                                /*#__PURE__*/ jsx_runtime_.jsx(InfoArea, {
+                                                                                /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
                                                                                     className: classes.infoArea,
                                                                                     title: "Fully Coded in HTML5",
                                                                                     description: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
@@ -13335,7 +13091,7 @@ function SectionJavascript() {
                                                                                     icon: (Code_default()),
                                                                                     iconColor: "primary"
                                                                                 }),
-                                                                                /*#__PURE__*/ jsx_runtime_.jsx(InfoArea, {
+                                                                                /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
                                                                                     className: classes.infoArea,
                                                                                     title: "Built Audience",
                                                                                     description: /*#__PURE__*/ jsx_runtime_.jsx("p", {
@@ -14551,6 +14307,13 @@ module.exports = require("@mui/icons-material/Close");
 
 /***/ }),
 
+/***/ 7235:
+/***/ ((module) => {
+
+module.exports = require("@mui/icons-material/Dashboard");
+
+/***/ }),
+
 /***/ 7372:
 /***/ ((module) => {
 
@@ -14611,6 +14374,13 @@ module.exports = require("@mui/material/Grid");
 /***/ ((module) => {
 
 module.exports = require("@mui/material/Hidden");
+
+/***/ }),
+
+/***/ 3843:
+/***/ ((module) => {
+
+module.exports = require("@mui/material/Icon");
 
 /***/ }),
 
@@ -14866,7 +14636,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [952,270,664,441,999,39,568,765,482,82,696,645,951,174,479], () => (__webpack_exec__(7980)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,270,664,441,999,39,568,765,482,82,696,645,951,83,479], () => (__webpack_exec__(8544)));
 module.exports = __webpack_exports__;
 
 })();

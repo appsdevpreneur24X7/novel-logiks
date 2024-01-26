@@ -843,29 +843,9 @@ function Header(props) {
                         mdDown: true,
                         implementation: "css",
                         className: classes.hidden,
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                             className: classes.collapse,
-                            children: [
-                                links,
-                                " ",
-                                /*#__PURE__*/ jsx_runtime_.jsx(material_.Button, {
-                                    size: "medium",
-                                    variant: "contained",
-                                    type: "submit",
-                                    justify: "center",
-                                    style: {
-                                        textTransform: "none",
-                                        color: "#112A46",
-                                        background: "#5288E5",
-                                        width: "6.75rem",
-                                        height: "2rem",
-                                        whiteSpace: "nowrap",
-                                        boxShadow: "none"
-                                    },
-                                    onClick: routeToContactUs,
-                                    children: "Contact Us"
-                                })
-                            ]
+                            children: links
                         })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx((Hidden_default()), {
@@ -1010,9 +990,9 @@ const headerLinksData = {
             smoothScroll: "services"
         },
         {
-            href: "/sections#about-us",
-            title: "About",
-            smoothScroll: "aboutus"
+            href: "/sections#projects",
+            title: "Project",
+            smoothScroll: "projects"
         },
         {
             href: "/sections#teams",
@@ -1023,6 +1003,11 @@ const headerLinksData = {
             href: "/sections#careers",
             title: "Careers",
             smoothScroll: "careers"
+        },
+        {
+            href: "/sections#contactUs",
+            title: "Contact Us",
+            smoothScroll: "conatctUs"
         }
     ]
 };
@@ -1124,7 +1109,7 @@ function HeaderLinks(props) {
                             color: "#111111"
                         },
                         onClick: (e)=>{
-                            if (each.title === "Services" || each.title === "About") router_default().push(each.href);
+                            if (each.title === "Services") router_default().push(each.href);
                             else smoothScroll(e, each.smoothScroll);
                         },
                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {

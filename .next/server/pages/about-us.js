@@ -29,7 +29,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_mui_material__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _components_CustomButtons_Button_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(571);
 /* harmony import */ var _data_about_us_data_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(5870);
-/* harmony import */ var _pages_sections_sections_page_SectionAboutUsCard_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(6724);
+/* harmony import */ var _pages_sections_sections_page_SectionAboutUsCard_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(539);
 
 
 
