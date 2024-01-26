@@ -392,15 +392,20 @@ function SectionHeaders({ ...rest }) {
                             md: 6,
                             style: {
                                 color: "#112A46",
-                                padding: "0rem"
+                                padding: "0rem",
+                                textAlign: "center",
+                                justifyContent: "center",
+                                marginTop: "10rem"
                             },
                             children: /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
+                                style: {
+                                    color: "#112A46",
+                                    padding: "0rem",
+                                    textAlign: "center",
+                                    justifyContent: "center"
+                                },
                                 children: /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
                                     md: 12,
-                                    style: {
-                                        textAlign: "center",
-                                        justifyContent: "center"
-                                    },
                                     children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                         src: "img/resized_imgs/digital_transform.png",
                                         alt: "Digital Transform",

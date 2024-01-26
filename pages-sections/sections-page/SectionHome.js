@@ -110,9 +110,9 @@ export default function SectionHeaders({ ...rest }) {
               </GridItem>
             </GridContainer>
           </GridItem>
-          <GridItem md={6} style={{ color: '#112A46',padding: "0rem"}}>
-            <GridContainer>
-              <GridItem md={12} style={{ textAlign: "center", justifyContent: "center" }} >
+          <GridItem md={6} style={{ color: '#112A46',padding: "0rem", textAlign: "center", justifyContent:"center", marginTop:"10rem" }}>
+            <GridContainer style={{ color: '#112A46',padding: "0rem", textAlign: "center", justifyContent:"center" }}>
+              <GridItem md={12} >
               <img
                   src="img/resized_imgs/digital_transform.png"
                   alt="Digital Transform"

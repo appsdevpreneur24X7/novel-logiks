@@ -12,7 +12,7 @@ export const headerLinksData = {
     },
     {
         href: "/sections#projects",
-        title: "Project",
+        title: "Projects",
         smoothScroll:"projects"
     },
     {
