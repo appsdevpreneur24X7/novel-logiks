@@ -1,8 +1,8 @@
 export const contactUs = {
     points : [
         "Let’s move your technology and business strategy forward. ",
-        "Talk to our experts now",
         "You need a partner. ",
+        "Talk to our experts now",
         "We’re here to help!",
     ],
     address_lines :[

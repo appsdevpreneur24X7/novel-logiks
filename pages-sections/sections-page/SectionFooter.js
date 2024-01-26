@@ -21,7 +21,7 @@ const SectionFooter = () => {
                 <div>
                   <div className={classes.left}>
                     <Button
-                      href="https://twitter.com/novellogikshill"
+                      href=""
                       target="_blank"
                       color="twitter"
                       justIcon
@@ -30,7 +30,7 @@ const SectionFooter = () => {
                       <i className="fab fa-twitter" />
                     </Button>
                     <Button
-                      href="https://instagram.com/novellogikshill?igshid=MzNlNGNkZWQ4Mg=="
+                      href=""
                       target="_blank"
                       color="instagram"
                       justIcon
@@ -38,7 +38,7 @@ const SectionFooter = () => {
                     >
                       <i className="fab fa-instagram" />
                     </Button>
-                    <Button href="https://www.facebook.com/people/Novel Logiks/100094870993690"
+                    <Button href=""
                       justIcon simple color="facebook">
                       <i className="fab fa-facebook-square" />
                     </Button>

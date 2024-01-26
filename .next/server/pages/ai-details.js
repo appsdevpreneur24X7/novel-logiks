@@ -710,7 +710,7 @@ function AiDetails() {
                                     className: classes.left,
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_CustomButtons_Button_js__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Z, {
-                                            href: "https://twitter.com/novellogikshill",
+                                            href: "",
                                             target: "_blank",
                                             color: "twitter",
                                             justIcon: true,
@@ -720,7 +720,7 @@ function AiDetails() {
                                             })
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_CustomButtons_Button_js__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Z, {
-                                            href: "https://instagram.com/novellogikshill?igshid=MzNlNGNkZWQ4Mg==",
+                                            href: "",
                                             target: "_blank",
                                             color: "instagram",
                                             justIcon: true,
@@ -730,7 +730,7 @@ function AiDetails() {
                                             })
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_CustomButtons_Button_js__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Z, {
-                                            href: "https://www.facebook.com/people/Novel Logiks/100094870993690",
+                                            href: "",
                                             justIcon: true,
                                             simple: true,
                                             color: "facebook",
@@ -744,7 +744,7 @@ function AiDetails() {
                                     className: classes.right,
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            href: " ",
+                                            href: "",
                                             target: "_blank",
                                             style: {
                                                 color: "gray"

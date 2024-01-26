@@ -108,9 +108,9 @@ export default function SectionsPage() {
         <SectionHome id="home" />
         <SectionServices id="services" />
         <SectionAboutUs id="aboutus" />
-        <SectionIndustries id="industries" />
+        {/* <SectionIndustries id="industries" /> */}
         <SectionTeams id="teams" />
-        {/* <SectionContactUs id="contactUs" /> */}
+        <SectionContactUs id="contactUs" />
         <SectionCareers id="careers" />
       </div>
       <nav id="cd-vertical-nav" style={{ display: 'none' }}>
@@ -323,23 +323,12 @@ export default function SectionsPage() {
               </GridContainer>
             </div> */}
             <Divider />
-            <div style={{ float: "left" }}>
-              ©2023 Novel Logiks Pvt Ltd
-              {/* {linksData.map(each => (<Link href={each.href} >
-                <a
-                  style={{ color: '#111111' }}
-                  onClick={()=>{}}
-                >
-                  <span style={{
-                    whiteSpace: "nowrap", fontFamily: '"Open Sans", sans-serif', fontSize: '0.875rem',
-                    lineHeight: '2rem', margin:"1rem"
-                  }}> {each.title}</span>
-                </a>
-              </Link>))} */}
+            <div style={{ float: "left" ,marginTop:"1.5rem"}}>
+              ©2023 Novel Logiks Pvt Ltd 
             </div>
             <div style={{ float: "right" }}>
               <Button
-                href="https://twitter.com/novellogikshill"
+                // href=""
                 target="_blank"
                 color="twitter"
                 justIcon
@@ -348,7 +337,7 @@ export default function SectionsPage() {
                 <i className="fab fa-twitter" />
               </Button>
               <Button
-                href="https://instagram.com/novellogikshill?igshid=MzNlNGNkZWQ4Mg=="
+                  // href=""
                 target="_blank"
                 color="instagram"
                 justIcon
@@ -356,7 +345,8 @@ export default function SectionsPage() {
               >
                 <i className="fab fa-instagram" />
               </Button>
-              <Button href="https://www.facebook.com/people/Novel Logiks/100094870993690"
+              <Button  
+               // href=""
                 justIcon simple color="facebook">
                 <i className="fab fa-facebook-square" />
               </Button>

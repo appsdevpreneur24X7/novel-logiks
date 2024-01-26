@@ -24,9 +24,9 @@ const SectionServicesCarousalCard = (props)=> {
     return (
         <GridItem xs={12} sm={6} md={4}>
             {/* <Card plain blog style={{ background: "#5288E5", borderColor: "#5288E5", borderStyle: "solid", borderWidth: "medium" }}> */}
-            <Card plain blog style={{ borderColor: "#5288E5", borderStyle: "solid", borderWidth: "medium" }}>
+            <Card plain blog>
                 <CardHeader plain image>
-                    <img src={services[index].serviceImageUrl} alt="..." style={{ height: "20rem", padding: "0.5rem", boxShadow: "none" }} />
+                    <img src={services[index].serviceImageUrl} alt="..." style={{ height: "20rem", padding: "0.5rem", boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)' }} />
                 </CardHeader>
                 <CardBody plain>
                     <Typography style={{

@@ -66,7 +66,7 @@ export default function SectionTeams({ ...rest }) {
       <div className={classes.team}>
         <div className={classes.container}>
           <GridContainer style={{ marginBottom: '2rem' }}>
-            <GridItem md={6} style={{ color: '#112A46' }}>
+            <GridItem md={6} style={{ color: '#091133' }}>
               <h1 style={{
                 fontFamily: 'Montserrat',
                 fontSize: '2rem',
@@ -85,7 +85,7 @@ export default function SectionTeams({ ...rest }) {
               }}></Divider>
             </GridItem>
 
-            <GridItem md={6} style={{ color: '#112A46' }}>
+            <GridItem md={6} style={{ color: '#091133' }}>
             </GridItem>
           </GridContainer>
           <GridContainer>
@@ -100,10 +100,10 @@ export default function SectionTeams({ ...rest }) {
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#112A46', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#112A46', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
                         Sunil
                       </h5>
-                      <h5 sx={{ color: '#112A46', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#112A46', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" ,padding:"0px" , margin:"0px"}}>
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" ,padding:"0px" , margin:"0px"}}>
                         CEO
                       </h5>
                     </CardBody>
@@ -111,17 +111,17 @@ export default function SectionTeams({ ...rest }) {
                   <div
                     className={classes.back}
                     style={{
-                      backgroundColor: '#E5AF52', fontFamily: "Montserrat", fontSize: "0.85rem", lineHeight: "0.85rem", fontWeight: '400', color: '#112A46'
+                      backgroundColor: '#E5AF52', fontFamily: "Montserrat", fontSize: "0.85rem", lineHeight: "0.85rem", fontWeight: '400', color: '#091133'
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#112A46', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#112A46', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
                         Sunil
                       </h5>
-                      <h5 sx={{ color: '#112A46', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#112A46', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" ,padding:"0px" , margin:"0px"}}>
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" ,padding:"0px" , margin:"0px"}}>
                         CEO
                       </h5>
-                      <h5 sx={{ color: '#112A46', fontSize: "0.85rem", lineHeight: "1rem", fontWeight: "400", textAlign: "left" }} style={{ color: '#112A46', fontSize: "0.85rem", lineHeight: "1rem", fontWeight: "400", textAlign: "left" }}>
+                      <h5 sx={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1rem", fontWeight: "400", textAlign: "left" }} style={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1rem", fontWeight: "400", textAlign: "left" }}>
                         A Full Stack Developer is a professional who possesses the skills and expertise to work on both the front-end and back-end development of web applications. 
                         They are proficient in a variety of programming languages, frameworks, and technologies, enabling them to handle the complete development process.
                         Expertise in Front-End Development, Back-End Development, Server Management and Deployment, Security Best Practices , Collaboration and Communication.
@@ -143,10 +143,10 @@ export default function SectionTeams({ ...rest }) {
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#112A46', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#112A46', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
                         Raju
                       </h5>
-                      <h5 sx={{ color: '#112A46', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#112A46', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" ,padding:"0px" , margin:"0px"}}>
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" ,padding:"0px" , margin:"0px"}}>
                         Cloud Architect
                       </h5>
                     </CardBody>
@@ -158,13 +158,13 @@ export default function SectionTeams({ ...rest }) {
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#112A46', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#112A46', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
                       Raju
                       </h5>
-                      <h5 sx={{ color: '#112A46', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#112A46', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "400", textAlign: "center",padding:"0px" , margin:"0px" }}>
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "400", textAlign: "center",padding:"0px" , margin:"0px" }}>
                       Cloud Architect
                       </h5>
-                      <h5 sx={{ color: '#112A46', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }} style={{ color: '#112A46', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }}>
+                      <h5 sx={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }} style={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }}>
                       Raju is a professional who is responsible for designing, implementing, and managing an organization's cloud computing architecture. This role involves making strategic decisions about the adoption and integration of cloud services to meet business requirements.
                       Rajus's Key aspects include, Cloud Strategy and Planning, Architecture Design, Cloud Service Integration, Security and Compliance, Cost Optimization, Migration Planning, Performance Optimization , Disaster Recovery and Business Continuity and Collaboration with Stakeholders.
                       </h5>

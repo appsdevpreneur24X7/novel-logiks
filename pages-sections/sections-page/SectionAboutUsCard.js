@@ -23,7 +23,7 @@ const SectionAboutUsCard = (props) => {
   const { index } = props
 
   return (
-    <Card blog style={{ backgroundColor: "#FFF", borderRadius:"1.75rem", boxShadow:"none", minHeight:"15rem", minWidth: "15.5rem"}}
+    <Card blog style={{ backgroundColor: "#FFF", borderRadius:"1rem",  boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)', minHeight:"15rem", minWidth: "15.5rem"}}
     sx={{ 
       height:{
         xs :"15rem",
@@ -52,14 +52,14 @@ const SectionAboutUsCard = (props) => {
           color: '#112A46'
         }}>{aboutUs[index].serviceTitle}</h6>
           {aboutUs[index].serviceOneLiner && (<Grid container>
-            <Grid item xs={12} style={{ lineHeight:"1.313rem", color:"#212121"}}>
+            <Grid item xs={12} style={{ lineHeight:"1.313rem", color:"#112A46", fontWeight:"600"}}>
               {aboutUs[index].serviceOneLiner}
             </Grid>
           </Grid>)}
           {aboutUs[index].servicePoints && (<Grid container>
             <Grid item xs={12}>
                 <Grid container>
-                  {aboutUs[index].servicePoints.map((e, index) => <Grid item key={index} xs={6} style={{textAlign:"center", lineHeight:"1.313rem", fontWeight:"600"}}>
+                  {aboutUs[index].servicePoints.map((e, index) => <Grid item key={index} xs={6} style={{textAlign:"center", color:"#112A46", lineHeight:"1.313rem", fontWeight:"600"}}>
                     {e}
                   </Grid>)}
                 </Grid>

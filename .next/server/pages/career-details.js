@@ -497,7 +497,7 @@ function CareerDetails() {
                                     className: classes.left,
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_CustomButtons_Button_js__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Z, {
-                                            href: "https://twitter.com/novellogikshill",
+                                            href: "",
                                             target: "_blank",
                                             color: "twitter",
                                             justIcon: true,

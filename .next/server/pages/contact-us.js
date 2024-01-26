@@ -322,7 +322,7 @@ function ContactUsPage() {
                                     className: classes.left,
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
-                                            href: "https://twitter.com/novellogikshill",
+                                            href: "",
                                             target: "_blank",
                                             color: "twitter",
                                             justIcon: true,
@@ -332,7 +332,7 @@ function ContactUsPage() {
                                             })
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
-                                            href: "https://instagram.com/novellogikshill?igshid=MzNlNGNkZWQ4Mg==",
+                                            href: "",
                                             target: "_blank",
                                             color: "instagram",
                                             justIcon: true,
@@ -342,7 +342,7 @@ function ContactUsPage() {
                                             })
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
-                                            href: "https://www.facebook.com/people/Novel Logiks/100094870993690",
+                                            href: "",
                                             justIcon: true,
                                             simple: true,
                                             color: "facebook",

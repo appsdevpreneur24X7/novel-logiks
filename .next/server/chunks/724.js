@@ -40,7 +40,7 @@ const aboutUs = [
 
 /***/ }),
 
-/***/ 539:
+/***/ 6724:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -99,8 +99,8 @@ const SectionAboutUsCard = (props)=>{
         blog: true,
         style: {
             backgroundColor: "#FFF",
-            borderRadius: "1.75rem",
-            boxShadow: "none",
+            borderRadius: "1rem",
+            boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)",
             minHeight: "15rem",
             minWidth: "15.5rem"
         },
@@ -156,7 +156,8 @@ const SectionAboutUsCard = (props)=>{
                         xs: 12,
                         style: {
                             lineHeight: "1.313rem",
-                            color: "#212121"
+                            color: "#112A46",
+                            fontWeight: "600"
                         },
                         children: _data_about_us_data_js__WEBPACK_IMPORTED_MODULE_16__/* .aboutUs */ .N[index].serviceOneLiner
                     })
@@ -173,6 +174,7 @@ const SectionAboutUsCard = (props)=>{
                                     xs: 6,
                                     style: {
                                         textAlign: "center",
+                                        color: "#112A46",
                                         lineHeight: "1.313rem",
                                         fontWeight: "600"
                                     },

@@ -53,12 +53,12 @@ export default function SectionHeaders({ ...rest }) {
               }}
             >  We provide Digital Solutions cutting across Sectors.
             </Typography>
-            <p style={{ marginBottom:"2rem"}}>
+            <div style={{ marginBottom:"2rem",  color:"#112A46", fontFamily: 'Montserrat',}}>
             To ignite expansion and ward off competitors, organizations should integrate hardware, software, and services to create customized solutions that address customers' needs and potentially address undiscovered challenges. Digitization has the potential not only to bring about transformation by cutting costs and enhancing core processes but can, and often should, serve as a substantial source of additional revenue. At Novel Logiks, we guide organizations in taking successful transformative strides, leveraging our industry-wide experience and capabilities.
-            </p>
+            </div>
             <h2 style={{
-              color:"#737373",
-              fontFamily: 'Open Sans',
+              color:"#112A46",
+              fontFamily: "Montserrat",
               fontSize: '1.125rem',
               lineHeight: '1.5rem',
               fontWeight: '600',
@@ -114,7 +114,7 @@ export default function SectionHeaders({ ...rest }) {
             <GridContainer>
               <GridItem md={12} style={{ textAlign: "center", justifyContent: "center" }} >
               <img
-                  src="img/resized_imgs/digital-transform.png"
+                  src="img/resized_imgs/digital_transform.png"
                   alt="Digital Transform"
                   style={{ width: '100%' }}
                 />
@@ -168,15 +168,13 @@ export default function SectionHeaders({ ...rest }) {
                 style={{
                   textTransform: "none",
                   color: '#112A46',
-                  borderColor: 'black',
-                  border: '2px solid',
-                  borderRadius:'0px',
-                  background: '#5288E5',
+                  borderRadius:'5px',
+                  backgroundColor: '#E5AF52',
                   textAlign: "center",
                   height:"4.4rem",
                   fontWeight:"600",
                   fontSize:"2.5rem",
-                  boxShadow:"none"
+                  boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)'
                 }}
                 onClick={routeToAiDetails}
               >

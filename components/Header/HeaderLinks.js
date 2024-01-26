@@ -64,14 +64,6 @@ export default function HeaderLinks(props) {
       <div >
         <img
          src="/img/logo/nl-main-title.png" alt="Novel Logiks" style={{ marginRight: "1.5rem" }} />
-         {/* <h1 style={{
-                fontFamily: 'Montserrat',
-                fontSize: '2rem',
-                lineHeight: '2rem',
-                fontWeight: '600',
-                textAlign: "left"
-              }}>  Novel Logiks
-              </h1> */}
       </div>
       <span style={{ marginLeft: "auto", marginRight: "1.5rem"  }}></span>
       {links.map(each => (<Link href={each.href} >

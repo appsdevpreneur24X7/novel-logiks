@@ -256,7 +256,7 @@ export default function CareerDetails() {
           <div>
             <div className={classes.left}>
               <Button
-                href="https://twitter.com/novellogikshill"
+                href=""
                 target="_blank"
                 color="twitter"
                 justIcon

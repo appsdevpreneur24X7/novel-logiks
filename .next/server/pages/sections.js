@@ -25,9 +25,9 @@ var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_)
 var makeStyles_ = __webpack_require__(8409);
 var makeStyles_default = /*#__PURE__*/__webpack_require__.n(makeStyles_);
 // EXTERNAL MODULE: ./components/Header/Header.js + 1 modules
-var Header = __webpack_require__(4889);
+var Header_Header = __webpack_require__(4889);
 // EXTERNAL MODULE: ./components/Header/HeaderLinks.js + 1 modules
-var HeaderLinks = __webpack_require__(6659);
+var Header_HeaderLinks = __webpack_require__(6659);
 // EXTERNAL MODULE: ./components/Grid/GridContainer.js
 var Grid_GridContainer = __webpack_require__(4041);
 // EXTERNAL MODULE: ./components/Grid/GridItem.js
@@ -317,16 +317,18 @@ function SectionHeaders({ ...rest }) {
                                     },
                                     children: "  We provide Digital Solutions cutting across Sectors."
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                     style: {
-                                        marginBottom: "2rem"
+                                        marginBottom: "2rem",
+                                        color: "#112A46",
+                                        fontFamily: "Montserrat"
                                     },
                                     children: "To ignite expansion and ward off competitors, organizations should integrate hardware, software, and services to create customized solutions that address customers' needs and potentially address undiscovered challenges. Digitization has the potential not only to bring about transformation by cutting costs and enhancing core processes but can, and often should, serve as a substantial source of additional revenue. At Novel Logiks, we guide organizations in taking successful transformative strides, leveraging our industry-wide experience and capabilities."
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                     style: {
-                                        color: "#737373",
-                                        fontFamily: "Open Sans",
+                                        color: "#112A46",
+                                        fontFamily: "Montserrat",
                                         fontSize: "1.125rem",
                                         lineHeight: "1.5rem",
                                         fontWeight: "600",
@@ -400,7 +402,7 @@ function SectionHeaders({ ...rest }) {
                                         justifyContent: "center"
                                     },
                                     children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                        src: "img/resized_imgs/digital-transform.png",
+                                        src: "img/resized_imgs/digital_transform.png",
                                         alt: "Digital Transform",
                                         style: {
                                             width: "100%"
@@ -482,15 +484,13 @@ function SectionHeaders({ ...rest }) {
                                     style: {
                                         textTransform: "none",
                                         color: "#112A46",
-                                        borderColor: "black",
-                                        border: "2px solid",
-                                        borderRadius: "0px",
-                                        background: "#5288E5",
+                                        borderRadius: "5px",
+                                        backgroundColor: "#E5AF52",
                                         textAlign: "center",
                                         height: "4.4rem",
                                         fontWeight: "600",
                                         fontSize: "2.5rem",
-                                        boxShadow: "none"
+                                        boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
                                     },
                                     onClick: routeToAiDetails,
                                     children: "Explore Now"
@@ -523,13 +523,13 @@ function SectionHeaders({ ...rest }) {
 };
 
 // EXTERNAL MODULE: ./components/CustomButtons/Button.js + 1 modules
-var Button = __webpack_require__(571);
+var CustomButtons_Button = __webpack_require__(571);
 // EXTERNAL MODULE: ./components/Card/Card.js + 1 modules
-var Card = __webpack_require__(2643);
+var Card_Card = __webpack_require__(2643);
 // EXTERNAL MODULE: ./components/Card/CardHeader.js + 1 modules
-var CardHeader = __webpack_require__(3082);
+var Card_CardHeader = __webpack_require__(3082);
 // EXTERNAL MODULE: ./components/Card/CardBody.js + 1 modules
-var CardBody = __webpack_require__(222);
+var Card_CardBody = __webpack_require__(222);
 // EXTERNAL MODULE: ./components/Typography/Warning.js
 var Warning = __webpack_require__(4951);
 // EXTERNAL MODULE: external "@mui/material/styles"
@@ -543,7 +543,7 @@ var Box_ = __webpack_require__(19);
 // EXTERNAL MODULE: ./data/about-us-data.js
 var about_us_data = __webpack_require__(5870);
 // EXTERNAL MODULE: ./pages-sections/sections-page/SectionAboutUsCard.js
-var SectionAboutUsCard = __webpack_require__(539);
+var SectionAboutUsCard = __webpack_require__(6724);
 ;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionAboutUs.js
 
 
@@ -676,16 +676,11 @@ const SectionServicesCarousalCard = (props)=>{
         xs: 12,
         sm: 6,
         md: 4,
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_Card/* default */.Z, {
             plain: true,
             blog: true,
-            style: {
-                borderColor: "#5288E5",
-                borderStyle: "solid",
-                borderWidth: "medium"
-            },
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(CardHeader/* default */.Z, {
+                /*#__PURE__*/ jsx_runtime_.jsx(Card_CardHeader/* default */.Z, {
                     plain: true,
                     image: true,
                     children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
@@ -694,11 +689,11 @@ const SectionServicesCarousalCard = (props)=>{
                         style: {
                             height: "20rem",
                             padding: "0.5rem",
-                            boxShadow: "none"
+                            boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
                         }
                     })
                 }),
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_CardBody/* default */.Z, {
                     plain: true,
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
@@ -781,9 +776,9 @@ function SectionServicesCarousel() {
     };
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(Header/* default */.Z, {
+            /*#__PURE__*/ jsx_runtime_.jsx(Header_Header/* default */.Z, {
                 brand: "",
-                links: /*#__PURE__*/ jsx_runtime_.jsx(HeaderLinks/* default */.Z, {
+                links: /*#__PURE__*/ jsx_runtime_.jsx(Header_HeaderLinks/* default */.Z, {
                     dropdownHoverColor: "info"
                 }),
                 fixed: true,
@@ -838,7 +833,7 @@ function SectionServicesCarousel() {
                             sm: 12,
                             md: 12,
                             children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
+                                /*#__PURE__*/ jsx_runtime_.jsx(CustomButtons_Button/* default */.Z, {
                                     size: "medium",
                                     variant: "contained",
                                     type: "submit",
@@ -878,7 +873,7 @@ function SectionServicesCarousel() {
                                     onClick: routeToContactUs,
                                     children: "Contact Us"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
+                                /*#__PURE__*/ jsx_runtime_.jsx(CustomButtons_Button/* default */.Z, {
                                     size: "medium",
                                     variant: "contained",
                                     type: "submit",
@@ -1006,11 +1001,11 @@ function SectionServices({ ...rest }) {
 };
 
 ;// CONCATENATED MODULE: ./data/contact-us-data.js
-const contact_us_data_contactUs = {
+const contactUs = {
     points: [
         "Let’s move your technology and business strategy forward. ",
-        "Talk to our experts now",
         "You need a partner. ",
+        "Talk to our experts now",
         "We’re here to help!", 
     ],
     address_lines: [
@@ -1042,32 +1037,32 @@ const SectionContactUs_useStyles = (0,styles_.makeStyles)(headersStyle/* default
 function SectionContactUs({ ...rest }) {
     const classes = SectionContactUs_useStyles();
     const routeToAiDetails = ()=>{
-        Router.push("/ai-details");
+        router_default().push("/ai-details");
     };
     const routeToContactUs = ()=>{
-        Router.push("/contact-us");
+        router_default().push("/contact-us");
     };
-    return /*#__PURE__*/ _jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "cd-section",
         ...rest,
         style: {
             background: "#5288E5"
         },
-        children: /*#__PURE__*/ _jsxs("div", {
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: classes.container,
             children: [
-                /*#__PURE__*/ _jsx(GridContainer, {
+                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
                     style: {
                         marginBottom: "2rem",
                         marginTop: "4rem"
                     },
-                    children: /*#__PURE__*/ _jsxs(GridItem, {
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
                         md: 6,
                         style: {
                             color: "#112A46"
                         },
                         children: [
-                            /*#__PURE__*/ _jsx("h1", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                                 style: {
                                     fontFamily: "Montserrat",
                                     fontSize: "2rem",
@@ -1078,7 +1073,7 @@ function SectionContactUs({ ...rest }) {
                                 },
                                 children: "  Contact Us"
                             }),
-                            /*#__PURE__*/ _jsx(Divider, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(material_.Divider, {
                                 style: {
                                     backgroundColor: "#112A46",
                                     color: "#112A46",
@@ -1091,31 +1086,31 @@ function SectionContactUs({ ...rest }) {
                         ]
                     })
                 }),
-                /*#__PURE__*/ _jsxs(GridContainer, {
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
                     style: {
                         margin: "2rem"
                     },
                     children: [
-                        /*#__PURE__*/ _jsxs(GridItem, {
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
                             md: 6,
                             style: {
-                                color: "#212121"
+                                color: "#091133"
                             },
                             children: [
-                                /*#__PURE__*/ _jsxs(Typography, {
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                     sx: {
                                         fontFamily: "Montserrat",
                                         textAlign: "left",
-                                        color: "#212121",
+                                        color: "#091133",
                                         fontSize: {
-                                            lg: "1.5rem",
-                                            md: "1.5rem",
-                                            sm: "1.5rem",
+                                            lg: "1.2rem",
+                                            md: "1.2rem",
+                                            sm: "1.25rem",
                                             xs: "1.25rem"
                                         }
                                     },
                                     style: {
-                                        lineHeight: "1.875rem",
+                                        lineHeight: "1.313rem",
                                         textAlign: "left",
                                         fontWeight: "400",
                                         marginBottom: "3rem"
@@ -1125,20 +1120,20 @@ function SectionContactUs({ ...rest }) {
                                         contactUs.points[0]
                                     ]
                                 }),
-                                /*#__PURE__*/ _jsxs(Typography, {
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                     sx: {
                                         fontFamily: "Montserrat",
                                         textAlign: "left",
-                                        color: "#212121",
+                                        color: "#091133",
                                         fontSize: {
-                                            lg: "1.5rem",
-                                            md: "1.5rem",
-                                            sm: "1.5rem",
+                                            lg: "1.2rem",
+                                            md: "1.2rem",
+                                            sm: "1.25rem",
                                             xs: "1.25rem"
                                         }
                                     },
                                     style: {
-                                        lineHeight: "1.875rem",
+                                        lineHeight: "1.313rem",
                                         textAlign: "left",
                                         fontWeight: "400",
                                         marginBottom: "3rem"
@@ -1148,56 +1143,46 @@ function SectionContactUs({ ...rest }) {
                                         contactUs.points[1]
                                     ]
                                 }),
-                                /*#__PURE__*/ _jsxs(Typography, {
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                     sx: {
                                         fontFamily: "Montserrat",
-                                        color: "#212121",
+                                        textAlign: "left",
+                                        color: "#091133",
                                         fontSize: {
-                                            lg: "1.875rem",
-                                            md: "1.875rem",
-                                            sm: "1.875rem",
-                                            xs: "1.5rem"
-                                        },
-                                        lineHeight: {
-                                            lg: "1.875rem",
-                                            md: "1.875rem",
-                                            sm: "1.875rem",
-                                            xs: "1.5rem"
+                                            lg: "1.2rem",
+                                            md: "1.2rem",
+                                            sm: "1.25rem",
+                                            xs: "1.25rem"
                                         }
                                     },
                                     style: {
-                                        fontWeight: "600",
+                                        lineHeight: "1.5rem",
                                         textAlign: "left",
-                                        color: "#112A46",
-                                        marginBottom: "1rem"
+                                        fontWeight: "600",
+                                        marginBottom: "3rem"
                                     },
                                     children: [
                                         "  ",
                                         contactUs.points[2]
                                     ]
                                 }),
-                                /*#__PURE__*/ _jsxs(Typography, {
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                     sx: {
                                         fontFamily: "Montserrat",
-                                        color: "#212121",
+                                        textAlign: "left",
+                                        color: "#091133",
                                         fontSize: {
-                                            lg: "1.875rem",
-                                            md: "1.875rem",
-                                            sm: "1.875rem",
-                                            xs: "1.5rem"
-                                        },
-                                        lineHeight: {
-                                            lg: "1.875rem",
-                                            md: "1.875rem",
-                                            sm: "1.875rem",
-                                            xs: "1.5rem"
+                                            lg: "1.2rem",
+                                            md: "1.2rem",
+                                            sm: "1.25rem",
+                                            xs: "1.25rem"
                                         }
                                     },
                                     style: {
-                                        fontWeight: "600",
+                                        lineHeight: "1.5rem",
                                         textAlign: "left",
-                                        color: "#112A46",
-                                        marginBottom: "1rem"
+                                        fontWeight: "600",
+                                        marginBottom: "3rem"
                                     },
                                     children: [
                                         "  ",
@@ -1206,40 +1191,40 @@ function SectionContactUs({ ...rest }) {
                                 })
                             ]
                         }),
-                        /*#__PURE__*/ _jsxs(GridItem, {
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
                             md: 6,
                             style: {
-                                color: "#212121"
+                                color: "#091133"
                             },
                             children: [
-                                /*#__PURE__*/ _jsxs(GridContainer, {
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
                                     style: {
                                         marginBottom: "2rem"
                                     },
                                     children: [
-                                        /*#__PURE__*/ _jsx(GridItem, {
+                                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
                                             md: 3,
                                             sm: 3,
                                             style: {
                                                 textAlign: "center"
                                             },
-                                            children: /*#__PURE__*/ _jsx("img", {
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                                 src: "/img/resized_imgs/contact-us-office.png",
                                                 alt: "...",
                                                 style: {
-                                                    width: "3.75rem",
-                                                    height: "3.75rem",
+                                                    width: "2.25rem",
+                                                    height: "2.25rem",
                                                     textAlign: "center",
                                                     justifyContent: "center"
                                                 }
                                             })
                                         }),
-                                        /*#__PURE__*/ _jsxs(GridItem, {
+                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
                                             md: 9,
                                             sm: 9,
                                             children: [
-                                                /*#__PURE__*/ _jsx(GridItem, {
-                                                    children: /*#__PURE__*/ _jsxs(Typography, {
+                                                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                         sx: {
                                                             textAlign: {
                                                                 lg: "left",
@@ -1258,7 +1243,7 @@ function SectionContactUs({ ...rest }) {
                                                             fontFamily: "Montserrat",
                                                             lineHeight: "1.5rem",
                                                             fontWeight: "600",
-                                                            color: "#212121"
+                                                            color: "#091133"
                                                         },
                                                         children: [
                                                             "  ",
@@ -1266,8 +1251,8 @@ function SectionContactUs({ ...rest }) {
                                                         ]
                                                     })
                                                 }),
-                                                /*#__PURE__*/ _jsx(GridItem, {
-                                                    children: /*#__PURE__*/ _jsxs(Typography, {
+                                                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                         sx: {
                                                             textAlign: {
                                                                 lg: "left",
@@ -1286,7 +1271,7 @@ function SectionContactUs({ ...rest }) {
                                                             fontFamily: "Montserrat",
                                                             lineHeight: "1.5rem",
                                                             fontWeight: "500",
-                                                            color: "#212121"
+                                                            color: "#091133"
                                                         },
                                                         children: [
                                                             "   ",
@@ -1294,8 +1279,8 @@ function SectionContactUs({ ...rest }) {
                                                         ]
                                                     })
                                                 }),
-                                                /*#__PURE__*/ _jsx(GridItem, {
-                                                    children: /*#__PURE__*/ _jsxs(Typography, {
+                                                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                         sx: {
                                                             textAlign: {
                                                                 lg: "left",
@@ -1314,7 +1299,7 @@ function SectionContactUs({ ...rest }) {
                                                             fontFamily: "Montserrat",
                                                             lineHeight: "1.5rem",
                                                             fontWeight: "500",
-                                                            color: "#212121"
+                                                            color: "#091133"
                                                         },
                                                         children: [
                                                             "  ",
@@ -1322,8 +1307,8 @@ function SectionContactUs({ ...rest }) {
                                                         ]
                                                     })
                                                 }),
-                                                /*#__PURE__*/ _jsx(GridItem, {
-                                                    children: /*#__PURE__*/ _jsxs(Typography, {
+                                                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                         sx: {
                                                             textAlign: {
                                                                 lg: "left",
@@ -1342,7 +1327,7 @@ function SectionContactUs({ ...rest }) {
                                                             fontFamily: "Montserrat",
                                                             lineHeight: "1.5rem",
                                                             fontWeight: "500",
-                                                            color: "#212121"
+                                                            color: "#091133"
                                                         },
                                                         children: [
                                                             "  ",
@@ -1354,35 +1339,36 @@ function SectionContactUs({ ...rest }) {
                                         })
                                     ]
                                 }),
-                                /*#__PURE__*/ _jsxs(GridContainer, {
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
                                     style: {
                                         marginBottom: "2rem"
                                     },
                                     children: [
-                                        /*#__PURE__*/ _jsx(GridItem, {
+                                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
                                             md: 3,
                                             sm: 3,
                                             style: {
                                                 textAlign: "center",
                                                 margin: "auto"
                                             },
-                                            children: /*#__PURE__*/ _jsx("img", {
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                                 src: "/img/resized_imgs/contact-us-email.png",
                                                 alt: "...",
                                                 style: {
-                                                    width: "3.75rem",
-                                                    height: "3.75rem",
+                                                    width: "2.25rem",
+                                                    height: "2.25rem",
                                                     textAlign: "center",
-                                                    justifyContent: "center"
+                                                    justifyContent: "center",
+                                                    boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
                                                 }
                                             })
                                         }),
-                                        /*#__PURE__*/ _jsxs(GridItem, {
+                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
                                             md: 9,
                                             sm: 9,
                                             children: [
-                                                /*#__PURE__*/ _jsx(GridItem, {
-                                                    children: /*#__PURE__*/ _jsxs(Typography, {
+                                                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                         sx: {
                                                             textAlign: {
                                                                 lg: "left",
@@ -1401,7 +1387,7 @@ function SectionContactUs({ ...rest }) {
                                                             fontFamily: "Montserrat",
                                                             lineHeight: "1.5rem",
                                                             fontWeight: "500",
-                                                            color: "#212121"
+                                                            color: "#091133"
                                                         },
                                                         children: [
                                                             "  ",
@@ -1409,8 +1395,8 @@ function SectionContactUs({ ...rest }) {
                                                         ]
                                                     })
                                                 }),
-                                                /*#__PURE__*/ _jsx(GridItem, {
-                                                    children: /*#__PURE__*/ _jsxs(Typography, {
+                                                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                         sx: {
                                                             textAlign: {
                                                                 lg: "left",
@@ -1429,7 +1415,7 @@ function SectionContactUs({ ...rest }) {
                                                             fontFamily: "Montserrat",
                                                             lineHeight: "1.5rem",
                                                             fontWeight: "500",
-                                                            color: "#212121"
+                                                            color: "#091133"
                                                         },
                                                         children: [
                                                             " ",
@@ -1441,92 +1427,35 @@ function SectionContactUs({ ...rest }) {
                                         })
                                     ]
                                 }),
-                                /*#__PURE__*/ _jsxs(GridContainer, {
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
                                     style: {
                                         marginBottom: "2rem"
                                     },
                                     children: [
-                                        /*#__PURE__*/ _jsx(GridItem, {
+                                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
                                             md: 3,
                                             sm: 3,
                                             style: {
                                                 textAlign: "center",
                                                 margin: "auto"
                                             },
-                                            children: /*#__PURE__*/ _jsx("img", {
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                                 src: "/img/resized_imgs/contact-us-call.png",
                                                 alt: "...",
                                                 style: {
-                                                    width: "3.75rem",
-                                                    height: "3.75rem",
+                                                    width: "2.25rem",
+                                                    height: "2.25rem",
                                                     textAlign: "center",
-                                                    justifyContent: "center"
+                                                    justifyContent: "center",
+                                                    boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
                                                 }
                                             })
                                         }),
-                                        /*#__PURE__*/ _jsx(GridItem, {
+                                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
                                             md: 9,
                                             sm: 9,
-                                            children: /*#__PURE__*/ _jsx(GridItem, {
-                                                children: /*#__PURE__*/ _jsxs(Typography, {
-                                                    sx: {
-                                                        textAlign: {
-                                                            lg: "left",
-                                                            md: "left",
-                                                            sm: "left",
-                                                            xs: "center"
-                                                        },
-                                                        fontSize: {
-                                                            lg: "1.25rem",
-                                                            md: "1.25rem",
-                                                            sm: "1.25rem",
-                                                            xs: "1rem"
-                                                        }
-                                                    },
-                                                    style: {
-                                                        fontFamily: "Montserrat",
-                                                        lineHeight: "1.25rem",
-                                                        fontWeight: "600",
-                                                        color: "#212121",
-                                                        padding: "1rem"
-                                                    },
-                                                    children: [
-                                                        "   ",
-                                                        contactUs.phone_no[0]
-                                                    ]
-                                                })
-                                            })
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ _jsxs(GridContainer, {
-                                    style: {
-                                        marginBottom: "2rem"
-                                    },
-                                    children: [
-                                        /*#__PURE__*/ _jsx(GridItem, {
-                                            md: 3,
-                                            sm: 3,
-                                            style: {
-                                                textAlign: "center",
-                                                margin: "auto"
-                                            },
-                                            children: /*#__PURE__*/ _jsx("img", {
-                                                src: "/img/resized_imgs/contact-us-timing.png",
-                                                alt: "...",
-                                                style: {
-                                                    width: "3.75rem",
-                                                    height: "3.75rem",
-                                                    textAlign: "center",
-                                                    justifyContent: "center"
-                                                }
-                                            })
-                                        }),
-                                        /*#__PURE__*/ _jsx(GridItem, {
-                                            md: 9,
-                                            sm: 9,
-                                            children: /*#__PURE__*/ _jsx(GridItem, {
-                                                children: /*#__PURE__*/ _jsxs(Typography, {
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                     sx: {
                                                         textAlign: {
                                                             lg: "left",
@@ -1545,7 +1474,66 @@ function SectionContactUs({ ...rest }) {
                                                         fontFamily: "Montserrat",
                                                         lineHeight: "1.25rem",
                                                         fontWeight: "500",
-                                                        color: "#212121",
+                                                        color: "#091133",
+                                                        padding: "1rem"
+                                                    },
+                                                    children: [
+                                                        "   ",
+                                                        contactUs.phone_no[0]
+                                                    ]
+                                                })
+                                            })
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                                    style: {
+                                        marginBottom: "2rem"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                            md: 3,
+                                            sm: 3,
+                                            style: {
+                                                textAlign: "center",
+                                                margin: "auto"
+                                            },
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                src: "/img/resized_imgs/contact-us-timing.png",
+                                                alt: "...",
+                                                style: {
+                                                    width: "2.25rem",
+                                                    height: "2.25rem",
+                                                    textAlign: "center",
+                                                    justifyContent: "center",
+                                                    boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
+                                                }
+                                            })
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                            md: 9,
+                                            sm: 9,
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
+                                                    sx: {
+                                                        textAlign: {
+                                                            lg: "left",
+                                                            md: "left",
+                                                            sm: "left",
+                                                            xs: "center"
+                                                        },
+                                                        fontSize: {
+                                                            lg: "1.25rem",
+                                                            md: "1.25rem",
+                                                            sm: "1.25rem",
+                                                            xs: "1rem"
+                                                        }
+                                                    },
+                                                    style: {
+                                                        fontFamily: "Montserrat",
+                                                        lineHeight: "1.25rem",
+                                                        fontWeight: "500",
+                                                        color: "#091133",
                                                         padding: "1rem"
                                                     },
                                                     children: [
@@ -1567,7 +1555,7 @@ function SectionContactUs({ ...rest }) {
 };
 
 ;// CONCATENATED MODULE: ./data/industries-data.js
-const industries = [
+const industries_data_industries = [
     {
         serviceTitle: "Retail",
         serviceImageUrl: "img/resized_imgs/industries-retail.png",
@@ -1634,16 +1622,16 @@ const industries = [
 
 
 const SectionIndustriesCarousalCard_useStyles = makeStyles_default()(featuresStyle/* default */.Z);
-const SectionIndustriesCarousalCard = (props)=>{
+const SectionIndustriesCarousalCard_SectionIndustriesCarousalCard = (props)=>{
     const classes = SectionIndustriesCarousalCard_useStyles();
     console.log("props Passed to Carousal Card : ", props);
     const { index  } = props;
     console.log("props Passed to Carousal Card : ", index);
-    return /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+    return /*#__PURE__*/ _jsx(GridItem, {
         xs: 12,
         sm: 6,
         md: 4,
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
+        children: /*#__PURE__*/ _jsxs(Card, {
             plain: true,
             blog: true,
             style: {
@@ -1653,10 +1641,10 @@ const SectionIndustriesCarousalCard = (props)=>{
                 borderWidth: "medium"
             },
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(CardHeader/* default */.Z, {
+                /*#__PURE__*/ _jsx(CardHeader, {
                     plain: true,
                     image: true,
-                    children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                    children: /*#__PURE__*/ _jsx("img", {
                         src: industries[index].serviceImageUrl,
                         alt: "...",
                         style: {
@@ -1666,10 +1654,10 @@ const SectionIndustriesCarousalCard = (props)=>{
                         }
                     })
                 }),
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                /*#__PURE__*/ _jsxs(CardBody, {
                     plain: true,
                     children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
+                        /*#__PURE__*/ _jsx(Typography, {
                             style: {
                                 fontFamily: "Montserrat",
                                 fontSize: "1.125rem",
@@ -1681,7 +1669,7 @@ const SectionIndustriesCarousalCard = (props)=>{
                             },
                             children: industries[index].serviceTitle
                         }),
-                        /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
+                        /*#__PURE__*/ _jsx(Typography, {
                             style: {
                                 fontFamily: '"Open Sans", sans-serif',
                                 fontSize: "0.875rem",
@@ -1699,7 +1687,7 @@ const SectionIndustriesCarousalCard = (props)=>{
         })
     });
 };
-/* harmony default export */ const sections_page_SectionIndustriesCarousalCard = (SectionIndustriesCarousalCard);
+/* harmony default export */ const sections_page_SectionIndustriesCarousalCard = ((/* unused pure expression or super */ null && (SectionIndustriesCarousalCard_SectionIndustriesCarousalCard)));
 
 ;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionIndustriesCarousel.js
 /*eslint-disable*/ 
@@ -1728,7 +1716,7 @@ const SectionIndustriesCarousalCard = (props)=>{
 
 
 const SectionIndustriesCarousel_useStyles = makeStyles_default()(featuresStyle/* default */.Z);
-function SectionIndustriesCarousel() {
+function SectionIndustriesCarousel_SectionIndustriesCarousel() {
     const classes = SectionIndustriesCarousel_useStyles();
     console.log("industries Data : ", industries);
     const settings = {
@@ -1741,66 +1729,66 @@ function SectionIndustriesCarousel() {
     };
     const showAllServices = ()=>{
         console.log("Routing to /service-details Page ");
-        router_default().push("/service-details");
+        Router.push("/service-details");
     };
     const routeToContactUs = ()=>{
         console.log("Routing to /contactUs Page ");
-        router_default().push("/sections#contactUs");
+        Router.push("/sections#contactUs");
     };
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+    return /*#__PURE__*/ _jsxs(_Fragment, {
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(Header/* default */.Z, {
+            /*#__PURE__*/ _jsx(Header, {
                 brand: "",
-                links: /*#__PURE__*/ jsx_runtime_.jsx(HeaderLinks/* default */.Z, {
+                links: /*#__PURE__*/ _jsx(HeaderLinks, {
                     dropdownHoverColor: "info"
                 }),
                 fixed: true,
                 color: "info",
                 disableGutters: true
             }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            /*#__PURE__*/ _jsxs("div", {
                 className: classes.container,
                 children: [
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)((external_react_slick_default()), {
+                    /*#__PURE__*/ _jsxs(Carousel, {
                         ...settings,
                         children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                            /*#__PURE__*/ _jsx("div", {
+                                children: /*#__PURE__*/ _jsxs(GridContainer, {
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionIndustriesCarousalCard, {
+                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
                                             index: 0
                                         }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionIndustriesCarousalCard, {
+                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
                                             index: 1
                                         }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionIndustriesCarousalCard, {
+                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
                                             index: 2
                                         })
                                     ]
                                 })
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                            /*#__PURE__*/ _jsx("div", {
+                                children: /*#__PURE__*/ _jsxs(GridContainer, {
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionIndustriesCarousalCard, {
+                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
                                             index: 3
                                         }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionIndustriesCarousalCard, {
+                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
                                             index: 4
                                         }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionIndustriesCarousalCard, {
+                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
                                             index: 5
                                         })
                                     ]
                                 })
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                            /*#__PURE__*/ _jsx("div", {
+                                children: /*#__PURE__*/ _jsxs(GridContainer, {
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionIndustriesCarousalCard, {
+                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
                                             index: 6
                                         }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionIndustriesCarousalCard, {
+                                        /*#__PURE__*/ _jsx(SectionIndustriesCarousalCard, {
                                             index: 7
                                         })
                                     ]
@@ -1808,17 +1796,17 @@ function SectionIndustriesCarousel() {
                             })
                         ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
+                    /*#__PURE__*/ _jsx(GridContainer, {
                         style: {
                             marginBottom: "2rem",
                             textAlign: "center"
                         },
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                        children: /*#__PURE__*/ _jsxs(GridItem, {
                             xs: 12,
                             sm: 12,
                             md: 12,
                             children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
+                                /*#__PURE__*/ _jsx(Button, {
                                     size: "medium",
                                     variant: "contained",
                                     type: "submit",
@@ -1858,7 +1846,7 @@ function SectionIndustriesCarousel() {
                                     onClick: routeToContactUs,
                                     children: "Contact Us"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
+                                /*#__PURE__*/ _jsx(Button, {
                                     size: "medium",
                                     variant: "contained",
                                     type: "submit",
@@ -1927,24 +1915,24 @@ const SectionIndustries_routeToContactUs = ()=>{
 };
 function SectionIndustries({ ...rest }) {
     const classes = SectionIndustries_useStyles();
-    console.log("Loaded Services data : ", services_data/* services */.u ? services_data/* services.length */.u.length : 0);
-    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+    console.log("Loaded Services data : ", services ? services.length : 0);
+    return /*#__PURE__*/ _jsx("div", {
         className: "cd-section",
         ...rest,
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+        children: /*#__PURE__*/ _jsxs("div", {
             className: classes.container,
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
+                /*#__PURE__*/ _jsx(GridContainer, {
                     style: {
                         marginBottom: ".25rem"
                     },
-                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                    children: /*#__PURE__*/ _jsxs(GridItem, {
                         md: 6,
                         style: {
                             color: "#112A46"
                         },
                         children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                            /*#__PURE__*/ _jsx("h1", {
                                 style: {
                                     fontFamily: "Montserrat",
                                     fontSize: "2rem",
@@ -1955,7 +1943,7 @@ function SectionIndustries({ ...rest }) {
                                 },
                                 children: "  Industries"
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(material_.Divider, {
+                            /*#__PURE__*/ _jsx(Divider, {
                                 style: {
                                     backgroundColor: "#5288E5",
                                     color: "#5288E5",
@@ -1968,7 +1956,7 @@ function SectionIndustries({ ...rest }) {
                         ]
                     })
                 }),
-                /*#__PURE__*/ jsx_runtime_.jsx(SectionIndustriesCarousel, {})
+                /*#__PURE__*/ _jsx(SectionIndustriesCarousel, {})
             ]
         })
     });
@@ -2755,7 +2743,7 @@ function SectionTeams({ ...rest }) {
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
                                 md: 6,
                                 style: {
-                                    color: "#112A46"
+                                    color: "#091133"
                                 },
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("h1", {
@@ -2783,7 +2771,7 @@ function SectionTeams({ ...rest }) {
                             /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
                                 md: 6,
                                 style: {
-                                    color: "#112A46"
+                                    color: "#091133"
                                 }
                             })
                         ]
@@ -2797,7 +2785,7 @@ function SectionTeams({ ...rest }) {
                                 lg: 6,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                     className: classes.rotatingCardContainer,
-                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_Card/* default */.Z, {
                                         background: true,
                                         className: classes.cardRotate,
                                         children: [
@@ -2806,19 +2794,19 @@ function SectionTeams({ ...rest }) {
                                                 style: {
                                                     backgroundColor: "#E5AF52"
                                                 },
-                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_CardBody/* default */.Z, {
                                                     background: true,
                                                     className: classes.cardBodyRotate,
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
                                                             style: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
@@ -2827,14 +2815,14 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
                                                                 fontWeight: "400",
                                                                 textAlign: "center"
                                                             },
                                                             style: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
                                                                 fontWeight: "400",
@@ -2855,21 +2843,21 @@ function SectionTeams({ ...rest }) {
                                                     fontSize: "0.85rem",
                                                     lineHeight: "0.85rem",
                                                     fontWeight: "400",
-                                                    color: "#112A46"
+                                                    color: "#091133"
                                                 },
-                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_CardBody/* default */.Z, {
                                                     background: true,
                                                     className: classes.cardBodyRotate,
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
                                                             style: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
@@ -2878,14 +2866,14 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
                                                                 fontWeight: "400",
                                                                 textAlign: "center"
                                                             },
                                                             style: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
                                                                 fontWeight: "400",
@@ -2897,14 +2885,14 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "0.85rem",
                                                                 lineHeight: "1rem",
                                                                 fontWeight: "400",
                                                                 textAlign: "left"
                                                             },
                                                             style: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "0.85rem",
                                                                 lineHeight: "1rem",
                                                                 fontWeight: "400",
@@ -2926,7 +2914,7 @@ function SectionTeams({ ...rest }) {
                                 lg: 6,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                     className: classes.rotatingCardContainer,
-                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_Card/* default */.Z, {
                                         background: true,
                                         className: classes.cardRotate,
                                         children: [
@@ -2935,19 +2923,19 @@ function SectionTeams({ ...rest }) {
                                                 style: {
                                                     backgroundColor: "#E5AF52"
                                                 },
-                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_CardBody/* default */.Z, {
                                                     background: true,
                                                     className: classes.cardBodyRotate,
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
                                                             style: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
@@ -2956,14 +2944,14 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
                                                                 fontWeight: "400",
                                                                 textAlign: "center"
                                                             },
                                                             style: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
                                                                 fontWeight: "400",
@@ -2984,19 +2972,19 @@ function SectionTeams({ ...rest }) {
                                                     fontSize: "0.85rem",
                                                     fontWeight: "400"
                                                 },
-                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card_CardBody/* default */.Z, {
                                                     background: true,
                                                     className: classes.cardBodyRotate,
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
                                                             style: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
@@ -3005,14 +2993,14 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
                                                                 fontWeight: "400",
                                                                 textAlign: "center"
                                                             },
                                                             style: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1.25rem",
                                                                 fontWeight: "400",
@@ -3024,14 +3012,14 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "0.85rem",
                                                                 lineHeight: "1.1rem",
                                                                 fontWeight: "400",
                                                                 textAlign: "left"
                                                             },
                                                             style: {
-                                                                color: "#112A46",
+                                                                color: "#091133",
                                                                 fontSize: "0.85rem",
                                                                 lineHeight: "1.1rem",
                                                                 fontWeight: "400",
@@ -3163,10 +3151,10 @@ function SectionsPage() {
     const classes = sections_useStyles();
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(Header/* default */.Z, {
+            /*#__PURE__*/ jsx_runtime_.jsx(Header_Header/* default */.Z, {
                 color: "info",
                 brand: "",
-                links: /*#__PURE__*/ jsx_runtime_.jsx(HeaderLinks/* default */.Z, {
+                links: /*#__PURE__*/ jsx_runtime_.jsx(Header_HeaderLinks/* default */.Z, {
                     dropdownHoverColor: "info"
                 }),
                 fixed: true
@@ -3183,11 +3171,11 @@ function SectionsPage() {
                     /*#__PURE__*/ jsx_runtime_.jsx(SectionAboutUs_SectionHeaders, {
                         id: "aboutus"
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(SectionIndustries, {
-                        id: "industries"
-                    }),
                     /*#__PURE__*/ jsx_runtime_.jsx(SectionTeams, {
                         id: "teams"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx(SectionContactUs, {
+                        id: "contactUs"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx(SectionCareers, {
                         id: "careers"
@@ -3414,17 +3402,18 @@ function SectionsPage() {
                         /*#__PURE__*/ jsx_runtime_.jsx(material_.Divider, {}),
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
                             style: {
-                                float: "left"
+                                float: "left",
+                                marginTop: "1.5rem"
                             },
-                            children: "\xa92023 Novel Logiks Technologies"
+                            children: "\xa92023 Novel Logiks Pvt Ltd"
                         }),
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                             style: {
                                 float: "right"
                             },
                             children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
-                                    href: "https://twitter.com/novellogikshill",
+                                /*#__PURE__*/ jsx_runtime_.jsx(CustomButtons_Button/* default */.Z, {
+                                    // href=""
                                     target: "_blank",
                                     color: "twitter",
                                     justIcon: true,
@@ -3433,8 +3422,8 @@ function SectionsPage() {
                                         className: "fab fa-twitter"
                                     })
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
-                                    href: "https://instagram.com/novellogikshill?igshid=MzNlNGNkZWQ4Mg==",
+                                /*#__PURE__*/ jsx_runtime_.jsx(CustomButtons_Button/* default */.Z, {
+                                    // href=""
                                     target: "_blank",
                                     color: "instagram",
                                     justIcon: true,
@@ -3443,8 +3432,8 @@ function SectionsPage() {
                                         className: "fab fa-instagram"
                                     })
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
-                                    href: "https://www.facebook.com/people/Novel Logiks/100094870993690",
+                                /*#__PURE__*/ jsx_runtime_.jsx(CustomButtons_Button/* default */.Z, {
+                                    // href=""
                                     justIcon: true,
                                     simple: true,
                                     color: "facebook",
@@ -3807,7 +3796,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [952,270,664,441,999,39,866,568,765,482,82,684,696,645,951,828,724,707,174], () => (__webpack_exec__(0)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,270,664,441,999,39,866,568,765,482,82,684,696,645,951,828,724,174,707], () => (__webpack_exec__(0)));
 module.exports = __webpack_exports__;
 
 })();
