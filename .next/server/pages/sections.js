@@ -5,7 +5,7 @@ exports.id = 30;
 exports.ids = [30];
 exports.modules = {
 
-/***/ 6927:
+/***/ 5767:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -246,7 +246,10 @@ function SectionHomeRight({ ...rest }) {
     });
 };
 
+;// CONCATENATED MODULE: ./public/video/ai-medical.mp4
+/* harmony default export */ const ai_medical = ("/_next/static/media/ai-medical.d9e01b29e3198ed37776cd8a94d2a56b.mp4");
 ;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionHome.js
+
 
 
 
@@ -280,143 +283,137 @@ function SectionHeaders({ ...rest }) {
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: classes.container,
             children: [
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    style: {
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        width: "100%",
+                        height: "100%"
+                    }
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx("video", {
+                    autoPlay: true,
+                    loop: true,
+                    muted: true,
+                    style: {
+                        position: "relative",
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover"
+                    },
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("source", {
+                        src: ai_medical,
+                        type: "video/mp4"
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
                     style: {
                         marginBottom: "2rem"
                     },
-                    children: [
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
-                            md: 6,
-                            style: {
-                                color: "#112A46",
-                                paddingTop: "3rem"
-                            },
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
-                                    sx: {
-                                        fontFamily: "Montserrat",
-                                        fontSize: {
-                                            lg: "3.125rem",
-                                            md: "3.125rem",
-                                            sm: "2rem",
-                                            xs: "2rem"
-                                        },
-                                        lineHeight: {
-                                            lg: "4.125rem",
-                                            md: "4.125rem",
-                                            sm: "3rem",
-                                            xs: "3rem"
-                                        }
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                        md: 12,
+                        style: {
+                            color: "#112A46",
+                            paddingTop: "3rem"
+                        },
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
+                                sx: {
+                                    fontFamily: "Montserrat",
+                                    fontSize: {
+                                        lg: "3.125rem",
+                                        md: "3.125rem",
+                                        sm: "2rem",
+                                        xs: "2rem"
                                     },
-                                    style: {
-                                        fontFamily: "Montserrat",
-                                        fontWeight: "600",
-                                        textAlign: "left",
-                                        color: "#091133",
-                                        marginBottom: "2rem"
-                                    },
-                                    children: "  We provide Digital Solutions cutting across Sectors."
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    style: {
-                                        marginBottom: "2rem",
-                                        color: "#112A46",
-                                        fontFamily: "Montserrat"
-                                    },
-                                    children: "To ignite expansion and ward off competitors, organizations should integrate hardware, software, and services to create customized solutions that address customers' needs and potentially address undiscovered challenges. Digitization has the potential not only to bring about transformation by cutting costs and enhancing core processes but can, and often should, serve as a substantial source of additional revenue. At Novel Logiks, we guide organizations in taking successful transformative strides, leveraging our industry-wide experience and capabilities."
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                    style: {
-                                        color: "#112A46",
-                                        fontFamily: "Montserrat",
-                                        fontSize: "1.125rem",
-                                        lineHeight: "1.5rem",
-                                        fontWeight: "600",
-                                        textAlign: "left",
-                                        marginBottom: "2rem"
-                                    },
-                                    children: "Catapult Beyond Imaginable Future."
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
-                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
-                                        xs: 12,
-                                        sm: 12,
-                                        md: 12,
-                                        style: {
-                                            textAlign: "center"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx(material_.Button, {
-                                                size: "medium",
-                                                variant: "contained",
-                                                type: "submit",
-                                                style: {
-                                                    textTransform: "none",
-                                                    color: "#112A46",
-                                                    background: "#5288E5",
-                                                    textAlign: "left",
-                                                    margin: "1em",
-                                                    boxShadow: "none",
-                                                    width: "11.813rem",
-                                                    height: "2.5rem",
-                                                    borderRadius: "0px"
-                                                },
-                                                onClick: routeToContactUs,
-                                                children: "Contact Us"
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx(material_.Button, {
-                                                size: "medium",
-                                                variant: "contained",
-                                                type: "submit",
-                                                style: {
-                                                    margin: "1em",
-                                                    textTransform: "none",
-                                                    color: "#112A46",
-                                                    borderColor: "black",
-                                                    border: "2px solid",
-                                                    background: "#FFF",
-                                                    boxShadow: "none",
-                                                    width: "11.813rem",
-                                                    height: "2.5rem",
-                                                    borderRadius: "0px"
-                                                },
-                                                onClick: routeToAiDetails,
-                                                children: "Learn More"
-                                            })
-                                        ]
-                                    })
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
-                            md: 6,
-                            style: {
-                                color: "#112A46",
-                                padding: "0rem",
-                                textAlign: "center",
-                                justifyContent: "center",
-                                marginTop: "10rem"
-                            },
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
+                                    lineHeight: {
+                                        lg: "4.125rem",
+                                        md: "4.125rem",
+                                        sm: "3rem",
+                                        xs: "3rem"
+                                    }
+                                },
+                                style: {
+                                    fontFamily: "Montserrat",
+                                    fontWeight: "600",
+                                    textAlign: "left",
+                                    color: "#091133",
+                                    marginBottom: "2rem"
+                                },
+                                children: "  We provide Digital Solutions cutting across Sectors."
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                style: {
+                                    marginBottom: "2rem",
+                                    color: "#112A46",
+                                    fontFamily: "Montserrat"
+                                },
+                                children: "To ignite expansion and ward off competitors, organizations should integrate hardware, software, and services to create customized solutions that address customers' needs and potentially address undiscovered challenges. Digitization has the potential not only to bring about transformation by cutting costs and enhancing core processes but can, and often should, serve as a substantial source of additional revenue. At Novel Logiks, we guide organizations in taking successful transformative strides, leveraging our industry-wide experience and capabilities."
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                 style: {
                                     color: "#112A46",
-                                    padding: "0rem",
-                                    textAlign: "center",
-                                    justifyContent: "center"
+                                    fontFamily: "Montserrat",
+                                    fontSize: "1.125rem",
+                                    lineHeight: "1.5rem",
+                                    fontWeight: "600",
+                                    textAlign: "left",
+                                    marginBottom: "2rem"
                                 },
-                                children: /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                children: "Catapult Beyond Imaginable Future."
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                                    xs: 12,
+                                    sm: 12,
                                     md: 12,
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                        src: "img/resized_imgs/digital_transform.png",
-                                        alt: "Digital Transform",
-                                        style: {
-                                            width: "100%"
-                                        }
-                                    })
+                                    style: {
+                                        textAlign: "center"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx(material_.Button, {
+                                            size: "medium",
+                                            variant: "contained",
+                                            type: "submit",
+                                            style: {
+                                                textTransform: "none",
+                                                color: "#112A46",
+                                                background: "#5288E5",
+                                                textAlign: "left",
+                                                margin: "1em",
+                                                boxShadow: "none",
+                                                width: "11.813rem",
+                                                height: "2.5rem",
+                                                borderRadius: "0px"
+                                            },
+                                            onClick: routeToContactUs,
+                                            children: "Contact Us"
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx(material_.Button, {
+                                            size: "medium",
+                                            variant: "contained",
+                                            type: "submit",
+                                            style: {
+                                                margin: "1em",
+                                                textTransform: "none",
+                                                color: "#112A46",
+                                                borderColor: "black",
+                                                border: "2px solid",
+                                                background: "#FFF",
+                                                boxShadow: "none",
+                                                width: "11.813rem",
+                                                height: "2.5rem",
+                                                borderRadius: "0px"
+                                            },
+                                            onClick: routeToAiDetails,
+                                            children: "Learn More"
+                                        })
+                                    ]
                                 })
                             })
-                        })
-                    ]
+                        ]
+                    })
                 }),
                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
                     style: {
@@ -3738,7 +3735,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [952,270,664,441,999,39,866,568,765,482,82,684,696,645,951,828,83,724,707], () => (__webpack_exec__(6927)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,270,664,441,999,39,866,568,765,482,82,684,696,645,951,828,83,724,707], () => (__webpack_exec__(5767)));
 module.exports = __webpack_exports__;
 
 })();

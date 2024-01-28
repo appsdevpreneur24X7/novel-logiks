@@ -57,7 +57,7 @@ function ErrorPage({ ...rest }) {
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
                                     className: classes.description,
-                                    children: "Ooooups! Looks like you got lost."
+                                    children: "Ooooups! Looks like you got lost. Om Sai Ram"
                                 })
                             ]
                         })
