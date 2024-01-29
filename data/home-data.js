@@ -1,15 +1,15 @@
 export const home = [
     {
         serviceTitle: "End-to end IT service expertise enabling better managed integrated portfolios",
-        serviceImageUrl: "img/resized_imgs/end-end-it.png",
+        serviceImageUrl: "img/lsk_imgs/it.jpg",
     },
     {
         serviceTitle: "AI / IOT Advisory experience across industries solving real problems, enabling innovation",
-        serviceImageUrl: "img/resized_imgs/iot-advisory.png",
+        serviceImageUrl: "img/lsk_imgs/iot.jpg",
     },
     {
         serviceTitle: "Delivery Driven by outcomes bettering expected, Speed on time, Customer Centric Culture.",
-        serviceImageUrl: "img/resized_imgs/delivery-driven.png",
+        serviceImageUrl: "img/lsk_imgs/delivery.jpg",
     },
 
 ];

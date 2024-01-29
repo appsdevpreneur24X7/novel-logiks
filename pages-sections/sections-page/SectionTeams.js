@@ -89,7 +89,7 @@ export default function SectionTeams({ ...rest }) {
             </GridItem>
           </GridContainer>
           <GridContainer>
-            <GridItem xs={12} sm={6} md={6} lg={6}>
+            <GridItem xs={12} md={4} >
               <div className={classes.rotatingCardContainer}>
                 <Card background className={classes.cardRotate}>
                   <div
@@ -131,7 +131,7 @@ export default function SectionTeams({ ...rest }) {
                 </Card>
               </div>
             </GridItem>
-            <GridItem xs={12} sm={6} md={6} lg={6}>
+            <GridItem xs={12} md={4}>
               <div className={classes.rotatingCardContainer}>
                 <Card background className={classes.cardRotate}>
                   <div
@@ -144,7 +144,7 @@ export default function SectionTeams({ ...rest }) {
                   >
                     <CardBody background className={classes.cardBodyRotate}>
                       <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
-                        Raju
+                        Venkat Raju
                       </h5>
                       <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" ,padding:"0px" , margin:"0px"}}>
                         Cloud Architect
@@ -159,14 +159,55 @@ export default function SectionTeams({ ...rest }) {
                   >
                     <CardBody background className={classes.cardBodyRotate}>
                       <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
-                      Raju
+                      Venkat Raju
                       </h5>
                       <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "400", textAlign: "center",padding:"0px" , margin:"0px" }}>
                       Cloud Architect
                       </h5>
                       <h5 sx={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }} style={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }}>
-                      Raju is a professional who is responsible for designing, implementing, and managing an organization's cloud computing architecture. This role involves making strategic decisions about the adoption and integration of cloud services to meet business requirements.
+                      Venkat Raju is a professional who is responsible for designing, implementing, and managing an organization's cloud computing architecture. This role involves making strategic decisions about the adoption and integration of cloud services to meet business requirements.
                       Rajus's Key aspects include, Cloud Strategy and Planning, Architecture Design, Cloud Service Integration, Security and Compliance, Cost Optimization, Migration Planning, Performance Optimization , Disaster Recovery and Business Continuity and Collaboration with Stakeholders.
+                      </h5>
+                    </CardBody>
+                  </div>
+                </Card>
+              </div>
+            </GridItem>
+            <GridItem xs={12} md={4}>
+              <div className={classes.rotatingCardContainer}>
+                <Card background className={classes.cardRotate}>
+                  <div
+                    className={
+                      classes.front
+                    }
+                    style={{
+                      backgroundColor: '#E5AF52'
+                    }}
+                  >
+                    <CardBody background className={classes.cardBodyRotate}>
+                      <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                        Shahid
+                      </h5>
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" ,padding:"0px" , margin:"0px"}}>
+                        Data Anaylist / Data Science
+                      </h5>
+                    </CardBody>
+                  </div>
+                  <div
+                    className={classes.back}
+                    style={{
+                      backgroundColor: '#E5AF52', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                    }}
+                  >
+                    <CardBody background className={classes.cardBodyRotate}>
+                      <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      Shahid
+                      </h5>
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "400", textAlign: "center",padding:"0px" , margin:"0px" }}>
+                      Data Anaylist / Data Science
+                      </h5>
+                      <h5 sx={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }} style={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }}>
+                      Data Scientists leverage advanced statistical and machine learning techniques to extract meaningful insights from complex datasets, while Data Analysts focus on interpreting and visualizing data to support decision-making and business strategies
                       </h5>
                     </CardBody>
                   </div>

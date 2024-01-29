@@ -5,7 +5,7 @@ exports.id = 30;
 exports.ids = [30];
 exports.modules = {
 
-/***/ 5767:
+/***/ 8294:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -29,9 +29,9 @@ var Header = __webpack_require__(4889);
 // EXTERNAL MODULE: ./components/Header/HeaderLinks.js + 1 modules
 var HeaderLinks = __webpack_require__(6659);
 // EXTERNAL MODULE: ./components/Grid/GridContainer.js
-var Grid_GridContainer = __webpack_require__(4041);
+var GridContainer = __webpack_require__(4041);
 // EXTERNAL MODULE: ./components/Grid/GridItem.js
-var Grid_GridItem = __webpack_require__(6680);
+var GridItem = __webpack_require__(6680);
 // EXTERNAL MODULE: external "@mui/styles"
 var styles_ = __webpack_require__(9484);
 // EXTERNAL MODULE: ./styles/jss/novel-logiks/pages/sectionsSections/headersStyle.js
@@ -49,15 +49,15 @@ const useMediaQuery_namespaceObject = require("@mui/material/useMediaQuery");
 const home = [
     {
         serviceTitle: "End-to end IT service expertise enabling better managed integrated portfolios",
-        serviceImageUrl: "img/resized_imgs/end-end-it.png"
+        serviceImageUrl: "img/lsk_imgs/it.jpg"
     },
     {
         serviceTitle: "AI / IOT Advisory experience across industries solving real problems, enabling innovation",
-        serviceImageUrl: "img/resized_imgs/iot-advisory.png"
+        serviceImageUrl: "img/lsk_imgs/iot.jpg"
     },
     {
         serviceTitle: "Delivery Driven by outcomes bettering expected, Speed on time, Customer Centric Culture.",
-        serviceImageUrl: "img/resized_imgs/delivery-driven.png"
+        serviceImageUrl: "img/lsk_imgs/delivery.jpg"
     }, 
 ];
 
@@ -92,13 +92,13 @@ function SectionHomeLeft({ ...rest }) {
             style: {
                 padding: "0px"
             },
-            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                 children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                    /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                         xs: 12,
                         sm: 6,
                         md: 6,
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                             md: 12,
                             style: {
                                 textAlign: "center",
@@ -108,12 +108,14 @@ function SectionHomeLeft({ ...rest }) {
                                 src: serviceImageUrl,
                                 alt: "ai pic",
                                 style: {
-                                    width: "80%"
+                                    width: "100%",
+                                    boxShadow: "0 3px 10px rgb(0 0 0 / 0.5)",
+                                    borderRadius: "5px"
                                 }
                             })
                         })
                     }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                         xs: 12,
                         sm: 6,
                         md: 6,
@@ -183,9 +185,9 @@ function SectionHomeRight({ ...rest }) {
             style: {
                 padding: "0px"
             },
-            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                 children: [
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                         xs: 12,
                         sm: 6,
                         md: 6,
@@ -221,11 +223,11 @@ function SectionHomeRight({ ...rest }) {
                             })
                         ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                    /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                         xs: 12,
                         sm: 6,
                         md: 6,
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                             md: 12,
                             style: {
                                 textAlign: "center",
@@ -235,7 +237,9 @@ function SectionHomeRight({ ...rest }) {
                                 src: serviceImageUrl,
                                 alt: "ai pic",
                                 style: {
-                                    width: "80%"
+                                    width: "100%",
+                                    boxShadow: "0 3px 10px rgb(0 0 0 / 0.5)",
+                                    borderRadius: "5px"
                                 }
                             })
                         })
@@ -277,7 +281,7 @@ function SectionHeaders({ ...rest }) {
         className: "cd-section",
         ...rest,
         style: {
-            marginTop: "5rem",
+            marginTop: "7.5rem",
             width: "100%"
         },
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -289,7 +293,8 @@ function SectionHeaders({ ...rest }) {
                         top: "0",
                         left: "0",
                         width: "100%",
-                        height: "100%"
+                        height: "100%",
+                        zIndex: 100
                     }
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx("video", {
@@ -297,25 +302,27 @@ function SectionHeaders({ ...rest }) {
                     loop: true,
                     muted: true,
                     style: {
-                        position: "relative",
+                        position: "absolute",
                         width: "100%",
-                        height: "100%",
-                        objectFit: "cover"
+                        height: "100vh",
+                        objectFit: "cover",
+                        zIndex: -1
                     },
                     children: /*#__PURE__*/ jsx_runtime_.jsx("source", {
                         src: ai_medical,
                         type: "video/mp4"
                     })
                 }),
-                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
+                /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
                     style: {
-                        marginBottom: "2rem"
+                        mamarginBottom: "1rem",
+                        zIndex: 100
                     },
-                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                         md: 12,
                         style: {
                             color: "#112A46",
-                            paddingTop: "3rem"
+                            marginTop: "10rem"
                         },
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx(material_.Typography, {
@@ -338,110 +345,18 @@ function SectionHeaders({ ...rest }) {
                                     fontFamily: "Montserrat",
                                     fontWeight: "600",
                                     textAlign: "left",
-                                    color: "#091133",
-                                    marginBottom: "2rem"
+                                    color: "#FFF",
+                                    margin: "2rem"
                                 },
                                 children: "  We provide Digital Solutions cutting across Sectors."
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 style: {
-                                    marginBottom: "2rem",
-                                    color: "#112A46",
+                                    margin: "1rem",
+                                    color: "#FFF",
                                     fontFamily: "Montserrat"
                                 },
-                                children: "To ignite expansion and ward off competitors, organizations should integrate hardware, software, and services to create customized solutions that address customers' needs and potentially address undiscovered challenges. Digitization has the potential not only to bring about transformation by cutting costs and enhancing core processes but can, and often should, serve as a substantial source of additional revenue. At Novel Logiks, we guide organizations in taking successful transformative strides, leveraging our industry-wide experience and capabilities."
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                style: {
-                                    color: "#112A46",
-                                    fontFamily: "Montserrat",
-                                    fontSize: "1.125rem",
-                                    lineHeight: "1.5rem",
-                                    fontWeight: "600",
-                                    textAlign: "left",
-                                    marginBottom: "2rem"
-                                },
-                                children: "Catapult Beyond Imaginable Future."
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
-                                    xs: 12,
-                                    sm: 12,
-                                    md: 12,
-                                    style: {
-                                        textAlign: "center"
-                                    },
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(material_.Button, {
-                                            size: "medium",
-                                            variant: "contained",
-                                            type: "submit",
-                                            style: {
-                                                textTransform: "none",
-                                                color: "#112A46",
-                                                background: "#5288E5",
-                                                textAlign: "left",
-                                                margin: "1em",
-                                                boxShadow: "none",
-                                                width: "11.813rem",
-                                                height: "2.5rem",
-                                                borderRadius: "0px"
-                                            },
-                                            onClick: routeToContactUs,
-                                            children: "Contact Us"
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(material_.Button, {
-                                            size: "medium",
-                                            variant: "contained",
-                                            type: "submit",
-                                            style: {
-                                                margin: "1em",
-                                                textTransform: "none",
-                                                color: "#112A46",
-                                                borderColor: "black",
-                                                border: "2px solid",
-                                                background: "#FFF",
-                                                boxShadow: "none",
-                                                width: "11.813rem",
-                                                height: "2.5rem",
-                                                borderRadius: "0px"
-                                            },
-                                            onClick: routeToAiDetails,
-                                            children: "Learn More"
-                                        })
-                                    ]
-                                })
-                            })
-                        ]
-                    })
-                }),
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
-                    style: {
-                        marginBottom: "2rem",
-                        background: "#5288E5"
-                    },
-                    children: [
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
-                            md: 6,
-                            style: {
-                                color: "#112A46",
-                                background: "#5288E5",
-                                backgroundImage: "url('img/resized_imgs/circuit_lines.png')",
-                                backgroundSize: "50rem"
-                            },
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                                    style: {
-                                        fontFamily: "Montserrat",
-                                        fontSize: "1.8rem",
-                                        lineHeight: "2rem",
-                                        fontWeight: "600",
-                                        textAlign: "left",
-                                        color: "#112A46"
-                                    },
-                                    children: "Novel Logiks AI Force One !"
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                     style: {
                                         fontFamily: "Montserrat",
                                         fontSize: "1.8rem",
@@ -451,72 +366,59 @@ function SectionHeaders({ ...rest }) {
                                     },
                                     children: "Transformative AI capabilities helps enterprises gather escape velocity to the future , propelling business and lives like never before."
                                 })
-                            ]
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
-                            md: 6,
+                            })
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
+                    style: {
+                        mamarginBottom: "5rem"
+                    },
+                    children: /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
+                        md: 12,
+                        style: {
+                            color: "#FFFFFF",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            margin: "2rem"
+                        },
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(material_.Box, {
+                            m: 1,
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
                             style: {
-                                color: "#112A46",
-                                background: "#5288E5",
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center"
+                                top: "50%",
+                                left: "50%"
                             },
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(material_.Box, {
-                                m: 1,
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                style: {
-                                    top: "50%",
-                                    left: "50%"
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(material_.Button, {
+                                size: "medium",
+                                variant: "contained",
+                                type: "submit",
+                                sx: {
+                                    width: {
+                                        lg: "20rem",
+                                        md: "20rem",
+                                        sm: "15rem",
+                                        xs: "15rem"
+                                    }
                                 },
-                                children: /*#__PURE__*/ jsx_runtime_.jsx(material_.Button, {
-                                    size: "medium",
-                                    variant: "contained",
-                                    type: "submit",
-                                    sx: {
-                                        width: {
-                                            lg: "23.438rem",
-                                            md: "23.438rem",
-                                            sm: "18rem",
-                                            xs: "18rem"
-                                        }
-                                    },
-                                    style: {
-                                        textTransform: "none",
-                                        color: "#112A46",
-                                        borderRadius: "5px",
-                                        backgroundColor: "#E5AF52",
-                                        textAlign: "center",
-                                        height: "4.4rem",
-                                        fontWeight: "600",
-                                        fontSize: "2.5rem",
-                                        boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
-                                    },
-                                    onClick: routeToAiDetails,
-                                    children: "Explore Now"
-                                })
+                                style: {
+                                    textTransform: "none",
+                                    color: "#FFFFFF",
+                                    borderRadius: "5px",
+                                    backgroundColor: "#5288E5",
+                                    textAlign: "center",
+                                    height: "4rem",
+                                    fontWeight: "600",
+                                    fontSize: "2rem",
+                                    boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
+                                },
+                                onClick: routeToAiDetails,
+                                children: "Explore Now"
                             })
                         })
-                    ]
-                }),
-                home && home[0] && /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
-                    id: "0",
-                    children: /*#__PURE__*/ jsx_runtime_.jsx(SectionHomeLeft, {
-                        data: home[0]
-                    })
-                }),
-                home && home[1] && /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
-                    id: "2",
-                    children: /*#__PURE__*/ jsx_runtime_.jsx(SectionHomeRight, {
-                        data: home[1]
-                    })
-                }),
-                home && home[2] && /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
-                    id: "2",
-                    children: /*#__PURE__*/ jsx_runtime_.jsx(SectionHomeLeft, {
-                        data: home[2]
                     })
                 })
             ]
@@ -524,8 +426,6 @@ function SectionHeaders({ ...rest }) {
     });
 };
 
-// EXTERNAL MODULE: ./components/CustomButtons/Button.js + 1 modules
-var Button = __webpack_require__(571);
 // EXTERNAL MODULE: ./components/Card/Card.js + 1 modules
 var Card = __webpack_require__(2643);
 // EXTERNAL MODULE: ./components/Card/CardHeader.js + 1 modules
@@ -538,16 +438,12 @@ var Warning = __webpack_require__(4951);
 var material_styles_ = __webpack_require__(8442);
 // EXTERNAL MODULE: external "@mui/material/Grid"
 var Grid_ = __webpack_require__(5612);
+var Grid_default = /*#__PURE__*/__webpack_require__.n(Grid_);
 // EXTERNAL MODULE: external "@mui/material/Paper"
 var Paper_ = __webpack_require__(1168);
 // EXTERNAL MODULE: external "@mui/material/Box"
 var Box_ = __webpack_require__(19);
-// EXTERNAL MODULE: ./data/about-us-data.js
-var about_us_data = __webpack_require__(5870);
-// EXTERNAL MODULE: ./pages-sections/sections-page/SectionAboutUsCard.js
-var sections_page_SectionAboutUsCard = __webpack_require__(539);
-;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionAboutUs.js
-
+;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionAboutUsDetails.js
 
 
 
@@ -567,57 +463,343 @@ var sections_page_SectionAboutUsCard = __webpack_require__(539);
 
 
 
-const SectionAboutUs_useStyles = (0,styles_.makeStyles)(headersStyle/* default */.Z);
-function SectionAboutUs_SectionHeaders({ ...rest }) {
-    const classes = SectionAboutUs_useStyles();
+
+const SectionAboutUsDetails_useStyles = (0,styles_.makeStyles)(headersStyle/* default */.Z);
+function SectionAboutUsDetails({ ...rest }) {
+    const classes = SectionAboutUsDetails_useStyles();
     const routeToAiDetails = ()=>{
         Router.push("/ai-details");
     };
     const routeToContactUs = ()=>{
         Router.push("/contact-us");
     };
-    return /*#__PURE__*/ _jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "cd-section",
         ...rest,
-        style: {
-            background: "#5288E5"
-        },
-        children: /*#__PURE__*/ _jsx("div", {
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: classes.container,
-            children: /*#__PURE__*/ _jsxs(GridContainer, {
-                children: [
-                    /*#__PURE__*/ _jsx(GridItem, {
-                        xs: 12,
-                        sm: 4,
-                        md: 4,
+            style: {
+                marginTop: "10rem"
+            },
+            children: [
+                /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
+                    style: {
+                        marginBottom: ".25rem",
+                        marginTop: "2rem"
+                    },
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
+                        md: 12,
                         style: {
-                            marginTop: "2rem"
+                            color: "#112A46"
                         },
-                        children: /*#__PURE__*/ _jsx(SectionAboutUsCard, {
-                            index: 0
-                        })
-                    }),
-                    /*#__PURE__*/ _jsx(GridItem, {
-                        xs: 12,
-                        sm: 4,
-                        md: 4,
-                        children: /*#__PURE__*/ _jsx(SectionAboutUsCard, {
-                            index: 1
-                        })
-                    }),
-                    /*#__PURE__*/ _jsx(GridItem, {
-                        xs: 12,
-                        sm: 4,
-                        md: 4,
-                        style: {
-                            marginTop: "2rem"
-                        },
-                        children: /*#__PURE__*/ _jsx(SectionAboutUsCard, {
-                            index: 2
-                        })
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                                style: {
+                                    fontFamily: "Montserrat",
+                                    fontSize: "2rem",
+                                    lineHeight: "2rem",
+                                    fontWeight: "600",
+                                    textAlign: "left",
+                                    color: "#112A46"
+                                },
+                                children: "  About Us"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(material_.Divider, {
+                                style: {
+                                    backgroundColor: "#5288E5",
+                                    color: "#5288E5",
+                                    border: "#5288E5",
+                                    borderRadius: "5px",
+                                    borderTop: "0.25rem solid #5288E5",
+                                    width: "25%"
+                                }
+                            })
+                        ]
                     })
-                ]
-            })
+                }),
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
+                    style: {
+                        marginBottom: "2rem",
+                        marginTop: "2rem"
+                    },
+                    children: [
+                        home && home[0] && /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
+                            id: "0",
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(SectionHomeLeft, {
+                                data: home[0]
+                            })
+                        }),
+                        home && home[1] && /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
+                            id: "2",
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(SectionHomeRight, {
+                                data: home[1]
+                            })
+                        }),
+                        home && home[2] && /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
+                            id: "2",
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(SectionHomeLeft, {
+                                data: home[2]
+                            })
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
+                            xs: 12,
+                            sm: 4,
+                            md: 4,
+                            style: {
+                                marginTop: "2rem"
+                            },
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(Card/* default */.Z, {
+                                blog: true,
+                                style: {
+                                    minHeight: "15rem",
+                                    height: "15rem",
+                                    backgroundColor: "#5288E5"
+                                },
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
+                                            style: {
+                                                textAlign: "center",
+                                                justifyContent: "center",
+                                                alignItems: "center"
+                                            },
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                href: "#pablo",
+                                                onClick: (e)=>e.preventDefault(),
+                                                style: {
+                                                    width: "2rem",
+                                                    height: "2rem",
+                                                    textAlign: "center",
+                                                    justifyContent: "center"
+                                                },
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                    src: "/img/resized_imgs/mission.png",
+                                                    alt: "...",
+                                                    style: {
+                                                        width: "2rem",
+                                                        height: "2rem",
+                                                        textAlign: "center",
+                                                        justifyContent: "center"
+                                                    }
+                                                })
+                                            })
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                            className: classes.cardCategory,
+                                            style: {
+                                                fontFamily: "Montserrat",
+                                                fontSize: "1.5rem",
+                                                lineHeight: "1.5rem",
+                                                fontWeight: "600",
+                                                textAlign: "center",
+                                                color: "#FFFFFF"
+                                            },
+                                            children: "Vision"
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                            style: {
+                                                color: "#FFFFFF",
+                                                fontSize: "0.85rem",
+                                                lineHeight: "1rem",
+                                                fontFamily: "Montserrat",
+                                                fontWeight: 300
+                                            },
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                                                container: true,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                                                    item: true,
+                                                    xs: 12,
+                                                    children: "To contribute to the overall wellbeing of the communities we operate our business."
+                                                })
+                                            })
+                                        })
+                                    ]
+                                })
+                            })
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
+                            xs: 12,
+                            sm: 4,
+                            md: 4,
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(Card/* default */.Z, {
+                                blog: true,
+                                style: {
+                                    minHeight: "15rem",
+                                    height: "15rem",
+                                    backgroundColor: "#5288E5"
+                                },
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
+                                            style: {
+                                                textAlign: "center",
+                                                justifyContent: "center",
+                                                alignItems: "center"
+                                            },
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                href: "#pablo",
+                                                onClick: (e)=>e.preventDefault(),
+                                                style: {
+                                                    width: "2rem",
+                                                    height: "2rem",
+                                                    textAlign: "center",
+                                                    justifyContent: "center"
+                                                },
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                    src: "/img/resized_imgs/mission.png",
+                                                    alt: "...",
+                                                    style: {
+                                                        width: "2rem",
+                                                        height: "2rem",
+                                                        textAlign: "center",
+                                                        justifyContent: "center"
+                                                    }
+                                                })
+                                            })
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                            className: classes.cardCategory,
+                                            style: {
+                                                fontFamily: "Montserrat",
+                                                fontSize: "1.5rem",
+                                                lineHeight: "1.5rem",
+                                                fontWeight: "600",
+                                                textAlign: "center",
+                                                color: "#FFFFFF"
+                                            },
+                                            children: " Mission"
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                            style: {
+                                                color: "#FFFFFF",
+                                                fontSize: "0.85rem",
+                                                lineHeight: "1rem",
+                                                fontFamily: "Montserrat",
+                                                fontWeight: 300
+                                            },
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                                                container: true,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                                                    item: true,
+                                                    xs: 12,
+                                                    children: "To inspire people and improve lives through technology delivered by us."
+                                                })
+                                            })
+                                        })
+                                    ]
+                                })
+                            })
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
+                            xs: 12,
+                            sm: 4,
+                            md: 4,
+                            style: {
+                                marginTop: "2rem"
+                            },
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(Card/* default */.Z, {
+                                blog: true,
+                                style: {
+                                    minHeight: "15rem",
+                                    height: "15rem",
+                                    backgroundColor: "#5288E5"
+                                },
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
+                                            style: {
+                                                textAlign: "center",
+                                                justifyContent: "center",
+                                                alignItems: "center"
+                                            },
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                href: "#pablo",
+                                                onClick: (e)=>e.preventDefault(),
+                                                style: {
+                                                    width: "2rem",
+                                                    height: "2rem",
+                                                    textAlign: "center",
+                                                    justifyContent: "center"
+                                                },
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                    src: "/img/resized_imgs/mission.png",
+                                                    alt: "...",
+                                                    style: {
+                                                        width: "2rem",
+                                                        height: "2rem",
+                                                        textAlign: "center",
+                                                        justifyContent: "center"
+                                                    }
+                                                })
+                                            })
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                            className: classes.cardCategory,
+                                            style: {
+                                                fontFamily: "Montserrat",
+                                                fontSize: "1.5rem",
+                                                lineHeight: "1.5rem",
+                                                fontWeight: "600",
+                                                textAlign: "center",
+                                                color: "#FFFFFF"
+                                            },
+                                            children: " Values"
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                            style: {
+                                                color: "#FFFFFF",
+                                                fontSize: "0.85rem",
+                                                lineHeight: "1rem",
+                                                fontFamily: "Montserrat",
+                                                fontWeight: 300
+                                            },
+                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Grid_default()), {
+                                                container: true,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                                                        item: true,
+                                                        xs: 6,
+                                                        children: "Oneness"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                                                        item: true,
+                                                        xs: 6,
+                                                        children: "Trust"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                                                        item: true,
+                                                        xs: 6,
+                                                        children: "Humour"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                                                        item: true,
+                                                        xs: 6,
+                                                        children: "Integrity"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                                                        item: true,
+                                                        xs: 6,
+                                                        children: "Thrive"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                                                        item: true,
+                                                        xs: 6,
+                                                        children: "Strive"
+                                                    })
+                                                ]
+                                            })
+                                        })
+                                    ]
+                                })
+                            })
+                        })
+                    ]
+                })
+            ]
         })
     });
 };
@@ -654,6 +836,8 @@ var Favorite_ = __webpack_require__(7372);
 var Parallax = __webpack_require__(7482);
 // EXTERNAL MODULE: ./components/Card/CardFooter.js + 1 modules
 var CardFooter = __webpack_require__(5793);
+// EXTERNAL MODULE: ./components/CustomButtons/Button.js + 1 modules
+var Button = __webpack_require__(571);
 ;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionServicesCarousalCard.js
 /*eslint-disable*/ 
 
@@ -675,7 +859,7 @@ const SectionServicesCarousalCard = (props)=>{
     console.log("props Passed to Carousal Card : ", props);
     const { index  } = props;
     console.log("props Passed to Carousal Card : ", index);
-    return /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+    return /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
         xs: 12,
         sm: 6,
         md: 4,
@@ -795,7 +979,7 @@ function SectionServicesCarousel() {
                         ...settings,
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionServicesCarousalCard, {
                                             index: 0
@@ -810,7 +994,7 @@ function SectionServicesCarousel() {
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionServicesCarousalCard, {
                                             index: 3
@@ -826,12 +1010,12 @@ function SectionServicesCarousel() {
                             })
                         ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
+                    /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
                         style: {
                             marginBottom: "2rem",
                             textAlign: "center"
                         },
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                             xs: 12,
                             sm: 12,
                             md: 12,
@@ -963,11 +1147,11 @@ function SectionServices({ ...rest }) {
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: classes.container,
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
+                /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
                     style: {
                         marginBottom: ".25rem"
                     },
-                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                         md: 6,
                         style: {
                             color: "#112A46"
@@ -1054,12 +1238,12 @@ function SectionContactUs({ ...rest }) {
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: classes.container,
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
+                /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
                     style: {
                         marginBottom: "2rem",
                         marginTop: "4rem"
                     },
-                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                         md: 6,
                         style: {
                             color: "#112A46"
@@ -1089,12 +1273,12 @@ function SectionContactUs({ ...rest }) {
                         ]
                     })
                 }),
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                     style: {
                         margin: "2rem"
                     },
                     children: [
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                             md: 6,
                             style: {
                                 color: "#091133"
@@ -1194,18 +1378,18 @@ function SectionContactUs({ ...rest }) {
                                 })
                             ]
                         }),
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                             md: 6,
                             style: {
                                 color: "#091133"
                             },
                             children: [
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                                     style: {
                                         marginBottom: "2rem"
                                     },
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                             md: 3,
                                             sm: 3,
                                             style: {
@@ -1222,11 +1406,11 @@ function SectionContactUs({ ...rest }) {
                                                 }
                                             })
                                         }),
-                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                                             md: 9,
                                             sm: 9,
                                             children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                                /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                         sx: {
                                                             textAlign: {
@@ -1254,7 +1438,7 @@ function SectionContactUs({ ...rest }) {
                                                         ]
                                                     })
                                                 }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                                /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                         sx: {
                                                             textAlign: {
@@ -1282,7 +1466,7 @@ function SectionContactUs({ ...rest }) {
                                                         ]
                                                     })
                                                 }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                                /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                         sx: {
                                                             textAlign: {
@@ -1310,7 +1494,7 @@ function SectionContactUs({ ...rest }) {
                                                         ]
                                                     })
                                                 }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                                /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                         sx: {
                                                             textAlign: {
@@ -1342,12 +1526,12 @@ function SectionContactUs({ ...rest }) {
                                         })
                                     ]
                                 }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                                     style: {
                                         marginBottom: "2rem"
                                     },
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                             md: 3,
                                             sm: 3,
                                             style: {
@@ -1366,11 +1550,11 @@ function SectionContactUs({ ...rest }) {
                                                 }
                                             })
                                         }),
-                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                                             md: 9,
                                             sm: 9,
                                             children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                                /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                         sx: {
                                                             textAlign: {
@@ -1398,7 +1582,7 @@ function SectionContactUs({ ...rest }) {
                                                         ]
                                                     })
                                                 }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                                /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                         sx: {
                                                             textAlign: {
@@ -1430,12 +1614,12 @@ function SectionContactUs({ ...rest }) {
                                         })
                                     ]
                                 }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                                     style: {
                                         marginBottom: "2rem"
                                     },
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                             md: 3,
                                             sm: 3,
                                             style: {
@@ -1454,10 +1638,10 @@ function SectionContactUs({ ...rest }) {
                                                 }
                                             })
                                         }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                             md: 9,
                                             sm: 9,
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                     sx: {
                                                         textAlign: {
@@ -1489,12 +1673,12 @@ function SectionContactUs({ ...rest }) {
                                         })
                                     ]
                                 }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                                     style: {
                                         marginBottom: "2rem"
                                     },
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                             md: 3,
                                             sm: 3,
                                             style: {
@@ -1513,10 +1697,10 @@ function SectionContactUs({ ...rest }) {
                                                 }
                                             })
                                         }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                             md: 9,
                                             sm: 9,
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(material_.Typography, {
                                                     sx: {
                                                         textAlign: {
@@ -1669,7 +1853,7 @@ const projectsSection = {
 };
 /* harmony default export */ const projectsStyle = (projectsSection);
 
-;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionProjects.js
+;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionProducts.js
 /* eslint-disable */ 
 
 
@@ -1690,9 +1874,9 @@ const projectsSection = {
 
 
 
-const SectionProjects_useStyles = makeStyles_default()(projectsStyle);
-function SectionProjects({ ...rest }) {
-    const classes = SectionProjects_useStyles();
+const SectionProducts_useStyles = makeStyles_default()(projectsStyle);
+function SectionProducts({ ...rest }) {
+    const classes = SectionProducts_useStyles();
     return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "cd-section",
         ...rest,
@@ -1701,8 +1885,8 @@ function SectionProjects({ ...rest }) {
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: classes.container,
                 children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridContainer/* default */.Z, {
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                    /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                             xs: 12,
                             sm: 8,
                             md: 8,
@@ -1722,9 +1906,9 @@ function SectionProjects({ ...rest }) {
                             ]
                         })
                     }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                         children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                 xs: 12,
                                 sm: 5,
                                 md: 5,
@@ -1761,7 +1945,7 @@ function SectionProjects({ ...rest }) {
                                     })
                                 })
                             }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                                 xs: 12,
                                 sm: 5,
                                 md: 5,
@@ -1793,9 +1977,9 @@ function SectionProjects({ ...rest }) {
                         ]
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("hr", {}),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                         children: [
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                                 xs: 12,
                                 sm: 5,
                                 md: 5,
@@ -1831,7 +2015,7 @@ function SectionProjects({ ...rest }) {
                                     })
                                 ]
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                 xs: 12,
                                 sm: 5,
                                 md: 5,
@@ -2033,12 +2217,12 @@ function SectionCareers({ ...rest }) {
                 children: searchResults && searchResults.length > 0 ? searchResults.map((ser)=>{
                     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         children: [
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                                 style: {
                                     marginTop: "1rem"
                                 },
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                         xs: 12,
                                         sm: 12,
                                         md: 12,
@@ -2057,7 +2241,7 @@ function SectionCareers({ ...rest }) {
                                             ]
                                         })
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                         xs: 12,
                                         sm: 12,
                                         md: 12,
@@ -2076,7 +2260,7 @@ function SectionCareers({ ...rest }) {
                                             ]
                                         })
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                         xs: 12,
                                         sm: 12,
                                         md: 12,
@@ -2095,7 +2279,7 @@ function SectionCareers({ ...rest }) {
                                             ]
                                         })
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                         xs: 12,
                                         sm: 12,
                                         md: 12,
@@ -2146,7 +2330,7 @@ function SectionCareers({ ...rest }) {
                                 }, indx);
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                                 xs: 12,
                                 sm: 12,
                                 md: 12,
@@ -2221,12 +2405,12 @@ function SectionCareers({ ...rest }) {
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: classes.container,
             children: [
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                     style: {
                         marginBottom: "2rem"
                     },
                     children: [
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                             md: 8,
                             style: {
                                 color: "#112A46"
@@ -2321,20 +2505,20 @@ function SectionCareers({ ...rest }) {
                                 })
                             ]
                         }),
-                        /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                             md: 4,
                             style: {
                                 color: "#112A46",
                                 backgroundImage: "url('img/resized_imgs/bulb_careers_bg.png')",
                                 backgroundSize: "cover"
                             },
-                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                                 style: {
                                     marginBottom: "1rem",
                                     gap: "2rem"
                                 },
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                         md: 12,
                                         sm: 12,
                                         style: {
@@ -2342,7 +2526,7 @@ function SectionCareers({ ...rest }) {
                                             margin: "auto"
                                         }
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                         md: 12,
                                         sm: 12,
                                         style: {
@@ -2377,7 +2561,7 @@ function SectionCareers({ ...rest }) {
                                                 })
                                         })
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                         md: 12,
                                         sm: 12,
                                         style: {
@@ -2408,7 +2592,7 @@ function SectionCareers({ ...rest }) {
                                                 })
                                         })
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                         md: 12,
                                         sm: 12,
                                         style: {
@@ -2442,7 +2626,7 @@ function SectionCareers({ ...rest }) {
                                                 })
                                         })
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                         md: 12,
                                         sm: 12,
                                         style: {
@@ -2480,7 +2664,7 @@ function SectionCareers({ ...rest }) {
                         })
                     ]
                 }),
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                     style: {
                         marginBottom: "2rem",
                         marginTop: "1rem"
@@ -2647,12 +2831,12 @@ function SectionTeams({ ...rest }) {
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: classes.container,
                 children: [
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                         style: {
                             marginBottom: "2rem"
                         },
                         children: [
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                                 md: 6,
                                 style: {
                                     color: "#091133"
@@ -2680,7 +2864,7 @@ function SectionTeams({ ...rest }) {
                                     })
                                 ]
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                 md: 6,
                                 style: {
                                     color: "#091133"
@@ -2688,13 +2872,11 @@ function SectionTeams({ ...rest }) {
                             })
                         ]
                     }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                         children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                 xs: 12,
-                                sm: 6,
-                                md: 6,
-                                lg: 6,
+                                md: 4,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                     className: classes.rotatingCardContainer,
                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
@@ -2819,11 +3001,9 @@ function SectionTeams({ ...rest }) {
                                     })
                                 })
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                 xs: 12,
-                                sm: 6,
-                                md: 6,
-                                lg: 6,
+                                md: 4,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                     className: classes.rotatingCardContainer,
                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
@@ -2852,7 +3032,7 @@ function SectionTeams({ ...rest }) {
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
-                                                            children: "Raju"
+                                                            children: "Venkat Raju"
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
@@ -2901,7 +3081,7 @@ function SectionTeams({ ...rest }) {
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
-                                                            children: "Raju"
+                                                            children: "Venkat Raju"
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
@@ -2937,7 +3117,132 @@ function SectionTeams({ ...rest }) {
                                                                 fontWeight: "400",
                                                                 textAlign: "left"
                                                             },
-                                                            children: "Raju is a professional who is responsible for designing, implementing, and managing an organization's cloud computing architecture. This role involves making strategic decisions about the adoption and integration of cloud services to meet business requirements. Rajus's Key aspects include, Cloud Strategy and Planning, Architecture Design, Cloud Service Integration, Security and Compliance, Cost Optimization, Migration Planning, Performance Optimization , Disaster Recovery and Business Continuity and Collaboration with Stakeholders."
+                                                            children: "Venkat Raju is a professional who is responsible for designing, implementing, and managing an organization's cloud computing architecture. This role involves making strategic decisions about the adoption and integration of cloud services to meet business requirements. Rajus's Key aspects include, Cloud Strategy and Planning, Architecture Design, Cloud Service Integration, Security and Compliance, Cost Optimization, Migration Planning, Performance Optimization , Disaster Recovery and Business Continuity and Collaboration with Stakeholders."
+                                                        })
+                                                    ]
+                                                })
+                                            })
+                                        ]
+                                    })
+                                })
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
+                                xs: 12,
+                                md: 4,
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: classes.rotatingCardContainer,
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
+                                        background: true,
+                                        className: classes.cardRotate,
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: classes.front,
+                                                style: {
+                                                    backgroundColor: "#E5AF52"
+                                                },
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                                    background: true,
+                                                    className: classes.cardBodyRotate,
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "1.5rem",
+                                                                lineHeight: "1.5rem",
+                                                                fontWeight: "600"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "1.5rem",
+                                                                lineHeight: "1.5rem",
+                                                                fontWeight: "600"
+                                                            },
+                                                            children: "Shahid"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "1rem",
+                                                                lineHeight: "1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "center"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "1rem",
+                                                                lineHeight: "1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "center",
+                                                                padding: "0px",
+                                                                margin: "0px"
+                                                            },
+                                                            children: "Data Anaylist / Data Science"
+                                                        })
+                                                    ]
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: classes.back,
+                                                style: {
+                                                    backgroundColor: "#E5AF52",
+                                                    fontFamily: "Montserrat",
+                                                    fontSize: "0.85rem",
+                                                    fontWeight: "400"
+                                                },
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                                    background: true,
+                                                    className: classes.cardBodyRotate,
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "1.5rem",
+                                                                lineHeight: "1.5rem",
+                                                                fontWeight: "600"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "1.5rem",
+                                                                lineHeight: "1.5rem",
+                                                                fontWeight: "600"
+                                                            },
+                                                            children: "Shahid"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "1rem",
+                                                                lineHeight: "1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "center"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "1rem",
+                                                                lineHeight: "1.25rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "center",
+                                                                padding: "0px",
+                                                                margin: "0px"
+                                                            },
+                                                            children: "Data Anaylist / Data Science"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "0.85rem",
+                                                                lineHeight: "1.1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "left"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "0.85rem",
+                                                                lineHeight: "1.1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "left"
+                                                            },
+                                                            children: "Data Scientists leverage advanced statistical and machine learning techniques to extract meaningful insights from complex datasets, while Data Analysts focus on interpreting and visualizing data to support decision-making and business strategies"
                                                         })
                                                     ]
                                                 })
@@ -3077,11 +3382,14 @@ function SectionsPage() {
                     /*#__PURE__*/ jsx_runtime_.jsx(SectionHeaders, {
                         id: "home"
                     }),
+                    /*#__PURE__*/ jsx_runtime_.jsx(SectionAboutUsDetails, {
+                        id: "about-us"
+                    }),
                     /*#__PURE__*/ jsx_runtime_.jsx(SectionServices, {
                         id: "services"
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(SectionProjects, {
-                        id: "projects"
+                    /*#__PURE__*/ jsx_runtime_.jsx(SectionProducts, {
+                        id: "products"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx(SectionTeams, {
                         id: "teams"
@@ -3187,7 +3495,7 @@ function SectionsPage() {
                                     // if we are on mobile device the scroll into view will be managed by the browser
                                     } else {
                                         e.preventDefault();
-                                        smoothScroll("projects");
+                                        smoothScroll("products");
                                     }
                                 },
                                 children: [
@@ -3196,7 +3504,7 @@ function SectionsPage() {
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                         className: "cd-label",
-                                        children: "Projects"
+                                        children: "Products"
                                     })
                                 ]
                             })
@@ -3311,12 +3619,12 @@ function SectionsPage() {
                         /*#__PURE__*/ jsx_runtime_.jsx(material_.Divider, {}),
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
                             className: classes.container,
-                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridContainer/* default */.Z, {
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                                 style: {
                                     alignItems: "baseline"
                                 },
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx(Grid_GridItem/* default */.Z, {
+                                    /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                         md: 6,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("h4", {
                                             style: {
@@ -3327,7 +3635,7 @@ function SectionsPage() {
                                             children: "\xa92023 Novel Logiks Technologies"
                                         })
                                     }),
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Grid_GridItem/* default */.Z, {
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                                         md: 6,
                                         style: {
                                             color: "#112A46",
@@ -3735,7 +4043,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [952,270,664,441,999,39,866,568,765,482,82,684,696,645,951,828,83,724,707], () => (__webpack_exec__(5767)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,270,664,441,999,39,866,568,765,482,82,684,696,645,951,828,83,707], () => (__webpack_exec__(8294)));
 module.exports = __webpack_exports__;
 
 })();

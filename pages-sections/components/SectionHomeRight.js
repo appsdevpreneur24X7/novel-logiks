@@ -98,7 +98,7 @@ export default function SectionHomeRight({ ...rest }) {
                             <img
                                 src={serviceImageUrl}
                                 alt="ai pic"
-                                style={{ width: '80%' }}
+                                style={{ width: '100%', boxShadow: '0 3px 10px rgb(0 0 0 / 0.5)', borderRadius:"5px" }}
                             />
                         </GridItem>
                     </GridItem>

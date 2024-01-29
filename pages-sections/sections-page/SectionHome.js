@@ -24,14 +24,17 @@ export default function SectionHeaders({ ...rest }) {
     Router.push("/sections#contactUs");
   }
   return (
-    <div className="cd-section" {...rest} style={{ marginTop: "5rem", width: "100%" }} >
+    <div className="cd-section" {...rest} style={{ marginTop: "7.5rem", width: "100%" }} >
       <div className={classes.container} >
-      <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}></div>
-      <video autoPlay loop muted style={{ position: "relative", width: "100%", height: "100%", objectFit: "cover" }}>
-        <source src={aiVideo} type="video/mp4" />
-      </video>
-        <GridContainer style={{ marginBottom: '2rem', zIndex:100}}>
-          <GridItem md={12} style={{ color: '#112A46', paddingTop: "3rem" }}>
+        <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', zIndex: 100 }}></div>
+        {/* IMAGE OVERLAY
+        https://www.google.com/search?q=video+background+play+and+text+overlay+example+react&rlz=1C1UEAD_enIN1061IN1061&oq=video+background++play+and+text+overlay+example+react&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCTIxNzE3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:f428bed4,vid:LSRNmhLS76o,st:0
+        */}
+        <video autoPlay loop muted style={{ position: "absolute", width: "100%", height: "100vh", objectFit: "cover", zIndex: -1 }}>
+          <source src={aiVideo} type="video/mp4" />
+        </video>
+        <GridContainer style={{ mamarginBottom: '1rem', zIndex: 100 }}>
+          <GridItem md={12} style={{ color: '#112A46', marginTop: "10rem" }}>
             <Typography
               sx={{
                 fontFamily: 'Montserrat',
@@ -52,103 +55,31 @@ export default function SectionHeaders({ ...rest }) {
                 fontFamily: 'Montserrat',
                 fontWeight: '600',
                 textAlign: "left",
-                color: '#091133',
-                marginBottom: "2rem"
+                color: '#FFF',
+                margin: "2rem"
               }}
             >  We provide Digital Solutions cutting across Sectors.
             </Typography>
-            <div style={{ marginBottom: "2rem", color: "#112A46", fontFamily: 'Montserrat', }}>
-              To ignite expansion and ward off competitors, organizations should integrate hardware, software, and services to create customized solutions that address customers' needs and potentially address undiscovered challenges. Digitization has the potential not only to bring about transformation by cutting costs and enhancing core processes but can, and often should, serve as a substantial source of additional revenue. At Novel Logiks, we guide organizations in taking successful transformative strides, leveraging our industry-wide experience and capabilities.
+            <div style={{ margin: "1rem", color: "#FFF", fontFamily: 'Montserrat', }}>
+              <h2 style={{
+                fontFamily: 'Montserrat',
+                fontSize: '1.8rem',
+                lineHeight: '2rem',
+                fontWeight: '500', textAlign: "left"
+              }} >Transformative AI capabilities helps enterprises gather escape velocity to the future ,
+                propelling business and lives like never before.
+              </h2>
             </div>
-            <h2 style={{
-              color: "#112A46",
-              fontFamily: "Montserrat",
-              fontSize: '1.125rem',
-              lineHeight: '1.5rem',
-              fontWeight: '600',
-              textAlign: "left",
-              marginBottom: "2rem"
-            }}>Catapult Beyond Imaginable Future.
-            </h2>
-            <GridContainer>
-              <GridItem xs={12} sm={12} md={12} style={{ textAlign: "center" }}>
-                <Button
-                  size="medium"
-                  variant="contained"
-                  type="submit"
-                  style={{
-                    textTransform: "none",
-                    color: '#112A46',
-                    background: '#5288E5',
-                    textAlign: "left",
-                    margin: '1em',
-                    boxShadow: "none",
-                    width: "11.813rem",
-                    height: "2.5rem",
-                    borderRadius: "0px"
-                  }}
-                  onClick={routeToContactUs}
-                >
-                  Contact Us
-                </Button>
-                <Button
-                  size="medium"
-                  variant="contained"
-                  type="submit"
-                  style={{
-                    margin: '1em',
-                    textTransform: "none",
-                    color: '#112A46',
-                    borderColor: 'black',
-                    border: '2px solid',
-                    background: '#FFF',
-                    boxShadow: "none",
-                    width: "11.813rem",
-                    height: "2.5rem",
-                    borderRadius: "0px"
-                  }}
-                  onClick={routeToAiDetails}
-                >
-                  Learn More
-                </Button>
-              </GridItem>
-            </GridContainer>
+
           </GridItem>
-          {/* <GridItem md={6} style={{ color: '#112A46',padding: "0rem", textAlign: "center", justifyContent:"center", marginTop:"10rem" }}>
-            <GridContainer style={{ color: '#112A46',padding: "0rem", textAlign: "center", justifyContent:"center" }}>
-              <GridItem md={12} >
-              <img
-                  src="img/resized_imgs/digital_transform.png"
-                  alt="Digital Transform"
-                  style={{ width: '100%' }}
-                />
-              </GridItem>
-            </GridContainer>
-          </GridItem> */}
         </GridContainer>
-        <GridContainer style={{ marginBottom: "2rem", background: "#5288E5" }}>
-          <GridItem md={6} style={{ color: '#112A46', background: '#5288E5', backgroundImage: "url('img/resized_imgs/circuit_lines.png')", backgroundSize: "50rem" }}>
-            <h1 style={{
-              fontFamily: 'Montserrat',
-              fontSize: '1.8rem',
-              lineHeight: '2rem',
-              fontWeight: '600', textAlign: "left",
-              color: '#112A46'
-            }}>Novel Logiks AI Force One !
-            </h1>
-            <h2 style={{
-              fontFamily: 'Montserrat',
-              fontSize: '1.8rem',
-              lineHeight: '2rem',
-              fontWeight: '500', textAlign: "left"
-            }} >Transformative AI capabilities helps enterprises gather escape velocity to the future ,
-              propelling business and lives like never before.
-            </h2>
-          </GridItem>
-          <GridItem md={6} style={{
-            color: '#112A46', background: '#5288E5', display: "flex",
+        <GridContainer style={{ mamarginBottom: "5rem" }}>
+          <GridItem md={12} style={{
+            color: '#FFFFFF', display: "flex",
             justifyContent: "center",
-            alignItems: "center"
+            alignItems: "center",
+            margin: "2rem"
+
           }}>
             <Box
               m={1}
@@ -162,22 +93,22 @@ export default function SectionHeaders({ ...rest }) {
                 type="submit"
                 sx={{
                   width: {
-                    lg: '23.438rem',
-                    md: '23.438rem',
-                    sm: '18rem',
-                    xs: '18rem'
+                    lg: '20rem',
+                    md: '20rem',
+                    sm: '15rem',
+                    xs: '15rem'
                   },
                 }}
 
                 style={{
                   textTransform: "none",
-                  color: '#112A46',
+                  color: '#FFFFFF',
                   borderRadius: '5px',
-                  backgroundColor: '#E5AF52',
+                  backgroundColor: '#5288E5',
                   textAlign: "center",
-                  height: "4.4rem",
+                  height: "4rem",
                   fontWeight: "600",
-                  fontSize: "2.5rem",
+                  fontSize: "2rem",
                   boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)'
                 }}
                 onClick={routeToAiDetails}
@@ -187,17 +118,7 @@ export default function SectionHeaders({ ...rest }) {
             </Box>
           </GridItem>
         </GridContainer>
-        {home && home[0] && (<GridContainer id='0'>
-          <SectionHomeLeft data={home[0]} />
-        </GridContainer>)}
-        {home && home[1] && (<GridContainer id='2' >
-          <SectionHomeRight data={home[1]} />
-        </GridContainer>)}
-        {home && home[2] && (<GridContainer id='2' >
-          <SectionHomeLeft data={home[2]} />
-        </GridContainer>)}
       </div>
-      {/* </div> */}
     </div >
   );
 }

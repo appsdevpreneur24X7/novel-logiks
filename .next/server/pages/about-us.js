@@ -5,31 +5,209 @@ exports.id = 552;
 exports.ids = [552];
 exports.modules = {
 
-/***/ 1683:
+/***/ 5555:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ AboutUs)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1853);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _mui_styles_makeStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8409);
-/* harmony import */ var _mui_styles_makeStyles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_mui_styles_makeStyles__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_Grid_GridContainer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4041);
-/* harmony import */ var _components_Grid_GridItem_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6680);
-/* harmony import */ var _components_Header_Header_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4889);
-/* harmony import */ var _components_Header_HeaderLinks_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(6659);
-/* harmony import */ var _styles_jss_novel_logiks_pages_sectionsSections_headersStyle_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(4866);
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(5692);
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_mui_material__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _components_CustomButtons_Button_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(571);
-/* harmony import */ var _data_about_us_data_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(5870);
-/* harmony import */ var _pages_sections_sections_page_SectionAboutUsCard_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(539);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ AboutUs)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+// EXTERNAL MODULE: external "next/router"
+var router_ = __webpack_require__(1853);
+// EXTERNAL MODULE: external "@mui/styles/makeStyles"
+var makeStyles_ = __webpack_require__(8409);
+var makeStyles_default = /*#__PURE__*/__webpack_require__.n(makeStyles_);
+// EXTERNAL MODULE: ./components/Grid/GridContainer.js
+var GridContainer = __webpack_require__(4041);
+// EXTERNAL MODULE: ./components/Grid/GridItem.js
+var GridItem = __webpack_require__(6680);
+// EXTERNAL MODULE: ./components/Header/Header.js + 1 modules
+var Header = __webpack_require__(4889);
+// EXTERNAL MODULE: ./components/Header/HeaderLinks.js + 1 modules
+var HeaderLinks = __webpack_require__(6659);
+// EXTERNAL MODULE: ./styles/jss/novel-logiks/pages/sectionsSections/headersStyle.js
+var headersStyle = __webpack_require__(4866);
+// EXTERNAL MODULE: external "@mui/material"
+var material_ = __webpack_require__(5692);
+// EXTERNAL MODULE: ./components/CustomButtons/Button.js + 1 modules
+var Button = __webpack_require__(571);
+;// CONCATENATED MODULE: ./data/about-us-data.js
+const aboutUs = [
+    {
+        serviceTitle: "Vision",
+        serviceImageUrl: "img/resized_imgs/vision.png",
+        serviceOneLiner: "To inspire people and improve lives through technology delivered by us.",
+        servicePoints: []
+    },
+    {
+        serviceTitle: "Mission",
+        serviceImageUrl: "img/resized_imgs/mission.png",
+        serviceOneLiner: "To contribute to the overall wellbeing of the communities we operate our business.",
+        servicePoints: []
+    },
+    {
+        serviceTitle: "Values",
+        serviceImageUrl: "img/resized_imgs/values.png",
+        serviceOneLiner: null,
+        servicePoints: [
+            "Oneness",
+            "Integrity",
+            "Humour",
+            "Trust",
+            "Thrive",
+            "Strive", 
+        ]
+    }, 
+];
+
+// EXTERNAL MODULE: external "@mui/styles"
+var styles_ = __webpack_require__(9484);
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__(1664);
+// EXTERNAL MODULE: ./components/Card/Card.js + 1 modules
+var Card = __webpack_require__(2643);
+// EXTERNAL MODULE: ./components/Card/CardHeader.js + 1 modules
+var CardHeader = __webpack_require__(3082);
+// EXTERNAL MODULE: ./components/Card/CardBody.js + 1 modules
+var CardBody = __webpack_require__(222);
+// EXTERNAL MODULE: ./components/Typography/Warning.js
+var Warning = __webpack_require__(4951);
+// EXTERNAL MODULE: external "@mui/material/styles"
+var material_styles_ = __webpack_require__(8442);
+// EXTERNAL MODULE: external "@mui/material/Grid"
+var Grid_ = __webpack_require__(5612);
+var Grid_default = /*#__PURE__*/__webpack_require__.n(Grid_);
+// EXTERNAL MODULE: external "@mui/material/Paper"
+var Paper_ = __webpack_require__(1168);
+// EXTERNAL MODULE: external "@mui/material/Box"
+var Box_ = __webpack_require__(19);
+;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionAboutUsCard.js
+
+
+
+
+
+
+
+
+
+
+
+// import { Grid } from "@mui/material";
+
+
+
+
+
+
+const useStyles = (0,styles_.makeStyles)(headersStyle/* default */.Z);
+const SectionAboutUsCard = (props)=>{
+    const classes = useStyles();
+    console.log(props);
+    const { index  } = props;
+    return /*#__PURE__*/ jsx_runtime_.jsx(Card/* default */.Z, {
+        blog: true,
+        style: {
+            backgroundColor: "#FFF",
+            borderRadius: "1rem",
+            boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)",
+            minHeight: "15rem",
+            minWidth: "15.5rem"
+        },
+        sx: {
+            height: {
+                xs: "15rem",
+                sm: "15rem",
+                md: "18rem",
+                lg: "21rem"
+            },
+            width: {
+                xs: "15.5rem",
+                sm: "15.5rem",
+                md: "18.5rem",
+                lg: "21.5rem"
+            }
+        },
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+            children: [
+                /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
+                    style: {
+                        textAlign: "center",
+                        justifyContent: "center",
+                        alignItems: "center"
+                    },
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                        src: aboutUs[index].serviceImageUrl,
+                        alt: aboutUs[index].serviceImageUrl,
+                        style: {
+                            width: "4.375rem",
+                            height: "4.375rem",
+                            textAlign: "center",
+                            justifyContent: "center"
+                        }
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                    className: classes.cardCategory,
+                    style: {
+                        fontFamily: "Montserrat",
+                        fontSize: "1.5rem",
+                        lineHeight: "1.5rem",
+                        fontWeight: "600",
+                        textAlign: "center",
+                        color: "#112A46"
+                    },
+                    children: aboutUs[index].serviceTitle
+                }),
+                aboutUs[index].serviceOneLiner && /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                    container: true,
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                        item: true,
+                        xs: 12,
+                        style: {
+                            lineHeight: "1.313rem",
+                            color: "#112A46",
+                            fontWeight: "600"
+                        },
+                        children: aboutUs[index].serviceOneLiner
+                    })
+                }),
+                aboutUs[index].servicePoints && /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                    container: true,
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                        item: true,
+                        xs: 12,
+                        children: /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                            container: true,
+                            children: aboutUs[index].servicePoints.map((e, index)=>/*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
+                                    item: true,
+                                    xs: 6,
+                                    style: {
+                                        textAlign: "center",
+                                        color: "#112A46",
+                                        lineHeight: "1.313rem",
+                                        fontWeight: "600"
+                                    },
+                                    children: e
+                                }, index))
+                        })
+                    })
+                })
+            ]
+        })
+    });
+};
+/* harmony default export */ const sections_page_SectionAboutUsCard = (SectionAboutUsCard);
+
+;// CONCATENATED MODULE: ./pages/about-us.js
 
 
 
@@ -43,7 +221,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const useStyles = _mui_styles_makeStyles__WEBPACK_IMPORTED_MODULE_3___default()(_styles_jss_novel_logiks_pages_sectionsSections_headersStyle_js__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z);
+const about_us_useStyles = makeStyles_default()(headersStyle/* default */.Z);
 const routeToAiDetails = ()=>{
     Router.push("/ai-details");
 };
@@ -51,62 +229,62 @@ const routeToContactUs = ()=>{
     Router.push("/contact-us");
 };
 function AboutUs({ ...rest }) {
-    const classes = useStyles();
-    console.log("Loaded About Us data : ", _data_about_us_data_js__WEBPACK_IMPORTED_MODULE_11__/* .aboutUs */ .N ? _data_about_us_data_js__WEBPACK_IMPORTED_MODULE_11__/* .aboutUs.length */ .N.length : 0);
-    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+    const classes = about_us_useStyles();
+    console.log("Loaded About Us data : ", aboutUs ? aboutUs.length : 0);
+    /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "cd-section",
         ...rest,
         style: {
             background: "#5288E5"
         },
-        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: classes.container,
             children: [
-                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components_Grid_GridContainer_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
                     children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Grid_GridItem_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
+                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                             xs: 12,
                             sm: 4,
                             md: 4,
                             style: {
                                 marginTop: "2rem"
                             },
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_pages_sections_sections_page_SectionAboutUsCard_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Z, {
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionAboutUsCard, {
                                 index: 0
                             })
                         }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Grid_GridItem_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
+                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                             xs: 12,
                             sm: 4,
                             md: 4,
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_pages_sections_sections_page_SectionAboutUsCard_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Z, {
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionAboutUsCard, {
                                 index: 1
                             })
                         }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Grid_GridItem_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
+                        /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                             xs: 12,
                             sm: 4,
                             md: 4,
                             style: {
                                 marginTop: "2rem"
                             },
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_pages_sections_sections_page_SectionAboutUsCard_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Z, {
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionAboutUsCard, {
                                 index: 2
                             })
                         })
                     ]
                 }),
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Grid_GridContainer_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
                     style: {
                         marginBottom: "2rem",
                         textAlign: "center"
                     },
-                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components_Grid_GridItem_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                         xs: 12,
                         sm: 12,
                         md: 12,
                         children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_CustomButtons_Button_js__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
                                 size: "medium",
                                 variant: "contained",
                                 type: "submit",
@@ -146,7 +324,7 @@ function AboutUs({ ...rest }) {
                                 onClick: ()=>{},
                                 children: "More About Us"
                             }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_CustomButtons_Button_js__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
                                 size: "medium",
                                 variant: "contained",
                                 type: "submit",
@@ -505,7 +683,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [952,270,664,441,999,39,866,765,82,951,724], () => (__webpack_exec__(1683)));
+var __webpack_exports__ = __webpack_require__.X(0, [952,270,664,441,999,39,866,765,82,951], () => (__webpack_exec__(5555)));
 module.exports = __webpack_exports__;
 
 })();

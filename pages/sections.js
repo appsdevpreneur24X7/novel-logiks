@@ -3,11 +3,11 @@ import makeStyles from '@mui/styles/makeStyles';
 import Header from "/components/Header/Header.js";
 import HeaderLinks from "/components/Header/HeaderLinks.js";
 import SectionHome from "/pages-sections/sections-page/SectionHome.js";
-import SectionAboutUs from "/pages-sections/sections-page/SectionAboutUs.js";
+import SectionAboutUsDetails from "/pages-sections/sections-page/SectionAboutUsDetails.js";
 import SectionServices from "/pages-sections/sections-page/SectionServices.js";
 import SectionServicesCarousel from "/pages-sections/sections-page/SectionServicesCarousel.js";
 import SectionContactUs from "/pages-sections/sections-page/SectionContactUs.js";
-import SectionProjects from "/pages-sections/sections-page/SectionProjects.js";
+import SectionProducts from "/pages-sections/sections-page/SectionProducts.js";
 import SectionCareers from "/pages-sections/sections-page/SectionCareers.js";
 import SectionTeams from "/pages-sections/sections-page/SectionTeams.js";
 import sectionsPageStyle from "/styles/jss/novel-logiks/pages/sectionsPageStyle.js";
@@ -106,8 +106,9 @@ export default function SectionsPage() {
       />
       <div className={classes.main}>
         <SectionHome id="home" />
+        <SectionAboutUsDetails id="about-us" />
         <SectionServices id="services" />
-        <SectionProjects id="projects" />
+        <SectionProducts id="products" />
         {/* <SectionIndustries id="industries" /> */}
         <SectionTeams id="teams" />
         <SectionCareers id="careers" />
@@ -193,12 +194,12 @@ export default function SectionsPage() {
                   // if we are on mobile device the scroll into view will be managed by the browser
                 } else {
                   e.preventDefault();
-                  smoothScroll("projects");
+                  smoothScroll("products");
                 }
               }}
             >
               <span className="cd-dot" />
-              <span className="cd-label">Projects</span>
+              <span className="cd-label">Products</span>
             </a>
           </li>
           <li>

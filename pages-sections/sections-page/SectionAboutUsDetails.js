@@ -14,9 +14,12 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import { Button, Divider, Typography } from "@mui/material";
+import { home } from "../../data/home-data";
+import SectionHomeLeft from "../components/SectionHomeLeft";
+import SectionHomeRight from "../components/SectionHomeRight";
 const useStyles = makeStyles(headersStyle);
 
-export default function SectionHeaders({ ...rest }) {
+export default function SectionAboutUsDetails({ ...rest }) {
   const classes = useStyles();
   const routeToAiDetails = () => {
     Router.push("/ai-details");
@@ -30,8 +33,8 @@ export default function SectionHeaders({ ...rest }) {
     <div className="cd-section" {...rest}>
       {/* HEADER 1 START */}
 
-      <div className={classes.container}>
-        <GridContainer style={{ marginBottom: '.25rem' }}>
+      <div className={classes.container} style={{marginTop:"10rem"}}>
+        <GridContainer style={{ marginBottom: '.25rem', marginTop:"2rem" }}>
           <GridItem md={12} style={{ color: '#112A46' }}>
             <h1 style={{
               fontFamily: 'Montserrat',
@@ -53,73 +56,24 @@ export default function SectionHeaders({ ...rest }) {
           </GridItem>
         </GridContainer>
         <GridContainer style={{ marginBottom: '2rem', marginTop: '2rem' }}>
-          <GridItem md={6} style={{ color: '#112A46' }}>
-            <Typography
-              style={{
-                fontFamily: 'Montserrat',
-                fontSize: '1rem',
-                lineHeight: '1.5rem',
-                fontWeight: '300',
-                textAlign: "left"
-              }}>
-              We are an aspiring young organization led by founders with technology consulting experience
-              of 2000 + Man months between them touching upon a gamut of industries. After 2 decades of
-              experience in the technology industry and medical fraternity many of the current leaders
-              including exceptional tech talent from Gen Z interconnected by common threads came
-              together to set up Novel Logiks Technologies– Ants are known to be hardworking and industrious,
-              in addition a Novel Logiks is one that is ingeniously clever in conception or execution, the name
-              reverberates with the ethos that we had in mind while this was an “Idea”.
-            </Typography>
-            <br />
-            <Typography
-              style={{
-                fontFamily: 'Montserrat',
-                fontSize: '1rem',
-                lineHeight: '1.5rem',
-                fontWeight: '300',
-                textAlign: "left",
-              }}>
-              We decided to bring in our experience to drive business outcomes and partner with
-              organizations with cutting edge technologies to position themselves to be market
-              differentiators to customers we serve. Our Network of tech experts, product owners are
-              spread across geographies to at best provide a near shore experience where required and
-              with significant talent capabilities spread across India.
-            </Typography>
-            <br />
-            <Typography style={{
-              fontFamily: 'Montserrat',
-              fontSize: '1rem',
-              lineHeight: '1.5rem',
-              fontWeight: '300',
-              textAlign: "left"
-            }}>
-              We seek to be the partner of trust and execution in an ever changing world defined by
-              automation, artificial intelligence and other digital transformation avenues. We also are
-              passionate about helping customers with set up of Global Business Services given our
-              extensive work experience in setting up Global Captives prior to our entrepreneurial journey
-
-            </Typography>
-          </GridItem>
-          <GridItem md={6} style={{ color: '#112A46' }}>
-            <GridContainer>
-              <GridItem md={12} style={{ textAlign: "center", justifyContent: "center" }} >
-                <img
-                  src="img/resized_imgs/hero-section.png"
-                  alt="ai pic"
-                  style={{ width: '100%' }}
-                />
-              </GridItem>
-            </GridContainer>
-          </GridItem>
+          {home && home[0] && (<GridContainer id='0'>
+            <SectionHomeLeft data={home[0]} />
+          </GridContainer>)}
+          {home && home[1] && (<GridContainer id='2' >
+            <SectionHomeRight data={home[1]} />
+          </GridContainer>)}
+          {home && home[2] && (<GridContainer id='2' >
+            <SectionHomeLeft data={home[2]} />
+          </GridContainer>)}
         </GridContainer>
         <GridContainer >
           <GridItem xs={12} sm={4} md={4} style={{ marginTop: "2rem" }}>
-          <Card blog style={{ minHeight:"15rem", height:"15rem" }}>
+            <Card blog style={{ minHeight: "15rem", height: "15rem" ,backgroundColor:"#5288E5"}}>
               <CardBody>
-                <GridItem style={{textAlign:"center", justifyContent:"center", alignItems:"center"}}>
-                <a href="#pablo" onClick={(e) => e.preventDefault()} style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }}>
-                  <img src="/img/resized_imgs/mission.png" alt="..." style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }} />
-                </a>
+                <GridItem style={{ textAlign: "center", justifyContent: "center", alignItems: "center" }}>
+                  <a href="#pablo" onClick={(e) => e.preventDefault()} style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }}>
+                    <img src="/img/resized_imgs/mission.png" alt="..." style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }} />
+                  </a>
                 </GridItem>
                 <h6 className={classes.cardCategory} style={{
                   fontFamily: 'Montserrat',
@@ -127,15 +81,15 @@ export default function SectionHeaders({ ...rest }) {
                   lineHeight: '1.5rem',
                   fontWeight: '600',
                   textAlign: "center",
-                  color: '#112A46'
+                  color: '#FFFFFF'
                 }}>Vision</h6>
                 <h4
                   style={{
-                    color: 'black',
+                    color: '#FFFFFF',
                     fontSize: "0.85rem",
                     lineHeight: '1rem',
                     fontFamily: 'Montserrat', fontWeight: 300
-                    
+
                   }}>
                   <Grid container>
                     <Grid item xs={12}>
@@ -147,13 +101,13 @@ export default function SectionHeaders({ ...rest }) {
             </Card>
           </GridItem>
           <GridItem xs={12} sm={4} md={4}>
-          {/* <Card blog style={{ backgroundColor: "#5288E5", minHeight:"15rem", height:"15rem" }}> */}
-          <Card blog style={{ backgroundColor: "#112A46", minHeight:"15rem", height:"15rem" }}>
+            {/* <Card blog style={{ backgroundColor: "#5288E5", minHeight:"15rem", height:"15rem" }}> */}
+            <Card blog style={{ minHeight: "15rem", height: "15rem" ,backgroundColor:"#5288E5"}}>
               <CardBody>
-                <GridItem style={{textAlign:"center", justifyContent:"center", alignItems:"center"}}>
-                <a href="#pablo" onClick={(e) => e.preventDefault()} style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }}>
-                  <img src="/img/resized_imgs/mission.png" alt="..." style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }} />
-                </a>
+                <GridItem style={{ textAlign: "center", justifyContent: "center", alignItems: "center" }}>
+                  <a href="#pablo" onClick={(e) => e.preventDefault()} style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }}>
+                    <img src="/img/resized_imgs/mission.png" alt="..." style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }} />
+                  </a>
                 </GridItem>
                 <h6 className={classes.cardCategory} style={{
                   fontFamily: 'Montserrat',
@@ -161,11 +115,11 @@ export default function SectionHeaders({ ...rest }) {
                   lineHeight: '1.5rem',
                   fontWeight: '600',
                   textAlign: "center",
-                  color: '#112A46'
+                  color: '#FFFFFF'
                 }}> Mission</h6>
                 <h4
                   style={{
-                    color: 'black',
+                    color: '#FFFFFF',
                     fontSize: "0.85rem",
                     lineHeight: '1rem',
                     fontFamily: 'Montserrat', fontWeight: 300
@@ -180,12 +134,12 @@ export default function SectionHeaders({ ...rest }) {
             </Card>
           </GridItem>
           <GridItem xs={12} sm={4} md={4} style={{ marginTop: "2rem" }}>
-            <Card blog style={{  minHeight:"15rem", height:"15rem" }}>
+          <Card blog style={{ minHeight: "15rem", height: "15rem" ,backgroundColor:"#5288E5"}}>
               <CardBody >
-                <GridItem style={{textAlign:"center", justifyContent:"center", alignItems:"center"}}>
-                <a href="#pablo" onClick={(e) => e.preventDefault()} style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }}>
-                  <img src="/img/resized_imgs/mission.png" alt="..." style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }} />
-                </a>  
+                <GridItem style={{ textAlign: "center", justifyContent: "center", alignItems: "center" }}>
+                  <a href="#pablo" onClick={(e) => e.preventDefault()} style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }}>
+                    <img src="/img/resized_imgs/mission.png" alt="..." style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }} />
+                  </a>
                 </GridItem>
                 <h6 className={classes.cardCategory} style={{
                   fontFamily: 'Montserrat',
@@ -193,11 +147,11 @@ export default function SectionHeaders({ ...rest }) {
                   lineHeight: '1.5rem',
                   fontWeight: '600',
                   textAlign: "center",
-                  color: '#112A46'
+                  color: '#FFFFFF'
                 }}> Values</h6>
                 <h4
                   style={{
-                    color: 'black',
+                    color: '#FFFFFF',
                     fontSize: "0.85rem",
                     lineHeight: '1rem',
                     fontFamily: 'Montserrat', fontWeight: 300
