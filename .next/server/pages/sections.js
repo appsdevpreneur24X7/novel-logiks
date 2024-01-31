@@ -271,6 +271,7 @@ const SectionHome_useStyles = (0,styles_.makeStyles)(headersStyle/* default */.Z
 function SectionHeaders({ ...rest }) {
     const classes = SectionHome_useStyles();
     console.log(home);
+    const serviceImageUrl = "img/lsk_imgs/business_home.jpg";
     const routeToAiDetails = ()=>{
         router_default().push("/ai-details");
     };
@@ -281,11 +282,13 @@ function SectionHeaders({ ...rest }) {
         className: "cd-section",
         ...rest,
         style: {
-            marginTop: "7.5rem",
-            width: "100%"
+            marginTop: "7.5rem"
         },
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: classes.container,
+            style: {
+                mamarginBottom: "1rem"
+            },
             children: [
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     style: {
@@ -293,8 +296,7 @@ function SectionHeaders({ ...rest }) {
                         top: "0",
                         left: "0",
                         width: "100%",
-                        height: "100%",
-                        zIndex: 100
+                        height: "100%"
                     }
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx("video", {
@@ -305,8 +307,7 @@ function SectionHeaders({ ...rest }) {
                         position: "absolute",
                         width: "100%",
                         height: "100vh",
-                        objectFit: "cover",
-                        zIndex: -1
+                        objectFit: "cover"
                     },
                     children: /*#__PURE__*/ jsx_runtime_.jsx("source", {
                         src: ai_medical,
@@ -314,10 +315,6 @@ function SectionHeaders({ ...rest }) {
                     })
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
-                    style: {
-                        mamarginBottom: "1rem",
-                        zIndex: 100
-                    },
                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                         md: 12,
                         style: {
@@ -345,7 +342,7 @@ function SectionHeaders({ ...rest }) {
                                     fontFamily: "Montserrat",
                                     fontWeight: "600",
                                     textAlign: "left",
-                                    color: "#FFF",
+                                    color: "#FFFFFF",
                                     margin: "2rem"
                                 },
                                 children: "  We provide Digital Solutions cutting across Sectors."
@@ -353,7 +350,7 @@ function SectionHeaders({ ...rest }) {
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 style: {
                                     margin: "1rem",
-                                    color: "#FFF",
+                                    color: "#FFFFFF",
                                     fontFamily: "Montserrat"
                                 },
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("h2", {
@@ -3223,6 +3220,260 @@ function SectionTeams({ ...rest }) {
                                                                 textAlign: "left"
                                                             },
                                                             children: "Data Scientists leverage advanced statistical and machine learning techniques to extract meaningful insights from complex datasets, while Data Analysts focus on interpreting and visualizing data to support decision-making and business strategies"
+                                                        })
+                                                    ]
+                                                })
+                                            })
+                                        ]
+                                    })
+                                })
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
+                                xs: 12,
+                                md: 4,
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: classes.rotatingCardContainer,
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
+                                        background: true,
+                                        className: classes.cardRotate,
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: classes.front,
+                                                style: {
+                                                    color: "#FFFFFF",
+                                                    backgroundColor: "#5288E5"
+                                                },
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                                    background: true,
+                                                    className: classes.cardBodyRotate,
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "1.5rem",
+                                                                lineHeight: "1.5rem",
+                                                                fontWeight: "600"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "1.5rem",
+                                                                lineHeight: "1.5rem",
+                                                                fontWeight: "600"
+                                                            },
+                                                            children: "Prasad"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "1rem",
+                                                                lineHeight: "1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "center"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "1rem",
+                                                                lineHeight: "1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "center",
+                                                                padding: "0px",
+                                                                margin: "0px"
+                                                            },
+                                                            children: "Front End Lead"
+                                                        })
+                                                    ]
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: classes.back,
+                                                style: {
+                                                    color: "#FFFFFF",
+                                                    backgroundColor: "#5288E5",
+                                                    fontFamily: "Montserrat",
+                                                    fontSize: "0.85rem",
+                                                    fontWeight: "400"
+                                                },
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                                    background: true,
+                                                    className: classes.cardBodyRotate,
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "1.5rem",
+                                                                lineHeight: "1.5rem",
+                                                                fontWeight: "600"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "1.5rem",
+                                                                lineHeight: "1.5rem",
+                                                                fontWeight: "600"
+                                                            },
+                                                            children: "Prasad"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "1rem",
+                                                                lineHeight: "1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "center"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "1rem",
+                                                                lineHeight: "1.25rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "center",
+                                                                padding: "0px",
+                                                                margin: "0px"
+                                                            },
+                                                            children: "Front End Lead"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "0.85rem",
+                                                                lineHeight: "1.1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "left"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "0.85rem",
+                                                                lineHeight: "1.1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "left"
+                                                            },
+                                                            children: "Prasad is involved leading and managing the frontend development team responsible for creating the user interface and user experience of a website or application."
+                                                        })
+                                                    ]
+                                                })
+                                            })
+                                        ]
+                                    })
+                                })
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
+                                xs: 12,
+                                md: 4,
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: classes.rotatingCardContainer,
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
+                                        background: true,
+                                        className: classes.cardRotate,
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: classes.front,
+                                                style: {
+                                                    color: "#FFFFFF",
+                                                    backgroundColor: "#5288E5"
+                                                },
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                                    background: true,
+                                                    className: classes.cardBodyRotate,
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "1.5rem",
+                                                                lineHeight: "1.5rem",
+                                                                fontWeight: "600"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "1.5rem",
+                                                                lineHeight: "1.5rem",
+                                                                fontWeight: "600"
+                                                            },
+                                                            children: "Kiranmayee"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "1rem",
+                                                                lineHeight: "1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "center"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "1rem",
+                                                                lineHeight: "1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "center",
+                                                                padding: "0px",
+                                                                margin: "0px"
+                                                            },
+                                                            children: "UX Designer"
+                                                        })
+                                                    ]
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: classes.back,
+                                                style: {
+                                                    color: "#FFFFFF",
+                                                    backgroundColor: "#5288E5",
+                                                    fontFamily: "Montserrat",
+                                                    fontSize: "0.85rem",
+                                                    fontWeight: "400"
+                                                },
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
+                                                    background: true,
+                                                    className: classes.cardBodyRotate,
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "1.5rem",
+                                                                lineHeight: "1.5rem",
+                                                                fontWeight: "600"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "1.5rem",
+                                                                lineHeight: "1.5rem",
+                                                                fontWeight: "600"
+                                                            },
+                                                            children: "Kiranmayee"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "1rem",
+                                                                lineHeight: "1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "center"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "1rem",
+                                                                lineHeight: "1.25rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "center",
+                                                                padding: "0px",
+                                                                margin: "0px"
+                                                            },
+                                                            children: "UX Designer"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            sx: {
+                                                                color: "#091133",
+                                                                fontSize: "0.85rem",
+                                                                lineHeight: "1.1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "left"
+                                                            },
+                                                            style: {
+                                                                color: "#091133",
+                                                                fontSize: "0.85rem",
+                                                                lineHeight: "1.1rem",
+                                                                fontWeight: "400",
+                                                                textAlign: "left"
+                                                            },
+                                                            children: "Kiranmayee is involved in creating Wireframing / Prototyping digital products , services that are intuitive, user-friendly and provide a positive experience for the end user"
                                                         })
                                                     ]
                                                 })

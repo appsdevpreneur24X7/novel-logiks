@@ -10,12 +10,13 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { home } from "../../data/home-data";
 import SectionHomeLeft from "../components/SectionHomeLeft";
 import SectionHomeRight from "../components/SectionHomeRight";
-import aiVideo from "../../public/video/ai-medical.mp4";
+import aiVideo from '../../public/video/ai-medical.mp4';
 const useStyles = makeStyles(headersStyle);
 
 export default function SectionHeaders({ ...rest }) {
   const classes = useStyles();
   console.log(home)
+  const serviceImageUrl = 'img/lsk_imgs/business_home.jpg'
   const routeToAiDetails = () => {
     Router.push("/ai-details");
   }
@@ -24,16 +25,22 @@ export default function SectionHeaders({ ...rest }) {
     Router.push("/sections#contactUs");
   }
   return (
-    <div className="cd-section" {...rest} style={{ marginTop: "7.5rem", width: "100%" }} >
-      <div className={classes.container} >
-        <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', zIndex: 100 }}></div>
+    <div className="cd-section" {...rest} style={{ marginTop: "7.5rem" }} >
+      <div className={classes.container} style={{ mamarginBottom: '1rem'}} >
+        <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}></div>
         {/* IMAGE OVERLAY
         https://www.google.com/search?q=video+background+play+and+text+overlay+example+react&rlz=1C1UEAD_enIN1061IN1061&oq=video+background++play+and+text+overlay+example+react&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCTIxNzE3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:f428bed4,vid:LSRNmhLS76o,st:0
         */}
-        <video autoPlay loop muted style={{ position: "absolute", width: "100%", height: "100vh", objectFit: "cover", zIndex: -1 }}>
+        <video autoPlay loop muted style={{ position: "absolute", width: "100%", height: "100vh", objectFit: "cover" }} >
           <source src={aiVideo} type="video/mp4" />
         </video>
-        <GridContainer style={{ mamarginBottom: '1rem', zIndex: 100 }}>
+        {/* <img src={serviceImageUrl} alt="..." style={{
+                    marginTop: "30px", marginBottom: "30px",
+                    width: '100vh', height: "100vh",
+                    minWidth: '15rem', borderRadius: "5px",  objectFit: "cover", zIndex: -1 ,
+                    boxShadow: '0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6)'
+                }} /> */}
+        <GridContainer >
           <GridItem md={12} style={{ color: '#112A46', marginTop: "10rem" }}>
             <Typography
               sx={{
@@ -55,12 +62,12 @@ export default function SectionHeaders({ ...rest }) {
                 fontFamily: 'Montserrat',
                 fontWeight: '600',
                 textAlign: "left",
-                color: '#FFF',
+                color: '#FFFFFF',
                 margin: "2rem"
               }}
             >  We provide Digital Solutions cutting across Sectors.
             </Typography>
-            <div style={{ margin: "1rem", color: "#FFF", fontFamily: 'Montserrat', }}>
+            <div style={{ margin: "1rem", color: "#FFFFFF", fontFamily: 'Montserrat', }}>
               <h2 style={{
                 fontFamily: 'Montserrat',
                 fontSize: '1.8rem',

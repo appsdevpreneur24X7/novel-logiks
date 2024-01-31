@@ -16,8 +16,7 @@ export default function SectionServicesLeft({ ...rest }) {
         // <div className="cd-section" {...rest}>
         <div className={classes.container} {...rest}>
             {/* Services Left START */}
-            {/* <div className={classes.features3}> */}
-                <GridContainer style={{backgroundColor:"#E5AF52", borderRadius:"5px"}}>
+                <GridContainer style={{ borderRadius:"5px"}}>
                     <GridItem xs={12} sm={4} md={4}>
                         <div className={classes.phoneContainer}>
                             <img src={serviceImageUrl} alt="..." style={{
@@ -31,7 +30,7 @@ export default function SectionServicesLeft({ ...rest }) {
                     <GridItem xs={12} sm={8} md={8}>
                         <h1 style={{
                             fontFamily: 'Montserrat',
-                            fontSize: '2rem',
+                            fontSize: '1rem',
                             lineHeight: '2rem',
                             fontWeight: '600',
                             textAlign: "left",
@@ -48,35 +47,12 @@ export default function SectionServicesLeft({ ...rest }) {
                         }}></Divider>
                         <Typography component="div" style={{ textAlign: "left",marginBottom:"1rem" }}>
                             <ul>
-                                {servicePoints.map((each, idx) => <li key={idx}><h5>{each}</h5></li>)}
+                                {servicePoints.map((each, idx) => <li key={idx}><h6 style={{color:"#091133"}}>{each}</h6></li>)}
                             </ul>
                         </Typography>
-                        {/* <GridContainer style={{ marginBottom: "2rem" }}>
-                            <GridItem xs={12} sm={12} md={12} style={{ alignItems: "center", justifyContent: "center", textAlign: "center" }}>
-                                <Button
-                                    size="medium"
-                                    variant="contained"
-                                    type="submit"
-                                    style={{
-                                        textTransform: "none",
-                                        color: '#112A46',
-                                        background: '#5288E5',
-                                        textAlign: "left",
-                                        marginLeft: '2em',
-                                        marginRight: '2em',
-                                        boxShadow:"none",
-                                        width: "10rem",
-                                    }}
-                                    onClick={() => console.log("Clicked")}
-                                >
-                                    Contact Us
-                                </Button>
-                            </GridItem>
-                        </GridContainer> */}
+                        
                     </GridItem>
                 </GridContainer>
-            {/* </div> */}
         </div>
-        // </div>
     );
 }

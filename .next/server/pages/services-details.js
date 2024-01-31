@@ -61,7 +61,6 @@ function SectionServicesRight({ ...rest }) {
         ...rest,
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
             style: {
-                backgroundColor: "#E5AF52",
                 borderRadius: "5px"
             },
             children: [
@@ -73,7 +72,7 @@ function SectionServicesRight({ ...rest }) {
                         /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                             style: {
                                 fontFamily: "Montserrat",
-                                fontSize: "2rem",
+                                fontSize: "1rem",
                                 lineHeight: "2rem",
                                 fontWeight: "600",
                                 textAlign: "left",
@@ -99,7 +98,10 @@ function SectionServicesRight({ ...rest }) {
                             },
                             children: /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                                 children: servicePoints.map((each, idx)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                            style: {
+                                                color: "#091133"
+                                            },
                                             children: each
                                         })
                                     }, idx))
@@ -154,7 +156,6 @@ function SectionServicesLeft({ ...rest }) {
         ...rest,
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
             style: {
-                backgroundColor: "#E5AF52",
                 borderRadius: "5px"
             },
             children: [
@@ -188,7 +189,7 @@ function SectionServicesLeft({ ...rest }) {
                         /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                             style: {
                                 fontFamily: "Montserrat",
-                                fontSize: "2rem",
+                                fontSize: "1rem",
                                 lineHeight: "2rem",
                                 fontWeight: "600",
                                 textAlign: "left",
@@ -215,7 +216,10 @@ function SectionServicesLeft({ ...rest }) {
                             },
                             children: /*#__PURE__*/ jsx_runtime_.jsx("ul", {
                                 children: servicePoints.map((each, idx)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                            style: {
+                                                color: "#091133"
+                                            },
                                             children: each
                                         })
                                     }, idx))

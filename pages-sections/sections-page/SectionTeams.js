@@ -224,6 +224,92 @@ export default function SectionTeams({ ...rest }) {
                 </Card>
               </div>
             </GridItem>
+            <GridItem xs={12} md={4}>
+              <div className={classes.rotatingCardContainer}>
+                <Card background className={classes.cardRotate}>
+                  <div
+                    className={
+                      classes.front
+                    }
+                    style={{
+                      color: '#FFFFFF',
+                      backgroundColor: '#5288E5',
+                    }}
+                  >
+                    <CardBody background className={classes.cardBodyRotate}>
+                      <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                        Prasad
+                      </h5>
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center", padding: "0px", margin: "0px" }}>
+                        Front End Lead
+                      </h5>
+                    </CardBody>
+                  </div>
+                  <div
+                    className={classes.back}
+                    style={{
+                      color: '#FFFFFF',
+                      backgroundColor: '#5288E5', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                    }}
+                  >
+                    <CardBody background className={classes.cardBodyRotate}>
+                      <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      Prasad
+                      </h5>
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "400", textAlign: "center", padding: "0px", margin: "0px" }}>
+                        Front End Lead
+                      </h5>
+                      <h5 sx={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }} style={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }}>
+                      Prasad is involved leading and managing the frontend development team responsible for creating the user interface and user experience of a website or application.
+                      </h5>
+                    </CardBody>
+                  </div>
+                </Card>
+              </div>
+            </GridItem>
+            <GridItem xs={12} md={4}>
+              <div className={classes.rotatingCardContainer}>
+                <Card background className={classes.cardRotate}>
+                  <div
+                    className={
+                      classes.front
+                    }
+                    style={{
+                      color: '#FFFFFF',
+                      backgroundColor: '#5288E5',
+                    }}
+                  >
+                    <CardBody background className={classes.cardBodyRotate}>
+                      <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                        Kiranmayee
+                      </h5>
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center", padding: "0px", margin: "0px" }}>
+                        UX Designer
+                      </h5>
+                    </CardBody>
+                  </div>
+                  <div
+                    className={classes.back}
+                    style={{
+                      color: '#FFFFFF',
+                      backgroundColor: '#5288E5', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                    }}
+                  >
+                    <CardBody background className={classes.cardBodyRotate}>
+                      <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      Kiranmayee
+                      </h5>
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "400", textAlign: "center", padding: "0px", margin: "0px" }}>
+                      UX Designer
+                      </h5>
+                      <h5 sx={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }} style={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }}>
+                      Kiranmayee is involved in creating Wireframing / Prototyping digital products , services that are intuitive, user-friendly and provide a positive experience for the end user
+                      </h5>
+                    </CardBody>
+                  </div>
+                </Card>
+              </div>
+            </GridItem>
           </GridContainer>
         </div>
       </div>
