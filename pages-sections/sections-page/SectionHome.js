@@ -93,10 +93,10 @@ export default function SectionHeaders({ ...rest }) {
                 type="submit"
                 sx={{
                   width: {
-                    lg: '20rem',
-                    md: '20rem',
-                    sm: '15rem',
-                    xs: '15rem'
+                    lg: '10rem',
+                    md: '10rem',
+                    sm: '11rem',
+                    xs: '12.5rem'
                   },
                 }}
 
@@ -106,14 +106,14 @@ export default function SectionHeaders({ ...rest }) {
                   borderRadius: '5px',
                   backgroundColor: '#5288E5',
                   textAlign: "center",
-                  height: "4rem",
+                  fontSize: "1.25rem",
+                  height: "2.5rem",
                   fontWeight: "600",
-                  fontSize: "2rem",
                   boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)'
                 }}
                 onClick={routeToAiDetails}
               >
-                Explore Now
+                Explore
               </Button>
             </Box>
           </GridItem>

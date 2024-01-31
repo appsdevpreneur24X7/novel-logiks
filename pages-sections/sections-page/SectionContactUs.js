@@ -128,7 +128,7 @@ export default function SectionContactUs({ ...rest }) {
           <GridItem md={6} style={{ color: '#091133' }}>
             <GridContainer style={{ marginBottom: "2rem" }}>
               <GridItem md={3} sm={3} style={{ textAlign: "center" }}>
-                <img src="/img/resized_imgs/contact-us-office.png" alt="..." style={{ width: "2.25rem", height: "2.25rem", textAlign: "center", justifyContent: "center" }} />
+                <img src="/img/resized_imgs/contact-us-office.png" alt="..." style={{ width: "1.75rem", height: "1.75rem", textAlign: "center", justifyContent: "center" }} />
               </GridItem>
               <GridItem md={9} sm={9}>
                 <GridItem>
@@ -141,10 +141,10 @@ export default function SectionContactUs({ ...rest }) {
                       xs: 'center'
                     },
                     fontSize: {
-                      lg: '1.25rem',
-                      md: '1.25rem',
-                      sm: '1.25rem',
-                      xs: '1rem'
+                      lg: '1rem',
+                      md: '1rem',
+                      sm: '1rem',
+                      xs: '1.1rem'
                     }
                   }}
                   style={{
@@ -166,10 +166,10 @@ export default function SectionContactUs({ ...rest }) {
                       xs: 'center'
                     },
                     fontSize: {
-                      lg: '1.25rem',
-                      md: '1.25rem',
-                      sm: '1.25rem',
-                      xs: '1rem'
+                      lg: '1rem',
+                      md: '1rem',
+                      sm: '1rem',
+                      xs: '1.1rem'
                     }
                   }}
                   style={{
@@ -191,10 +191,10 @@ export default function SectionContactUs({ ...rest }) {
                       xs: 'center'
                     },
                     fontSize: {
-                      lg: '1.25rem',
-                      md: '1.25rem',
-                      sm: '1.25rem',
-                      xs: '1rem'
+                      lg: '1rem',
+                      md: '1rem',
+                      sm: '1rem',
+                      xs: '1.1rem'
                     }
                   }}
                   style={{
@@ -216,10 +216,10 @@ export default function SectionContactUs({ ...rest }) {
                         xs: 'center'
                       },
                       fontSize: {
-                        lg: '1.25rem',
-                        md: '1.25rem',
-                        sm: '1.25rem',
-                        xs: '1rem'
+                        lg: '1rem',
+                        md: '1rem',
+                        sm: '1rem',
+                        xs: '1.1rem'
                       }
                     }}
                     style={{
@@ -237,7 +237,7 @@ export default function SectionContactUs({ ...rest }) {
             {/* Email Section */}
             <GridContainer style={{ marginBottom: "2rem" }}>
               <GridItem md={3} sm={3} style={{ textAlign: "center", margin: "auto" }}>
-                <img src="/img/resized_imgs/contact-us-email.png" alt="..." style={{ width: "2.25rem", height: "2.25rem", textAlign: "center", justifyContent: "center" ,boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)'}} />
+                <img src="/img/resized_imgs/contact-us-email.png" alt="..." style={{ width: "1.75rem", height: "1.75rem", textAlign: "center", justifyContent: "center" ,boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)'}} />
               </GridItem>
               <GridItem md={9} sm={9}>
                 <GridItem>
@@ -250,10 +250,10 @@ export default function SectionContactUs({ ...rest }) {
                         xs: 'center'
                       },
                       fontSize: {
-                        lg: '1.25rem',
-                        md: '1.25rem',
-                        sm: '1.25rem',
-                        xs: '1rem'
+                        lg: '1rem',
+                        md: '1rem',
+                        sm: '1rem',
+                        xs: '1.1rem'
                       }
                     }}
                     style={{
@@ -275,10 +275,10 @@ export default function SectionContactUs({ ...rest }) {
                         xs: 'center'
                       },
                       fontSize: {
-                        lg: '1.25rem',
-                        md: '1.25rem',
-                        sm: '1.25rem',
-                        xs: '1rem'
+                        lg: '1rem',
+                        md: '1rem',
+                        sm: '1rem',
+                        xs: '1.1rem'
                       }
                     }}
                     style={{
@@ -296,7 +296,7 @@ export default function SectionContactUs({ ...rest }) {
             {/* Phone No Section */}
             <GridContainer style={{ marginBottom: "2rem" }}>
               <GridItem md={3} sm={3} style={{ textAlign: "center", margin: "auto" }}>
-                <img src="/img/resized_imgs/contact-us-call.png" alt="..." style={{ width: "2.25rem", height: "2.25rem", textAlign: "center", justifyContent: "center" ,boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)'}} />
+                <img src="/img/resized_imgs/contact-us-call.png" alt="..." style={{ width: "1.75rem", height: "1.75rem", textAlign: "center", justifyContent: "center" ,boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)'}} />
               </GridItem>
               <GridItem md={9} sm={9}>
                 <GridItem>
@@ -309,10 +309,10 @@ export default function SectionContactUs({ ...rest }) {
                         xs: 'center'
                       },
                       fontSize: {
-                        lg: '1.25rem',
-                        md: '1.25rem',
-                        sm: '1.25rem',
-                        xs: '1rem'
+                        lg: '1rem',
+                        md: '1rem',
+                        sm: '1rem',
+                        xs: '1.1rem'
                       }
                     }}
                     style={{
@@ -331,7 +331,7 @@ export default function SectionContactUs({ ...rest }) {
             {/* Working Hours Section */}
             <GridContainer style={{ marginBottom: "2rem" }}>
               <GridItem md={3} sm={3} style={{ textAlign: "center", margin: "auto" }}>
-                <img src="/img/resized_imgs/contact-us-timing.png" alt="..." style={{ width: "2.25rem", height: "2.25rem", textAlign: "center", justifyContent: "center" , boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)'}} />
+                <img src="/img/resized_imgs/contact-us-timing.png" alt="..." style={{ width: "1.75rem", height: "1.75rem", textAlign: "center", justifyContent: "center" , boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)'}} />
               </GridItem>
               <GridItem md={9} sm={9}>
                 <GridItem>
@@ -344,10 +344,10 @@ export default function SectionContactUs({ ...rest }) {
                         xs: 'center'
                       },
                       fontSize: {
-                        lg: '1.25rem',
-                        md: '1.25rem',
-                        sm: '1.25rem',
-                        xs: '1rem'
+                        lg: '1rem',
+                        md: '1rem',
+                        sm: '1rem',
+                        xs: '1.1rem'
                       }
                     }}
                     style={{

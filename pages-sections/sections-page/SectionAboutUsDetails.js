@@ -71,8 +71,8 @@ export default function SectionAboutUsDetails({ ...rest }) {
             <Card blog style={{ minHeight: "15rem", height: "15rem" ,backgroundColor:"#5288E5"}}>
               <CardBody>
                 <GridItem style={{ textAlign: "center", justifyContent: "center", alignItems: "center" }}>
-                  <a href="#pablo" onClick={(e) => e.preventDefault()} style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }}>
-                    <img src="/img/resized_imgs/mission.png" alt="..." style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }} />
+                  <a href="#pablo" onClick={(e) => e.preventDefault()} style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" ,color: '#FFFFFF'}}>
+                    <img src="/img/resized_imgs/mission.png" alt="..." style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" ,color: '#FFFFFF'}} />
                   </a>
                 </GridItem>
                 <h6 className={classes.cardCategory} style={{

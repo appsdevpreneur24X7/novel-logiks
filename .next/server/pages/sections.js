@@ -398,10 +398,10 @@ function SectionHeaders({ ...rest }) {
                                 type: "submit",
                                 sx: {
                                     width: {
-                                        lg: "20rem",
-                                        md: "20rem",
-                                        sm: "15rem",
-                                        xs: "15rem"
+                                        lg: "10rem",
+                                        md: "10rem",
+                                        sm: "11rem",
+                                        xs: "12.5rem"
                                     }
                                 },
                                 style: {
@@ -410,13 +410,13 @@ function SectionHeaders({ ...rest }) {
                                     borderRadius: "5px",
                                     backgroundColor: "#5288E5",
                                     textAlign: "center",
-                                    height: "4rem",
+                                    fontSize: "1.25rem",
+                                    height: "2.5rem",
                                     fontWeight: "600",
-                                    fontSize: "2rem",
                                     boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
                                 },
                                 onClick: routeToAiDetails,
-                                children: "Explore Now"
+                                children: "Explore"
                             })
                         })
                     })
@@ -574,7 +574,8 @@ function SectionAboutUsDetails({ ...rest }) {
                                                     width: "2rem",
                                                     height: "2rem",
                                                     textAlign: "center",
-                                                    justifyContent: "center"
+                                                    justifyContent: "center",
+                                                    color: "#FFFFFF"
                                                 },
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                                     src: "/img/resized_imgs/mission.png",
@@ -583,7 +584,8 @@ function SectionAboutUsDetails({ ...rest }) {
                                                         width: "2rem",
                                                         height: "2rem",
                                                         textAlign: "center",
-                                                        justifyContent: "center"
+                                                        justifyContent: "center",
+                                                        color: "#FFFFFF"
                                                     }
                                                 })
                                             })
@@ -874,9 +876,7 @@ const SectionServicesCarousalCard = (props)=>{
                         src: services_data/* services */.u[index].serviceImageUrl,
                         alt: "...",
                         style: {
-                            height: "20rem",
-                            padding: "0.5rem",
-                            boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
+                            height: "15rem"
                         }
                     })
                 }),
@@ -1015,92 +1015,36 @@ function SectionServicesCarousel() {
                             marginBottom: "2rem",
                             textAlign: "center"
                         },
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                             xs: 12,
                             sm: 12,
                             md: 12,
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
-                                    size: "medium",
-                                    variant: "contained",
-                                    type: "submit",
-                                    sx: {
-                                        width: {
-                                            lg: "21rem",
-                                            md: "21rem",
-                                            sm: "15rem",
-                                            xs: "15rem"
-                                        },
-                                        height: {
-                                            lg: "4rem",
-                                            md: "4rem",
-                                            sm: "3rem",
-                                            xs: "3rem"
-                                        },
-                                        fontSize: {
-                                            lg: "1.5rem",
-                                            md: "1.5rem",
-                                            sm: "1.25rem",
-                                            xs: "1.125rem"
-                                        }
-                                    },
-                                    style: {
-                                        textTransform: "none",
-                                        fontFamily: "Montserrat",
-                                        fontSize: "1.5rem",
-                                        fontWeight: "600",
-                                        color: "#112A46",
-                                        background: "#5288E5",
-                                        textAlign: "left",
-                                        margin: "1em",
-                                        fontSize: "1.5rem",
-                                        boxShadow: "none",
-                                        borderRadius: "0px"
-                                    },
-                                    onClick: routeToContactUs,
-                                    children: "Contact Us"
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
-                                    size: "medium",
-                                    variant: "contained",
-                                    type: "submit",
-                                    sx: {
-                                        width: {
-                                            lg: "21rem",
-                                            md: "21rem",
-                                            sm: "15rem",
-                                            xs: "15rem"
-                                        },
-                                        height: {
-                                            lg: "4rem",
-                                            md: "4rem",
-                                            sm: "3rem",
-                                            xs: "3rem"
-                                        },
-                                        fontSize: {
-                                            lg: "1.5rem",
-                                            md: "1.5rem",
-                                            sm: "1.25rem",
-                                            xs: "1.125rem"
-                                        }
-                                    },
-                                    style: {
-                                        color: "#112A46",
-                                        textTransform: "none",
-                                        fontFamily: "Montserrat",
-                                        fontSize: "1.5rem",
-                                        borderColor: "black",
-                                        border: "2px solid",
-                                        background: "#FFF",
-                                        textAlign: "right",
-                                        boxShadow: "none",
-                                        borderRadius: "0px",
-                                        fontWeight: "600"
-                                    },
-                                    onClick: showAllServices,
-                                    children: "See all Services"
-                                })
-                            ]
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
+                                size: "medium",
+                                variant: "contained",
+                                type: "submit",
+                                sx: {
+                                    width: {
+                                        lg: "10rem",
+                                        md: "10rem",
+                                        sm: "11rem",
+                                        xs: "12.5rem"
+                                    }
+                                },
+                                style: {
+                                    textTransform: "none",
+                                    color: "#FFFFFF",
+                                    borderRadius: "5px",
+                                    backgroundColor: "#5288E5",
+                                    textAlign: "center",
+                                    fontSize: "1.25rem",
+                                    height: "2.5rem",
+                                    fontWeight: "600",
+                                    boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
+                                },
+                                onClick: showAllServices,
+                                children: "Explore"
+                            })
                         })
                     })
                 ]
@@ -1175,7 +1119,7 @@ function SectionServices({ ...rest }) {
                                     border: "#5288E5",
                                     borderRadius: "5px",
                                     borderTop: "0.25rem solid #5288E5",
-                                    width: "40%"
+                                    width: "50%"
                                 }
                             })
                         ]
@@ -1399,8 +1343,8 @@ function SectionContactUs({ ...rest }) {
                                                 src: "/img/resized_imgs/contact-us-office.png",
                                                 alt: "...",
                                                 style: {
-                                                    width: "2.25rem",
-                                                    height: "2.25rem",
+                                                    width: "1.75rem",
+                                                    height: "1.75rem",
                                                     textAlign: "center",
                                                     justifyContent: "center"
                                                 }
@@ -1420,10 +1364,10 @@ function SectionContactUs({ ...rest }) {
                                                                 xs: "center"
                                                             },
                                                             fontSize: {
-                                                                lg: "1.25rem",
-                                                                md: "1.25rem",
-                                                                sm: "1.25rem",
-                                                                xs: "1rem"
+                                                                lg: "1rem",
+                                                                md: "1rem",
+                                                                sm: "1rem",
+                                                                xs: "1.1rem"
                                                             }
                                                         },
                                                         style: {
@@ -1448,10 +1392,10 @@ function SectionContactUs({ ...rest }) {
                                                                 xs: "center"
                                                             },
                                                             fontSize: {
-                                                                lg: "1.25rem",
-                                                                md: "1.25rem",
-                                                                sm: "1.25rem",
-                                                                xs: "1rem"
+                                                                lg: "1rem",
+                                                                md: "1rem",
+                                                                sm: "1rem",
+                                                                xs: "1.1rem"
                                                             }
                                                         },
                                                         style: {
@@ -1476,10 +1420,10 @@ function SectionContactUs({ ...rest }) {
                                                                 xs: "center"
                                                             },
                                                             fontSize: {
-                                                                lg: "1.25rem",
-                                                                md: "1.25rem",
-                                                                sm: "1.25rem",
-                                                                xs: "1rem"
+                                                                lg: "1rem",
+                                                                md: "1rem",
+                                                                sm: "1rem",
+                                                                xs: "1.1rem"
                                                             }
                                                         },
                                                         style: {
@@ -1504,10 +1448,10 @@ function SectionContactUs({ ...rest }) {
                                                                 xs: "center"
                                                             },
                                                             fontSize: {
-                                                                lg: "1.25rem",
-                                                                md: "1.25rem",
-                                                                sm: "1.25rem",
-                                                                xs: "1rem"
+                                                                lg: "1rem",
+                                                                md: "1rem",
+                                                                sm: "1rem",
+                                                                xs: "1.1rem"
                                                             }
                                                         },
                                                         style: {
@@ -1542,8 +1486,8 @@ function SectionContactUs({ ...rest }) {
                                                 src: "/img/resized_imgs/contact-us-email.png",
                                                 alt: "...",
                                                 style: {
-                                                    width: "2.25rem",
-                                                    height: "2.25rem",
+                                                    width: "1.75rem",
+                                                    height: "1.75rem",
                                                     textAlign: "center",
                                                     justifyContent: "center",
                                                     boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
@@ -1564,10 +1508,10 @@ function SectionContactUs({ ...rest }) {
                                                                 xs: "center"
                                                             },
                                                             fontSize: {
-                                                                lg: "1.25rem",
-                                                                md: "1.25rem",
-                                                                sm: "1.25rem",
-                                                                xs: "1rem"
+                                                                lg: "1rem",
+                                                                md: "1rem",
+                                                                sm: "1rem",
+                                                                xs: "1.1rem"
                                                             }
                                                         },
                                                         style: {
@@ -1592,10 +1536,10 @@ function SectionContactUs({ ...rest }) {
                                                                 xs: "center"
                                                             },
                                                             fontSize: {
-                                                                lg: "1.25rem",
-                                                                md: "1.25rem",
-                                                                sm: "1.25rem",
-                                                                xs: "1rem"
+                                                                lg: "1rem",
+                                                                md: "1rem",
+                                                                sm: "1rem",
+                                                                xs: "1.1rem"
                                                             }
                                                         },
                                                         style: {
@@ -1630,8 +1574,8 @@ function SectionContactUs({ ...rest }) {
                                                 src: "/img/resized_imgs/contact-us-call.png",
                                                 alt: "...",
                                                 style: {
-                                                    width: "2.25rem",
-                                                    height: "2.25rem",
+                                                    width: "1.75rem",
+                                                    height: "1.75rem",
                                                     textAlign: "center",
                                                     justifyContent: "center",
                                                     boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
@@ -1651,10 +1595,10 @@ function SectionContactUs({ ...rest }) {
                                                             xs: "center"
                                                         },
                                                         fontSize: {
-                                                            lg: "1.25rem",
-                                                            md: "1.25rem",
-                                                            sm: "1.25rem",
-                                                            xs: "1rem"
+                                                            lg: "1rem",
+                                                            md: "1rem",
+                                                            sm: "1rem",
+                                                            xs: "1.1rem"
                                                         }
                                                     },
                                                     style: {
@@ -1689,8 +1633,8 @@ function SectionContactUs({ ...rest }) {
                                                 src: "/img/resized_imgs/contact-us-timing.png",
                                                 alt: "...",
                                                 style: {
-                                                    width: "2.25rem",
-                                                    height: "2.25rem",
+                                                    width: "1.75rem",
+                                                    height: "1.75rem",
                                                     textAlign: "center",
                                                     justifyContent: "center",
                                                     boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
@@ -1710,10 +1654,10 @@ function SectionContactUs({ ...rest }) {
                                                             xs: "center"
                                                         },
                                                         fontSize: {
-                                                            lg: "1.25rem",
-                                                            md: "1.25rem",
-                                                            sm: "1.25rem",
-                                                            xs: "1rem"
+                                                            lg: "1rem",
+                                                            md: "1rem",
+                                                            sm: "1rem",
+                                                            xs: "1.1rem"
                                                         }
                                                     },
                                                     style: {
@@ -1866,6 +1810,7 @@ const projectsSection = {
 
 
 
+
 // core components
 
 
@@ -1880,182 +1825,209 @@ function SectionProducts({ ...rest }) {
     return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "cd-section",
         ...rest,
-        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-            className: classes.projects + " " + classes.projects4,
-            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: classes.container,
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
-                            xs: 12,
-                            sm: 8,
-                            md: 8,
-                            className: classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter,
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                    className: classes.title,
-                                    children: "Some of Our Awesome E-Commerce Products"
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("h5", {
-                                    className: classes.description,
-                                    children: "We understood Who’s target buyer?what they need and What are their pain points? and we came up with a solution."
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: classes.sectionSpace
-                                })
-                            ]
-                        })
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            className: classes.container,
+            style: {
+                marginTop: "10rem"
+            },
+            children: [
+                /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
+                    style: {
+                        marginBottom: ".25rem",
+                        marginTop: "2rem"
+                    },
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
+                        md: 12,
+                        style: {
+                            color: "#112A46"
+                        },
                         children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
-                                xs: 12,
-                                sm: 5,
-                                md: 5,
-                                className: classes.mlAuto,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx(Card/* default */.Z, {
-                                    background: true,
-                                    className: classes.card4,
-                                    style: {
-                                        backgroundImage: "url('/img/tt_client.png')"
-                                    },
-                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
-                                        background: true,
-                                        className: classes.cardBody4,
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx(Badge/* default */.Z, {
-                                                color: "rose",
-                                                children: "Client: Vishudha Tagline Traders"
-                                            }),
-                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
-                                                href: "#pablo",
-                                                onClick: (e)=>e.preventDefault,
-                                                children: [
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                                        className: classes.cardTitle,
-                                                        children: "Tagline E-Commerce Client"
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                        className: classes.cardDescription,
-                                                        children: "E-Commerce Client App to facilitate procuring Vishudha Groceries uin Domestic and Bulk."
-                                                    })
-                                                ]
-                                            })
-                                        ]
-                                    })
-                                })
+                            /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                                style: {
+                                    fontFamily: "Montserrat",
+                                    fontSize: "2rem",
+                                    lineHeight: "2rem",
+                                    fontWeight: "600",
+                                    textAlign: "left",
+                                    color: "#112A46"
+                                },
+                                children: "  Products"
                             }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
-                                xs: 12,
-                                sm: 5,
-                                md: 5,
-                                className: classes.mrAuto,
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
-                                        className: classes.info4,
-                                        title: "E-Commerce Application",
-                                        description: "We've created the design of the website using modern Technologies like Sketch. It was a very interesting collaboration.",
-                                        icon: (ShoppingCartCheckout_default()),
-                                        iconColor: "success"
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
-                                        className: classes.info4,
-                                        title: "Saves Time",
-                                        description: "I would save lot of time of the customer by just relaxing and ordering the Groceries needed to any where ",
-                                        icon: (QueryBuilder_default()),
-                                        iconColor: "primary"
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
-                                        className: classes.info4,
-                                        title: "Free Shipping",
-                                        description: "Deliver Goods on Time and handle the goods with Care",
-                                        icon: (LocalShipping_default()),
-                                        iconColor: "success"
-                                    })
-                                ]
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("hr", {}),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
-                        children: [
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
-                                xs: 12,
-                                sm: 5,
-                                md: 5,
-                                className: classes.mlAuto,
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
-                                        className: classes.info4,
-                                        title: "Admin Panel",
-                                        description: "Admin Panel for accessing all the modules in Vishudha Ecommerce Business",
-                                        icon: (AdminPanelSettings_default()),
-                                        iconColor: "warning"
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
-                                        className: classes.info4,
-                                        title: "Analytics Integrated",
-                                        description: "Fully Integrated with Analytics to track the Sales",
-                                        icon: (Analytics_default()),
-                                        iconColor: "success"
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
-                                        className: classes.info4,
-                                        title: "Intuitive Dashboard ",
-                                        description: "Intuitive Dashboard based on the Roles",
-                                        icon: (Dashboard_default()),
-                                        iconColor: "info"
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
-                                        className: classes.info4,
-                                        title: "Configure ",
-                                        description: "Can Configure all the Categories, Sub categories, Products, Prices, Discounts and Taxes details",
-                                        icon: (Tune_default()),
-                                        iconColor: "info"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
-                                xs: 12,
-                                sm: 5,
-                                md: 5,
-                                className: classes.mrAuto,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx(Card/* default */.Z, {
-                                    background: true,
-                                    className: classes.card4,
-                                    style: {
-                                        backgroundImage: "url('/img/tt_admin.png')"
-                                    },
-                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
-                                        background: true,
-                                        className: classes.cardBody4,
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx(Badge/* default */.Z, {
-                                                color: "rose",
-                                                children: "CLIENT: Vishudha Tagline Traders"
-                                            }),
-                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
-                                                href: "#pablo",
-                                                onClick: (e)=>e.preventDefault,
-                                                children: [
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                                        className: classes.cardTitle,
-                                                        children: "Tagline E-Commerce MIS"
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                        className: classes.cardDescription,
-                                                        children: "Admin module to facilitate all the backend operations of Tagline Traders."
-                                                    })
-                                                ]
-                                            })
-                                        ]
-                                    })
-                                })
+                            /*#__PURE__*/ jsx_runtime_.jsx(material_.Divider, {
+                                style: {
+                                    backgroundColor: "#5288E5",
+                                    color: "#5288E5",
+                                    border: "#5288E5",
+                                    borderRadius: "5px",
+                                    borderTop: "0.25rem solid #5288E5",
+                                    width: "30%"
+                                }
                             })
                         ]
                     })
-                ]
-            })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: classes.projects + " " + classes.projects4,
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: classes.container,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
+                                    xs: 12,
+                                    sm: 8,
+                                    md: 8,
+                                    className: classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter,
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                            className: classes.description,
+                                            children: "We understood Who’s target buyer?what they need and What are their pain points? and we came up with a solution."
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: classes.sectionSpace
+                                        })
+                                    ]
+                                })
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
+                                        xs: 12,
+                                        sm: 5,
+                                        md: 5,
+                                        className: classes.mlAuto,
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx(Card/* default */.Z, {
+                                            background: true,
+                                            className: classes.card4,
+                                            style: {
+                                                backgroundImage: "url('/img/lsk_imgs/tagline-client.png')"
+                                            },
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx(CardBody/* default */.Z, {
+                                                background: true,
+                                                className: classes.cardBody4,
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                                                    href: "#pablo",
+                                                    onClick: (e)=>e.preventDefault,
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                                            className: classes.cardTitle,
+                                                            children: "Tagline E-Commerce Client"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: classes.cardDescription,
+                                                            children: "E-Commerce Client App to facilitate procuring Vishudha Groceries uin Domestic and Bulk."
+                                                        })
+                                                    ]
+                                                })
+                                            })
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
+                                        xs: 12,
+                                        sm: 5,
+                                        md: 5,
+                                        className: classes.mrAuto,
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
+                                                className: classes.info4,
+                                                title: "E-Commerce Application",
+                                                description: "We've created the design of the website using modern Technologies like Sketch. It was a very interesting collaboration.",
+                                                icon: (ShoppingCartCheckout_default()),
+                                                iconColor: "warning"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
+                                                className: classes.info4,
+                                                title: "Saves Time",
+                                                description: "I would save lot of time of the customer by just relaxing and ordering the Groceries needed to any where ",
+                                                icon: (QueryBuilder_default()),
+                                                iconColor: "warning"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
+                                                className: classes.info4,
+                                                title: "Free Shipping",
+                                                description: "Deliver Goods on Time and handle the goods with Care",
+                                                icon: (LocalShipping_default()),
+                                                iconColor: "warning"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("hr", {}),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
+                                        xs: 12,
+                                        sm: 5,
+                                        md: 5,
+                                        className: classes.mlAuto,
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
+                                                className: classes.info4,
+                                                title: "Admin Panel",
+                                                description: "Admin Panel for accessing all the modules in Vishudha Ecommerce Business",
+                                                icon: (AdminPanelSettings_default()),
+                                                iconColor: "warning"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
+                                                className: classes.info4,
+                                                title: "Analytics Integrated",
+                                                description: "Fully Integrated with Analytics to track the Sales",
+                                                icon: (Analytics_default()),
+                                                iconColor: "warning"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
+                                                className: classes.info4,
+                                                title: "Intuitive Dashboard ",
+                                                description: "Intuitive Dashboard based on the Roles",
+                                                icon: (Dashboard_default()),
+                                                iconColor: "warning"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
+                                                className: classes.info4,
+                                                title: "Configure ",
+                                                description: "Can Configure all the Categories, Sub categories, Products, Prices, Discounts and Taxes details",
+                                                icon: (Tune_default()),
+                                                iconColor: "warning"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
+                                        xs: 12,
+                                        sm: 5,
+                                        md: 5,
+                                        className: classes.mrAuto,
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx(Card/* default */.Z, {
+                                            background: true,
+                                            className: classes.card4,
+                                            style: {
+                                                backgroundImage: "url('/img/lsk_imgs/tagline-mis.png')"
+                                            },
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx(CardBody/* default */.Z, {
+                                                background: true,
+                                                className: classes.cardBody4,
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                                                    href: "#pablo",
+                                                    onClick: (e)=>e.preventDefault,
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                                            className: classes.cardTitle,
+                                                            children: "Tagline E-Commerce MIS"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: classes.cardDescription,
+                                                            children: "Admin module to facilitate all the backend operations of Tagline Traders."
+                                                        })
+                                                    ]
+                                                })
+                                            })
+                                        })
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                })
+            ]
         })
     });
 };
@@ -2541,7 +2513,7 @@ function SectionCareers({ ...rest }) {
                                             style: {
                                                 textAlign: "left",
                                                 color: "black",
-                                                background: "#FEFDF3"
+                                                background: "#D3D3D3"
                                             },
                                             options: positions,
                                             value: selectedPosition,
@@ -2556,7 +2528,7 @@ function SectionCareers({ ...rest }) {
                                                     style: {
                                                         textAlign: "left",
                                                         color: "black",
-                                                        background: "#FEFDF3"
+                                                        background: "#D3D3D3"
                                                     }
                                                 })
                                         })
@@ -2577,7 +2549,7 @@ function SectionCareers({ ...rest }) {
                                             style: {
                                                 textAlign: "left",
                                                 color: "black",
-                                                background: "#FEFDF3"
+                                                background: "#D3D3D3"
                                             },
                                             value: selectedLocation,
                                             onChange: (event, value)=>{
@@ -2608,7 +2580,7 @@ function SectionCareers({ ...rest }) {
                                             style: {
                                                 textAlign: "left",
                                                 color: "black",
-                                                background: "#FEFDF3"
+                                                background: "#D3D3D3"
                                             },
                                             sx: {
                                                 margintop: "0.25em"
@@ -2638,25 +2610,27 @@ function SectionCareers({ ...rest }) {
                                             size: "medium",
                                             variant: "contained",
                                             type: "submit",
-                                            justify: "center",
+                                            sx: {
+                                                width: {
+                                                    lg: "10rem",
+                                                    md: "10rem",
+                                                    sm: "11rem",
+                                                    xs: "12.5rem"
+                                                }
+                                            },
                                             style: {
-                                                alignItems: "center",
-                                                textAlign: "center",
                                                 textTransform: "none",
-                                                width: "21rem",
-                                                fontFamily: "Montserrat",
-                                                fontSize: "1.5rem",
-                                                fontWeight: "600",
-                                                lineHeight: "1.5rem",
-                                                height: "3.9rem",
-                                                color: "#112A46",
+                                                color: "#FFFFFF",
                                                 borderRadius: "5px",
-                                                backgroundColor: "#E5AF52",
+                                                backgroundColor: "#5288E5",
+                                                textAlign: "center",
+                                                fontSize: "1.25rem",
+                                                height: "2.5rem",
+                                                fontWeight: "600",
                                                 boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
                                             },
-                                            disabled: enableSearch ? true : false,
                                             onClick: searchHandler,
-                                            children: "Apply Now"
+                                            children: "Search"
                                         })
                                     })
                                 ]
@@ -2854,11 +2828,11 @@ function SectionTeams({ ...rest }) {
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx(material_.Divider, {
                                         style: {
-                                            backgroundColor: "#E5AF52",
-                                            color: "#E5AF52",
-                                            border: "#E5AF52",
+                                            backgroundColor: "#5288E5",
+                                            color: "#5288E5",
+                                            border: "#5288E5",
                                             borderRadius: "5px",
-                                            borderTop: "0.25rem solid #E5AF52",
+                                            borderTop: "0.25rem solid #5288E5",
                                             width: "50%"
                                         }
                                     })
@@ -2886,7 +2860,8 @@ function SectionTeams({ ...rest }) {
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: classes.front,
                                                 style: {
-                                                    backgroundColor: "#E5AF52"
+                                                    color: "#FFFFFF",
+                                                    backgroundColor: "#5288E5"
                                                 },
                                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
                                                     background: true,
@@ -2932,7 +2907,8 @@ function SectionTeams({ ...rest }) {
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: classes.back,
                                                 style: {
-                                                    backgroundColor: "#E5AF52",
+                                                    color: "#FFFFFF",
+                                                    backgroundColor: "#5288E5",
                                                     fontFamily: "Montserrat",
                                                     fontSize: "0.85rem",
                                                     lineHeight: "0.85rem",
@@ -2992,7 +2968,7 @@ function SectionTeams({ ...rest }) {
                                                                 fontWeight: "400",
                                                                 textAlign: "left"
                                                             },
-                                                            children: "A Full Stack Developer is a professional who possesses the skills and expertise to work on both the front-end and back-end development of web applications. They are proficient in a variety of programming languages, frameworks, and technologies, enabling them to handle the complete development process. Expertise in Front-End Development, Back-End Development, Server Management and Deployment, Security Best Practices , Collaboration and Communication."
+                                                            children: "He is A Full Stack Developer proficient in a variety of programming languages, frameworks, and technologies, enabling them to handle the complete development process. Expertise in Front-End Development, Back-End Development, Server Management and Deployment, Security Best Practices , Collaboration and Communication."
                                                         })
                                                     ]
                                                 })
@@ -3013,7 +2989,8 @@ function SectionTeams({ ...rest }) {
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: classes.front,
                                                 style: {
-                                                    backgroundColor: "#E5AF52"
+                                                    color: "#FFFFFF",
+                                                    backgroundColor: "#5288E5"
                                                 },
                                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
                                                     background: true,
@@ -3059,7 +3036,8 @@ function SectionTeams({ ...rest }) {
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: classes.back,
                                                 style: {
-                                                    backgroundColor: "#E5AF52",
+                                                    color: "#FFFFFF",
+                                                    backgroundColor: "#5288E5",
                                                     fontFamily: "Montserrat",
                                                     fontSize: "0.85rem",
                                                     fontWeight: "400"
@@ -3117,7 +3095,7 @@ function SectionTeams({ ...rest }) {
                                                                 fontWeight: "400",
                                                                 textAlign: "left"
                                                             },
-                                                            children: "Venkat Raju is a professional who is responsible for designing, implementing, and managing an organization's cloud computing architecture. This role involves making strategic decisions about the adoption and integration of cloud services to meet business requirements. Rajus's Key aspects include, Cloud Strategy and Planning, Architecture Design, Cloud Service Integration, Security and Compliance, Cost Optimization, Migration Planning, Performance Optimization , Disaster Recovery and Business Continuity and Collaboration with Stakeholders."
+                                                            children: "Venkat Raju is a professional in designing, implementing, and managing an organization's cloud computing architecture. Involved in strategic decisions about the adoption and integration of cloud services. Venkat is expertise in  Cloud Strategy and Planning, Architecture Design, Cloud Service Integration, Security and Compliance, Cost Optimization, Migration Planning, Performance Optimization , Disaster Recovery."
                                                         })
                                                     ]
                                                 })
@@ -3138,7 +3116,8 @@ function SectionTeams({ ...rest }) {
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: classes.front,
                                                 style: {
-                                                    backgroundColor: "#E5AF52"
+                                                    color: "#FFFFFF",
+                                                    backgroundColor: "#5288E5"
                                                 },
                                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
                                                     background: true,
@@ -3184,7 +3163,8 @@ function SectionTeams({ ...rest }) {
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: classes.back,
                                                 style: {
-                                                    backgroundColor: "#E5AF52",
+                                                    color: "#FFFFFF",
+                                                    backgroundColor: "#5288E5",
                                                     fontFamily: "Montserrat",
                                                     fontSize: "0.85rem",
                                                     fontWeight: "400"

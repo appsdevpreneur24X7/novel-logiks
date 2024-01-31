@@ -74,99 +74,38 @@ export default function SectionServicesCarousel() {
              <SectionServicesCarousalCard index ={5}/>
             </GridContainer>
           </div>
-          {/* <div >
-            <GridContainer>
-            <SectionServicesCarousalCard index ={6}/>
-            </GridContainer>
-          </div> */}
         </Carousel>
         {/*  CONTACT US AND SEE ALL SERVICES */}
         <GridContainer style={{ marginBottom: "2rem", textAlign: "center" }}>
           <GridItem xs={12} sm={12} md={12}>
             <Button
-              size="medium"
-              variant="contained"
-              type="submit"
-              sx={{
-                width: {
-                  lg: '21rem',
-                  md: '21rem',
-                  sm: '15rem',
-                  xs: '15rem'
-                },
-                height:{
-                  lg: '4rem',
-                  md: '4rem',
-                  sm: '3rem',
-                  xs: '3rem' 
-                },
-                fontSize : {
-                  lg: '1.5rem',
-                  md: '1.5rem',
-                  sm: '1.25rem',
-                  xs: '1.125rem' 
-              }
-              }}
+                size="medium"
+                variant="contained"
+                type="submit"
+                sx={{
+                  width: {
+                    lg: '10rem',
+                    md: '10rem',
+                    sm: '11rem',
+                    xs: '12.5rem'
+                  },
+                }}
 
-              style={{
-                textTransform: "none",
-                fontFamily:"Montserrat",
-                fontSize:"1.5rem",
-                fontWeight : "600",
-                color: '#112A46',
-                background: '#5288E5',
-                textAlign: "left",
-                margin: '1em',
-                fontSize : "1.5rem",
-                boxShadow: "none",
-                borderRadius:"0px"
-              }}
-              onClick={routeToContactUs}
-            >
-              Contact Us
-            </Button>
-            <Button
-              size="medium"
-              variant="contained"
-              type="submit"
-              sx={{
-                width: {
-                  lg: '21rem',
-                  md: '21rem',
-                  sm: '15rem',
-                  xs: '15rem'
-                },
-                height:{
-                  lg: '4rem',
-                  md: '4rem',
-                  sm: '3rem',
-                  xs: '3rem' 
-                },
-                fontSize : {
-                  lg: '1.5rem',
-                  md: '1.5rem',
-                  sm: '1.25rem',
-                  xs: '1.125rem' 
-              }
-              }}
-
-              style={{
-                color: '#112A46',
-                textTransform: "none",
-                fontFamily:"Montserrat",
-                fontSize:"1.5rem",
-                borderColor: 'black',
-                border: '2px solid',
-                background: '#FFF',
-                textAlign: "right",
-                boxShadow: "none",
-                borderRadius:"0px",
-                fontWeight : "600"
-              }}
-              onClick={showAllServices}
-            >
-              See all Services
-            </Button>
+                style={{
+                  textTransform: "none",
+                  color: '#FFFFFF',
+                  borderRadius: '5px',
+                  backgroundColor: '#5288E5',
+                  textAlign: "center",
+                  fontSize: "1.25rem",
+                  height: "2.5rem",
+                  fontWeight: "600",
+                  boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)'
+                }}
+                onClick={showAllServices}
+              >
+                Explore
+              </Button>
           </GridItem>
         </GridContainer>
       </div>

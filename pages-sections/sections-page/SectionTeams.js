@@ -76,11 +76,11 @@ export default function SectionTeams({ ...rest }) {
               }}>  Meet the Team
               </h1>
               <Divider style={{
-                backgroundColor: '#E5AF52',
-                color: '#E5AF52',
-                border: '#E5AF52',
+                backgroundColor: '#5288E5',
+                color: '#5288E5',
+                border: '#5288E5',
                 borderRadius: '5px',
-                borderTop: '0.25rem solid #E5AF52',
+                borderTop: '0.25rem solid #5288E5',
                 width: '50%'
               }}></Divider>
             </GridItem>
@@ -96,14 +96,15 @@ export default function SectionTeams({ ...rest }) {
                     className={
                       classes.front}
                     style={{
-                      backgroundColor: "#E5AF52"
+                      color: '#FFFFFF',
+                      backgroundColor: '#5288E5',
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
                       <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
                         Sunil
                       </h5>
-                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" ,padding:"0px" , margin:"0px"}}>
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center", padding: "0px", margin: "0px" }}>
                         CEO
                       </h5>
                     </CardBody>
@@ -111,19 +112,20 @@ export default function SectionTeams({ ...rest }) {
                   <div
                     className={classes.back}
                     style={{
-                      backgroundColor: '#E5AF52', fontFamily: "Montserrat", fontSize: "0.85rem", lineHeight: "0.85rem", fontWeight: '400', color: '#091133'
+                      color: '#FFFFFF',
+                      backgroundColor: '#5288E5',
+                      fontFamily: "Montserrat", fontSize: "0.85rem", lineHeight: "0.85rem", fontWeight: '400', color: '#091133'
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
                       <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
                         Sunil
                       </h5>
-                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" ,padding:"0px" , margin:"0px"}}>
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center", padding: "0px", margin: "0px" }}>
                         CEO
                       </h5>
                       <h5 sx={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1rem", fontWeight: "400", textAlign: "left" }} style={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1rem", fontWeight: "400", textAlign: "left" }}>
-                        A Full Stack Developer is a professional who possesses the skills and expertise to work on both the front-end and back-end development of web applications. 
-                        They are proficient in a variety of programming languages, frameworks, and technologies, enabling them to handle the complete development process.
+                        He is A Full Stack Developer proficient in a variety of programming languages, frameworks, and technologies, enabling them to handle the complete development process.
                         Expertise in Front-End Development, Back-End Development, Server Management and Deployment, Security Best Practices , Collaboration and Communication.
                       </h5>
                     </CardBody>
@@ -139,14 +141,16 @@ export default function SectionTeams({ ...rest }) {
                       classes.front
                     }
                     style={{
-                      backgroundColor: '#E5AF52'
+                      color: '#FFFFFF',
+                      backgroundColor: '#5288E5',
+
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
                       <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
                         Venkat Raju
                       </h5>
-                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" ,padding:"0px" , margin:"0px"}}>
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center", padding: "0px", margin: "0px" }}>
                         Cloud Architect
                       </h5>
                     </CardBody>
@@ -154,19 +158,23 @@ export default function SectionTeams({ ...rest }) {
                   <div
                     className={classes.back}
                     style={{
-                      backgroundColor: '#E5AF52', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                      color: '#FFFFFF',
+                      backgroundColor: '#5288E5',
+                      fontFamily: "Montserrat", 
+                      fontSize: "0.85rem", 
+                      fontWeight: '400'
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
                       <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
-                      Venkat Raju
+                        Venkat Raju
                       </h5>
-                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "400", textAlign: "center",padding:"0px" , margin:"0px" }}>
-                      Cloud Architect
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "400", textAlign: "center", padding: "0px", margin: "0px" }}>
+                        Cloud Architect
                       </h5>
                       <h5 sx={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }} style={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }}>
-                      Venkat Raju is a professional who is responsible for designing, implementing, and managing an organization's cloud computing architecture. This role involves making strategic decisions about the adoption and integration of cloud services to meet business requirements.
-                      Rajus's Key aspects include, Cloud Strategy and Planning, Architecture Design, Cloud Service Integration, Security and Compliance, Cost Optimization, Migration Planning, Performance Optimization , Disaster Recovery and Business Continuity and Collaboration with Stakeholders.
+                        Venkat Raju is a professional in designing, implementing, and managing an organization's cloud computing architecture. Involved in strategic decisions about the adoption and integration of cloud services.
+                        Venkat is expertise in  Cloud Strategy and Planning, Architecture Design, Cloud Service Integration, Security and Compliance, Cost Optimization, Migration Planning, Performance Optimization , Disaster Recovery.
                       </h5>
                     </CardBody>
                   </div>
@@ -181,14 +189,15 @@ export default function SectionTeams({ ...rest }) {
                       classes.front
                     }
                     style={{
-                      backgroundColor: '#E5AF52'
+                      color: '#FFFFFF',
+                      backgroundColor: '#5288E5',
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
                       <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
                         Shahid
                       </h5>
-                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" ,padding:"0px" , margin:"0px"}}>
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center", padding: "0px", margin: "0px" }}>
                         Data Anaylist / Data Science
                       </h5>
                     </CardBody>
@@ -196,18 +205,19 @@ export default function SectionTeams({ ...rest }) {
                   <div
                     className={classes.back}
                     style={{
-                      backgroundColor: '#E5AF52', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                      color: '#FFFFFF',
+                      backgroundColor: '#5288E5', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
                       <h5 sx={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#091133', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
-                      Shahid
+                        Shahid
                       </h5>
-                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "400", textAlign: "center",padding:"0px" , margin:"0px" }}>
-                      Data Anaylist / Data Science
+                      <h5 sx={{ color: '#091133', fontSize: "1rem", lineHeight: "1rem", fontWeight: "400", textAlign: "center" }} style={{ color: '#091133', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "400", textAlign: "center", padding: "0px", margin: "0px" }}>
+                        Data Anaylist / Data Science
                       </h5>
                       <h5 sx={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }} style={{ color: '#091133', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "400", textAlign: "left" }}>
-                      Data Scientists leverage advanced statistical and machine learning techniques to extract meaningful insights from complex datasets, while Data Analysts focus on interpreting and visualizing data to support decision-making and business strategies
+                        Data Scientists leverage advanced statistical and machine learning techniques to extract meaningful insights from complex datasets, while Data Analysts focus on interpreting and visualizing data to support decision-making and business strategies
                       </h5>
                     </CardBody>
                   </div>

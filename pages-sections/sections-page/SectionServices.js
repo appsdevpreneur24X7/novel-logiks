@@ -51,7 +51,7 @@ export default function SectionServices({ ...rest }) {
               border: '#5288E5',
               borderRadius: '5px',
               borderTop: '0.25rem solid #5288E5',
-              width: '40%'
+              width: '50%'
             }}></Divider>
           </GridItem>
         </GridContainer> 

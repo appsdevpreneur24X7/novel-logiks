@@ -26,7 +26,7 @@ const SectionServicesCarousalCard = (props)=> {
             {/* <Card plain blog style={{ background: "#5288E5", borderColor: "#5288E5", borderStyle: "solid", borderWidth: "medium" }}> */}
             <Card plain blog>
                 <CardHeader plain image>
-                    <img src={services[index].serviceImageUrl} alt="..." style={{ height: "20rem", padding: "0.5rem", boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)' }} />
+                    <img src={services[index].serviceImageUrl} alt="..." style={{ height: "15rem"}} />
                 </CardHeader>
                 <CardBody plain>
                     <Typography style={{

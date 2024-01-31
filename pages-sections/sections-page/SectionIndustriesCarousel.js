@@ -166,7 +166,7 @@ export default function SectionIndustriesCarousel() {
               }}
               onClick={showAllServices}
             >
-              See all Services
+              Explore Services
             </Button>
           </GridItem>
         </GridContainer>

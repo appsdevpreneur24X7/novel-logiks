@@ -3,7 +3,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import careersStyle from "/styles/jss/novel-logiks/pages/sectionsSections/careersStyle.js";
-import { Autocomplete, Box, Button, Divider, TextField, Typography , Paper} from "@mui/material";
+import { Autocomplete, Box, Button, Divider, TextField, Typography, Paper } from "@mui/material";
 import { careersData } from "../../data/careers-data";
 import Router from "next/router";
 const useStyles = makeStyles(careersStyle);
@@ -13,7 +13,7 @@ export default function SectionCareers({ ...rest }) {
   const routeToCareerDetails = () => {
     Router.push("/career-details");
   }
-  const {careers} = careersData;
+  const { careers } = careersData;
   const [positions, setPositions] =
     useState(() => []);
 
@@ -75,9 +75,10 @@ export default function SectionCareers({ ...rest }) {
 
   const renderCareerResults = () => {
     console.log("Exec  Data Found");
-    return (<div style = {{
+    return (<div style={{
       overflowY: 'scroll',
-      height: '600px', minHeight: '600px'}}>
+      height: '600px', minHeight: '600px'
+    }}>
       <Paper sx={{ borderRadius: '10px', width: '90%', textAlign: "left", marginLeft: "auto", marginRight: "auto" }} >
         {searchResults && searchResults.length > 0 ? searchResults.map(ser => {
           return <div>
@@ -107,7 +108,7 @@ export default function SectionCareers({ ...rest }) {
             </GridContainer>
             <Typography component="div" style={{ color: "black", fontSize: "1rem", fontWeight: "550", fontFamily: 'Montserrat', marginLeft: "2em" }}>
               Role & Responsibilities :
-            </Typography><br /> {ser.rolesResponsibilities.map((r, indx) => { 
+            </Typography><br /> {ser.rolesResponsibilities.map((r, indx) => {
               return (
                 <ul key={indx}>
                   <li><Typography component="div" style={{ color: "black", fontSize: "0.85rem", fontFamily: 'Montserrat', marginLeft: "3em" }}>{r}</Typography></li>
@@ -131,7 +132,7 @@ export default function SectionCareers({ ...rest }) {
           </div>
         }) : null}
       </Paper>
-      </div>
+    </div>
     )
   }
 
@@ -149,17 +150,17 @@ export default function SectionCareers({ ...rest }) {
     <div className="cd-section" {...rest}>
       {/* Careers 1START */}
       <div className={classes.container}>
-      
+
         <GridContainer style={{ marginBottom: '2rem' }}>
-          <GridItem md={8} style={{ color: '#112A46'}}>
-          <h1 style={{
+          <GridItem md={8} style={{ color: '#112A46' }}>
+            <h1 style={{
               fontFamily: 'Montserrat',
               fontSize: '2rem',
               lineHeight: '1.25rem',
               fontWeight: '600',
               textAlign: "left",
               color: '#112A46',
-              
+
 
             }}>  Careers
             </h1>
@@ -189,7 +190,7 @@ export default function SectionCareers({ ...rest }) {
                   sm: '1.5rem',
                   xs: '1.25rem'
                 },
-                margin:"2rem"
+                margin: "2rem"
               }}
             >{careersData.points[0]}
             </Typography>
@@ -211,7 +212,7 @@ export default function SectionCareers({ ...rest }) {
                   sm: '1rem',
                   xs: '0.95rem'
                 },
-                margin:"2rem"
+                margin: "2rem"
               }}
             >{careersData.points[1]}
             </Typography>
@@ -233,105 +234,108 @@ export default function SectionCareers({ ...rest }) {
                   sm: '1rem',
                   xs: '0.95rem'
                 },
-                margin:"2rem"
+                margin: "2rem"
               }}
             >{careersData.points[2]}
             </Typography>
           </GridItem>
-          <GridItem md={4} style={{ color: '#112A46',backgroundImage: "url('img/resized_imgs/bulb_careers_bg.png')", backgroundSize :"cover" }}>
-            <GridContainer style={{ marginBottom: "1rem" ,gap:"2rem"}}>
+          <GridItem md={4} style={{ color: '#112A46', backgroundImage: "url('img/resized_imgs/bulb_careers_bg.png')", backgroundSize: "cover" }}>
+            <GridContainer style={{ marginBottom: "1rem", gap: "2rem" }}>
               <GridItem md={12} sm={12} style={{ textAlign: "center", margin: "auto" }}>
               </GridItem>
               {/* POSITIONS */}
-              <GridItem md={12} sm={12} style={{ textAlign: "center", margin: "auto" ,background:"white"}}>
-              <Autocomplete
-                disablePortal
-                size="small"
-                id="combo-box-position"
-                style={{ textAlign: "left" ,color:"black", background:"#FEFDF3"}}
-                options={positions}
-                value={selectedPosition}
-                onChange={(event, value) => {
-                  console.log("value : ", value);
-                  setSelectedPosition(value);
-                  setEnableSearch(() => false);
-                }}
-                renderInput={(params) => <TextField {...params} label="Positions" style={{ textAlign: "left" ,color:"black", background:"#FEFDF3"}}/>}
-              />
+              <GridItem md={12} sm={12} style={{ textAlign: "center", margin: "auto", background: "white" }}>
+                <Autocomplete
+                  disablePortal
+                  size="small"
+                  id="combo-box-position"
+                  style={{ textAlign: "left", color: "black", background: "#D3D3D3" }}
+                  options={positions}
+                  value={selectedPosition}
+                  onChange={(event, value) => {
+                    console.log("value : ", value);
+                    setSelectedPosition(value);
+                    setEnableSearch(() => false);
+                  }}
+                  renderInput={(params) => <TextField {...params} label="Positions" style={{ textAlign: "left", color: "black", background: "#D3D3D3" }} />}
+                />
               </GridItem>
 
               {/* LOCATIONS */}
-              <GridItem md={12} sm={12} style={{ textAlign: "center", margin: "auto" ,background:"white"}}>
+              <GridItem md={12} sm={12} style={{ textAlign: "center", margin: "auto", background: "white" }}>
                 <Autocomplete
-                disablePortal
-                size="small"
-                id="combo-box-location"
-                options={locations}
-                style={{ textAlign: "left" ,color:"black", background:"#FEFDF3"}}
-                value={selectedLocation}
-                onChange={(event, value) => {
-                  console.log("Selected Location  : ", value);
-                  setSelectedLocation(value);
-                  setEnableSearch(() => false);
-                  return;
-                }}
-                renderInput={(params) => <TextField {...params} label="Location" />}
-              />
+                  disablePortal
+                  size="small"
+                  id="combo-box-location"
+                  options={locations}
+                  style={{ textAlign: "left", color: "black", background: "#D3D3D3" }}
+                  value={selectedLocation}
+                  onChange={(event, value) => {
+                    console.log("Selected Location  : ", value);
+                    setSelectedLocation(value);
+                    setEnableSearch(() => false);
+                    return;
+                  }}
+                  renderInput={(params) => <TextField {...params} label="Location" />}
+                />
               </GridItem>
 
               {/* EMPLOYMENT TYPE */}
-              <GridItem md={12} sm={12} style={{ textAlign: "center", margin: "auto" ,background:"white"}}>
+              <GridItem md={12} sm={12} style={{ textAlign: "center", margin: "auto", background: "white" }}>
                 <Autocomplete
-                disablePortal
-                size="small"
-                id="combo-box-employment-type"
-                options={employmentTypes}
-                style={{ textAlign: "left" ,color:"black", background:"#FEFDF3"}}
-                sx={{ margintop: "0.25em" }}
-                value={selectedEmploymentType}
-                onChange={(event, value) => {
-                  console.log("Selected Employment Type  : ", value);
-                  setSelectedEmploymentType(value);
-                  setEnableSearch(() => false);
-                  return;
-                }}
-                renderInput={(params) => <TextField {...params} label="Employment Type" />}
-              />
+                  disablePortal
+                  size="small"
+                  id="combo-box-employment-type"
+                  options={employmentTypes}
+                  style={{ textAlign: "left", color: "black", background: "#D3D3D3" }}
+                  sx={{ margintop: "0.25em" }}
+                  value={selectedEmploymentType}
+                  onChange={(event, value) => {
+                    console.log("Selected Employment Type  : ", value);
+                    setSelectedEmploymentType(value);
+                    setEnableSearch(() => false);
+                    return;
+                  }}
+                  renderInput={(params) => <TextField {...params} label="Employment Type" />}
+                />
               </GridItem>
 
-              <GridItem md={12} sm={12} style={{ textAlign: "center", margin: "auto" ,background:"white"}}>
+              <GridItem md={12} sm={12} style={{ textAlign: "center", margin: "auto", background: "white" }}>
                 <Button
-                size="medium"
-                variant="contained"
-                type="submit"
-                justify="center"
-                style={{
-                  alignItems: "center",
-                  textAlign: "center",
-                  textTransform: "none",
-                  width:"21rem",
-                  fontFamily:"Montserrat",
-                  fontSize:"1.5rem",
-                  fontWeight:"600",
-                  lineHeight:"1.5rem",
-                  height:"3.9rem",
-                  color: '#112A46',
-                  borderRadius:'5px',
-                  backgroundColor: '#E5AF52',
-                  boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)'
-                }}
-                disabled={enableSearch ? true : false}
-                onClick={searchHandler}
-              >
-                Apply Now
-              </Button>
+                   size="medium"
+                   variant="contained"
+                   type="submit"
+                   sx={{
+                     width: {
+                       lg: '10rem',
+                       md: '10rem',
+                       sm: '11rem',
+                       xs: '12.5rem'
+                     },
+                   }}
+   
+                   style={{
+                     textTransform: "none",
+                     color: '#FFFFFF',
+                     borderRadius: '5px',
+                     backgroundColor: '#5288E5',
+                     textAlign: "center",
+                     fontSize: "1.25rem",
+                     height: "2.5rem",
+                     fontWeight: "600",
+                     boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)'
+                   }}
+                  onClick={searchHandler}
+                >
+                  Search
+                </Button>
               </GridItem>
             </GridContainer>
           </GridItem>
         </GridContainer>
         <GridContainer style={{ marginBottom: '2rem', marginTop: "1rem" }}>
-        {searchResults && searchResults.length !== 0 && (renderCareerResults())}
-        {!searchResults && (selectedPosition !== null || selectedLocation !== null || selectedEmploymentType !== null) && (renderNoDataFound())}
+          {searchResults && searchResults.length !== 0 && (renderCareerResults())}
+          {!searchResults && (selectedPosition !== null || selectedLocation !== null || selectedEmploymentType !== null) && (renderNoDataFound())}
         </GridContainer>
       </div>
     </div>
