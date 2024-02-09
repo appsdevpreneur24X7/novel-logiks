@@ -48,7 +48,7 @@ export default function SectionServicesCarousel() {
     console.log("Routing to /contactUs Page ");
     Router.push("/sections#contactUs");
   }
-
+  
   return (
     <>
       <Header
@@ -60,7 +60,7 @@ export default function SectionServicesCarousel() {
       />
       <div className={classes.container}>
         <Carousel {...settings}>
-          <div >
+          {/* <div >
             <GridContainer>
              <SectionServicesCarousalCard index ={0}/>
              <SectionServicesCarousalCard index ={1}/>
@@ -73,10 +73,17 @@ export default function SectionServicesCarousel() {
              <SectionServicesCarousalCard index ={4}/>
              <SectionServicesCarousalCard index ={5}/>
             </GridContainer>
+          </div> */}
+           <div >
+            <GridContainer>
+              {services.map((each,index)=> <SectionServicesCarousalCard index ={index}/>)}
+             {/* <SectionServicesCarousalCard index ={0}/> */}
+            </GridContainer>
           </div>
+       
         </Carousel>
         {/*  CONTACT US AND SEE ALL SERVICES */}
-        <GridContainer style={{ marginBottom: "2rem", textAlign: "center" }}>
+        {/* <GridContainer style={{ marginBottom: "2rem", textAlign: "center" }}>
           <GridItem xs={12} sm={12} md={12}>
             <Button
                 size="medium"
@@ -107,7 +114,7 @@ export default function SectionServicesCarousel() {
                 Explore
               </Button>
           </GridItem>
-        </GridContainer>
+        </GridContainer> */}
       </div>
     </>
   );

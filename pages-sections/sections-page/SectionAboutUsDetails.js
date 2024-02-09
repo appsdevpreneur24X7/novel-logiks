@@ -42,7 +42,9 @@ export default function SectionAboutUsDetails({ ...rest }) {
               lineHeight: '2rem',
               fontWeight: '600',
               textAlign: "left",
-              color: '#112A46'
+              color: '#112A46',
+              marginTop:"3rem",
+              marginBottom:"3rem"
             }}>  About Us
             </h1>
             <Divider style={{
@@ -55,6 +57,33 @@ export default function SectionAboutUsDetails({ ...rest }) {
             }}></Divider>
           </GridItem>
         </GridContainer>
+        {/* IMPLEMENT CAROUSAL HERE
+        <div className={classes.container}>
+        <Carousel {...settings}>
+          {/* <div >
+            <GridContainer>
+             <SectionServicesCarousalCard index ={0}/>
+             <SectionServicesCarousalCard index ={1}/>
+             <SectionServicesCarousalCard index ={2}/>
+            </GridContainer>
+          </div>
+          <div >
+            <GridContainer>
+              <SectionServicesCarousalCard index ={3}/>
+             <SectionServicesCarousalCard index ={4}/>
+             <SectionServicesCarousalCard index ={5}/>
+            </GridContainer>
+          </div> 
+           <div >
+            <GridContainer>
+            
+            </GridContainer>
+          </div>
+       
+        </Carousel>
+      </div> 
+      */}
+
         <GridContainer style={{ marginBottom: '2rem', marginTop: '2rem' }}>
           {home && home[0] && (<GridContainer id='0'>
             <SectionHomeLeft data={home[0]} />
@@ -88,7 +117,7 @@ export default function SectionAboutUsDetails({ ...rest }) {
                     color: '#FFFFFF',
                     fontSize: "0.85rem",
                     lineHeight: '1rem',
-                    fontFamily: 'Montserrat', fontWeight: 300
+                    fontFamily: 'Montserrat', fontWeight: '500'
 
                   }}>
                   <Grid container>
@@ -122,7 +151,7 @@ export default function SectionAboutUsDetails({ ...rest }) {
                     color: '#FFFFFF',
                     fontSize: "0.85rem",
                     lineHeight: '1rem',
-                    fontFamily: 'Montserrat', fontWeight: 300
+                    fontFamily: 'Montserrat', fontWeight: '500'
                   }}>
                   <Grid container >
                     <Grid item xs={12}>
@@ -154,7 +183,7 @@ export default function SectionAboutUsDetails({ ...rest }) {
                     color: '#FFFFFF',
                     fontSize: "0.85rem",
                     lineHeight: '1rem',
-                    fontFamily: 'Montserrat', fontWeight: 300
+                    fontFamily: 'Montserrat', fontWeight: '500'
                   }}>
                   <Grid container>
                     <Grid item xs={6}>

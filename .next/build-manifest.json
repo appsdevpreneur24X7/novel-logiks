@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/FU556DKUxi1ym73NXTkoh/_buildManifest.js",
-    "static/FU556DKUxi1ym73NXTkoh/_ssgManifest.js"
+    "static/EUrr0axsE_EwonpQQBdMS/_buildManifest.js",
+    "static/EUrr0axsE_EwonpQQBdMS/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -53,7 +53,7 @@
       "static/chunks/864-8eb9fa706961e50f.js",
       "static/chunks/561-f6a826a5c77de6a1.js",
       "static/chunks/367-d8bd13cc58439d48.js",
-      "static/chunks/pages/ai-details-e447bbc6257390a3.js"
+      "static/chunks/pages/ai-details-a4c24d3f4039eb04.js"
     ],
     "/ai-details-bkp": [
       "static/chunks/webpack-42cdea76c8170223.js",
@@ -63,7 +63,7 @@
       "static/chunks/864-8eb9fa706961e50f.js",
       "static/chunks/66-5cdc029b7e807840.js",
       "static/chunks/561-f6a826a5c77de6a1.js",
-      "static/chunks/pages/ai-details-bkp-823ba8ac6c8d9d1e.js"
+      "static/chunks/pages/ai-details-bkp-814199cda8105d14.js"
     ],
     "/career-details": [
       "static/chunks/webpack-42cdea76c8170223.js",
@@ -134,7 +134,7 @@
       "static/chunks/367-d8bd13cc58439d48.js",
       "static/chunks/150-cb7c185b77ab8251.js",
       "static/chunks/841-2ada9ee9649e4b0d.js",
-      "static/chunks/pages/sections-66ab5befbd06b949.js"
+      "static/chunks/pages/sections-d7afda528ab996a9.js"
     ],
     "/services-details": [
       "static/chunks/webpack-42cdea76c8170223.js",
@@ -143,7 +143,7 @@
       "static/chunks/939-e9ffc150eb47f3fc.js",
       "static/chunks/864-8eb9fa706961e50f.js",
       "static/chunks/561-f6a826a5c77de6a1.js",
-      "static/chunks/pages/services-details-b062588369503847.js"
+      "static/chunks/pages/services-details-cdda44e369b81a0c.js"
     ]
   },
   "ampFirstPages": []

@@ -1,7 +1,7 @@
 {
+  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/_app": "pages/_app.js",
   "/404": "pages/404.js",
   "/about-us": "pages/about-us.js",
   "/ai-details-bkp": "pages/ai-details-bkp.js",
@@ -9,8 +9,8 @@
   "/career-details": "pages/career-details.js",
   "/components": "pages/components.js",
   "/contact-us": "pages/contact-us.js",
-  "/": "pages/index.js",
   "/error-page": "pages/error-page.js",
+  "/": "pages/index.js",
   "/presentation": "pages/presentation.js",
   "/sections": "pages/sections.js",
   "/services-details": "pages/services-details.js"

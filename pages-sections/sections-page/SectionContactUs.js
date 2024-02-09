@@ -33,9 +33,9 @@ export default function SectionContactUs({ ...rest }) {
             }}>  Contact Us
             </h1>
             <Divider style={{
-              backgroundColor: '#112A46',
-              color: '#112A46',
-              border: '#112A46',
+              backgroundColor: '#FFFFFF',
+              color: '#FFFFFF',
+              border: '#FFFFFF',
               borderRadius: '5px',
               borderTop: '0.25rem solid #112A46',
               width: '40%'

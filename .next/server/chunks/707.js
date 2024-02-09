@@ -12,7 +12,7 @@ exports.modules = {
 const services = [
     {
         serviceTitle: "Enterprise Application - Packaged Software",
-        serviceImageUrl: "img/lsk_imgs/enterprise.jpg",
+        serviceImageUrl: "img/lsk_imgs/enterprise.png",
         servicePoints: [
             "We provide ERP –SAP/ Oracle Apps/ Open Source ERP consulting, implementation, and maintenance services leveraging ,Our Skills on S4 HANA for general industries and expertise in areas of SAP S/4 for Fashion and Retail to get you the unfair advantage."
         ],
@@ -20,7 +20,7 @@ const services = [
     },
     {
         serviceTitle: "Data Analytics - Business Intelligence",
-        serviceImageUrl: "img/lsk_imgs/data-anlytics.jpg",
+        serviceImageUrl: "img/lsk_imgs/data-anlytics.png",
         servicePoints: [
             "Commit to new vectors of growth as well as supporting long-term digital transformation with Novel Logiks AI services. Tapping into our extensive tech expertise, you can create, maintain, and scale up your Artificial Intelligence (AI) and Machine Learning (ML) solutions while augmenting human capacity and increasing business value."
         ],
@@ -28,24 +28,23 @@ const services = [
     },
     {
         serviceTitle: "E-Commerce and Retail",
-        serviceImageUrl: "img/lsk_imgs/ecommerce.jpg",
+        serviceImageUrl: "img/lsk_imgs/ecommerce.png",
         servicePoints: [
             "Transforming online shopping experiences and optimizing retail operations for seamless, secure, and customer-centric transactions."
         ],
         serviceOneLiner: "Transforming online shopping experiences and optimizing retail operations for seamless, secure, and customer-centric transactions."
     },
     {
-        serviceTitle: "IOT & Cloud Services",
-        serviceImageUrl: "img/lsk_imgs/smart-home.jpg",
+        serviceTitle: "SEO & Digital Marketing",
+        serviceImageUrl: "img/lsk_imgs/seo.png",
         servicePoints: [
-            " Cloud Consulting, Cloud Migration , Cloud Engineering The cloud brings security, momentum, and cost efficiency Novel Logiks's cloud adoption and engineering services help enterprises reduce development costs, quicken time to market, and boost operational agility and securityR Adopt the future of business efficiency not",
-            " Internet of things Delivering apps to support smart initiatives from the various industries ranging from security to home automation to industrial IoT "
+            "SEO (Search Engine Optimization) improves a website's visibility on search engines, while Digital Marketing encompasses various online strategies to promote products or services"
         ],
-        serviceOneLiner: "Internet of things Delivering apps to support smart initiatives from the various industries ranging from security to home Automation"
+        serviceOneLiner: "SEO (Search Engine Optimization) improves a website's visibility on search engines"
     },
     {
         serviceTitle: "Financial Process Outsourcing",
-        serviceImageUrl: "img/lsk_imgs/revenue-operations.jpg",
+        serviceImageUrl: "img/lsk_imgs/revenue-operations.png",
         servicePoints: [
             ,
             "Accounts Payable/ Receivable accounting",
@@ -56,7 +55,7 @@ const services = [
     },
     {
         serviceTitle: "Software Testing            ",
-        serviceImageUrl: "img/lsk_imgs/quality.jpg",
+        serviceImageUrl: "img/lsk_imgs/quality.png",
         servicePoints: [
             "Automation Testing- API testing, GUI Testing, Content Testing.",
             "Mobile Applications Testing",

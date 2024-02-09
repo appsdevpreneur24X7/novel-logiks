@@ -86,7 +86,7 @@ function AiDetailsBkp() {
                                 plain: true,
                                 background: true,
                                 style: {
-                                    backgroundImage: "url('img/latest/ai-bg-1.jpg')",
+                                    backgroundImage: "url('img/latest/ai-bg-1.png')",
                                     backgroundSize: "cover",
                                     backgroundPosition: "top center"
                                 },
@@ -144,9 +144,6 @@ function AiDetailsBkp() {
                                                         })
                                                     })
                                                 ]
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
-                                                children: "Generative AI isn’t just a tool; it’s a revolutionary leap forward in creativity and problem-solving. It can save time, reduce costs, and inspire new possibilities across various industries. Whether you’re in art, marketing, research, or any field where creativity and innovation are essential, Novel Logiks can help you harness the transformative potential of Generative AI. Join us in exploring the fascinating world of Generative AI and witness how algorithms can bring your vision to life, one generated masterpiece at a time."
                                             })
                                         ]
                                     })
@@ -158,7 +155,7 @@ function AiDetailsBkp() {
                                 plain: true,
                                 background: true,
                                 style: {
-                                    backgroundImage: "url('img/latest/ai-bg-2.jpg')",
+                                    backgroundImage: "url('img/latest/ai-bg-2.png')",
                                     backgroundSize: "cover",
                                     backgroundPosition: "top center"
                                 },
@@ -217,9 +214,6 @@ function AiDetailsBkp() {
                                                         })
                                                     })
                                                 ]
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
-                                                children: "Predictive Maintenance isn’t just a maintenance strategy; it’s a transformative approach that revolutionizes how industries operate. Whether you’re in manufacturing, energy, transportation, or any sector relying on machinery and equipment, Novel Logiks can help you implement Predictive Maintenance solutions that keep your operations running smoothly and efficiently. Join us in exploring the world of Predictive Maintenance and experience firsthand how it can drive efficiency, reduce costs, and ensure the reliability of your assets."
                                             })
                                         ]
                                     })
@@ -231,7 +225,7 @@ function AiDetailsBkp() {
                                 plain: true,
                                 background: true,
                                 style: {
-                                    backgroundImage: "url('img/latest/ai-bg-3.jpg')",
+                                    backgroundImage: "url('img/latest/ai-bg-3.png')",
                                     backgroundSize: "cover",
                                     backgroundPosition: "top center"
                                 },
@@ -299,9 +293,6 @@ function AiDetailsBkp() {
                                                         })
                                                     })
                                                 ]
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
-                                                children: "AI-driven Computer Vision isn’t just about seeing; it’s about understanding and making informed decisions. Whether you’re in healthcare, manufacturing, retail, or any industry relying on visual data, Novel Logiks can help you harness the transformative power of AI and Computer Vision to gain deeper insights, increase efficiency, and drive innovation. Join us in exploring the boundless possibilities of AI and Computer Vision, where visual data becomes a source of knowledge and a catalyst for intelligent solutions"
                                             })
                                         ]
                                     })

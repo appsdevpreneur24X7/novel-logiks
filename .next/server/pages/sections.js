@@ -49,15 +49,15 @@ const useMediaQuery_namespaceObject = require("@mui/material/useMediaQuery");
 const home = [
     {
         serviceTitle: "End-to end IT service expertise enabling better managed integrated portfolios",
-        serviceImageUrl: "img/lsk_imgs/it.jpg"
+        serviceImageUrl: "img/lsk_imgs/it.png"
     },
     {
-        serviceTitle: "AI / IOT Advisory experience across industries solving real problems, enabling innovation",
-        serviceImageUrl: "img/lsk_imgs/iot.jpg"
+        serviceTitle: "SEO & DM improves a website's visibility on search engines, while Digital Marketing encompasses various online strategies to promote products or services",
+        serviceImageUrl: "img/lsk_imgs/seo.png"
     },
     {
         serviceTitle: "Delivery Driven by outcomes bettering expected, Speed on time, Customer Centric Culture.",
-        serviceImageUrl: "img/lsk_imgs/delivery.jpg"
+        serviceImageUrl: "img/lsk_imgs/delivery.png"
     }, 
 ];
 
@@ -119,19 +119,11 @@ function SectionHomeLeft({ ...rest }) {
                         xs: 12,
                         sm: 6,
                         md: 6,
-                        sx: {
-                            paddingTop: {
-                                xs: "3rem",
-                                sm: "3rem",
-                                md: "5rem",
-                                lg: "5rem"
-                            }
-                        },
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                                 style: {
                                     fontFamily: "Montserrat",
-                                    fontSize: "1.719rem",
+                                    fontSize: "1.5rem",
                                     lineHeight: "2rem",
                                     fontWeight: "600",
                                     textAlign: "left",
@@ -146,7 +138,7 @@ function SectionHomeLeft({ ...rest }) {
                                     border: "#5288E5",
                                     borderRadius: "5px",
                                     borderTop: "0.25rem solid #5288E5",
-                                    width: "40%"
+                                    width: "50%"
                                 }
                             })
                         ]
@@ -191,19 +183,11 @@ function SectionHomeRight({ ...rest }) {
                         xs: 12,
                         sm: 6,
                         md: 6,
-                        sx: {
-                            paddingTop: {
-                                xs: "3rem",
-                                sm: "3rem",
-                                md: "5rem",
-                                lg: "5rem"
-                            }
-                        },
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                                 style: {
                                     fontFamily: "Montserrat",
-                                    fontSize: "1.719rem",
+                                    fontSize: "1.5rem",
                                     lineHeight: "2rem",
                                     fontWeight: "600",
                                     textAlign: "left",
@@ -218,7 +202,7 @@ function SectionHomeRight({ ...rest }) {
                                     border: "#5288E5",
                                     borderRadius: "5px",
                                     borderTop: "0.25rem solid #5288E5",
-                                    width: "40%"
+                                    width: "50%"
                                 }
                             })
                         ]
@@ -251,7 +235,7 @@ function SectionHomeRight({ ...rest }) {
 };
 
 ;// CONCATENATED MODULE: ./public/video/ai-medical.mp4
-/* harmony default export */ const ai_medical = ("/_next/static/media/ai-medical.d9e01b29e3198ed37776cd8a94d2a56b.mp4");
+/* harmony default export */ const ai_medical = ("/static/media/ai-medical.d9e01b29e3198ed37776cd8a94d2a56b.mp4");
 ;// CONCATENATED MODULE: ./pages-sections/sections-page/SectionHome.js
 
 
@@ -271,7 +255,7 @@ const SectionHome_useStyles = (0,styles_.makeStyles)(headersStyle/* default */.Z
 function SectionHeaders({ ...rest }) {
     const classes = SectionHome_useStyles();
     console.log(home);
-    const serviceImageUrl = "img/lsk_imgs/business_home.jpg";
+    const serviceImageUrl = "img/lsk_imgs/business_home..png";
     const routeToAiDetails = ()=>{
         router_default().push("/ai-details");
     };
@@ -287,7 +271,9 @@ function SectionHeaders({ ...rest }) {
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: classes.container,
             style: {
-                mamarginBottom: "1rem"
+                mamarginBottom: "1rem",
+                width: "100%",
+                maxWidth: "100%"
             },
             children: [
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -497,7 +483,9 @@ function SectionAboutUsDetails({ ...rest }) {
                                     lineHeight: "2rem",
                                     fontWeight: "600",
                                     textAlign: "left",
-                                    color: "#112A46"
+                                    color: "#112A46",
+                                    marginTop: "3rem",
+                                    marginBottom: "3rem"
                                 },
                                 children: "  About Us"
                             }),
@@ -605,7 +593,7 @@ function SectionAboutUsDetails({ ...rest }) {
                                                 fontSize: "0.85rem",
                                                 lineHeight: "1rem",
                                                 fontFamily: "Montserrat",
-                                                fontWeight: 300
+                                                fontWeight: "500"
                                             },
                                             children: /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
                                                 container: true,
@@ -678,7 +666,7 @@ function SectionAboutUsDetails({ ...rest }) {
                                                 fontSize: "0.85rem",
                                                 lineHeight: "1rem",
                                                 fontFamily: "Montserrat",
-                                                fontWeight: 300
+                                                fontWeight: "500"
                                             },
                                             children: /*#__PURE__*/ jsx_runtime_.jsx((Grid_default()), {
                                                 container: true,
@@ -754,7 +742,7 @@ function SectionAboutUsDetails({ ...rest }) {
                                                 fontSize: "0.85rem",
                                                 lineHeight: "1rem",
                                                 fontFamily: "Montserrat",
-                                                fontWeight: 300
+                                                fontWeight: "500"
                                             },
                                             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Grid_default()), {
                                                 container: true,
@@ -969,82 +957,18 @@ function SectionServicesCarousel() {
                 color: "info",
                 disableGutters: true
             }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: classes.container,
-                children: [
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)((external_react_slick_default()), {
-                        ...settings,
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionServicesCarousalCard, {
-                                            index: 0
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionServicesCarousalCard, {
-                                            index: 1
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionServicesCarousalCard, {
-                                            index: 2
-                                        })
-                                    ]
-                                })
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridContainer/* default */.Z, {
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionServicesCarousalCard, {
-                                            index: 3
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionServicesCarousalCard, {
-                                            index: 4
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionServicesCarousalCard, {
-                                            index: 5
-                                        })
-                                    ]
-                                })
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
-                        style: {
-                            marginBottom: "2rem",
-                            textAlign: "center"
-                        },
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
-                            xs: 12,
-                            sm: 12,
-                            md: 12,
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
-                                size: "medium",
-                                variant: "contained",
-                                type: "submit",
-                                sx: {
-                                    width: {
-                                        lg: "10rem",
-                                        md: "10rem",
-                                        sm: "11rem",
-                                        xs: "12.5rem"
-                                    }
-                                },
-                                style: {
-                                    textTransform: "none",
-                                    color: "#FFFFFF",
-                                    borderRadius: "5px",
-                                    backgroundColor: "#5288E5",
-                                    textAlign: "center",
-                                    fontSize: "1.25rem",
-                                    height: "2.5rem",
-                                    fontWeight: "600",
-                                    boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"
-                                },
-                                onClick: showAllServices,
-                                children: "Explore"
-                            })
+                children: /*#__PURE__*/ jsx_runtime_.jsx((external_react_slick_default()), {
+                    ...settings,
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
+                            children: services_data/* services.map */.u.map((each, index)=>/*#__PURE__*/ jsx_runtime_.jsx(sections_page_SectionServicesCarousalCard, {
+                                    index: index
+                                }))
                         })
                     })
-                ]
+                })
             })
         ]
     });
@@ -1203,9 +1127,9 @@ function SectionContactUs({ ...rest }) {
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx(material_.Divider, {
                                 style: {
-                                    backgroundColor: "#112A46",
-                                    color: "#112A46",
-                                    border: "#112A46",
+                                    backgroundColor: "#FFFFFF",
+                                    color: "#FFFFFF",
+                                    border: "#FFFFFF",
                                     borderRadius: "5px",
                                     borderTop: "0.25rem solid #112A46",
                                     width: "40%"
@@ -1825,7 +1749,7 @@ function SectionProducts({ ...rest }) {
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: classes.container,
             style: {
-                marginTop: "10rem"
+                marginTop: "5rem"
             },
             children: [
                 /*#__PURE__*/ jsx_runtime_.jsx(GridContainer/* default */.Z, {
@@ -1875,8 +1799,13 @@ function SectionProducts({ ...rest }) {
                                     md: 8,
                                     className: classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter,
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                             className: classes.description,
+                                            style: {
+                                                fontSize: "1.125rem",
+                                                fontWeight: "500",
+                                                fontFamily: "Montserrat"
+                                            },
                                             children: "We understood Who’s target buyer?what they need and What are their pain points? and we came up with a solution."
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -1889,8 +1818,8 @@ function SectionProducts({ ...rest }) {
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                         xs: 12,
-                                        sm: 5,
-                                        md: 5,
+                                        sm: 7,
+                                        md: 7,
                                         className: classes.mlAuto,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx(Card/* default */.Z, {
                                             background: true,
@@ -1911,7 +1840,7 @@ function SectionProducts({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                             className: classes.cardDescription,
-                                                            children: "E-Commerce Client App to facilitate procuring Vishudha Groceries uin Domestic and Bulk."
+                                                            children: "E-Commerce Client App to facilitate procuring Vishudha Groceries in Domestic and Bulk ."
                                                         })
                                                     ]
                                                 })
@@ -1926,13 +1855,23 @@ function SectionProducts({ ...rest }) {
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
                                                 className: classes.info4,
+                                                style: {
+                                                    fontSize: "0.85rem",
+                                                    fontWeight: "500",
+                                                    color: "#000"
+                                                },
                                                 title: "E-Commerce Application",
-                                                description: "We've created the design of the website using modern Technologies like Sketch. It was a very interesting collaboration.",
+                                                description: "We've created the design of the website using modern Tech Stack",
                                                 icon: (ShoppingCartCheckout_default()),
                                                 iconColor: "warning"
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
                                                 className: classes.info4,
+                                                style: {
+                                                    fontSize: "0.85rem",
+                                                    fontWeight: "500",
+                                                    color: "#000"
+                                                },
                                                 title: "Saves Time",
                                                 description: "I would save lot of time of the customer by just relaxing and ordering the Groceries needed to any where ",
                                                 icon: (QueryBuilder_default()),
@@ -1940,6 +1879,11 @@ function SectionProducts({ ...rest }) {
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
                                                 className: classes.info4,
+                                                style: {
+                                                    fontSize: "0.85rem",
+                                                    fontWeight: "500",
+                                                    color: "#000"
+                                                },
                                                 title: "Free Shipping",
                                                 description: "Deliver Goods on Time and handle the goods with Care",
                                                 icon: (LocalShipping_default()),
@@ -1960,6 +1904,11 @@ function SectionProducts({ ...rest }) {
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
                                                 className: classes.info4,
+                                                style: {
+                                                    fontSize: "0.85rem",
+                                                    fontWeight: "500",
+                                                    color: "#000"
+                                                },
                                                 title: "Admin Panel",
                                                 description: "Admin Panel for accessing all the modules in Vishudha Ecommerce Business",
                                                 icon: (AdminPanelSettings_default()),
@@ -1967,6 +1916,11 @@ function SectionProducts({ ...rest }) {
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
                                                 className: classes.info4,
+                                                style: {
+                                                    fontSize: "0.85rem",
+                                                    fontWeight: "500",
+                                                    color: "#000"
+                                                },
                                                 title: "Analytics Integrated",
                                                 description: "Fully Integrated with Analytics to track the Sales",
                                                 icon: (Analytics_default()),
@@ -1974,6 +1928,11 @@ function SectionProducts({ ...rest }) {
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
                                                 className: classes.info4,
+                                                style: {
+                                                    fontSize: "0.85rem",
+                                                    fontWeight: "500",
+                                                    color: "#000"
+                                                },
                                                 title: "Intuitive Dashboard ",
                                                 description: "Intuitive Dashboard based on the Roles",
                                                 icon: (Dashboard_default()),
@@ -1981,6 +1940,11 @@ function SectionProducts({ ...rest }) {
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx(InfoArea/* default */.Z, {
                                                 className: classes.info4,
+                                                style: {
+                                                    fontSize: "0.85rem",
+                                                    fontWeight: "500",
+                                                    color: "#000"
+                                                },
                                                 title: "Configure ",
                                                 description: "Can Configure all the Categories, Sub categories, Products, Prices, Discounts and Taxes details",
                                                 icon: (Tune_default()),
@@ -1990,8 +1954,8 @@ function SectionProducts({ ...rest }) {
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                         xs: 12,
-                                        sm: 5,
-                                        md: 5,
+                                        sm: 7,
+                                        md: 7,
                                         className: classes.mrAuto,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx(Card/* default */.Z, {
                                             background: true,
@@ -2810,7 +2774,7 @@ function SectionTeams({ ...rest }) {
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {
                                 md: 6,
                                 style: {
-                                    color: "#091133"
+                                    color: "#112A46"
                                 },
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("h1", {
@@ -2838,7 +2802,7 @@ function SectionTeams({ ...rest }) {
                             /*#__PURE__*/ jsx_runtime_.jsx(GridItem/* default */.Z, {
                                 md: 6,
                                 style: {
-                                    color: "#091133"
+                                    color: "#FFFFFF"
                                 }
                             })
                         ]
@@ -2866,13 +2830,13 @@ function SectionTeams({ ...rest }) {
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
@@ -2881,17 +2845,17 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center",
                                                                 padding: "0px",
                                                                 margin: "0px"
@@ -2910,7 +2874,7 @@ function SectionTeams({ ...rest }) {
                                                     fontSize: "0.85rem",
                                                     lineHeight: "0.85rem",
                                                     fontWeight: "400",
-                                                    color: "#091133"
+                                                    color: "#FFFFFF"
                                                 },
                                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CardBody/* default */.Z, {
                                                     background: true,
@@ -2918,13 +2882,13 @@ function SectionTeams({ ...rest }) {
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
@@ -2933,17 +2897,17 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center",
                                                                 padding: "0px",
                                                                 margin: "0px"
@@ -2952,17 +2916,17 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "0.85rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "left"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "0.85rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "left"
                                                             },
                                                             children: "He is A Full Stack Developer proficient in a variety of programming languages, frameworks, and technologies, enabling them to handle the complete development process. Expertise in Front-End Development, Back-End Development, Server Management and Deployment, Security Best Practices , Collaboration and Communication."
@@ -2995,13 +2959,13 @@ function SectionTeams({ ...rest }) {
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
@@ -3010,17 +2974,17 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center",
                                                                 padding: "0px",
                                                                 margin: "0px"
@@ -3045,13 +3009,13 @@ function SectionTeams({ ...rest }) {
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
@@ -3060,17 +3024,17 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1.25rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center",
                                                                 padding: "0px",
                                                                 margin: "0px"
@@ -3079,20 +3043,20 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "0.85rem",
                                                                 lineHeight: "1.1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "left"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "0.85rem",
                                                                 lineHeight: "1.1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "left"
                                                             },
-                                                            children: "Venkat Raju is a professional in designing, implementing, and managing an organization's cloud computing architecture. Involved in strategic decisions about the adoption and integration of cloud services. Venkat is expertise in  Cloud Strategy and Planning, Architecture Design, Cloud Service Integration, Security and Compliance, Cost Optimization, Migration Planning, Performance Optimization , Disaster Recovery."
+                                                            children: "Venkat Raju is a professional in designing, implementing, and managing an organization's cloud computing architecture. Venkat handles Cloud Strategy / Planning, Architecture Design, Cloud Service Integration, Security and Compliance, Cost Optimization, Migration Planning, Performance Optimization , Disaster Recovery."
                                                         })
                                                     ]
                                                 })
@@ -3122,13 +3086,13 @@ function SectionTeams({ ...rest }) {
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
@@ -3137,17 +3101,17 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center",
                                                                 padding: "0px",
                                                                 margin: "0px"
@@ -3172,13 +3136,13 @@ function SectionTeams({ ...rest }) {
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
@@ -3187,17 +3151,17 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1.25rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center",
                                                                 padding: "0px",
                                                                 margin: "0px"
@@ -3206,17 +3170,17 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "0.85rem",
                                                                 lineHeight: "1.1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "left"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "0.85rem",
                                                                 lineHeight: "1.1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "left"
                                                             },
                                                             children: "Data Scientists leverage advanced statistical and machine learning techniques to extract meaningful insights from complex datasets, while Data Analysts focus on interpreting and visualizing data to support decision-making and business strategies"
@@ -3249,13 +3213,13 @@ function SectionTeams({ ...rest }) {
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
@@ -3264,17 +3228,17 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center",
                                                                 padding: "0px",
                                                                 margin: "0px"
@@ -3299,13 +3263,13 @@ function SectionTeams({ ...rest }) {
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
@@ -3314,17 +3278,17 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1.25rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center",
                                                                 padding: "0px",
                                                                 margin: "0px"
@@ -3333,17 +3297,17 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "0.85rem",
                                                                 lineHeight: "1.1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "left"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "0.85rem",
                                                                 lineHeight: "1.1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "left"
                                                             },
                                                             children: "Prasad is involved leading and managing the frontend development team responsible for creating the user interface and user experience of a website or application."
@@ -3376,13 +3340,13 @@ function SectionTeams({ ...rest }) {
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
@@ -3391,17 +3355,17 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center",
                                                                 padding: "0px",
                                                                 margin: "0px"
@@ -3426,13 +3390,13 @@ function SectionTeams({ ...rest }) {
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1.5rem",
                                                                 lineHeight: "1.5rem",
                                                                 fontWeight: "600"
@@ -3441,17 +3405,17 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "1rem",
                                                                 lineHeight: "1.25rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "center",
                                                                 padding: "0px",
                                                                 margin: "0px"
@@ -3460,17 +3424,17 @@ function SectionTeams({ ...rest }) {
                                                         }),
                                                         /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                                                             sx: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "0.85rem",
                                                                 lineHeight: "1.1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "left"
                                                             },
                                                             style: {
-                                                                color: "#091133",
+                                                                color: "#FFFFFF",
                                                                 fontSize: "0.85rem",
                                                                 lineHeight: "1.1rem",
-                                                                fontWeight: "400",
+                                                                fontWeight: "500",
                                                                 textAlign: "left"
                                                             },
                                                             children: "Kiranmayee is involved in creating Wireframing / Prototyping digital products , services that are intuitive, user-friendly and provide a positive experience for the end user"
@@ -3863,7 +3827,7 @@ function SectionsPage() {
                                                 fontSize: "0.75rem",
                                                 color: "#091133"
                                             },
-                                            children: "\xa92023 Novel Logiks Technologies"
+                                            children: "\xa92023 novellogiks.com"
                                         })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)(GridItem/* default */.Z, {

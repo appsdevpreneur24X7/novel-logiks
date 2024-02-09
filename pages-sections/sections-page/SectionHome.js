@@ -16,7 +16,7 @@ const useStyles = makeStyles(headersStyle);
 export default function SectionHeaders({ ...rest }) {
   const classes = useStyles();
   console.log(home)
-  const serviceImageUrl = 'img/lsk_imgs/business_home.jpg'
+  const serviceImageUrl = 'img/lsk_imgs/business_home..png'
   const routeToAiDetails = () => {
     Router.push("/ai-details");
   }
@@ -26,7 +26,7 @@ export default function SectionHeaders({ ...rest }) {
   }
   return (
     <div className="cd-section" {...rest} style={{ marginTop: "7.5rem" }} >
-      <div className={classes.container} style={{ mamarginBottom: '1rem'}} >
+      <div className={classes.container} style={{ mamarginBottom: '1rem', width:'100%', maxWidth:'100%'}} >
         <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}></div>
         {/* IMAGE OVERLAY
         https://www.google.com/search?q=video+background+play+and+text+overlay+example+react&rlz=1C1UEAD_enIN1061IN1061&oq=video+background++play+and+text+overlay+example+react&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCTIxNzE3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:f428bed4,vid:LSRNmhLS76o,st:0
@@ -34,12 +34,6 @@ export default function SectionHeaders({ ...rest }) {
         <video autoPlay loop muted style={{ position: "absolute", width: "100%", height: "100vh", objectFit: "cover" }} >
           <source src={aiVideo} type="video/mp4" />
         </video>
-        {/* <img src={serviceImageUrl} alt="..." style={{
-                    marginTop: "30px", marginBottom: "30px",
-                    width: '100vh', height: "100vh",
-                    minWidth: '15rem', borderRadius: "5px",  objectFit: "cover", zIndex: -1 ,
-                    boxShadow: '0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6)'
-                }} /> */}
         <GridContainer >
           <GridItem md={12} style={{ color: '#112A46', marginTop: "10rem" }}>
             <Typography
@@ -126,6 +120,30 @@ export default function SectionHeaders({ ...rest }) {
           </GridItem>
         </GridContainer>
       </div>
+      {/* <div className={classes.container}>
+        <Carousel {...settings}>
+          {/* <div >
+            <GridContainer>
+             <SectionServicesCarousalCard index ={0}/>
+             <SectionServicesCarousalCard index ={1}/>
+             <SectionServicesCarousalCard index ={2}/>
+            </GridContainer>
+          </div>
+          <div >
+            <GridContainer>
+              <SectionServicesCarousalCard index ={3}/>
+             <SectionServicesCarousalCard index ={4}/>
+             <SectionServicesCarousalCard index ={5}/>
+            </GridContainer>
+          </div> 
+           <div >
+            <GridContainer>
+            
+            </GridContainer>
+          </div>
+       
+        </Carousel>
+      </div> */}
     </div >
   );
 }

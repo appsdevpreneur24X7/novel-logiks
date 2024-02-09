@@ -40,11 +40,11 @@ export default function AiDetailsBkp() {
         color="info"
         disableGutters={true}
       />
-       <div className={classes.container} style={{ marginTop: "4em" }}>
+      <div className={classes.container} style={{ marginTop: "4em" }}>
         <Carousel {...settings}>
           <div >
             <Card plain background style={{
-              backgroundImage: "url('img/latest/ai-bg-1.jpg')",
+              backgroundImage: "url('img/latest/ai-bg-1.png')",
               backgroundSize: "cover",
               backgroundPosition: "top center"
             }}>
@@ -57,9 +57,9 @@ export default function AiDetailsBkp() {
                     classes.mrAuto,
                     classes.textCenter
                   )}
-                  style={{ marginTop: "4em", zIndex:'1000'}}
+                  style={{ marginTop: "4em", zIndex: '1000' }}
                 >
-                  <h1 className={classes.title} style={{color:'#FFFFFF'}}>Generative Artificial Intelligence: Unleashing
+                  <h1 className={classes.title} style={{ color: '#FFFFFF' }}>Generative Artificial Intelligence: Unleashing
                     the Creative Power of Algorithms</h1>
                   <h4>
                     At Novel Logiks, we’re passionate about demystifying the magic behind Generative Artificial Intelligence (AI) and showing you how it works. Generative AI is
@@ -92,22 +92,13 @@ export default function AiDetailsBkp() {
                     <li><h4>Iterative Improvement: The AI can continually refine its output based
                       on feedback and additional training data, ensuring that its creations become increasingly sophisticated and tailored to your needs.</h4></li>
                   </ul>
-                  <h4>
-                      Generative AI isn’t just a tool; it’s a revolutionary leap forward in creativity
-                      and problem-solving. It can save time, reduce costs, and inspire new possibilities
-                      across various industries. Whether you’re in art, marketing, research, or any
-                      field where creativity and innovation are essential, Novel Logiks can help you
-                      harness the transformative potential of Generative AI.
-                      Join us in exploring the fascinating world of Generative AI and witness how
-                      algorithms can bring your vision to life, one generated masterpiece at a time.
-                    </h4>
                 </GridItem>
               </CardBody>
             </Card>
           </div>
           <div >
             <Card plain background style={{
-              backgroundImage: "url('img/latest/ai-bg-2.jpg')",
+              backgroundImage: "url('img/latest/ai-bg-2.png')",
               backgroundSize: "cover",
               backgroundPosition: "top center"
             }}>
@@ -120,9 +111,9 @@ export default function AiDetailsBkp() {
                     classes.mrAuto,
                     classes.textCenter
                   )}
-                  style={{ marginTop: "4em", zIndex:'1000'}}
+                  style={{ marginTop: "4em", zIndex: '1000' }}
                 >
-                  <h1 sx={{color:'#FFF' ,zIndex:'1000'}}> Predictive Maintenance using AI: Ensuring
+                  <h1 sx={{ color: '#FFF', zIndex: '1000' }}> Predictive Maintenance using AI: Ensuring
                     Efficiency and Reliability
                   </h1>
                   <h4>
@@ -134,9 +125,9 @@ export default function AiDetailsBkp() {
                   </h4>
                   <ul>
                     <li>
-                       Data Collection: Predictive Maintenance begins with the collection of
-                        vast amounts of data from sensors, machinery, and other relevant sources.
-                        These data streams provide valuable insights into the health and performance of equipment.</li>
+                      Data Collection: Predictive Maintenance begins with the collection of
+                      vast amounts of data from sensors, machinery, and other relevant sources.
+                      These data streams provide valuable insights into the health and performance of equipment.</li>
                     <li>
                       Data Analysis: Advanced analytics and machine learning algorithms
                       are employed to process and analyze the collected data. Patterns and
@@ -163,23 +154,13 @@ export default function AiDetailsBkp() {
                     <li><h4>Continuous Improvement: Predictive Maintenance is an ongoing process that continually learns and adapts. As more data is collected and
                       analyzed, the system becomes more accurate and refined, further enhancing its predictive capabilities.</h4></li>
                   </ul>
-                  <h4>
-                    Predictive Maintenance isn’t just a maintenance strategy; it’s a transformative approach that revolutionizes how industries operate. Whether you’re
-                    in manufacturing, energy, transportation, or any sector relying on machinery
-                    and equipment, Novel Logiks can help you implement Predictive Maintenance
-                    solutions that keep your operations running smoothly and efficiently.
-                    Join us in exploring the world of Predictive Maintenance and experience
-                    firsthand how it can drive efficiency, reduce costs, and ensure the reliability of
-                    your assets.
-
-                  </h4>
                 </GridItem>
               </CardBody>
             </Card>
           </div>
           <div >
             <Card plain background style={{
-              backgroundImage: "url('img/latest/ai-bg-3.jpg')",
+              backgroundImage: "url('img/latest/ai-bg-3.png')",
               backgroundSize: "cover",
               backgroundPosition: "top center"
             }}>
@@ -192,9 +173,9 @@ export default function AiDetailsBkp() {
                     classes.mrAuto,
                     classes.textCenter
                   )}
-                  style={{ marginTop: "4em", zIndex:'1000'}}
+                  style={{ marginTop: "4em", zIndex: '1000' }}
                 >
-                  <h1 className={classes.title} style={{color:'#FFF'}}>  AI and Computer Vision: Transforming Visual Data into Intelligent Insights
+                  <h1 className={classes.title} style={{ color: '#FFF' }}>  AI and Computer Vision: Transforming Visual Data into Intelligent Insights
                   </h1>
                   <h4>
                     Welcome to Novel Logiks, where we delve into the captivating world of AI and
@@ -236,16 +217,6 @@ export default function AiDetailsBkp() {
                       data, ensuring their reliability in various environments
                     </h4></li>
                   </ul>
-                  <h4>
-                    AI-driven Computer Vision isn’t just about seeing; it’s about understanding
-                    and making informed decisions. Whether you’re in healthcare, manufacturing,
-                    retail, or any industry relying on visual data, Novel Logiks can help you harness
-                    the transformative power of AI and Computer Vision to gain deeper insights,
-                    increase efficiency, and drive innovation.
-                    Join us in exploring the boundless possibilities of AI and Computer Vision,
-                    where visual data becomes a source of knowledge and a catalyst for intelligent
-                    solutions
-                  </h4>
                 </GridItem>
               </CardBody>
             </Card>

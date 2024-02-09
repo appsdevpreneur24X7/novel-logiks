@@ -36,17 +36,12 @@ export default function SectionHomeLeft({ ...rest }) {
                             />
                         </GridItem>
                     </GridItem>
-                    <GridItem xs={12} sm={6} md={6} sx={{
-                        paddingTop:{
-                            xs:"3rem",
-                            sm:"3rem",
-                            md:"5rem",
-                            lg:"5rem",
-                        }
-                    }}>
+                    <GridItem xs={12} sm={6} md={6} 
+                   
+                    >
                         <h1 style={{
                             fontFamily: "Montserrat",
-                            fontSize: '1.719rem',
+                            fontSize: '1.5rem',
                             lineHeight: '2rem',
                             fontWeight: '600',
                             textAlign: "left",
@@ -58,56 +53,12 @@ export default function SectionHomeLeft({ ...rest }) {
                             border: '#5288E5',
                             borderRadius: '5px',
                             borderTop: '0.25rem solid #5288E5',
-                            width: '40%'
+                            width: '50%'
                         }}></Divider>
-                        {/* <GridContainer style={{ textAlign: "center" }}>
-                            <GridItem xs={12} sm={12} md={12} style={{ marginTop: "5rem"}}>
-                                <Button
-                                    size="medium"
-                                    variant="contained"
-                                    type="submit"
-                                    style={{
-                                        textTransform: "none",
-                                        color: '#112A46',
-                                        background: '#5288E5',
-                                        textAlign: "left",
-                                        margin: '1em',
-                                        boxShadow: "none",
-                                        width: "11.813rem",
-                                        height: "2.5rem",
-                                        borderRadius: "0px"
-                                    }}
-                                    onClick={routeToContactUs}
-                                >
-                                    Contact Us
-                                </Button>
-                                <Button
-                                    size="medium"
-                                    variant="contained"
-                                    type="submit"
-                                    style={{
-                                        margin: '1em',
-                                        textTransform: "none",
-                                        color: '#112A46',
-                                        borderColor: 'black',
-                                        border: '2px solid',
-                                        background: '#FFF',
-                                        textAlign: "right",
-                                        boxShadow: "none",
-                                        width: "11.813rem",
-                                        height: "2.5rem",
-                                        borderRadius: "0px"
-                                    }}
-                                    onClick={() => console.log("Need to Handle Routing ?")}
-                                >
-                                    Learn More
-                                </Button>
-                            </GridItem>
-                        </GridContainer> */}
+                     
                     </GridItem>
                 </GridContainer>
             </div>
         </div>
-        // </div>
     );
 }

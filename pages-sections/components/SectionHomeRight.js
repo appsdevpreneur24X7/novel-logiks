@@ -24,17 +24,19 @@ export default function SectionHomeRight({ ...rest }) {
         <div className={classes.container} {...rest}>
             <div className={classes.features3} style={{ padding: "0px" }}>
                 <GridContainer>
-                <GridItem xs={12} sm={6} md={6} sx={{
-                        paddingTop:{
-                            xs:"3rem",
-                            sm:"3rem",
-                            md:"5rem",
-                            lg:"5rem",
-                        }
-                    }}>
+                    <GridItem xs={12} sm={6} md={6}
+                    // sx={{
+                    //         paddingTop:{
+                    //             xs:"3rem",
+                    //             sm:"3rem",
+                    //             md:"5rem",
+                    //             lg:"5rem",
+                    //         }
+                    //     }}
+                    >
                         <h1 style={{
                             fontFamily: "Montserrat",
-                            fontSize: '1.719rem',
+                            fontSize: '1.5rem',
                             lineHeight: '2rem',
                             fontWeight: '600',
                             textAlign: "left",
@@ -46,7 +48,7 @@ export default function SectionHomeRight({ ...rest }) {
                             border: '#5288E5',
                             borderRadius: '5px',
                             borderTop: '0.25rem solid #5288E5',
-                            width: '40%'
+                            width: '50%'
                         }}></Divider>
                         {/* <GridContainer style={{ textAlign: "center" }}>
                             <GridItem xs={12} sm={12} md={12} style={{ marginTop: "5rem"}}>
@@ -98,7 +100,7 @@ export default function SectionHomeRight({ ...rest }) {
                             <img
                                 src={serviceImageUrl}
                                 alt="ai pic"
-                                style={{ width: '100%', boxShadow: '0 3px 10px rgb(0 0 0 / 0.5)', borderRadius:"5px" }}
+                                style={{ width: '100%', boxShadow: '0 3px 10px rgb(0 0 0 / 0.5)', borderRadius: "5px" }}
                             />
                         </GridItem>
                     </GridItem>

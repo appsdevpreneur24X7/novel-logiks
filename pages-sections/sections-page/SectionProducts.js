@@ -27,7 +27,7 @@ export default function SectionProducts({ ...rest }) {
   const classes = useStyles();
   return (
     <div className="cd-section" {...rest}>
-      <div className={classes.container} style={{ marginTop: "10rem" }}>
+      <div className={classes.container} style={{ marginTop: "5rem" }}>
         <GridContainer style={{ marginBottom: '.25rem', marginTop: "2rem" }}>
           <GridItem md={12} style={{ color: '#112A46' }}>
             <h1 style={{
@@ -64,14 +64,14 @@ export default function SectionProducts({ ...rest }) {
                 {/* <h2 className={classes.title}>
                   Some of Our Awesome E-Commerce Products
                 </h2> */}
-                <h3 className={classes.description}>
+                <h5 className={classes.description} style={{fontSize:"1.125rem", fontWeight:"500", fontFamily:"Montserrat"}}>
                   We understood Who’s target buyer?what they need and What are their pain points? and we came up with a solution.
-                </h3>
+                </h5>
                 <div className={classes.sectionSpace} />
               </GridItem>
             </GridContainer>
             <GridContainer>
-              <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
+              <GridItem xs={12} sm={7} md={7} className={classes.mlAuto}>
                 <Card
                   background
                   className={classes.card4}
@@ -83,7 +83,7 @@ export default function SectionProducts({ ...rest }) {
                     <a href="#pablo" onClick={(e) => e.preventDefault}>
                       <h3 className={classes.cardTitle}>Tagline E-Commerce Client</h3>
                       <p className={classes.cardDescription}>
-                        E-Commerce Client App to facilitate procuring Vishudha Groceries uin Domestic and Bulk.
+                        E-Commerce Client App to facilitate procuring Vishudha Groceries in Domestic and Bulk .
                       </p>
                     </a>
                   </CardBody>
@@ -91,21 +91,21 @@ export default function SectionProducts({ ...rest }) {
               </GridItem>
               <GridItem xs={12} sm={5} md={5} className={classes.mrAuto}>
                 <InfoArea
-                  className={classes.info4}
+                  className={classes.info4} style={{fontSize:"0.85rem", fontWeight:"500", color:"#000"}}
                   title="E-Commerce Application"
-                  description="We've created the design of the website using modern Technologies like Sketch. It was a very interesting collaboration."
+                  description="We've created the design of the website using modern Tech Stack"
                   icon={ShoppingCartCheckoutIcon}
                   iconColor="warning"
                 />
                 <InfoArea
-                  className={classes.info4}
+                  className={classes.info4} style={{fontSize:"0.85rem", fontWeight:"500", color:"#000"}}
                   title="Saves Time"
                   description="I would save lot of time of the customer by just relaxing and ordering the Groceries needed to any where "
                   icon={QueryBuilderIcon}
                   iconColor="warning"
                 />
                 <InfoArea
-                  className={classes.info4}
+                  className={classes.info4} style={{fontSize:"0.85rem", fontWeight:"500", color:"#000"}}
                   title="Free Shipping"
                   description="Deliver Goods on Time and handle the goods with Care"
                   icon={LocalShippingIcon}
@@ -117,35 +117,35 @@ export default function SectionProducts({ ...rest }) {
             <GridContainer>
               <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
                 <InfoArea
-                  className={classes.info4}
+                  className={classes.info4} style={{fontSize:"0.85rem", fontWeight:"500", color:"#000"}}
                   title="Admin Panel"
                   description="Admin Panel for accessing all the modules in Vishudha Ecommerce Business"
                   icon={AdminPanelSettingsIcon}
                   iconColor="warning"
                 />
                 <InfoArea
-                  className={classes.info4}
+                  className={classes.info4} style={{fontSize:"0.85rem", fontWeight:"500", color:"#000"}}
                   title="Analytics Integrated"
                   description="Fully Integrated with Analytics to track the Sales"
                   icon={AnalyticsIcon}
                   iconColor="warning"
                 />
                 <InfoArea
-                  className={classes.info4}
+                  className={classes.info4} style={{fontSize:"0.85rem", fontWeight:"500", color:"#000"}}
                   title="Intuitive Dashboard "
                   description="Intuitive Dashboard based on the Roles"
                   icon={Dashboard}
                   iconColor="warning"
                 />
-                <InfoArea
-                  className={classes.info4}
+                <InfoArea 
+                  className={classes.info4} style={{fontSize:"0.85rem", fontWeight:"500", color:"#000"}}
                   title="Configure "
                   description="Can Configure all the Categories, Sub categories, Products, Prices, Discounts and Taxes details"
                   icon={TuneIcon}
                   iconColor="warning"
                 />
               </GridItem>
-              <GridItem xs={12} sm={5} md={5} className={classes.mrAuto}>
+              <GridItem xs={12} sm={7} md={7} className={classes.mrAuto}>
                 <Card
                   background
                   className={classes.card4}

@@ -296,7 +296,7 @@ export default function SectionsPage() {
             <div className={classes.container} >
               <GridContainer style={{alignItems: "baseline" }}>
                 <GridItem md={6} >
-                  <h4 style ={{fontFamily:"Montserrat", fontSize : "0.75rem", color:"#091133"}}>©2023 Novel Logiks Technologies</h4>
+                  <h4 style ={{fontFamily:"Montserrat", fontSize : "0.75rem", color:"#091133"}}>©2023 novellogiks.com</h4>
                 </GridItem>
                 <GridItem md={6} style={{ color: '#112A46', verticalAlign: "baseline" }}>
                   <Button
