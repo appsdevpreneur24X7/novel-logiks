@@ -25,7 +25,7 @@ export default function SectionHeaders({ ...rest }) {
     Router.push("/sections#contactUs");
   }
   return (
-    <div className="cd-section" {...rest} style={{ marginTop: "7.5rem" }} >
+    <div className="cd-section" {...rest} style={{ marginTop: "5rem" }} >
       <div className={classes.container} style={{ mamarginBottom: '1rem', width:'100%', maxWidth:'100%'}} >
         <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}></div>
         {/* IMAGE OVERLAY

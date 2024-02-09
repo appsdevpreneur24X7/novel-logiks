@@ -5,9 +5,10 @@ import HeaderLinks from "/components/Header/HeaderLinks.js";
 import SectionHome from "/pages-sections/sections-page/SectionHome.js";
 import SectionAboutUsDetails from "/pages-sections/sections-page/SectionAboutUsDetails.js";
 import SectionServices from "/pages-sections/sections-page/SectionServices.js";
-import SectionServicesCarousel from "/pages-sections/sections-page/SectionServicesCarousel.js";
+// import SectionServicesCarousel from "/pages-sections/sections-page/SectionServicesCarousel.js";
 import SectionContactUs from "/pages-sections/sections-page/SectionContactUs.js";
 import SectionProducts from "/pages-sections/sections-page/SectionProducts.js";
+import SectionClients from "/pages-sections/sections-page/SectionClients.js";
 import SectionCareers from "/pages-sections/sections-page/SectionCareers.js";
 import SectionTeams from "/pages-sections/sections-page/SectionTeams.js";
 import sectionsPageStyle from "/styles/jss/novel-logiks/pages/sectionsPageStyle.js";
@@ -15,10 +16,7 @@ import Footer from "../components/Footer/Footer";
 import Button from "/components/CustomButtons/Button.js";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
-import headersStyle from "/styles/jss/novel-logiks/pages/sectionsSections/headersStyle.js";
-import { Typography, Divider, Box, List, ListItem } from "@mui/material";
-import Link from "next/link";
-import { linksData } from "../data/links-data.js";
+import { Divider } from "@mui/material";
 
 const useStyles = makeStyles(sectionsPageStyle);
 
@@ -85,15 +83,6 @@ export default function SectionsPage() {
     };
     animateScroll();
   };
-  const showAllServices = () => {
-    console.log("Routing to /service-details Page ");
-    Router.push("/service-details");
-  }
-
-  const routeToContactUs = () => {
-    console.log("Routing to /contactUs Page ");
-    Router.push("/sections#contactUs");
-  }
 
   const classes = useStyles();
   return (
@@ -109,7 +98,7 @@ export default function SectionsPage() {
         <SectionAboutUsDetails id="about-us" />
         <SectionServices id="services" />
         <SectionProducts id="products" />
-        {/* <SectionIndustries id="industries" /> */}
+        <SectionClients id="clients" />
         <SectionTeams id="teams" />
         <SectionCareers id="careers" />
         <SectionContactUs id="contactUs" />
@@ -204,8 +193,29 @@ export default function SectionsPage() {
           </li>
           <li>
             <a
-              href="#teams"
+              href="#clients"
               data-number="5"
+              className=""
+              onClick={(e) => {
+                var isMobile = navigator.userAgent.match(
+                  /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
+                );
+                if (isMobile) {
+                  // if we are on mobile device the scroll into view will be managed by the browser
+                } else {
+                  e.preventDefault();
+                  smoothScroll("clients");
+                }
+              }}
+            >
+              <span className="cd-dot" />
+              <span className="cd-label">Clients</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#teams"
+              data-number="6"
               className=""
               onClick={(e) => {
                 var isMobile = navigator.userAgent.match(
@@ -226,7 +236,7 @@ export default function SectionsPage() {
           <li>
             <a
               href="#offices"
-              data-number="6"
+              data-number="7"
               className=""
               onClick={(e) => {
                 var isMobile = navigator.userAgent.match(
@@ -247,7 +257,7 @@ export default function SectionsPage() {
           <li>
             <a
               href="#careers"
-              data-number="7"
+              data-number="8"
               className=""
               onClick={(e) => {
                 var isMobile = navigator.userAgent.match(
@@ -268,7 +278,7 @@ export default function SectionsPage() {
           <li>
             <a
               href="#contactUs"
-              data-number="7"
+              data-number="9"
               className=""
               onClick={(e) => {
                 var isMobile = navigator.userAgent.match(

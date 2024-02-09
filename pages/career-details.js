@@ -8,11 +8,10 @@ import HeaderLinks from "/components/Header/HeaderLinks.js";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import headersStyle from "/styles/jss/novel-logiks/pages/sectionsSections/headersStyle.js";
-import { Autocomplete, Divider, Grid, Paper, TextField, Typography } from "@mui/material";
+import { Autocomplete, Divider,  Paper, TextField, Typography } from "@mui/material";
 import { careersData } from "../data/careers-data.js";
 import Footer from "/components/Footer/Footer.js";
 import Button from "/components/CustomButtons/Button.js";
-import sectionsPageStyle from "/styles/jss/novel-logiks/pages/sectionsPageStyle.js";
 const useStyles = makeStyles(headersStyle);
 
 export default function CareerDetails() {
@@ -51,7 +50,6 @@ export default function CareerDetails() {
   }, []);
 
   const searchHandler = () => {
-    // debugger;
     console.log(`selectedPosition :${selectedPosition} , Selected Location : ${selectedLocation} , Selected Employment : ${selectedEmploymentType}`);
     if (selectedPosition && selectedPosition.length > 0) {
       filteredCareers = careers.filter((value, index, array) => value['position'] === selectedPosition);

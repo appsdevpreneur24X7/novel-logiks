@@ -1,19 +1,16 @@
 /*eslint-disable*/
-import React, { useEffect, useState } from "react";
+import React from "react";
 import makeStyles from "@mui/styles/makeStyles";
 import Header from "/components/Header/Header.js";
 import HeaderLinks from "/components/Header/HeaderLinks.js";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import headersStyle from "/styles/jss/novel-logiks/pages/sectionsSections/headersStyle.js";
-import { Divider, Grid, Paper, Typography } from "@mui/material";
+import { Divider, Typography } from "@mui/material";
 import Footer from "/components/Footer/Footer.js";
 import Button from "/components/CustomButtons/Button.js";
-import sectionsPageStyle from "/styles/jss/novel-logiks/pages/sectionsPageStyle.js";
 
 const useStyles = makeStyles(headersStyle);
-
-import contactUsStyle from "/styles/jss/novel-logiks/pages/contactUsStyle.js";
 
 export default function ContactUsPage() {
   const classes = useStyles();
@@ -26,7 +23,6 @@ export default function ContactUsPage() {
         color="info"
         disableGutters={true}
       />
-      {/* <div className={classes.container} style={{ marginTop: "5em", backgroundColor: "#FFFFFF" }}> */}
       <div style={{ marginTop: "5em", backgroundColor: "#FFFFFF" }}>
         <GridContainer style={{ marginBottom: '.25rem' }}>
           <GridItem md={12} style={{ color: '#112A46' }}>
@@ -115,7 +111,7 @@ export default function ContactUsPage() {
                 target="_blank"
                 style={{ color: "gray" }}
               >
-                All rights reserved by Novel Logiks Copyright ©2023
+                All rights reserved by novellogiks.com Copyright ©2023
               </a>{" "}
             </div>
           </div>
