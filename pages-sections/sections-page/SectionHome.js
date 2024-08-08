@@ -10,7 +10,9 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { home } from "../../data/home-data";
 import SectionHomeLeft from "../components/SectionHomeLeft";
 import SectionHomeRight from "../components/SectionHomeRight";
-import aiVideo from '../../public/video/ai-medical.mp4';
+import Video from 'next-video';
+// import getStarted from '/videos/get-started.mp4';
+// import aiVideo from '../../public/ai-medical.mp4';
 const useStyles = makeStyles(headersStyle);
 
 export default function SectionHeaders({ ...rest }) {
@@ -27,13 +29,19 @@ export default function SectionHeaders({ ...rest }) {
   return (
     <div className="cd-section" {...rest} style={{ marginTop: "5rem" }} >
       <div className={classes.container} style={{ mamarginBottom: '1rem', width:'100%', maxWidth:'100%'}} >
-        <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}></div>
+        {/* <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}></div> */}
+        {/* <video autoPlay muted loop style={{ maxWidth: '100%', height: 'auto' }}> */}
+        <video autoPlay loop muted style={{ position: "absolute", width: "100%", height: "100vh", objectFit: "cover" }} >
+        <source src='/ai-medical.mp4' type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      {/* <Video src={aiVideo} /> */}
         {/* IMAGE OVERLAY
         https://www.google.com/search?q=video+background+play+and+text+overlay+example+react&rlz=1C1UEAD_enIN1061IN1061&oq=video+background++play+and+text+overlay+example+react&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCTIxNzE3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:f428bed4,vid:LSRNmhLS76o,st:0
         */}
-        <video autoPlay loop muted style={{ position: "absolute", width: "100%", height: "100vh", objectFit: "cover" }} >
+        {/* <video autoPlay loop muted style={{ position: "absolute", width: "100%", height: "100vh", objectFit: "cover" }} >
           <source src={aiVideo} type="video/mp4" />
-        </video>
+        </video> */}
         <GridContainer >
           <GridItem md={12} style={{ color: '#112A46', marginTop: "10rem" }}>
             <Typography
@@ -74,7 +82,7 @@ export default function SectionHeaders({ ...rest }) {
 
           </GridItem>
         </GridContainer>
-        <GridContainer style={{ mamarginBottom: "5rem" }}>
+        <GridContainer >
           <GridItem md={12} style={{
             color: '#FFFFFF', display: "flex",
             justifyContent: "center",
@@ -120,30 +128,6 @@ export default function SectionHeaders({ ...rest }) {
           </GridItem>
         </GridContainer>
       </div>
-      {/* <div className={classes.container}>
-        <Carousel {...settings}>
-          {/* <div >
-            <GridContainer>
-             <SectionServicesCarousalCard index ={0}/>
-             <SectionServicesCarousalCard index ={1}/>
-             <SectionServicesCarousalCard index ={2}/>
-            </GridContainer>
-          </div>
-          <div >
-            <GridContainer>
-              <SectionServicesCarousalCard index ={3}/>
-             <SectionServicesCarousalCard index ={4}/>
-             <SectionServicesCarousalCard index ={5}/>
-            </GridContainer>
-          </div> 
-           <div >
-            <GridContainer>
-            
-            </GridContainer>
-          </div>
-       
-        </Carousel>
-      </div> */}
     </div >
   );
 }
