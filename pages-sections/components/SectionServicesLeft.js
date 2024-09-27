@@ -36,15 +36,15 @@ export default function SectionServicesLeft({ ...rest }) {
                             textAlign: "left",
                             color: '#112A46'
                         }}>{serviceTitle}</h1>
-                        <Divider style={{
-                            backgroundColor: '#5288E5',
-                            color: '#5288E5',
-                            border: '#5288E5',
+                        {/* <Divider style={{
+                            backgroundColor: '#007bff',
+                            color: '#007bff',
+                            border: '#007bff',
                             borderRadius: '5px',
-                            borderTop: '0.25rem solid #5288E5',
+                            borderTop: '0.25rem solid #007bff',
                             width: '50%',
                             marginBottom:"1.5rem"
-                        }}></Divider>
+                        }}></Divider> */}
                         <Typography component="div" style={{ textAlign: "left",marginBottom:"1rem" }}>
                             <ul>
                                 {servicePoints.map((each, idx) => <li key={idx}><h6 style={{color:"#091133"}}>{each}</h6></li>)}

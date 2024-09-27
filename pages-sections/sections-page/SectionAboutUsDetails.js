@@ -47,14 +47,14 @@ export default function SectionAboutUsDetails({ ...rest }) {
               marginBottom:"3rem"
             }}>  About Us
             </h1>
-            <Divider style={{
-              backgroundColor: '#5288E5',
-              color: '#5288E5',
-              border: '#5288E5',
+            {/* <Divider style={{
+              backgroundColor: '#007bff',
+              color: '#007bff',
+              border: '#007bff',
               borderRadius: '5px',
-              borderTop: '0.25rem solid #5288E5',
+              borderTop: '0.25rem solid #007bff',
               width: '25%'
-            }}></Divider>
+            }}></Divider> */}
           </GridItem>
         </GridContainer>
         {/* IMPLEMENT CAROUSAL HERE
@@ -96,8 +96,8 @@ export default function SectionAboutUsDetails({ ...rest }) {
           </GridContainer>)}
         </GridContainer>
         <GridContainer >
-          <GridItem xs={12} sm={4} md={4} style={{ marginTop: "2rem" }}>
-            <Card blog style={{ minHeight: "15rem", height: "15rem" ,backgroundColor:"#5288E5"}}>
+          <GridItem xs={12} sm={4} md={4} >
+            <Card blog style={{ minHeight: "15rem", height: "15rem" ,backgroundColor:"#007bff"}}>
               <CardBody>
                 <GridItem style={{ textAlign: "center", justifyContent: "center", alignItems: "center" }}>
                   <a href="#pablo" onClick={(e) => e.preventDefault()} style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" ,color: '#FFFFFF'}}>
@@ -130,8 +130,8 @@ export default function SectionAboutUsDetails({ ...rest }) {
             </Card>
           </GridItem>
           <GridItem xs={12} sm={4} md={4}>
-            {/* <Card blog style={{ backgroundColor: "#5288E5", minHeight:"15rem", height:"15rem" }}> */}
-            <Card blog style={{ minHeight: "15rem", height: "15rem" ,backgroundColor:"#5288E5"}}>
+            {/* <Card blog style={{ backgroundColor: "#007bff", minHeight:"15rem", height:"15rem" }}> */}
+            <Card blog style={{ minHeight: "15rem", height: "15rem" ,backgroundColor:"#007bff"}}>
               <CardBody>
                 <GridItem style={{ textAlign: "center", justifyContent: "center", alignItems: "center" }}>
                   <a href="#pablo" onClick={(e) => e.preventDefault()} style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }}>
@@ -162,8 +162,8 @@ export default function SectionAboutUsDetails({ ...rest }) {
               </CardBody>
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={4} md={4} style={{ marginTop: "2rem" }}>
-          <Card blog style={{ minHeight: "15rem", height: "15rem" ,backgroundColor:"#5288E5"}}>
+          <GridItem xs={12} sm={4} md={4} >
+          <Card blog style={{ minHeight: "15rem", height: "15rem" ,backgroundColor:"#007bff"}}>
               <CardBody >
                 <GridItem style={{ textAlign: "center", justifyContent: "center", alignItems: "center" }}>
                   <a href="#pablo" onClick={(e) => e.preventDefault()} style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }}>

@@ -45,14 +45,14 @@ export default function AiDetails() {
               marginTop: "1.5rem"
             }}>  NovelLogiks in Artificial Intelligence
             </h1>
-            <Divider style={{
-              backgroundColor: '#5288E5',
-              color: '#5288E5',
-              border: '#5288E5',
+            {/* <Divider style={{
+              backgroundColor: '#007bff',
+              color: '#007bff',
+              border: '#007bff',
               borderRadius: '5px',
-              borderTop: '0.25rem solid #5288E5',
+              borderTop: '0.25rem solid #007bff',
               width: '50%',
-            }}></Divider>
+            }}></Divider> */}
           </GridItem>
         </GridContainer>
 
@@ -68,14 +68,14 @@ export default function AiDetails() {
             }}>  Generative Artificial Intelligence: Unleashing The Creative Power Of Algorithms
 
             </h1>
-            <Divider style={{
-              backgroundColor: '#5288E5',
-              color: '#5288E5',
-              border: '#5288E5',
+            {/* <Divider style={{
+              backgroundColor: '#007bff',
+              color: '#007bff',
+              border: '#007bff',
               borderRadius: '5px',
-              borderTop: '0.25rem solid #5288E5',
+              borderTop: '0.25rem solid #007bff',
               width: '40%'
-            }}></Divider>
+            }}></Divider> */}
           </GridItem>
         </GridContainer>
 
@@ -141,14 +141,14 @@ export default function AiDetails() {
             }}>  Predictive Maintenance Using AI: Ensuring Efficiency And Reliability
 
             </h1>
-            <Divider style={{
-              backgroundColor: '#5288E5',
-              color: '#5288E5',
-              border: '#5288E5',
+            {/* <Divider style={{
+              backgroundColor: '#007bff',
+              color: '#007bff',
+              border: '#007bff',
               borderRadius: '5px',
-              borderTop: '0.25rem solid #5288E5',
+              borderTop: '0.25rem solid #007bff',
               width: '40%'
-            }}></Divider>
+            }}></Divider> */}
           </GridItem>
         </GridContainer>
 
@@ -226,14 +226,14 @@ export default function AiDetails() {
               color: '#112A46'
             }}>  AI and Computer Vision: Transforming Visual Data into Intelligent Insights
             </h1>
-            <Divider style={{
-              backgroundColor: '#5288E5',
-              color: '#5288E5',
-              border: '#5288E5',
+            {/* <Divider style={{
+              backgroundColor: '#007bff',
+              color: '#007bff',
+              border: '#007bff',
               borderRadius: '5px',
-              borderTop: '0.25rem solid #5288E5',
+              borderTop: '0.25rem solid #007bff',
               width: '40%'
-            }}></Divider>
+            }}></Divider> */}
           </GridItem>
         </GridContainer>
         <GridContainer xs={12} style={{ marginBottom: "2rem", color: '#112A46', background: '#FFF' }}>

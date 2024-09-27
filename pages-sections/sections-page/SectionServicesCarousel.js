@@ -102,7 +102,7 @@ export default function SectionServicesCarousel() {
                   textTransform: "none",
                   color: '#FFFFFF',
                   borderRadius: '5px',
-                  backgroundColor: '#5288E5',
+                  backgroundColor: '#007bff',
                   textAlign: "center",
                   fontSize: "1.25rem",
                   height: "2.5rem",

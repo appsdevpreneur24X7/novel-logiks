@@ -129,7 +129,7 @@ export default function CareerDetails() {
                 }
                 )
               }
-              <Divider />
+              {/* <Divider /> */}
             </GridItem>
           </div>
         }) : null}
@@ -235,7 +235,7 @@ export default function CareerDetails() {
                   textAlign: "center",
                   textTransform: "none",
                   color: '#112A46',
-                  background: '#5288E5',
+                  background: '#007bff',
                   width: '10rem'
                 }}
                 disabled={enableSearch ? true : false}

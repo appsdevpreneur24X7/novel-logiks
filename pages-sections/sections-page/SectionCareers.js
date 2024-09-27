@@ -127,7 +127,7 @@ export default function SectionCareers({ ...rest }) {
                 }
                 )
               }
-              <Divider />
+              {/* <Divider /> */}
             </GridItem>
           </div>
         }) : null}
@@ -164,14 +164,14 @@ export default function SectionCareers({ ...rest }) {
 
             }}>  Careers
             </h1>
-            <Divider style={{
-              background: "#5288E5",
-              color: '#5288E5',
-              border: '#5288E5',
+            {/* <Divider style={{
+              background: "#007bff",
+              color: '#007bff',
+              border: '#007bff',
               borderRadius: '5px',
-              borderTop: '0.25rem solid #5288E5',
+              borderTop: '0.25rem solid #007bff',
               width: '40%'
-            }}></Divider>
+            }}></Divider> */}
             <Typography
               sx={{
                 fontFamily: 'Montserrat',
@@ -318,7 +318,7 @@ export default function SectionCareers({ ...rest }) {
                      textTransform: "none",
                      color: '#FFFFFF',
                      borderRadius: '5px',
-                     backgroundColor: '#5288E5',
+                     backgroundColor: '#007bff',
                      textAlign: "center",
                      fontSize: "1.25rem",
                      height: "2.5rem",

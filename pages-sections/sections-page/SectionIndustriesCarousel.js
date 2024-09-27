@@ -115,7 +115,7 @@ export default function SectionIndustriesCarousel() {
                 fontSize:"1.5rem",
                 fontWeight : "600",
                 color: '#112A46',
-                background: '#5288E5',
+                background: '#007bff',
                 textAlign: "left",
                 margin: '1em',
                 fontSize : "1.5rem",

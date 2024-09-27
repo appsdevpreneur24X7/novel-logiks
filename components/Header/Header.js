@@ -82,7 +82,7 @@ export default function Header(props) {
             style={{
               textTransform: "none",
               color: '#112A46',
-              background: '#5288E5',
+              background: '#007bff',
               width: '6.75rem',
               height: "2rem",
               whiteSpace: 'nowrap',

@@ -56,11 +56,11 @@ export default function ServicesLeftComponent({ ...rest }) {
                                 color: '#112A46'
                             }}>Enterprise Application- Packaged Software and Open Source</h1>
                             <Divider style={{
-                                backgroundColor: '#5288E5',
-                                color: '#5288E5',
-                                border: '#5288E5',
+                                backgroundColor: '#007bff',
+                                color: '#007bff',
+                                border: '#007bff',
                                 borderRadius: '5px',
-                                borderTop: '0.25rem solid #5288E5',
+                                borderTop: '0.25rem solid #007bff',
                                 width: '40%'
                             }}></Divider>
                             <Typography component="div" style={{ textAlign: "left" }}>
@@ -80,7 +80,7 @@ export default function ServicesLeftComponent({ ...rest }) {
                                         style={{
                                             textTransform: "none",
                                             color: '#112A46',
-                                            background: '#5288E5',
+                                            background: '#007bff',
                                             textAlign: "left",
                                             marginLeft: '2em',
                                             marginRight: '2em',

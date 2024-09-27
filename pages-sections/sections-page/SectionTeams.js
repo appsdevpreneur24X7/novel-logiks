@@ -75,14 +75,14 @@ export default function SectionTeams({ ...rest }) {
                 textAlign: "left"
               }}>  Meet the Team
               </h1>
-              <Divider style={{
-                backgroundColor: '#5288E5',
-                color: '#5288E5',
-                border: '#5288E5',
+              {/* <Divider style={{
+                backgroundColor: '#007bff',
+                color: '#007bff',
+                border: '#007bff',
                 borderRadius: '5px',
-                borderTop: '0.25rem solid #5288E5',
+                borderTop: '0.25rem solid #007bff',
                 width: '50%'
-              }}></Divider>
+              }}></Divider> */}
             </GridItem>
 
             <GridItem md={6} style={{ color: '#FFFFFF' }}>
@@ -97,7 +97,7 @@ export default function SectionTeams({ ...rest }) {
                       classes.front}
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#5288E5',
+                      backgroundColor: '#007bff',
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
@@ -113,7 +113,7 @@ export default function SectionTeams({ ...rest }) {
                     className={classes.back}
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#5288E5',
+                      backgroundColor: '#007bff',
                       fontFamily: "Montserrat", fontSize: "0.85rem", lineHeight: "0.85rem", fontWeight: '400', color: '#FFFFFF'
                     }}
                   >
@@ -142,7 +142,7 @@ export default function SectionTeams({ ...rest }) {
                     }
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#5288E5',
+                      backgroundColor: '#007bff',
 
                     }}
                   >
@@ -159,7 +159,7 @@ export default function SectionTeams({ ...rest }) {
                     className={classes.back}
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#5288E5',
+                      backgroundColor: '#007bff',
                       fontFamily: "Montserrat", 
                       fontSize: "0.85rem", 
                       fontWeight: '400'
@@ -189,7 +189,7 @@ export default function SectionTeams({ ...rest }) {
                     }
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#5288E5',
+                      backgroundColor: '#007bff',
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
@@ -205,7 +205,7 @@ export default function SectionTeams({ ...rest }) {
                     className={classes.back}
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#5288E5', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                      backgroundColor: '#007bff', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
@@ -232,7 +232,7 @@ export default function SectionTeams({ ...rest }) {
                     }
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#5288E5',
+                      backgroundColor: '#007bff',
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
@@ -248,7 +248,7 @@ export default function SectionTeams({ ...rest }) {
                     className={classes.back}
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#5288E5', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                      backgroundColor: '#007bff', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
@@ -275,7 +275,7 @@ export default function SectionTeams({ ...rest }) {
                     }
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#5288E5',
+                      backgroundColor: '#007bff',
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
@@ -291,7 +291,7 @@ export default function SectionTeams({ ...rest }) {
                     className={classes.back}
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#5288E5', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                      backgroundColor: '#007bff', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
@@ -318,7 +318,7 @@ export default function SectionTeams({ ...rest }) {
                     }
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#5288E5',
+                      backgroundColor: '#007bff',
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
@@ -334,7 +334,7 @@ export default function SectionTeams({ ...rest }) {
                     className={classes.back}
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#5288E5', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                      backgroundColor: '#007bff', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>

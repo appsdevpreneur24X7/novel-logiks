@@ -2,7 +2,7 @@ import { title, mlAuto, mrAuto } from "/styles/jss/novel-logiks.js";
 
 const featuresStyle = {
   featuresSection: {
-    padding: "80px 0px"
+    padding: "0px 0px"
   },
   textCenter: {
     textAlign: "center"

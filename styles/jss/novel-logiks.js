@@ -55,8 +55,8 @@ const hexToRgb = (input) => {
 const drawerWidth = 260;
 
 const primaryColor = [
-  "#FBFAF9",
-  "#FBFAF9",
+  "#007bff",
+  "#007bff",
   "#51c1f5",
   "#af2cc5",
   "#e1bee7",
@@ -94,9 +94,9 @@ const successColor = [
   "#66bb6a",
 ];
 const infoColor = [
-  "#FBFAF9",
+  "#007bff",
   "#26c6da",
-  "#FBFAF9",
+  "#007bff",
   "#00d3ee",
   "#d9edf7",
   "#c4e3f3",
@@ -135,7 +135,7 @@ const grayColor = [
 const whiteColor = "#FFF";
 const blackColor = "#112A46";
 const twitterColor = "#55acee";
-const facebookColor = "#5288E5";
+const facebookColor = "#007bff";
 const googleColor = "#dd4b39";
 const linkedinColor = "#0976b4";
 const pinterestColor = "#cc2127";

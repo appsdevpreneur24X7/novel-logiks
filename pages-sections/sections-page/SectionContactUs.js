@@ -19,7 +19,7 @@ export default function SectionContactUs({ ...rest }) {
     Router.push("/contact-us");
   }
   return (
-    <div className="cd-section" {...rest} style={{ background: "#5288E5" }} >
+    <div className="cd-section" {...rest} >
       <div className={classes.container} >
         <GridContainer style={{ marginBottom: '2rem' ,marginTop: '4rem' }}>
           <GridItem md={6} style={{ color: '#112A46' }}>
@@ -32,14 +32,14 @@ export default function SectionContactUs({ ...rest }) {
               color: '#112A46'
             }}>  Contact Us
             </h1>
-            <Divider style={{
+            {/* <Divider style={{
               backgroundColor: '#FFFFFF',
               color: '#FFFFFF',
               border: '#FFFFFF',
               borderRadius: '5px',
               borderTop: '0.25rem solid #112A46',
               width: '40%'
-            }}></Divider>
+            }}></Divider> */}
           </GridItem>
         </GridContainer>
         <GridContainer style={{ margin: '2rem' }}>

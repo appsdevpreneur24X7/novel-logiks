@@ -302,7 +302,7 @@ export default function SectionsPage() {
         className={classes.footer}
         content={
           <div>
-            <Divider />
+            {/* <Divider /> */}
             <div className={classes.container} >
               <GridContainer style={{alignItems: "baseline" }}>
                 <GridItem md={6} >

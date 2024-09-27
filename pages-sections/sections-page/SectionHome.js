@@ -94,7 +94,7 @@ export default function SectionHeaders({ ...rest }) {
               m={1}
               display="flex"
               justifyContent="center"
-              alignItems="center" style={{ top: '50%', left: '50%' }}
+              alignItems="center" style={{ top: '75%', left: '50%' }}
             >
               <Button
                 size="medium"
@@ -113,12 +113,13 @@ export default function SectionHeaders({ ...rest }) {
                   textTransform: "none",
                   color: '#FFFFFF',
                   borderRadius: '5px',
-                  backgroundColor: '#5288E5',
+                  backgroundColor: '#007bff',
                   textAlign: "center",
                   fontSize: "1.25rem",
                   height: "2.5rem",
                   fontWeight: "600",
-                  boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)'
+                  boxShadow: '0 3px 10px rgb(0 0 0 / 0.2)',
+                  marginTop:'15rem'
                 }}
                 onClick={routeToAiDetails}
               >

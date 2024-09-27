@@ -30,7 +30,7 @@ export default function SectionHeaders({ ...rest }) {
   }
 
   return (
-    <div className="cd-section" {...rest} style={{background : "#5288E5"}}>
+    <div className="cd-section" {...rest} style={{background : "#007bff"}}>
       {/* HEADER 1 START */}
 
       <div className={classes.container}>
@@ -79,7 +79,7 @@ export default function SectionHeaders({ ...rest }) {
                 fontSize:"1.5rem",
                 fontWeight : "600",
                 color: '#112A46',
-                background: '#5288E5',
+                background: '#007bff',
                 textAlign: "left",
                 margin: '1em',
                 fontSize : "1.5rem",
@@ -122,7 +122,7 @@ export default function SectionHeaders({ ...rest }) {
                 fontSize:"1.5rem",
                 borderColor: 'black',
                 border: '2px solid',
-                background: '#5288E5',
+                background: '#007bff',
                 textAlign: "right",
                 boxShadow: "none",
                 borderRadius:"0px",

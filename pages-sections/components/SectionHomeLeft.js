@@ -36,26 +36,15 @@ export default function SectionHomeLeft({ ...rest }) {
                             />
                         </GridItem>
                     </GridItem>
-                    <GridItem xs={12} sm={6} md={6} 
-                   
-                    >
+                    <GridItem xs={12} sm={6} md={6} >
                         <h1 style={{
                             fontFamily: "Montserrat",
-                            fontSize: '1.5rem',
-                            lineHeight: '2rem',
+                            fontSize: '1rem',
+                            lineHeight: '1.25rem',
                             fontWeight: '600',
                             textAlign: "left",
                             color: '#112A46'
                         }}>{serviceTitle}</h1>
-                        <Divider style={{
-                            backgroundColor: '#5288E5',
-                            color: '#5288E5',
-                            border: '#5288E5',
-                            borderRadius: '5px',
-                            borderTop: '0.25rem solid #5288E5',
-                            width: '50%'
-                        }}></Divider>
-                     
                     </GridItem>
                 </GridContainer>
             </div>

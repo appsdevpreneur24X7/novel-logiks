@@ -39,14 +39,14 @@ export default function SectionProducts({ ...rest }) {
               color: '#112A46'
             }}>  Products
             </h1>
-            <Divider style={{
-              backgroundColor: '#5288E5',
-              color: '#5288E5',
-              border: '#5288E5',
+            {/* <Divider style={{
+              backgroundColor: '#007bff',
+              color: '#007bff',
+              border: '#007bff',
               borderRadius: '5px',
-              borderTop: '0.25rem solid #5288E5',
+              borderTop: '0.25rem solid #007bff',
               width: '30%'
-            }}></Divider>
+            }}></Divider> */}
           </GridItem>
         </GridContainer>
         {/* Project 4 START */}
