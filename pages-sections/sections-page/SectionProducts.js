@@ -76,7 +76,7 @@ export default function SectionProducts({ ...rest }) {
                   background
                   className={classes.card4}
                   style={{
-                    backgroundImage: "url('/img/lsk_imgs/tagline-client.png')"
+                    backgroundImage: "url('/img/lsk_imgs/taglinetraders.png')"
                   }}
                 >
                   <CardBody background className={classes.cardBody4}>

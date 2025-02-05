@@ -111,7 +111,8 @@ export default function SectionAboutUsDetails({ ...rest }) {
                         height: "2rem",
                         textAlign: "center",
                         justifyContent: "center",
-                        color: "#FFFFFF",
+                        color:"white",
+                        backgroundColor: "transparent",
                       }}
                     />
                   </a>

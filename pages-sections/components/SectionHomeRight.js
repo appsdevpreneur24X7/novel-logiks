@@ -33,6 +33,7 @@ export default function SectionHomeRight({ ...rest }) {
                 fontWeight: "600",
                 textAlign: "left",
                 color: "#112A46",
+                margin:"2rem"
               }}
             >
               {serviceTitle}

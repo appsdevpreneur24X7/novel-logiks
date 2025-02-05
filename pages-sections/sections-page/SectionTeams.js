@@ -302,7 +302,7 @@ export default function SectionTeams({ ...rest }) {
                       Technical Lead
                       </h5>
                       <h5 sx={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "500", textAlign: "left" }} style={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "500", textAlign: "left" }}>
-                      Shanti is Define architecture, choose tech stack, ensure scalability.Writing, review, and maintain high-quality code.Guide and upskill developers. Plan, estimate, and ensure timely delivery. Debug and optimize system performance. Bridge between developers and stakeholders.
+                      Defines architecture, choose tech stack, ensure scalability.Writing, review, and maintain high-quality code.Guide and upskill developers. Plan, estimate, and ensure timely delivery. Debug and optimize system performance. Bridge between developers and stakeholders.
                       Adopt new technologies and best practices. Ensure secure coding and deployments. Implement automation and cloud solutions.
                       Maintain technical records and share knowledge.
                       </h5>
