@@ -76,11 +76,11 @@ export default function SectionTeams({ ...rest }) {
               }}>  Meet the Team
               </h1>
               {/* <Divider style={{
-                backgroundColor: '#007bff',
-                color: '#007bff',
-                border: '#007bff',
+                backgroundColor: '#0D47A1',
+                color: '#0D47A1',
+                border: '#0D47A1',
                 borderRadius: '5px',
-                borderTop: '0.25rem solid #007bff',
+                borderTop: '0.25rem solid #0D47A1',
                 width: '50%'
               }}></Divider> */}
             </GridItem>
@@ -97,7 +97,7 @@ export default function SectionTeams({ ...rest }) {
                       classes.front}
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#007bff',
+                      backgroundColor: '#0D47A1',
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
@@ -113,7 +113,7 @@ export default function SectionTeams({ ...rest }) {
                     className={classes.back}
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#007bff',
+                      backgroundColor: '#0D47A1',
                       fontFamily: "Montserrat", fontSize: "0.85rem", lineHeight: "0.85rem", fontWeight: '400', color: '#FFFFFF'
                     }}
                   >
@@ -142,7 +142,7 @@ export default function SectionTeams({ ...rest }) {
                     }
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#007bff',
+                      backgroundColor: '#0D47A1',
 
                     }}
                   >
@@ -159,7 +159,7 @@ export default function SectionTeams({ ...rest }) {
                     className={classes.back}
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#007bff',
+                      backgroundColor: '#0D47A1',
                       fontFamily: "Montserrat", 
                       fontSize: "0.85rem", 
                       fontWeight: '400'
@@ -189,7 +189,7 @@ export default function SectionTeams({ ...rest }) {
                     }
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#007bff',
+                      backgroundColor: '#0D47A1',
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
@@ -205,7 +205,7 @@ export default function SectionTeams({ ...rest }) {
                     className={classes.back}
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#007bff', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                      backgroundColor: '#0D47A1', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
@@ -232,7 +232,7 @@ export default function SectionTeams({ ...rest }) {
                     }
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#007bff',
+                      backgroundColor: '#0D47A1',
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
@@ -248,7 +248,7 @@ export default function SectionTeams({ ...rest }) {
                     className={classes.back}
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#007bff', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                      backgroundColor: '#0D47A1', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
@@ -275,15 +275,15 @@ export default function SectionTeams({ ...rest }) {
                     }
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#007bff',
+                      backgroundColor: '#0D47A1',
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
                       <h5 sx={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
-                        Sai Bhaskar
+                        Shanti
                       </h5>
                       <h5 sx={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center" }} style={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center", padding: "0px", margin: "0px" }}>
-                        UX Designer
+                        Technical Lead
                       </h5>
                     </CardBody>
                   </div>
@@ -291,18 +291,20 @@ export default function SectionTeams({ ...rest }) {
                     className={classes.back}
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#007bff', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                      backgroundColor: '#0D47A1', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
                       <h5 sx={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
-                      Sai Bhaskar
+                      Shanti
                       </h5>
                       <h5 sx={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center" }} style={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "500", textAlign: "center", padding: "0px", margin: "0px" }}>
-                      UX Designer
+                      Technical Lead
                       </h5>
                       <h5 sx={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "500", textAlign: "left" }} style={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "500", textAlign: "left" }}>
-                      Sai Bhaskar is involved in creating Wireframing / Prototyping digital products , services that are intuitive, user-friendly and provide a positive experience for the end user
+                      Shanti is Define architecture, choose tech stack, ensure scalability.Writing, review, and maintain high-quality code.Guide and upskill developers. Plan, estimate, and ensure timely delivery. Debug and optimize system performance. Bridge between developers and stakeholders.
+                      Adopt new technologies and best practices. Ensure secure coding and deployments. Implement automation and cloud solutions.
+                      Maintain technical records and share knowledge.
                       </h5>
                     </CardBody>
                   </div>
@@ -318,7 +320,7 @@ export default function SectionTeams({ ...rest }) {
                     }
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#007bff',
+                      backgroundColor: '#0D47A1',
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
@@ -334,7 +336,7 @@ export default function SectionTeams({ ...rest }) {
                     className={classes.back}
                     style={{
                       color: '#FFFFFF',
-                      backgroundColor: '#007bff', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                      backgroundColor: '#0D47A1', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>

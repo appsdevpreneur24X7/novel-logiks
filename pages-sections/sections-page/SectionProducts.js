@@ -40,11 +40,11 @@ export default function SectionProducts({ ...rest }) {
             }}>  Products
             </h1>
             {/* <Divider style={{
-              backgroundColor: '#007bff',
-              color: '#007bff',
-              border: '#007bff',
+              backgroundColor: '#0D47A1',
+              color: '#0D47A1',
+              border: '#0D47A1',
               borderRadius: '5px',
-              borderTop: '0.25rem solid #007bff',
+              borderTop: '0.25rem solid #0D47A1',
               width: '30%'
             }}></Divider> */}
           </GridItem>

@@ -23,7 +23,7 @@ const SectionServicesCarousalCard = (props)=> {
     console.log("props Passed to Carousal Card : ",index);
     return (
         <GridItem xs={12} sm={6} md={4}>
-            {/* <Card plain blog style={{ background: "#007bff", borderColor: "#007bff", borderStyle: "solid", borderWidth: "medium" }}> */}
+            {/* <Card plain blog style={{ background: "#0D47A1", borderColor: "#0D47A1", borderStyle: "solid", borderWidth: "medium" }}> */}
             <Card plain blog>
                 <CardHeader plain image>
                     <img src={services[index].serviceImageUrl} alt="..." style={{ height: "15rem"}} />

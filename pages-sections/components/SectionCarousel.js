@@ -32,7 +32,7 @@ export default function SectionCarousel() {
               <Carousel {...settings}>
                 <div>
                   <img
-                    src="/img/bg.jpg"
+                    src='/delivery.png'
                     alt="First slide"
                     className="slick-image"
                   />
@@ -45,7 +45,7 @@ export default function SectionCarousel() {
                 </div>
                 <div>
                   <img
-                    src="/img/bg2.jpg"
+                    src="../../public/img/lsk_imgs/seo.png"
                     alt="Second slide"
                     className="slick-image"
                   />
@@ -58,7 +58,7 @@ export default function SectionCarousel() {
                 </div>
                 <div>
                   <img
-                    src="/img/bg3.jpg"
+                   src="../../public/img/lsk_imgs/delivery.png"
                     alt="Third slide"
                     className="slick-image"
                   />

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React from "react";
+import React , {useState} from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // react components for routing our app without refresh
@@ -15,6 +15,8 @@ import Router from "next/router";
 const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
+  const [activeItem, setActiveItem] = useState(null);
+  
   const easeInOutQuad = (t, b, c, d) => {
     t /= d / 2;
     if (t < 1) return (c / 2) * t * t + b;
@@ -68,20 +70,29 @@ export default function HeaderLinks(props) {
       <span style={{ marginLeft: "auto", marginRight: "1.5rem"  }}></span>
       {links.map(each => (<Link href={each.href} >
         <a
-          className={classes.dropdownLink} style={{ color: '#111111' }}
-          onClick={(e) => {
-            if (each.title === "Services")
-              Router.push(each.href)
-            else
-              smoothScroll(e, each.smoothScroll)
-          }
-          }
-        >
-          <span style={{
-            whiteSpace: "nowrap", fontFamily: '"Open Sans", sans-serif', fontSize: '0.875rem',
-            lineHeight: '2rem'
-          }}> {each.title}</span>
-        </a>
+  className={classes.dropdownLink}
+  style={{
+    color: activeItem === each.title ? "#FFD700" : "#FFFFFF", // Highlight active item (gold color)
+    fontFamily: '"Montserrat", sans-serif',
+    fontSize: "1rem",
+    fontWeight: "600",
+    letterSpacing: "0.5px",
+    textTransform: "uppercase",
+    transition: "color 0.3s ease-in-out",
+    cursor: "pointer", // Pointer cursor on hover
+    padding: "10px 15px",
+    borderBottom: activeItem === each.title ? "2px solid #FFD700" : "none", // Underline active item
+  }}
+  onClick={(e) => {
+    setActiveItem(each.title); // Set the active menu item
+    if (each.title === "Services") Router.push(each.href);
+    else smoothScroll(e, each.smoothScroll);
+  }}
+>
+  <span style={{ whiteSpace: "nowrap", lineHeight: '2rem' }}>
+    {each.title}
+  </span>
+</a>
       </Link>))}
     </>
 

@@ -24,7 +24,7 @@ const routeToContactUs = () => {
 export default function AboutUs({ ...rest }) {
   const classes = useStyles();
   console.log('Loaded About Us data : ', aboutUs ? aboutUs.length : 0);
-  <div className="cd-section" {...rest} style={{background : "#007bff"}}>
+  <div className="cd-section" {...rest} style={{background : "#0D47A1"}}>
   {/* HEADER 1 START */}
 
   <div className={classes.container}>
@@ -73,7 +73,7 @@ export default function AboutUs({ ...rest }) {
             fontSize:"1.5rem",
             fontWeight : "600",
             color: '#FFF',
-            background: '#007bff',
+            background: '#0D47A1',
             textAlign: "left",
             margin: '1em',
             fontSize : "1.5rem",
@@ -116,7 +116,7 @@ export default function AboutUs({ ...rest }) {
             fontSize:"1.5rem",
             borderColor: 'black',
             border: '2px solid',
-            background: '#007bff',
+            background: '#0D47A1',
             textAlign: "right",
             boxShadow: "none",
             borderRadius:"0px",

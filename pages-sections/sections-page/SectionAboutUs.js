@@ -30,7 +30,7 @@ export default function SectionHeaders({ ...rest }) {
   }
 
   return (
-    <div className="cd-section" {...rest} style={{background : "#007bff"}}>
+    <div className="cd-section" {...rest} style={{background : "#0D47A1"}}>
       {/* HEADER 1 START */}
 
       <div className={classes.container}>
@@ -45,95 +45,6 @@ export default function SectionHeaders({ ...rest }) {
             <SectionAboutUsCard index={2} />
           </GridItem>
         </GridContainer>
-         {/*  CONTACT US AND SEE ALL SERVICES */}
-         {/* <GridContainer style={{ marginBottom: "2rem", textAlign: "center" }}>
-          <GridItem xs={12} sm={12} md={12}>
-            <Button
-              size="medium"
-              variant="contained"
-              type="submit"
-              sx={{
-                width: {
-                  lg: '21rem',
-                  md: '21rem',
-                  sm: '15rem',
-                  xs: '15rem'
-                },
-                height:{
-                  lg: '4rem',
-                  md: '4rem',
-                  sm: '3rem',
-                  xs: '3rem' 
-                },
-                fontSize : {
-                  lg: '1.5rem',
-                  md: '1.5rem',
-                  sm: '1.25rem',
-                  xs: '1.125rem' 
-              }
-              }}
-
-              style={{
-                textTransform: "none",
-                fontFamily:"Montserrat",
-                fontSize:"1.5rem",
-                fontWeight : "600",
-                color: '#112A46',
-                background: '#007bff',
-                textAlign: "left",
-                margin: '1em',
-                fontSize : "1.5rem",
-                boxShadow: "none",
-                borderRadius:"0px"
-              }}
-              onClick={()=>{}}
-            >
-              More About Us
-            </Button>
-            <Button
-              size="medium"
-              variant="contained"
-              type="submit"
-              sx={{
-                width: {
-                  lg: '21rem',
-                  md: '21rem',
-                  sm: '15rem',
-                  xs: '15rem'
-                },
-                height:{
-                  lg: '4rem',
-                  md: '4rem',
-                  sm: '3rem',
-                  xs: '3rem' 
-                },
-                fontSize : {
-                  lg: '1.5rem',
-                  md: '1.5rem',
-                  sm: '1.25rem',
-                  xs: '1.125rem' 
-              }
-              }}
-
-              style={{
-                color: '#112A46',
-                textTransform: "none",
-                fontFamily:"Montserrat",
-                fontSize:"1.5rem",
-                borderColor: 'black',
-                border: '2px solid',
-                background: '#007bff',
-                textAlign: "right",
-                boxShadow: "none",
-                borderRadius:"0px",
-                fontWeight : "600"
-              }}
-              onClick={()=>{}}
-            >
-              Meet Our Team
-            </Button>
-          </GridItem>
-        </GridContainer> */}
       </div>
     </div>
   );

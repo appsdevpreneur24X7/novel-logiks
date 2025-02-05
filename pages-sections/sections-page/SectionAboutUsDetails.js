@@ -1,128 +1,148 @@
 import React from "react";
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import { makeStyles } from '@mui/styles';
-import headersStyle from "/styles/jss/novel-logiks/pages/sectionsSections/headersStyle.js";
-import Link from 'next/link'
-import Card from "/components/Card/Card.js";
-import CardHeader from "/components/Card/CardHeader.js";
-import CardBody from "/components/Card/CardBody.js";
-import Warning from "/components/Typography/Warning.js";
+import GridContainer from "../../components/Grid/GridContainer.js";
+import GridItem from "../../components/Grid/GridItem.js";
+import { makeStyles } from "@mui/styles";
+import headersStyle from "../../styles/jss/novel-logiks/pages/sectionsSections/headersStyle.js";
+import Card from "../../components/Card/Card.js";
+import CardBody from "../../components/Card/CardBody.js";
 // import { Grid } from "@mui/material";
-import { styled } from '@mui/material/styles';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import Box from '@mui/material/Box';
+import { styled } from "@mui/material/styles";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import Box from "@mui/material/Box";
 import { Button, Divider, Typography } from "@mui/material";
 import { home } from "../../data/home-data";
-import SectionHomeLeft from "../components/SectionHomeLeft";
-import SectionHomeRight from "../components/SectionHomeRight";
+import SectionHomeLeft from "../../pages-sections/components/SectionHomeLeft.js";
+import SectionHomeRight from "../../pages-sections/components/SectionHomeRight";
+import SectionCarousel from "../components/SectionCarousel.js";
+import { useMediaQuery } from "@mui/material";
 const useStyles = makeStyles(headersStyle);
 
 export default function SectionAboutUsDetails({ ...rest }) {
   const classes = useStyles();
   const routeToAiDetails = () => {
     Router.push("/ai-details");
-  }
+  };
 
   const routeToContactUs = () => {
     Router.push("/contact-us");
-  }
+  };
+
+  // Use Material-UI useMediaQuery hook to determine screen size
+  const isLargeScreen = useMediaQuery("(min-width: 1200px)");
 
   return (
-    <div className="cd-section" {...rest}>
-      {/* HEADER 1 START */}
-
-      <div className={classes.container} style={{marginTop:"10rem"}}>
-        <GridContainer style={{ marginBottom: '.25rem', marginTop:"2rem" }}>
-          <GridItem md={12} style={{ color: '#112A46' }}>
-            <h1 style={{
-              fontFamily: 'Montserrat',
-              fontSize: '2rem',
-              lineHeight: '2rem',
-              fontWeight: '600',
-              textAlign: "left",
-              color: '#112A46',
-              marginTop:"3rem",
-              marginBottom:"3rem"
-            }}>  About Us
+    <div className="cd-section" {...rest} >
+     <div
+        className={classes.container}
+        style={{ marginTop: isLargeScreen ? "20rem" : "5rem" }}
+      >
+        <GridContainer  style={{ marginTop: isLargeScreen ? "20rem" : "5rem" }}>
+          <GridItem md={12} style={{ color: "#112A46" }}>
+            <h1
+              style={{
+                fontFamily: "Montserrat",
+                fontSize: "2rem",
+                lineHeight: "2rem",
+                fontWeight: "600",
+                textAlign: "left",
+                color: "#112A46",
+                marginTop: "2rem",
+                marginBottom: "3rem",
+              }}
+            >
+              {" "}
+              About Us
             </h1>
-            {/* <Divider style={{
-              backgroundColor: '#007bff',
-              color: '#007bff',
-              border: '#007bff',
-              borderRadius: '5px',
-              borderTop: '0.25rem solid #007bff',
-              width: '25%'
-            }}></Divider> */}
           </GridItem>
         </GridContainer>
-        {/* IMPLEMENT CAROUSAL HERE
-        <div className={classes.container}>
-        <Carousel {...settings}>
-          {/* <div >
-            <GridContainer>
-             <SectionServicesCarousalCard index ={0}/>
-             <SectionServicesCarousalCard index ={1}/>
-             <SectionServicesCarousalCard index ={2}/>
-            </GridContainer>
-          </div>
-          <div >
-            <GridContainer>
-              <SectionServicesCarousalCard index ={3}/>
-             <SectionServicesCarousalCard index ={4}/>
-             <SectionServicesCarousalCard index ={5}/>
-            </GridContainer>
-          </div> 
-           <div >
-            <GridContainer>
-            
-            </GridContainer>
-          </div>
-       
-        </Carousel>
-      </div> 
-      */}
 
-        <GridContainer style={{ marginBottom: '2rem', marginTop: '2rem' }}>
-          {home && home[0] && (<GridContainer id='0'>
-            <SectionHomeLeft data={home[0]} />
-          </GridContainer>)}
-          {home && home[1] && (<GridContainer id='2' >
-            <SectionHomeRight data={home[1]} />
-          </GridContainer>)}
-          {home && home[2] && (<GridContainer id='2' >
-            <SectionHomeLeft data={home[2]} />
-          </GridContainer>)}
+        <GridContainer style={{ marginBottom: "2rem", marginTop: "2rem" }}>
+          {home && home[0] && (
+            <GridContainer id="0">
+              <SectionHomeLeft data={home[0]} />
+            </GridContainer>
+          )}
+          {home && home[1] && (
+            <GridContainer id="2">
+              <SectionHomeRight data={home[1]} />
+            </GridContainer>
+          )}
+          {home && home[2] && (
+            <GridContainer id="2">
+              <SectionHomeLeft data={home[2]} />
+            </GridContainer>
+          )}
         </GridContainer>
-        <GridContainer >
-          <GridItem xs={12} sm={4} md={4} >
-            <Card blog style={{ minHeight: "15rem", height: "15rem" ,backgroundColor:"#007bff"}}>
+        <GridContainer>
+          <GridItem xs={12} sm={4} md={4}>
+            <Card
+              blog
+              style={{
+                minHeight: "15rem",
+                height: "15rem",
+                backgroundColor: "#0D47A1",
+              }}
+            >
               <CardBody>
-                <GridItem style={{ textAlign: "center", justifyContent: "center", alignItems: "center" }}>
-                  <a href="#pablo" onClick={(e) => e.preventDefault()} style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" ,color: '#FFFFFF'}}>
-                    <img src="/img/resized_imgs/mission.png" alt="..." style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" ,color: '#FFFFFF'}} />
+                <GridItem
+                  style={{
+                    textAlign: "center",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <a
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                    style={{
+                      width: "2rem",
+                      height: "2rem",
+                      textAlign: "center",
+                      justifyContent: "center",
+                      color: "#FFFFFF",
+                    }}
+                  >
+                    <img
+                      src="/img/resized_imgs/mission.png"
+                      alt="..."
+                      style={{
+                        width: "2rem",
+                        height: "2rem",
+                        textAlign: "center",
+                        justifyContent: "center",
+                        color: "#FFFFFF",
+                      }}
+                    />
                   </a>
                 </GridItem>
-                <h6 className={classes.cardCategory} style={{
-                  fontFamily: 'Montserrat',
-                  fontSize: '1.5rem',
-                  lineHeight: '1.5rem',
-                  fontWeight: '600',
-                  textAlign: "center",
-                  color: '#FFFFFF'
-                }}>Vision</h6>
+                <h6
+                  className={classes.cardCategory}
+                  style={{
+                    fontFamily: "Montserrat",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.5rem",
+                    fontWeight: "600",
+                    textAlign: "center",
+                    color: "#FFFFFF",
+                  }}
+                >
+                  Vision
+                </h6>
                 <h4
                   style={{
-                    color: '#FFFFFF',
-                    fontSize: "0.85rem",
-                    lineHeight: '1rem',
-                    fontFamily: 'Montserrat', fontWeight: '500'
-
-                  }}>
+                    fontFamily: "Montserrat",
+                    fontSize: "1rem",
+                    lineHeight: "1.15rem",
+                    fontWeight: "500",
+                    textAlign: "center",
+                    color: "#FFFFFF",
+                  }}
+                >
                   <Grid container>
                     <Grid item xs={12}>
-                      To contribute to the overall wellbeing of the communities we operate our business.
+                      To contribute to the overall wellbeing of the communities
+                      we operate our business.
                     </Grid>
                   </Grid>
                 </h4>
@@ -130,61 +150,142 @@ export default function SectionAboutUsDetails({ ...rest }) {
             </Card>
           </GridItem>
           <GridItem xs={12} sm={4} md={4}>
-            {/* <Card blog style={{ backgroundColor: "#007bff", minHeight:"15rem", height:"15rem" }}> */}
-            <Card blog style={{ minHeight: "15rem", height: "15rem" ,backgroundColor:"#007bff"}}>
+            {/* <Card blog style={{ backgroundColor: "#0D47A1", minHeight:"15rem", height:"15rem" }}> */}
+            <Card
+              blog
+              style={{
+                minHeight: "15rem",
+                height: "15rem",
+                backgroundColor: "#0D47A1",
+              }}
+            >
               <CardBody>
-                <GridItem style={{ textAlign: "center", justifyContent: "center", alignItems: "center" }}>
-                  <a href="#pablo" onClick={(e) => e.preventDefault()} style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }}>
-                    <img src="/img/resized_imgs/mission.png" alt="..." style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }} />
+                <GridItem
+                  style={{
+                    textAlign: "center",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <a
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                    style={{
+                      width: "2rem",
+                      height: "2rem",
+                      textAlign: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <img
+                      src="/img/resized_imgs/mission.png"
+                      alt="..."
+                      style={{
+                        width: "2rem",
+                        height: "2rem",
+                        textAlign: "center",
+                        justifyContent: "center",
+                      }}
+                    />
                   </a>
                 </GridItem>
-                <h6 className={classes.cardCategory} style={{
-                  fontFamily: 'Montserrat',
-                  fontSize: '1.5rem',
-                  lineHeight: '1.5rem',
-                  fontWeight: '600',
-                  textAlign: "center",
-                  color: '#FFFFFF'
-                }}> Mission</h6>
-                <h4
+                <h6
+                  className={classes.cardCategory}
                   style={{
-                    color: '#FFFFFF',
-                    fontSize: "0.85rem",
-                    lineHeight: '1rem',
-                    fontFamily: 'Montserrat', fontWeight: '500'
-                  }}>
-                  <Grid container >
+                    fontFamily: "Montserrat",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.5rem",
+                    fontWeight: "600",
+                    textAlign: "center",
+                    color: "#FFFFFF",
+                  }}
+                >
+                  {" "}
+                  Mission
+                </h6>
+                <h4
+                 style={{
+                  fontFamily: "Montserrat",
+                  fontSize: "1rem",
+                  lineHeight: "1.15rem",
+                  fontWeight: "500",
+                  textAlign: "center",
+                  color: "#FFFFFF",
+                }}
+                >
+                  <Grid container>
                     <Grid item xs={12}>
-                      To inspire people and improve lives through technology delivered by us.
+                      To inspire people and improve lives through technology
+                      delivered by us.
                     </Grid>
                   </Grid>
                 </h4>
               </CardBody>
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={4} md={4} >
-          <Card blog style={{ minHeight: "15rem", height: "15rem" ,backgroundColor:"#007bff"}}>
-              <CardBody >
-                <GridItem style={{ textAlign: "center", justifyContent: "center", alignItems: "center" }}>
-                  <a href="#pablo" onClick={(e) => e.preventDefault()} style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }}>
-                    <img src="/img/resized_imgs/mission.png" alt="..." style={{ width: "2rem", height: "2rem", textAlign: "center", justifyContent: "center" }} />
+          <GridItem xs={12} sm={4} md={4}>
+            <Card
+              blog
+              style={{
+                minHeight: "15rem",
+                height: "15rem",
+                backgroundColor: "#0D47A1",
+              }}
+            >
+              <CardBody>
+                <GridItem
+                  style={{
+                    textAlign: "center",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <a
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                    style={{
+                      width: "2rem",
+                      height: "2rem",
+                      textAlign: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <img
+                      src="/img/resized_imgs/mission.png"
+                      alt="..."
+                      style={{
+                        width: "2rem",
+                        height: "2rem",
+                        textAlign: "center",
+                        justifyContent: "center",
+                      }}
+                    />
                   </a>
                 </GridItem>
-                <h6 className={classes.cardCategory} style={{
-                  fontFamily: 'Montserrat',
-                  fontSize: '1.5rem',
-                  lineHeight: '1.5rem',
-                  fontWeight: '600',
-                  textAlign: "center",
-                  color: '#FFFFFF'
-                }}> Values</h6>
-                <h4
+                <h6
+                  className={classes.cardCategory}
                   style={{
-                    color: '#FFFFFF',
-                    fontSize: "0.85rem",
-                    lineHeight: '1rem',
-                    fontFamily: 'Montserrat', fontWeight: '500'
-                  }}>
+                    fontFamily: "Montserrat",
+                    fontSize: "1.5rem",
+                    lineHeight: "1.5rem",
+                    fontWeight: "600",
+                    textAlign: "center",
+                    color: "#FFFFFF",
+                  }}
+                >
+                  {" "}
+                  Values
+                </h6>
+                <h4
+                 style={{
+                  fontFamily: "Montserrat",
+                  fontSize: "1rem",
+                  lineHeight: "1.15rem",
+                  fontWeight: "500",
+                  textAlign: "center",
+                  color: "#FFFFFF",
+                }}
+                >
                   <Grid container>
                     <Grid item xs={6}>
                       Oneness

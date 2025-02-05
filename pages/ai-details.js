@@ -46,11 +46,11 @@ export default function AiDetails() {
             }}>  NovelLogiks in Artificial Intelligence
             </h1>
             {/* <Divider style={{
-              backgroundColor: '#007bff',
-              color: '#007bff',
-              border: '#007bff',
+              backgroundColor: '#0D47A1',
+              color: '#0D47A1',
+              border: '#0D47A1',
               borderRadius: '5px',
-              borderTop: '0.25rem solid #007bff',
+              borderTop: '0.25rem solid #0D47A1',
               width: '50%',
             }}></Divider> */}
           </GridItem>
@@ -69,11 +69,11 @@ export default function AiDetails() {
 
             </h1>
             {/* <Divider style={{
-              backgroundColor: '#007bff',
-              color: '#007bff',
-              border: '#007bff',
+              backgroundColor: '#0D47A1',
+              color: '#0D47A1',
+              border: '#0D47A1',
               borderRadius: '5px',
-              borderTop: '0.25rem solid #007bff',
+              borderTop: '0.25rem solid #0D47A1',
               width: '40%'
             }}></Divider> */}
           </GridItem>
@@ -142,11 +142,11 @@ export default function AiDetails() {
 
             </h1>
             {/* <Divider style={{
-              backgroundColor: '#007bff',
-              color: '#007bff',
-              border: '#007bff',
+              backgroundColor: '#0D47A1',
+              color: '#0D47A1',
+              border: '#0D47A1',
               borderRadius: '5px',
-              borderTop: '0.25rem solid #007bff',
+              borderTop: '0.25rem solid #0D47A1',
               width: '40%'
             }}></Divider> */}
           </GridItem>
@@ -227,11 +227,11 @@ export default function AiDetails() {
             }}>  AI and Computer Vision: Transforming Visual Data into Intelligent Insights
             </h1>
             {/* <Divider style={{
-              backgroundColor: '#007bff',
-              color: '#007bff',
-              border: '#007bff',
+              backgroundColor: '#0D47A1',
+              color: '#0D47A1',
+              border: '#0D47A1',
               borderRadius: '5px',
-              borderTop: '0.25rem solid #007bff',
+              borderTop: '0.25rem solid #0D47A1',
               width: '40%'
             }}></Divider> */}
           </GridItem>

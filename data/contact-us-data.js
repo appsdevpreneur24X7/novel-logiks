@@ -7,7 +7,9 @@ export const contactUs = {
     ],
     address_lines :[
         "Novel Logiks ",
-        "Opp ISB , Gachibowli",
+        "Geek Space Business Centre ",
+        "12th floor, Manjeera Trinity Corporate",
+        "JNTU – Hitech City Road, (near eSeva Lane / Lulu Mall), K P H B Phase 3, Kukatpally, Hyderabad – 500072, India",
         "Hyderabad, TS 500075",
     ],
     email_ids :[

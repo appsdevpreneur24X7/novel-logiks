@@ -235,7 +235,7 @@ export default function CareerDetails() {
                   textAlign: "center",
                   textTransform: "none",
                   color: '#112A46',
-                  background: '#007bff',
+                  background: '#0D47A1',
                   width: '10rem'
                 }}
                 disabled={enableSearch ? true : false}

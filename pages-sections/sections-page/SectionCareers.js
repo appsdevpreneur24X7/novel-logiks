@@ -165,11 +165,11 @@ export default function SectionCareers({ ...rest }) {
             }}>  Careers
             </h1>
             {/* <Divider style={{
-              background: "#007bff",
-              color: '#007bff',
-              border: '#007bff',
+              background: "#0D47A1",
+              color: '#0D47A1',
+              border: '#0D47A1',
               borderRadius: '5px',
-              borderTop: '0.25rem solid #007bff',
+              borderTop: '0.25rem solid #0D47A1',
               width: '40%'
             }}></Divider> */}
             <Typography
@@ -318,7 +318,7 @@ export default function SectionCareers({ ...rest }) {
                      textTransform: "none",
                      color: '#FFFFFF',
                      borderRadius: '5px',
-                     backgroundColor: '#007bff',
+                     backgroundColor: '#0D47A1',
                      textAlign: "center",
                      fontSize: "1.25rem",
                      height: "2.5rem",

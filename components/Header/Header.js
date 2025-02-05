@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState} from "react";
 import Link from "next/link";
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -82,7 +82,7 @@ export default function Header(props) {
             style={{
               textTransform: "none",
               color: '#112A46',
-              background: '#007bff',
+              background: '#0D47A1',
               width: '6.75rem',
               height: "2rem",
               whiteSpace: 'nowrap',
