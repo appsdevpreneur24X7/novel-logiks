@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import Subject from "@mui/icons-material/Subject";
@@ -62,49 +62,72 @@ export default function SectionTeams({ ...rest }) {
   };
   return (
     <div className="cd-section" {...rest}>
-      {/* Team 1 START */}
       <div className={classes.team}>
         <div className={classes.container}>
-          <GridContainer style={{ marginBottom: '2rem' }}>
-            <GridItem md={6} style={{ color: '#112A46' }}>
-              <h1 style={{
-                fontFamily: 'Montserrat',
-                fontSize: '2rem',
-                lineHeight: '2rem',
-                fontWeight: '600',
-                textAlign: "left"
-              }}>  Meet the Team
+          <GridContainer style={{ marginBottom: "2rem" }}>
+            <GridItem md={6} style={{ color: "#112A46" }}>
+              <h1
+                style={{
+                  fontFamily: "Montserrat",
+                  fontSize: "2rem",
+                  lineHeight: "2rem",
+                  fontWeight: "600",
+                  textAlign: "left",
+                }}
+              >
+                {" "}
+                Meet the Team
               </h1>
-              {/* <Divider style={{
-                backgroundColor: '#0D47A1',
-                color: '#0D47A1',
-                border: '#0D47A1',
-                borderRadius: '5px',
-                borderTop: '0.25rem solid #0D47A1',
-                width: '50%'
-              }}></Divider> */}
             </GridItem>
 
-            <GridItem md={6} style={{ color: '#FFFFFF' }}>
-            </GridItem>
+            <GridItem md={6} style={{ color: "#000" }}></GridItem>
           </GridContainer>
           <GridContainer>
-            <GridItem xs={12} md={4} >
+            <GridItem xs={12} md={4}>
               <div className={classes.rotatingCardContainer}>
                 <Card background className={classes.cardRotate}>
                   <div
-                    className={
-                      classes.front}
+                    className={classes.front}
                     style={{
-                      color: '#FFFFFF',
-                      backgroundColor: '#0D47A1',
+                      backgroundImage:
+                        "linear-gradient(230deg, #FAD961 0%, #F76B1C 100%)",
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                      >
                         Sunil
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center" }} style={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center", padding: "0px", margin: "0px" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                          padding: "0px",
+                          margin: "0px",
+                        }}
+                      >
                         CEO
                       </h5>
                     </CardBody>
@@ -112,21 +135,69 @@ export default function SectionTeams({ ...rest }) {
                   <div
                     className={classes.back}
                     style={{
-                      color: '#FFFFFF',
-                      backgroundColor: '#0D47A1',
-                      fontFamily: "Montserrat", fontSize: "0.85rem", lineHeight: "0.85rem", fontWeight: '400', color: '#FFFFFF'
+                      backgroundImage:
+                        "linear-gradient(230deg, #FAD961 0%, #F76B1C 100%)",
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                      >
                         Sunil
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center" }} style={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center", padding: "0px", margin: "0px" }}>
+                      <h5
+                        sx={{
+                          color: "black",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                        }}
+                        style={{
+                          color: "black",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                          padding: "0px",
+                          margin: "0px",
+                        }}
+                      >
                         CEO
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1rem", fontWeight: "500", textAlign: "left" }} style={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1rem", fontWeight: "500", textAlign: "left" }}>
-                        He is A Full Stack Developer proficient in a variety of programming languages, frameworks, and technologies, enabling them to handle the complete development process.
-                        Expertise in Front-End Development, Back-End Development, Server Management and Deployment, Security Best Practices , Collaboration and Communication.
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "0.85rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "left",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "0.85rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "left",
+                        }}
+                      >
+                        He is A Full Stack Developer proficient in a variety of
+                        programming languages, frameworks, and technologies,
+                        enabling them to handle the complete development
+                        process. Expertise in Front-End Development, Back-End
+                        Development, Server Management and Deployment, Security
+                        Best Practices , Collaboration and Communication.
                       </h5>
                     </CardBody>
                   </div>
@@ -137,20 +208,47 @@ export default function SectionTeams({ ...rest }) {
               <div className={classes.rotatingCardContainer}>
                 <Card background className={classes.cardRotate}>
                   <div
-                    className={
-                      classes.front
-                    }
+                    className={classes.front}
                     style={{
-                      color: '#FFFFFF',
-                      backgroundColor: '#0D47A1',
-
+                      backgroundImage:
+                        "linear-gradient(230deg, #F76B1C 0%, #FAD961 100%)",
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                      >
                         Venkat Raju
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center" }} style={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center", padding: "0px", margin: "0px" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                          padding: "0px",
+                          margin: "0px",
+                        }}
+                      >
                         Cloud Architect
                       </h5>
                     </CardBody>
@@ -158,22 +256,70 @@ export default function SectionTeams({ ...rest }) {
                   <div
                     className={classes.back}
                     style={{
-                      color: '#FFFFFF',
-                      backgroundColor: '#0D47A1',
-                      fontFamily: "Montserrat", 
-                      fontSize: "0.85rem", 
-                      fontWeight: '400'
+                      backgroundImage:
+                        "linear-gradient(230deg, #F76B1C 0%, #FAD961 100%)",
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                      >
                         Venkat Raju
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center" }} style={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "500", textAlign: "center", padding: "0px", margin: "0px" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1.25rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                          padding: "0px",
+                          margin: "0px",
+                        }}
+                      >
                         Cloud Architect
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "500", textAlign: "left" }} style={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "500", textAlign: "left" }}>
-                        Venkat Raju is a professional in designing, implementing, and managing an organization's cloud computing architecture. Venkat handles Cloud Strategy / Planning, Architecture Design, Cloud Service Integration, Security and Compliance, Cost Optimization, Migration Planning, Performance Optimization , Disaster Recovery.
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "0.85rem",
+                          lineHeight: "1.1rem",
+                          fontWeight: "500",
+                          textAlign: "left",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "0.85rem",
+                          lineHeight: "1.1rem",
+                          fontWeight: "500",
+                          textAlign: "left",
+                        }}
+                      >
+                        Venkat Raju is a professional in designing,
+                        implementing, and managing an organization's cloud
+                        computing architecture. Venkat handles Cloud Strategy /
+                        Planning, Architecture Design, Cloud Service
+                        Integration, Security and Compliance, Cost Optimization,
+                        Migration Planning, Performance Optimization , Disaster
+                        Recovery.
                       </h5>
                     </CardBody>
                   </div>
@@ -184,19 +330,47 @@ export default function SectionTeams({ ...rest }) {
               <div className={classes.rotatingCardContainer}>
                 <Card background className={classes.cardRotate}>
                   <div
-                    className={
-                      classes.front
-                    }
+                    className={classes.front}
                     style={{
-                      color: '#FFFFFF',
-                      backgroundColor: '#0D47A1',
+                      backgroundImage:
+                        "linear-gradient(230deg, #FAD961 0%, #F76B1C 100%)",
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                      >
                         Farhaan
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center" }} style={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center", padding: "0px", margin: "0px" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                          padding: "0px",
+                          margin: "0px",
+                        }}
+                      >
                         Data Anaylist / Data Science
                       </h5>
                     </CardBody>
@@ -204,19 +378,68 @@ export default function SectionTeams({ ...rest }) {
                   <div
                     className={classes.back}
                     style={{
-                      color: '#FFFFFF',
-                      backgroundColor: '#0D47A1', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                      backgroundImage:
+                        "linear-gradient(230deg, #FAD961 0%, #F76B1C 100%)",
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
-                      Farhaan
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Farhaan
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center" }} style={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "500", textAlign: "center", padding: "0px", margin: "0px" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1.25rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                          padding: "0px",
+                          margin: "0px",
+                        }}
+                      >
                         Data Anaylist / Data Science
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "500", textAlign: "left" }} style={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "500", textAlign: "left" }}>
-                        Data Scientists leverage advanced statistical and machine learning techniques to extract meaningful insights from complex datasets, while Data Analysts focus on interpreting and visualizing data to support decision-making and business strategies
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "0.85rem",
+                          lineHeight: "1.1rem",
+                          fontWeight: "500",
+                          textAlign: "left",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "0.85rem",
+                          lineHeight: "1.1rem",
+                          fontWeight: "500",
+                          textAlign: "left",
+                        }}
+                      >
+                        Data Scientists leverage advanced statistical and
+                        machine learning techniques to extract meaningful
+                        insights from complex datasets, while Data Analysts
+                        focus on interpreting and visualizing data to support
+                        decision-making and business strategies
                       </h5>
                     </CardBody>
                   </div>
@@ -227,19 +450,47 @@ export default function SectionTeams({ ...rest }) {
               <div className={classes.rotatingCardContainer}>
                 <Card background className={classes.cardRotate}>
                   <div
-                    className={
-                      classes.front
-                    }
+                    className={classes.front}
                     style={{
-                      color: '#FFFFFF',
-                      backgroundColor: '#0D47A1',
+                      backgroundImage:
+                        "linear-gradient(230deg, #F76B1C 0%, #FAD961 100%)",
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                      >
                         Kumar
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center" }} style={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center", padding: "0px", margin: "0px" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                          padding: "0px",
+                          margin: "0px",
+                        }}
+                      >
                         Front End Lead
                       </h5>
                     </CardBody>
@@ -247,19 +498,67 @@ export default function SectionTeams({ ...rest }) {
                   <div
                     className={classes.back}
                     style={{
-                      color: '#FFFFFF',
-                      backgroundColor: '#0D47A1', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                      backgroundImage:
+                        "linear-gradient(230deg, #F76B1C 0%, #FAD961 100%)",
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
-                      Kumar
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Kumar
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center" }} style={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "500", textAlign: "center", padding: "0px", margin: "0px" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1.25rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                          padding: "0px",
+                          margin: "0px",
+                        }}
+                      >
                         Front End Lead
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "500", textAlign: "left" }} style={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "500", textAlign: "left" }}>
-                      Kumar is involved leading and managing the frontend development team responsible for creating the user interface and user experience of a website or application.
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "0.85rem",
+                          lineHeight: "1.1rem",
+                          fontWeight: "500",
+                          textAlign: "left",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "0.85rem",
+                          lineHeight: "1.1rem",
+                          fontWeight: "500",
+                          textAlign: "left",
+                        }}
+                      >
+                        Kumar is involved leading and managing the frontend
+                        development team responsible for creating the user
+                        interface and user experience of a website or
+                        application.
                       </h5>
                     </CardBody>
                   </div>
@@ -270,19 +569,47 @@ export default function SectionTeams({ ...rest }) {
               <div className={classes.rotatingCardContainer}>
                 <Card background className={classes.cardRotate}>
                   <div
-                    className={
-                      classes.front
-                    }
+                    className={classes.front}
                     style={{
-                      color: '#FFFFFF',
-                      backgroundColor: '#0D47A1',
+                      backgroundImage:
+                        "linear-gradient(230deg, #FAD961 0%, #F76B1C 100%)",
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                      >
                         Shanti
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center" }} style={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center", padding: "0px", margin: "0px" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                          padding: "0px",
+                          margin: "0px",
+                        }}
+                      >
                         Technical Lead
                       </h5>
                     </CardBody>
@@ -290,21 +617,72 @@ export default function SectionTeams({ ...rest }) {
                   <div
                     className={classes.back}
                     style={{
-                      color: '#FFFFFF',
-                      backgroundColor: '#0D47A1', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                      backgroundImage:
+                        "linear-gradient(230deg, #FAD961 0%, #F76B1C 100%)",
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
-                      Shanti
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Shanti
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center" }} style={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "500", textAlign: "center", padding: "0px", margin: "0px" }}>
-                      Technical Lead
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1.25rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                          padding: "0px",
+                          margin: "0px",
+                        }}
+                      >
+                        Technical Lead
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "500", textAlign: "left" }} style={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "500", textAlign: "left" }}>
-                      Defines architecture, choose tech stack, ensure scalability.Writing, review, and maintain high-quality code.Guide and upskill developers. Plan, estimate, and ensure timely delivery. Debug and optimize system performance. Bridge between developers and stakeholders.
-                      Adopt new technologies and best practices. Ensure secure coding and deployments. Implement automation and cloud solutions.
-                      Maintain technical records and share knowledge.
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "0.85rem",
+                          lineHeight: "1.1rem",
+                          fontWeight: "500",
+                          textAlign: "left",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "0.85rem",
+                          lineHeight: "1.1rem",
+                          fontWeight: "500",
+                          textAlign: "left",
+                        }}
+                      >
+                        Defines architecture, choose tech stack, ensure
+                        scalability.Writing, review, and maintain high-quality
+                        code.Guide and upskill developers. Plan, estimate, and
+                        ensure timely delivery. Debug and optimize system
+                        performance. Bridge between developers and stakeholders.
+                        Adopt new technologies and best practices. Ensure secure
+                        coding and deployments. Implement automation and cloud
+                        solutions. Maintain technical records and share
+                        knowledge.
                       </h5>
                     </CardBody>
                   </div>
@@ -315,19 +693,47 @@ export default function SectionTeams({ ...rest }) {
               <div className={classes.rotatingCardContainer}>
                 <Card background className={classes.cardRotate}>
                   <div
-                    className={
-                      classes.front
-                    }
+                    className={classes.front}
                     style={{
-                      color: '#FFFFFF',
-                      backgroundColor: '#0D47A1',
+                      backgroundImage:
+                        "linear-gradient(230deg, #F76B1C 0%, #FAD961 100%)",
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                      >
                         Sri Charan
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center" }} style={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center", padding: "0px", margin: "0px" }}>
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                          padding: "0px",
+                          margin: "0px",
+                        }}
+                      >
                         Full Stack Developer
                       </h5>
                     </CardBody>
@@ -335,19 +741,71 @@ export default function SectionTeams({ ...rest }) {
                   <div
                     className={classes.back}
                     style={{
-                      color: '#FFFFFF',
-                      backgroundColor: '#0D47A1', fontFamily: "Montserrat", fontSize: "0.85rem", fontWeight: '400'
+                      backgroundImage:
+                        "linear-gradient(230deg, #F76B1C 0%, #FAD961 100%)",
                     }}
                   >
                     <CardBody background className={classes.cardBodyRotate}>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }} style={{ color: '#FFFFFF', fontSize: "1.5rem", lineHeight: "1.5rem", fontWeight: "600" }}>
-                      Sri Charan
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1.5rem",
+                          lineHeight: "1.5rem",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Sri Charan
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1rem", fontWeight: "500", textAlign: "center" }} style={{ color: '#FFFFFF', fontSize: "1rem", lineHeight: "1.25rem", fontWeight: "500", textAlign: "center", padding: "0px", margin: "0px" }}>
-                      Full Stack Developer
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "1rem",
+                          lineHeight: "1.25rem",
+                          fontWeight: "500",
+                          textAlign: "center",
+                          padding: "0px",
+                          margin: "0px",
+                        }}
+                      >
+                        Full Stack Developer
                       </h5>
-                      <h5 sx={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "500", textAlign: "left" }} style={{ color: '#FFFFFF', fontSize: "0.85rem", lineHeight: "1.1rem", fontWeight: "500", textAlign: "left" }}>
-                      Sri Charan Oversee all technical, functional, and visual components of the ongoing software development. Ensure the application is compatible with various devices. Optimize software performance. Guarantee that the design integrates seamlessly with the final product's functionality. Stays updated with the latest trends in the IT industry. Continuously enhance programming language proficiency.
+                      <h5
+                        sx={{
+                          color: "#000",
+                          fontSize: "0.85rem",
+                          lineHeight: "1.1rem",
+                          fontWeight: "500",
+                          textAlign: "left",
+                        }}
+                        style={{
+                          color: "#000",
+                          fontSize: "0.85rem",
+                          lineHeight: "1.1rem",
+                          fontWeight: "500",
+                          textAlign: "left",
+                        }}
+                      >
+                        Sri Charan Oversee all technical, functional, and visual
+                        components of the ongoing software development. Ensure
+                        the application is compatible with various devices.
+                        Optimize software performance. Guarantee that the design
+                        integrates seamlessly with the final product's
+                        functionality. Stays updated with the latest trends in
+                        the IT industry. Continuously enhance programming
+                        language proficiency.
                       </h5>
                     </CardBody>
                   </div>
@@ -357,7 +815,7 @@ export default function SectionTeams({ ...rest }) {
           </GridContainer>
         </div>
       </div>
-      {/* Team 1 END */}
+      <hr />
     </div>
   );
 }

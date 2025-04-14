@@ -70,36 +70,18 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
   return (
-    <AppBar className={appBarClasses}>
+    <AppBar className={appBarClasses} style={{ backgroundColor: "white" }}>
       <Toolbar className={classes.container} style={{ marginLeft: '2rem', marginRight: 'auto' }}>
         <Hidden mdDown implementation="css" className={classes.hidden}>
           <div className={classes.collapse}>{links} 
-          {/* <Button
-            size="medium"
-            variant="contained"
-            type="submit"
-            justify="center"
-            style={{
-              textTransform: "none",
-              color: '#112A46',
-              background: '#0D47A1',
-              width: '6.75rem',
-              height: "2rem",
-              whiteSpace: 'nowrap',
-              boxShadow: "none"
-            }}
-            onClick={routeToContactUs}
-          >
-            Contact Us
-          </Button> */}
           </div>
         </Hidden>
         <Hidden mdUp>
-          <img src="/img/resized_imgs/transparent-logo.png" alt="novellogiks" style={{ width: "4rem", height: "4rem", marginRight: "1.5rem" }} />
+          <img src="/img/resized_imgs/nl-logo.png" alt="novellogiks" style={{ width: "2.5rem", marginRight: "2rem" }} />
         </Hidden>
         <Hidden mdUp>
           <div >
-            <img src="/img/logo/nl-main-title.png" alt="novellogiks" style={{ marginRight: "1.5rem" }} />
+            <img src="/img/logo/nl-title.png" alt="novellogiks" style={{ width: "15rem", height:"2rem",marginRight: "1.5rem" }} />
           </div> 
         </Hidden>
         <Hidden mdUp>

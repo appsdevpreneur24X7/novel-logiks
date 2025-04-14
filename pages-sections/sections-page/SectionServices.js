@@ -33,6 +33,7 @@ export default function SectionServices({ ...rest }) {
   console.log('Loaded Services data : ', services ? services.length : 0);
   return (
     <div className="cd-section" {...rest}>
+      
       <div className={classes.container}>
         <GridContainer style={{ marginBottom: '.25rem' }}>
           <GridItem md={6} style={{ color: '#112A46' }}>
@@ -45,17 +46,10 @@ export default function SectionServices({ ...rest }) {
               color: '#112A46'
             }}>  Services
             </h1>
-            {/* <Divider style={{
-              backgroundColor: '#0D47A1',
-              color: '#0D47A1',
-              border: '#0D47A1',
-              borderRadius: '5px',
-              borderTop: '0.25rem solid #0D47A1',
-              width: '50%'
-            }}></Divider> */}
           </GridItem>
         </GridContainer> 
         <SectionServicesCarousel/>
+        <hr />
       </div>
     </div>
   );

@@ -43,18 +43,9 @@ export default function ServicesDetails({ ...rest }) {
               lineHeight: '2rem',
               fontWeight: '600',
               textAlign: "left",
-              color: '#112A46'
+              background: "linear-gradient(90deg, #F4D03F, #16A085)",
             }}>  Services
             </h1>
-            {/* <Divider style={{
-              backgroundColor: '#0D47A1',
-              color: '#0D47A1',
-              border: '#0D47A1',
-              borderRadius: '5px',
-              borderTop: '0.25rem solid #0D47A1',
-              width: '50%',
-              marginBottom:"1.5rem"
-            }}></Divider> */}
           </GridItem>
         </GridContainer>
         {services && services[0] && (<GridContainer id='0' style={{ marginBottom: '.25rem' }}>

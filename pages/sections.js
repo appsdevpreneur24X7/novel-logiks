@@ -1,5 +1,5 @@
 import React from "react";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 import Header from "/components/Header/Header.js";
 import HeaderLinks from "/components/Header/HeaderLinks.js";
 import SectionHome from "/pages-sections/sections-page/SectionHome.js";
@@ -16,7 +16,7 @@ import Footer from "../components/Footer/Footer";
 import Button from "/components/CustomButtons/Button.js";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
-import { Divider } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 
 const useStyles = makeStyles(sectionsPageStyle);
 
@@ -45,11 +45,11 @@ export default function SectionsPage() {
         parseInt(navigationItems[i].getAttribute("data-number"), 10) - 1;
       if (
         contentSections[i].offsetTop - window.innerHeight / 2 <
-        window.pageYOffset &&
+          window.pageYOffset &&
         contentSections[i].offsetTop +
-        contentSections[i].scrollHeight -
-        window.innerHeight / 2 >
-        window.pageYOffset
+          contentSections[i].scrollHeight -
+          window.innerHeight / 2 >
+          window.pageYOffset
       ) {
         navigationItems[activeSection].classList.add("is-selected");
       } else {
@@ -103,7 +103,7 @@ export default function SectionsPage() {
         <SectionCareers id="careers" />
         <SectionContactUs id="contactUs" />
       </div>
-      <nav id="cd-vertical-nav" style={{ display: 'none' }}>
+      <nav id="cd-vertical-nav" style={{ display: "none" }}>
         <ul>
           <li>
             <a
@@ -120,8 +120,7 @@ export default function SectionsPage() {
                   e.preventDefault();
                   smoothScroll("home");
                 }
-              }
-              }
+              }}
             >
               <span className="cd-dot" />
               <span className="cd-label">Home</span>
@@ -142,8 +141,7 @@ export default function SectionsPage() {
                   e.preventDefault();
                   smoothScroll("aboutus");
                 }
-              }
-              }
+              }}
             >
               <span className="cd-dot" />
               <span className="cd-label">About</span>
@@ -298,47 +296,30 @@ export default function SectionsPage() {
           </li>
         </ul>
       </nav>
-      <Footer
-        className={classes.footer}
-        content={
-          <div>
-            {/* <Divider /> */}
-            <div className={classes.container} >
-              <GridContainer style={{alignItems: "baseline" }}>
-                <GridItem md={6} >
-                  <h4 style ={{fontFamily:"Montserrat", fontSize : "0.75rem", color:"#091133"}}>©2023 novellogiks.com</h4>
-                </GridItem>
-                <GridItem md={6} style={{ color: '#112A46', verticalAlign: "baseline" }}>
-                  <Button
-                    // href=""
-                    target="_blank"
-                    color="twitter"
-                    justIcon
-                    simple
-                  >
-                    <i className="fab fa-twitter" />
-                  </Button>
-                  <Button
-                    // href=""
-                    target="_blank"
-                    color="instagram"
-                    justIcon
-                    simple
-                  >
-                    <i className="fab fa-instagram" />
-                  </Button>
-                  <Button
-                    // href=""
-                    justIcon simple color="facebook">
-                    <i className="fab fa-facebook-square" />
-                  </Button>
-                </GridItem>
-
-              </GridContainer>
+        <Footer
+          className={classes.footer}
+          content={
+            <div>
+              {/* <Divider /> */}
+              <div className={classes.container}>
+                <GridContainer style={{ alignItems: "baseline" }}>
+                  <GridItem md={12}>
+                    <h4
+                      style={{
+                        fontFamily: "Montserrat",
+                        fontSize: "0.75rem",
+                        fontWeight: "500",
+                        color: "#000",
+                      }}
+                    >
+                      ©2025 novellogiks.com
+                    </h4>
+                  </GridItem>
+                </GridContainer>
+              </div>
             </div>
-          </div>
-        }
-      />
+          }
+        />
     </div>
   );
 }

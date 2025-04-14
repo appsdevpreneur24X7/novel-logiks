@@ -10,26 +10,14 @@ class MyDocument extends Document {
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#000000" />
           <meta name="description" content="Novel Logiks Technologies | Digital Transformation"></meta>
-          <link rel="shortcut icon" href="/img/latest/transparent-logo.png" />
+          <link rel="shortcut icon" href="/img/latest/nl-logo.png" />
           <link
             rel="apple-touch-icon"
             sizes="76x76"
             href="/img/logo/favicon.png"
           />
-          {/* Fonts and icons */}
-          {/* 
-          PRE STYLING LSK FOR MONTSERRAT
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
-          />
-          <link
-            href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
-            rel="stylesheet"
-          /> */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap|Material+Icons" rel="stylesheet"></link>
           <link
             href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"

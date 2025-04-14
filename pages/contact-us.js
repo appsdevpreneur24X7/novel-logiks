@@ -69,7 +69,7 @@ export default function ContactUsPage() {
             <GridContainer>
               <GridItem md={12} style={{ textAlign: "center", justifyContent: "center" }} >
                 <img
-                  src="img/resized_imgs/transparent-logo.png"
+                  src="img/resized_imgs/nl-logo.png"
                   alt="ai pic"
                   style={{ width: '50%' }}
                 />

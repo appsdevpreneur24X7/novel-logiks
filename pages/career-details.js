@@ -224,19 +224,23 @@ export default function CareerDetails() {
               />
             </GridItem>
             <GridItem item xs={12} style={{ marginTop: "2em", marginBottom: "2em", marginLeft: "auto", marginRight: "auto", alignItems: "center", justifyContent: "center" }}>
-              <Button
-                size="medium"
+              <Button 
                 variant="contained"
                 type="submit"
-                justify="center"
-                style={{
-                  alignItems: "center",
-                  alignItems: "center",
-                  textAlign: "center",
+                sx={{
                   textTransform: "none",
-                  color: '#112A46',
-                  background: '#0D47A1',
-                  width: '10rem'
+                  borderRadius: "5px",
+                  fontSize: "1.25rem",
+                  height: "2.5rem",
+                  fontWeight: 600,
+                  width: { lg: "10rem", xs: "12.5rem" },
+                  background: "linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%)",
+                  boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
+                  // '&:hover': {
+                  //   background: "linear-gradient(135deg, #F4D03F 10%, #16A085 90%)",
+                  //   boxShadow: "0 6px 15px rgba(0, 0, 0, 0.25)",
+                  // }
+                  
                 }}
                 disabled={enableSearch ? true : false}
                 onClick={searchHandler}

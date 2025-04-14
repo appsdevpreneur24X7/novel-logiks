@@ -17,7 +17,6 @@ import { Typography } from "@mui/material";
 const useStyles = makeStyles(featuresStyle);
 
 const SectionServicesCarousalCard = (props)=> { 
-    const classes = useStyles();
     console.log("props Passed to Carousal Card : ",props);
     const {index} = props
     console.log("props Passed to Carousal Card : ",index);
@@ -28,26 +27,29 @@ const SectionServicesCarousalCard = (props)=> {
                 <CardHeader plain image>
                     <img src={services[index].serviceImageUrl} alt="..." style={{ height: "15rem"}} />
                 </CardHeader>
-                <CardBody plain>
+                <CardBody plain style={{marginBottom: "0.1rem"}}>
                     <Typography style={{
                         fontFamily: 'Montserrat',
                         fontSize: '1.125rem',
-                        lineHeight: '1.719rem',
+                        lineHeight: '1.5rem',
                         fontWeight: '600',
                         textAlign: "left",
                         color: '#212121',
-                        padding: "0.5rem"
+                        paddingLeft: "0.5rem",
+                        paddingRight: "0.5rem",
+                        marginBottom:"0.25rem"
                     }}>
                         {services[index].serviceTitle}
                     </Typography>
                     <Typography style={{
-                        fontFamily: '"Open Sans", sans-serif',
-                        fontSize: '0.875rem',
-                        lineHeight: '1.719rem',
+                        fontFamily: 'Montserrat',
+                        fontSize: '1rem',
+                        lineHeight: '1.5rem',
                         fontWeight: '500',
                         textAlign: "left",
                         color: '#212121',
-                        padding: "1rem"
+                        paddingLeft: "0.5rem",
+                        paddingRight: "0.5rem",
                     }}>
                         {services[index].serviceOneLiner}
                     </Typography>

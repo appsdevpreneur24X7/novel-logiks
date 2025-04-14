@@ -20,7 +20,7 @@ export default function SectionServicesLeft({ ...rest }) {
                     <GridItem xs={12} sm={4} md={4}>
                         <div className={classes.phoneContainer}>
                             <img src={serviceImageUrl} alt="..." style={{
-                                marginTop: "30px", marginBottom: "30px",
+                                marginTop: ".5rem", marginBottom: ".5rem",
                                 width: '15rem', height: "20rem",
                                 minWidth: '15rem', borderRadius: "5px", objectFit:"cover",
                                 boxShadow: '0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6)'
@@ -31,7 +31,7 @@ export default function SectionServicesLeft({ ...rest }) {
                         <h1 style={{
                             fontFamily: 'Montserrat',
                             fontSize: '1rem',
-                            lineHeight: '2rem',
+                            lineHeight: '1.25rem',
                             fontWeight: '600',
                             textAlign: "left",
                             color: '#112A46'
@@ -45,7 +45,7 @@ export default function SectionServicesLeft({ ...rest }) {
                             width: '50%',
                             marginBottom:"1.5rem"
                         }}></Divider> */}
-                        <Typography component="div" style={{ textAlign: "left",marginBottom:"1rem" }}>
+                        <Typography component="div" style={{ textAlign: "left",marginBottom:".5rem" }}>
                             <ul>
                                 {servicePoints.map((each, idx) => <li key={idx}><h6 style={{color:"#091133"}}>{each}</h6></li>)}
                             </ul>

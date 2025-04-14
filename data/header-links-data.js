@@ -38,7 +38,7 @@ export const headerLinksData = {
     {
         href: "/sections#contactUs",
         title: "Contact Us",
-        smoothScroll:"conatctUs"
+        smoothScroll:"contactUs"
     }]
     
 }

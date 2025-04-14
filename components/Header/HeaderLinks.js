@@ -1,11 +1,11 @@
 /* eslint-disable */
-import React , {useState} from "react";
+import React, { useState } from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // react components for routing our app without refresh
 import Link from "next/link";
 import { headerLinksData } from "../../data/header-links-data.js";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 
 // @mui/icons-material
 import Button from "/components/CustomButtons/Button.js";
@@ -16,7 +16,7 @@ const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
   const [activeItem, setActiveItem] = useState(null);
-  
+
   const easeInOutQuad = (t, b, c, d) => {
     t /= d / 2;
     if (t < 1) return (c / 2) * t * t + b;
@@ -62,45 +62,54 @@ export default function HeaderLinks(props) {
   const { links } = headerLinksData;
   return (
     <>
-      <img src="/img/resized_imgs/transparent-logo.png" alt="novellogiks" style={{ width: "4rem", height: "4rem", marginRight: "1.5rem" }} />
-      <div >
+      <img
+        src="/img/resized_imgs/nl-logo.png"
+        alt="novellogiks"
+        style={{ width: "2.5rem", marginRight: "2rem" }}
+      />
+      <div>
         <img
-         src="/img/logo/nl-main-title.png" alt="Novel Logiks" style={{ marginRight: "1.5rem" }} />
+          src="/img/logo/nl-title.png"
+          alt="Novel Logiks"
+          style={{ width: "15rem", height: "2rem", marginRight: "1.5rem" }}
+        />
       </div>
-      <span style={{ marginLeft: "auto", marginRight: "1.5rem"  }}></span>
-      {links.map(each => (<Link href={each.href} >
-        <a
-  className={classes.dropdownLink}
-  style={{
-    color: activeItem === each.title ? "#FFD700" : "#FFFFFF", // Highlight active item (gold color)
-    fontFamily: '"Montserrat", sans-serif',
-    fontSize: "1rem",
-    fontWeight: "600",
-    letterSpacing: "0.5px",
-    textTransform: "uppercase",
-    transition: "color 0.3s ease-in-out",
-    cursor: "pointer", // Pointer cursor on hover
-    padding: "10px 15px",
-    borderBottom: activeItem === each.title ? "2px solid #FFD700" : "none", // Underline active item
-  }}
-  onClick={(e) => {
-    setActiveItem(each.title); // Set the active menu item
-    if (each.title === "Services") Router.push(each.href);
-    else smoothScroll(e, each.smoothScroll);
-  }}
->
-  <span style={{ whiteSpace: "nowrap", lineHeight: '2rem' }}>
-    {each.title}
-  </span>
-</a>
-      </Link>))}
+      <span style={{ marginLeft: "auto", marginRight: "1.5rem" }}></span>
+      {links.map((each) => (
+        <Link href={each.href}>
+          <a
+            className={classes.dropdownLink}
+            style={{
+              color: activeItem === each.title ? "#1e81b0" : "#06437a", // Highlight active item (gold color)
+              fontFamily: '"Montserrat", sans-serif',
+              fontSize: "1rem",
+              fontWeight: "600",
+              letterSpacing: "0.5px",
+              textTransform: "uppercase",
+              transition: "color 0.3s ease-in-out",
+              cursor: "pointer", // Pointer cursor on hover
+              padding: "10px 15px",
+              borderBottom:
+                activeItem === each.title ? "2px solid #eab676" : "none", // Underline active item
+            }}
+            onClick={(e) => {
+              setActiveItem(each.title); // Set the active menu item
+              if (each.title === "Services") Router.push(each.href);
+              else smoothScroll(e, each.smoothScroll);
+            }}
+          >
+            <span style={{ whiteSpace: "nowrap", lineHeight: "2rem" }}>
+              {each.title}
+            </span>
+          </a>
+        </Link>
+      ))}
     </>
-
   );
 }
 
 HeaderLinks.defaultProps = {
-  hoverColor: "primary"
+  hoverColor: "primary",
 };
 
 HeaderLinks.propTypes = {
@@ -111,6 +120,6 @@ HeaderLinks.propTypes = {
     "success",
     "warning",
     "danger",
-    "rose"
-  ])
+    "rose",
+  ]),
 };

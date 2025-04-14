@@ -32,25 +32,18 @@ export default function SectionClients({ ...rest }) {
               color: '#112A46'
             }}>  Clients
             </h1>
-            {/* <Divider style={{
-              backgroundColor: '#0D47A1',
-              color: '#0D47A1',
-              border: '#0D47A1',
-              borderRadius: '5px',
-              borderTop: '0.25rem solid #0D47A1',
-              width: '20%'
-            }}></Divider> */}
           </GridItem>
         </GridContainer>
         <GridContainer style={{ margin: '2rem' }}>
           <GridItem sm={12} md= {6} style={{ textAlign: "center" }}>
-            <img src="/img/lsk_imgs/vishudha-client.png" alt="..." style={{ width: "10rem", height: "4rem", textAlign: "center", justifyContent: "center", boxShadow: '0 3px 10px rgb(0 0 0 / 0.5)', borderRadius:"5px" }} />
+            <img src="/img/lsk_imgs/vishudha-client.png" alt="..." style={{ width: "15rem", height: "6rem", textAlign: "center", justifyContent: "center", boxShadow: '0 3px 10px rgb(0 0 0 / 0.5)', borderRadius:"5px" }} />
           </GridItem>
           <GridItem sm={12} md= {6}  style={{ textAlign: "center", justifyContent: "center", alignItems: "center" }}>
-            <img src="/img/lsk_imgs/tek-centrix-client.png" alt="..." style={{ width: "10rem", height: "3rem", textAlign: "center", justifyContent: "center", boxShadow: '0 3px 10px rgb(0 0 0 / 0.5)', borderRadius:"5px" }} />
+            <img src="/img/lsk_imgs/tek-centrix-client.png" alt="..." style={{ width: "15rem", height: "6rem", textAlign: "center", justifyContent: "center", boxShadow: '0 3px 10px rgb(0 0 0 / 0.5)', borderRadius:"5px" }} />
           </GridItem>
         </GridContainer>
       </div>
+      <hr/>
     </div >
   );
 }
