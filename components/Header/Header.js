@@ -71,17 +71,17 @@ export default function Header(props) {
   });
   return (
     <AppBar className={appBarClasses} style={{ backgroundColor: "white" }}>
-      <Toolbar className={classes.container} style={{ marginLeft: '2rem', marginRight: 'auto' }}>
+      <Toolbar className={classes.container} style={{ marginRight: 'auto' }}>
         <Hidden mdDown implementation="css" className={classes.hidden}>
           <div className={classes.collapse}>{links} 
           </div>
         </Hidden>
         <Hidden mdUp>
-          <img src="/img/resized_imgs/nl-logo.png" alt="novellogiks" style={{ width: "2.5rem", marginRight: "2rem" }} />
+          <img src="/img/resized_imgs/nl-logo.png" alt="novellogiks" style={{ width: "2rem", marginRight: "1rem" }} />
         </Hidden>
         <Hidden mdUp>
           <div >
-            <img src="/img/logo/nl-title.png" alt="novellogiks" style={{ width: "15rem", height:"2rem",marginRight: "1.5rem" }} />
+            <img src="/img/logo/nl-title.png" alt="novellogiks" style={{ width: "10rem" }} />
           </div> 
         </Hidden>
         <Hidden mdUp>

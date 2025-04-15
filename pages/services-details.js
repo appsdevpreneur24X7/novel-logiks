@@ -14,14 +14,6 @@ import { services } from "../data/services-data.js";
 
 const useStyles = makeStyles(headersStyle);
 
-const routeToAiDetails = () => {
-  Router.push("/ai-details");
-}
-
-const routeToContactUs = () => {
-  Router.push("/contact-us");
-}
-
 export default function ServicesDetails({ ...rest }) {
   const classes = useStyles();
   console.log('Loaded Services data : ', services ? services.length : 0);
@@ -43,7 +35,7 @@ export default function ServicesDetails({ ...rest }) {
               lineHeight: '2rem',
               fontWeight: '600',
               textAlign: "left",
-              background: "linear-gradient(90deg, #F4D03F, #16A085)",
+              color: "black",
             }}>  Services
             </h1>
           </GridItem>
@@ -57,25 +49,6 @@ export default function ServicesDetails({ ...rest }) {
         {services && services[2] && (<GridContainer id='2' style={{ marginBottom: '.25rem' }}>
           <SectionServicesLeft data={services[2]} />
         </GridContainer>)}
-        {services && services[3] && (<GridContainer id='3' style={{ marginBottom: '.25rem' }}>
-          <SectionServicesRight data={services[3]} />
-        </GridContainer>)}
-        {services && services[4] && (<GridContainer id='4' style={{ marginBottom: '.25rem' }}>
-          <SectionServicesLeft data={services[4]} />
-        </GridContainer>)}
-        {services && services[5] && (<GridContainer id='5' style={{ marginBottom: '.25rem' }}>
-          <SectionServicesRight data={services[5]} />
-        </GridContainer>)}
-        {/* {services && services[6] && (<GridContainer id='6' style={{ marginBottom: '.25rem' }}>
-          <SectionServicesLeft data={services[6]} />
-        </GridContainer>)}
-        {services && services[7] && (<GridContainer id='7' style={{ marginBottom: '.25rem' }}>
-          <SectionServicesRight data={services[7]} />
-        </GridContainer>)}
-        {services && services[8] && (<GridContainer id='8' style={{ marginBottom: '.25rem' }}>
-          <SectionServicesLeft data={services[8]} />
-        </GridContainer>)} */}
-       
       </div>
     </>
   );

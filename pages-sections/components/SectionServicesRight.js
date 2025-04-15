@@ -14,48 +14,34 @@ export default function SectionServicesRight({ ...rest }) {
   const { serviceTitle, serviceImageUrl, servicePoints } = data
 
   return (
-    // <div className="cd-section" {...rest}>
       <div className={classes.container} {...rest}>
-        {/* Services Right START */}
-        {/* <div className={classes.features3}> */}
           <GridContainer style={{ borderRadius:"5px"}}>
-            <GridItem xs={12} sm={8} md={8}>
-              <h1 style={{
-                fontFamily: 'Montserrat',
-                fontSize: '1rem',
-                lineHeight: '2rem',
-                fontWeight: '600',
-                textAlign: "left",
-                color: '#112A46'
-              }}>{serviceTitle}</h1>
-              {/* <Divider style={{
-                backgroundColor: '#0D47A1',
-                color: '#0D47A1',
-                border: '#0D47A1',
-                borderRadius: '5px',
-                borderTop: '0.25rem solid #0D47A1',
-                width: '50%',
-                marginBottom:"1.5rem"
-              }}></Divider> */}
+            <GridItem xs={12} sm={6} md={6}>
+            <h1 style={{
+                            fontFamily: 'Montserrat',
+                            fontSize: '1rem',
+                            lineHeight: '1.25rem',
+                            fontWeight: '600',
+                            textAlign: "left",
+                            color: '#112A46'
+                        }}>{serviceTitle}</h1>
               <Typography component="div" style={{ textAlign: "left" }}>
                 <ul>
-                  {servicePoints.map((each, idx) => <li key={idx}><h6 style={{color:"#091133"}}>{each}</h6></li>)}
+                  {servicePoints.map((each, idx) => <li key={idx}><Typography style={{color:"#091133"}}>{each}</Typography></li>)}
                 </ul>
               </Typography>
             </GridItem>
-            <GridItem xs={12} sm={4} md={4}>
-              <div className={classes.phoneContainer} >
-                <img src={serviceImageUrl} alt="..." style={{
-                    marginTop: "30px", marginBottom: "30px",
-                    width: '15rem', height: "20rem",
-                    minWidth: '15rem', borderRadius: "5px", objectFit:"cover",
-                    boxShadow: '0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6)'
-                }} />
+            <GridItem xs={12} sm={6} md={6}>
+              <div className={classes.phoneContainer} style={{textAlign:"center"}} >
+              <img src={serviceImageUrl} alt="..." style={{
+                                marginTop: ".5rem", marginBottom: ".5rem",
+                                width: '20rem', height: "20rem",
+                                minWidth: '15rem', borderRadius: "5px", objectFit:"cover",
+                                boxShadow: '0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6)'
+                            }} />
               </div>
             </GridItem>
           </GridContainer>
-        {/* </div> */}
       </div>
-    // </div>
   );
 }

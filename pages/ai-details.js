@@ -304,38 +304,22 @@ export default function AiDetails() {
           className={classes.footer}
           content={
             <div>
-              <div className={classes.left}>
-                <Button
-                  href=""
-                  target="_blank"
-                  color="twitter"
-                  justIcon
-                  simple
-                >
-                  <i className="fab fa-twitter" />
-                </Button>
-                <Button
-                  href=""
-                  target="_blank"
-                  color="instagram"
-                  justIcon
-                  simple
-                >
-                  <i className="fab fa-instagram" />
-                </Button>
-                <Button href=""
-                  justIcon simple color="facebook">
-                  <i className="fab fa-facebook-square" />
-                </Button>
-              </div>
-              <div className={classes.right}>
-                <a
-                  href=""
-                  target="_blank"
-                  style={{ color: "gray" }}
-                >
-                  All rights reserved by novellogiks.com Copyright ©2023
-                </a>{" "}
+              {/* <Divider /> */}
+              <div className={classes.container}>
+                <GridContainer style={{ alignItems: "baseline" }}>
+                  <GridItem md={12}>
+                    <h4
+                      style={{
+                        fontFamily: "Montserrat",
+                        fontSize: "0.75rem",
+                        fontWeight: "500",
+                        color: "#000",
+                      }}
+                    >
+                      ©2025 novellogiks.com
+                    </h4>
+                  </GridItem>
+                </GridContainer>
               </div>
             </div>
           }
